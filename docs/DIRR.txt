@@ -1,0 +1,48 @@
+Virus Name:  Dir Virus 
+ Aliases:     691 
+ V Status:    Rare 
+ Discovered:  January, 1991 
+ Symptoms:    .COM growth; TSR; sluggishness of DIR commands; 
+              File allocation errors 
+ Origin:      USSR 
+ Eff Length:  691 Bytes 
+ Type Code:   PRsCK - Parasitic Resident .COM  Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Dir Virus was submitted in January, 1991.  It originated in the 
+       USSR.  The Dir Virus is a memory resident infector of .COM programs, 
+       including COMMAND.COM. 
+ 
+       The first time a program infected with the Dir Virus is executed, 
+       the virus will install itself memory resident as a low system memory 
+       TSR of 1,008 bytes.  Interrupt 21 will be hooked by the virus.  If 
+       COMMAND.COM is not already infected, it will become infected at this 
+       time. 
+ 
+       After the Dir Virus is memory resident, it will only infect .COM 
+       programs when a DOS DIR command is performed.  It does not infect 
+       programs on execution, or when .COM files are opened.  When a DIR 
+       command is performed, the first uninfected .COM program that is 
+       found in the directory will become infected.  When the virus infects 
+       a .COM file, there will be a pause in the output of the DIR command 
+       while the program is being infected, then the output will continue. 
+ 
+       Infected programs will increase in size by 691 bytes, though the 
+       file length increase cannot be seen when a directory command is 
+       performed if the virus is memory resident.  The virus will be 
+       located at the end of infected programs.  Infected programs will not 
+       have their date and time altered by the virus. 
+ 
+       Systems infected with the Dir Virus will receive file allocation 
+       errors when the DOS CHKDSK program is executed on a drive containing 
+       infected programs.  If the virus is not memory resident, these 
+       errors will not be found.  Execution of the DOS CHKDSK program with 
+       the /F option when the virus is memory resident will result in 
+       corruption of the infected programs. 
+ 
+       This virus does not appear to contain any activation mechanism.

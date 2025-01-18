@@ -1,0 +1,19 @@
+;
+;	Virus school, lession 1	 	(c) 1992 Tormentor [Demoralized Youth]
+;
+;	This is the first lession on how to make an own virus.
+;	Hope you'll learn something of it...
+;	To be compiled with TASM 3.0 or higher.
+;
+;	This virus is quite dumb and 'noisy' 
+;	It updates the filedate and time, changes DTA before execution causing
+;	some progs to belive they are executed with parameters...
+;	But this should only be a 'raw' virus that you can develop.
+;	Certain program may hang, so i recommend you not to spread to geeks
+;	since there is MANY better viruses to use for such nice purpose.
+;
+;	If you want to conntact me or other virus-writers call me on my board:
+;	Swedish Virus Laboratory	+46-3191-9393
+;
+;	Greetings to All virus-writers!
+;	

@@ -1,0 +1,60 @@
+Virus Name:  1963 
+ Aliases:     V1963, 1963 OverWrite 
+ V Status:    Rare 
+ Discovery:   May, 1991 
+ Symptoms:    .COM & .EXE file changes; decrease in available memory; 
+              file allocation errors 
+ Origin:      Unknown 
+ Eff Length:  1,963 Bytes 
+ Type Code:   PRsAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, NAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    LProt, Sweep/N, NShld, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The 1963 virus was received in May, 1991.  Its origin or original 
+       point of discovery is unknown.  1963 is a memory resident infector 
+       of .COM and .EXE files, including COMMAND.COM.  This virus is a 
+       stealth virus, it hides its file length increase on infected files 
+       regardless of whether the virus is memory resident.  It is related 
+       to the Dark Avenger family of viruses. 
+ 
+       The first time a program infected with the 1963 virus is executed, 
+       the virus will install itself memory resident as a low system memory 
+       TSR of 5,136 bytes.  Interrupt 21 will be hooked by the virus.  This 
+       virus will mark its TSR as "available", though the memory is in fact 
+       reserved. 
+ 
+       After 1963 is memory resident, it will infect .COM and .EXE programs 
+       over 1,963 bytes in length when they are opened or executed.  The 
+       virus infects the programs by writing the original first 1,963 bytes 
+       of the program after the program's end of file mark, and then copying 
+       itself into the first 1,963 bytes of the file.  (.EXE programs will 
+       have the first 2,475 bytes of the program altered, the difference is 
+       due to the .EXE header.)  Infected programs do not change in length 
+       in the DOS disk directory. 
+ 
+       Execution of the DOS CHKDSK on infected systems will result in file 
+       allocation errors being detected.  These errors will occur on each 
+       infected program regardless whether the virus is memory resident. 
+      
+       1963 is capable of disinfecting programs on the fly.  As a result, 
+       an anti-viral unaware of this virus will be unable to locate it on 
+       infected programs when using CRC or checksumming techniques. 
+       Further, execution of an anti-viral program unaware of 1963 with the 
+       virus memory resident will result in all programs which are opened 
+       becoming infected. 
+ 
+       It is unknown what 1963 does besides replicate. 
+ 
+       Known variant(s) of 1963 are: 
+       1963-B: Submitted in May, 1991 from Europe.  1963-B is similar 
+               is similar in behavior to 1963.  The primary difference is 
+               that it will infect COMMAND.COM when the first infected 
+               program is executed.  There are 48 bytes of viral code 
+               which differ from the original virus. 
+               Origin: Europe 
+ 
+       See:   Cracker Jack   Dark Avenger 

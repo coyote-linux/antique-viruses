@@ -1,0 +1,78 @@
+Virus Name:  Mini-45 
+ Aliases:     Dust, Minimal, Short-45, Mini-35, Mini-44, Mini-46, Mini-97, 
+              Mini-99, Mini, Trivial 
+ V Status:    Viron 
+ Discovered:  April, 1991 
+ Symptoms:    .COM file corruption; file date/time changes 
+ Origin:      Bulgaria 
+ Eff Length:  45 Bytes 
+ Type Code:   ONCK - Overwriting Non-Resident .COM Infector 
+ Detection Method:  AVTK, F-Prot, ViruScan, Sweep, PCScan, 
+                    IBMAV, NAV, NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Mini-45 virus was received in April, 1991.  It is originally 
+       from Bulgaria.  This virus is a non-resident, overwriting virus 
+       which infects .COM files, including COMMAND.COM. 
+ 
+       When a program infected with Mini-45 is executed, the virus will 
+       infect all .COM programs in the current directory by overwriting 
+       the first 45 bytes of the program with the viral code.  No file 
+       size increase will be noticed, unless the original program was less 
+       than 45 bytes in length, in which case it will now be 45 bytes in 
+       length. The .COM programs' date and time in the disk directory will 
+       be updated to the current system date and time of infection. 
+ 
+       All .COM programs infected with Mini-45 will fail to function 
+       properly after infection.  These programs will be permanently 
+       damaged since the first 45 bytes are lost. 
+ 
+       Known variant(s) of Mini-45 are: 
+       Dust: Dust is a 50 byte variant of the original Mini-45 virus. 
+             It overwrites the first 50 bytes of all .COM programs in 
+             the current directory when an infected program is executed. 
+             The program's date and time in the DOS disk directory listing 
+             will have been updated to the current system date and time 
+             when infection occurred. 
+             Origin:  Unknown  August, 1992. 
+       Mini-35: Mini-35 is a 35 byte variant of the original Mini-45 
+                virus.  Mini-35 will overwrite the first 35 bytes of the 
+                first .COM program in the current directory when an 
+                infected program is executed.  The program's date and time 
+                in the DOS disk directory listing will also have been 
+                updated. 
+                Origin:  Unknown  January, 1992. 
+       Mini-44: Mini-44 is a 44 byte variant of the original Mini-45 
+                virus.  It will overwrite the first 44 bytes of all .COM 
+                programs located in the current directory when an infected 
+                program is executed.  The file's date and time in the DOS 
+                disk directory listing will have been updated to the 
+                current system date/time. 
+                Origin:  Unknown  January, 1992. 
+       Mini-46: Mini-46 is a 46 byte variant of the original Mini-45 
+                virus.  Other than the difference in length, the virus 
+                functions similarly to the Mini-45 virus. 
+       Mini-97: Mini-97 is a larger variant of the Mini-45 virus.  This 
+                particular virus was the smallest known parasitic virus at 
+                the time of its submission in October, 1991.  Mini-97 
+                infects all .COM files in the current directory which do not 
+                start with a JMP (E9h) instruction, including COMMAND.COM, 
+                when an infected program is executed.  Infected programs 
+                increase in size by 97 bytes with the virus being located at 
+                the beginning of the infected file.  The file's date and time 
+                in the DOS disk directory listing will also have been altered. 
+                Origin:  The Netherlands  October, 1991. 
+       Mini-99: Probably an earlier variant of Mini-97, this variant 
+                infects all .COM files in the current directory, including 
+                COMMAND.COM, when an infected program is executed. 
+                Infected programs increase in size by 99 bytes, and will 
+                have had their file date and time in the DOS disk 
+                directory updated to the current system date and time 
+                when infection occurred.  The virus will be located at 
+                the end of infected files. 
+                Origin:  The Netherlands  October, 1991. 
+ 
+       See:   Banana   Blood Lust   Define   Dutch Tiny 

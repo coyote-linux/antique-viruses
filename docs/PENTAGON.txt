@@ -1,0 +1,25 @@
+Virus Name:  Pentagon 
+ Aliases: 
+ V Status:    Extinct 
+ Discovered:  January, 1988 
+ Symptoms:    TSR; BSC 360k floppies; file (see text) 
+ Origin:      United States 
+ Eff Length:  N/A 
+ Type Code:   RF - Resident Floppy Boot Sector Infector 
+ Detection Method:  [Not in Certification Set] 
+ Removal Instructions:  MDisk, or DOS SYS command 
+ 
+ General Comments: 
+       The Pentagon virus consists of a normal MS-DOS 3.20 boot sector 
+       where the name 'IBM' has been replaced by 'HAL', along with two 
+       files.  The first file has a name of the hex character 0F9H, and 
+       contains the portion of the virus code which would not fit into the 
+       boot sector, as well as the original boot sector of the infected 
+       disk.  The second file is named PENTAGON.TXT and does not appear to 
+       be used or contain any data.  The 0F9H file is accessed by its 
+       absolute storage address.  Portions of this virus are encrypted. 
+ 
+       The Pentagon virus only infects 360K floppies, and will look for 
+       and remove the Brain virus from any disk that it infects. It is 
+       memory resident, occupying 5K of RAM, and can survive a warm reboot 
+       (CTL-ALT-DEL). 

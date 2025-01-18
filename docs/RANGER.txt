@@ -1,0 +1,32 @@
+Virus Name:  Ranger 
+ Aliases:     Ranger.290 
+ V Status:    New 
+ Discovery:   July, 1995 
+ Symptoms:    .COM file growth; file date/time changes 
+ Origin:      Unknown 
+ Eff Length:  290 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method: AVTK, Sweep, IBMAV, NAV, NAVDX, ViruScan, F-Prot, 
+                   ChAV, 
+                   Sweep/N, IBMAV/N, NAV/N, NShld, AVTK/N, Innoc 4.0+ 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Ranger virus was received in July, 1995.  Its origin or point of 
+       isolation is unknown.  Ranger is a non-resident, direct action 
+       infector of .COM files, including COMMAND.COM. 
+ 
+       When a program infected with the Ranger virus is executed, this 
+       virus will infect one .COM file located in the current directory. 
+       Infected programs will have a file length increase of 290 bytes 
+       with the virus being located at the end of the file.  The program's 
+       date and time in the DOS disk directory listing will not be altered. 
+       The following text strings can be found within the viral code in 
+       infected programs: 
+ 
+           "*.com" 
+           "????????COM" 
+           "RANGER" 
+ 
+       The "RANGER" text string can also be found starting in the fourth 
+       byte of all infected files. 

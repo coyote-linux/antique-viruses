@@ -1,0 +1,45 @@
+Virus Name:  Ontario 
+ Aliases: 
+ V Status:    Common 
+ Discovered:  July, 1990 
+ Symptoms:    .COM & .EXE growth; decrease in system and free memory; hard 
+              disk errors in the case of extreme infections 
+ Origin:      Ontario, Canada 
+ Eff Length:  512 Bytes 
+ Type Code:   PRtAK - Parasitic Encrypted Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, PCScan, 
+                    IBMAV, NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, IBMAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Ontario virus was isolated by Mike Shields in Ontario, Canada 
+       in July, 1990.  The Ontario virus is a memory resident infector of 
+       .COM, .EXE, and overlay files.  It will infect COMMAND.COM. 
+ 
+       The first time a program infected with the Ontario virus is 
+       executed, it will install itself memory resident above the top of 
+       system memory but below the 640K DOS boundary.  Total system memory 
+       and free memory will be decreased by 2,048 bytes.  At this time, 
+       the virus will infect COMMAND.COM on the C: drive, increasing its 
+       length by 512 bytes. 
+ 
+       Each time an uninfected program is executed on the system with the 
+       virus memory resident, the program will become infected with the 
+       viral code located at the end of the file.  For .COM files, they 
+       will increase by 512 bytes in all cases.  For .EXE and overlay 
+       files, the file length increase will be 512 - 1023 bytes.  The 
+       difference in length for .EXE and overlay files is because the 
+       virus will fill out the unused space at the end of the last sector 
+       of the uninfected file with random data (usually a portion of the 
+       directory) and then append itself to the end of the file at the 
+       next sector.  Systems using a sector size of more than 512 bytes 
+       may notice larger file increases for infected files.  Infected 
+       files will always have a file length that is a multiple of the 
+       sector size on the disk. 
+ 
+       In the case of extreme infections of the Ontario virus, hard disk 
+       errors may be noticed. 
+ 
+       See:   1024 SBC   Ontario 730   Ontario III 

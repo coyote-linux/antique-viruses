@@ -1,0 +1,95 @@
+Virus Name:  VComm 
+ Aliases:     637, Vienna 637 
+ V Status:    Rare 
+ Discovered:  December, 1989 
+ Symptoms:    .EXE growth; TSR; write failures 
+ Origin:      Poland 
+ Eff Length:  637 - 1,149 Bytes 
+ Type Code:   PRaE - Parasitic Resident .EXE Infector 
+ Detection Method:  F-Prot, ViruScan, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The VComm virus is of Polish origin, first isolated in December, 
+       1989.  The virus is a .EXE file infector.  When an infected file is 
+       run, the virus will attempt to infect one .EXE file in the current 
+       directory.  It will also infect the memory resident version of the 
+       system's command interpreter. 
+ 
+       When VComm infects a file, it first pads the file so that the files 
+       length is a multiple of 512 bytes, then it adds its 637 bytes of 
+       virus code to the end of the file, so the file length increase is 
+       between 637 and 1,149 bytes.  The file's date and time in the DOS 
+       disk directory listing will not be altered. 
+ 
+       The memory resident portion of the virus intercepts any disk writes 
+       that are attempted, and changes them into disk reads. 
+ 
+       Known variant(s) of VComm are: 
+       VComm.633: A 633 byte variant of the VComm virus described above, 
+               this variant adds 633 to 1,145 bytes to the .EXE programs it 
+               infected.  The virus will be located at the end of the file 
+               and the file's date and time in the DOS disk directory 
+               listing will not be altered.  One text string is visible 
+               within the viral code: 
+               "-DWD" 
+               Systems hangs may occur when programs are executed with the 
+               virus memory resident. 
+               Origin:  Unknown  July, 1994. 
+
+
+=================================
+
+;--------------------------------------------------------------------;
+;                                                                    ;
+; The EXE virus concept is as follows:                               ;
+;                                                                    ;
+; First, original Disk Transfer Address is preserved to avoid        ;
+; changing command-line text. Also initial values of CS, IP, SS, SP  ;
+; DS and ES are saved (to be restored on exit from virus code).      ;
+;   Virus is to be appended to original code and, of course, has     ;
+; to be relocated before it's executed. Thus, first we look for      ;
+; an EXE file. Then we have to know if this is in fact an EXE        ;
+; (checking for magic 'MZ' signature) and if there is any free space ;
+; in relocation table. This is checked by substracting relocation    ;
+; table end (i.e. sum of table start and number of relocation items, ;
+; multiplied by table entry size) from EXE header size.              ;
+;   Smart virus shouldn't infect a file that's already infected.     ;
+; So first 4 bytes of code to be executed is compared against        ;
+; virus code. If they match one another, no infection takes place.   ;
+;   Having found suitable file, we compute its code end and append   ;
+; virus at the end of code, writing alignment to last 512-bytes page ;
+; boundary if necessary. Original start address is preserved inside  ;
+; virus, and CS:IP value in EXE header gets changed, so that virus   ;
+; code would be executed first. Number of pages gets changed,        ;
+; together with Last Page Size and Number Of Relocation Items.       ;
+;   New relocation item address is appended to relocation table,     ;
+; pointing to the segment of the far jump in virus (this is the jump ;
+; virus uses to return to original code).                            ;
+;   Upon returning from virus, all saved registers and DTA are       ;
+; restored to reestablish environment state as if no virus existed.  ;
+;                                                                    ;
+;   Virus also installs resident part, if it is not already present. ;
+; This part's job is to replace all disk 'writes' with corresponding ;
+; 'reads'. It's rather unharmful, but can easily be replaced with    ;
+; more dangerous one (if somebody is really keen to be called ...).  ;
+; Instalation can be removed with equal ease, as well.               ;
+;                                                                    ;
+;   The real trouble with EXEs is that DOS pays a little (if any)    ;
+; attention to Last Page Size. Therefore EXE files ofen have this    ;
+; zeroed, even if they have some code on the last page. Writing to   ;
+; last page can cause system crash while infected file is being      ;
+; executed. To solve the problem, one should first test if EXE file  ;
+; really ends as the header contents say and move to last page end   ;
+; instead of appending any bytes, if possible.                       ;
+;                                                                    ;
+;   Another problem is infecting EXEs containg debug info.           ;
+; It comes in various formats, and often contains vital informations ;
+; placed behind code. This info gets destroyed when file becomes     ;
+; infected. I see no solution to this problem, so far.               ;
+;                                                                    ;
+;--------------------------------------------------------------------;
+  

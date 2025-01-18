@@ -1,0 +1,40 @@
+Virus Name:  Druid 
+ Aliases:    
+ V Status:    Viron 
+ Discovered:  October, 1992 
+ Symptoms:    .COM files corrupted; programs fail to execute; long disk 
+              accesses 
+ Origin:      Unknown 
+ Eff Length:  317 Bytes 
+ Type Code:   ONC - Overwriting Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, IBMAV, NAVDX, VAlert, NAV, 
+                    PCScan, ChAV, 
+                    NShld, AVTK/N, IBMAV/N, Innoc, NAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Druid virus was submitted in October, 1992.  It is a non-resident 
+       direct action infector of .COM programs, but not COMMAND.COM.  It 
+       overwrites the beginning of the programs it infects, permanently 
+       corrupting them. 
+ 
+       When a program infected with the Druid virus is executed, the Druid 
+       virus will infect all of the .COM programs located in the current 
+       directory.  Once it has completed infecting the .COM files in the 
+       current directory, it will move up one directory at a time in the 
+       directory structure, infecting programs, until it finally infects 
+       the current drive root directory.  It avoids infecting COMMAND.COM. 
+     
+       Programs infected with the Druid virus will normally not increase 
+       in size.  The exception is that if the original program was smaller 
+       than 317 bytes in length, the program will become 317 bytes in 
+       length.  The file's date and time in the DOS disk directory listing 
+       will not be altered.  The following text string can be found within 
+       the viral code in all infected programs: 
+ 
+               "DRUID, coded by Morbid Angel/Line Noise" 
+ 
+       Systems infected with Druid will notice long disk accesses occurring 
+       when .COM programs are executed.  The long disk access is due to the 
+       virus infecting .COM programs in several directories.  Infected 
+       programs will not function properly. 

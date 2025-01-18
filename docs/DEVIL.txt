@@ -1,0 +1,56 @@
+Virus Name:  Devil's Dance 
+ Aliases:     Devil's Dance-B 
+ V Status:    Rare 
+ Discovered:  December, 1989 
+ Symptoms:    Message; .COM growth; FAT corruption; TSR 
+ Origin:      Mexico 
+ Eff Length:  941 Bytes 
+ Type Code:   PRsCKT - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, NAV, F-Prot, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The Devil's Dance virus was first isolated in December, 1989, by Mao 
+       Fragoso of Mexico City.  Devil's Dance is a memory resident infector 
+       of .COM programs, including COMMAND.COM.  It can be very destructive. 
+ 
+       The first time a program infected with Devil's Dance is executed, 
+       Devil's Dance will become memory resident as a low system memory 
+       TSR of 1.2K.  Interrupts 09 and 21 will be hooked by Devil's Dance 
+       in memory.  Also at this time, Devil's Dance will infect all .COM 
+       programs in the current directory.  If the program was previously 
+       infected with Devil's Dance, it will be reinfected. 
+ 
+       After Devil's Dance is memory resident, it will infect any program 
+       the user attempts to execute.  Programs infected with Devil's Dance 
+       will increase in size by 941 bytes, with each later reinfection 
+       resulting in an additional 941 byte increase.  The virus is located 
+       at the end of infected files.  Infected programs will also have had 
+       their file date and time updated in the DOS disk directory. 
+ 
+       Once an infected program has been run, any subsequent warm-reboot 
+       (CTL-ALT-DEL) may result in the following message being displayed: 
+ 
+    "Have you ever danced with the devil under the week light of the moon?" 
+                             PRAY FOR YOUR DISKS!!" 
+                 
+       The Devil's Dance virus is destructive.  After the first 2,000 
+       keystrokes, the virus starts changing the colors of any text 
+       displayed on the system monitor.  The changing of colors of displayed 
+       text will also sometimes start to occur immediately with this virus. 
+ 
+       After the first 5,000 keystrokes, the virus erases the first copy 
+       of the FAT.  At this point, when the system is rebooted, it will 
+       display the message above and again destroy the first copy of the 
+       FAT, then allow the boot to proceed. 
+ 
+       Known variant(s) of Devil's Dance are: 
+       Devil's Dance-B: Similar to the original Devil's Dance virus, 
+                        this variant is also 941 bytes in length.  The 
+                        major difference is that infected systems will 
+                        run very slowly, including at boot.  On system 
+                        boot, the user may receive the message: 
+                        "Specified COMMAND search directory bad". 

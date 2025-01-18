@@ -1,0 +1,44 @@
+ Virus Name:  Tony 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   November, 1991 
+ Symptoms:    .COM file growth 
+ Origin:      Bulgaria 
+ Eff Length:  200 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, Sweep, F-Prot, ChAV, 
+                    NAV, IBMAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Tony virus was submitted in November, 1991.  It comes to us from 
+       Bulgaria.  Tony is a non-resident, direct action infector of .COM 
+       files, including COMMAND.COM. 
+ 
+       When a program infected with the Tony virus is executed, the virus 
+       will check the day of the system date.  Depending on the day of the 
+       month, the virus will determine which .COM files in the current 
+       directory it will infect.  The algorithm is if the day = "1", then 
+       files starting with "B" are infected.  On the 2nd, files starting 
+       with "C" are infected.  This algorithm continues for the rest of the 
+       days of the month.  Tony infects all .COM files in the current 
+       directory which meet the selection criteria. 
+ 
+       Tony infected programs will have a file length increase of 200 
+       bytes.  The virus will be located at the beginning of the infected 
+       file.  There will be no change in the file's date and time in a 
+       DOS directory listing.  The following text string can be found 
+       within the viral code in Tony infected programs: 
+ 
+               "Tony+*.COM" 
+ 
+       Tony does not do anything besides replicate. 
+ 
+       Known variant(s) of Tony are: 
+       Tony-203: Functionally similar to the Tony virus described 
+                 above, this variant adds 203 bytes to the .COM programs 
+                 it infects.  The text string found in the original virus 
+                 also occurs in this variant. 
+                 Origin:  Unknown  December, 1992. 

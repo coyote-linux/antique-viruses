@@ -1,0 +1,54 @@
+Virus Name:  Sad 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   July, 1992 
+ Symptoms:    .COM file growth; system hangs; boot failures; message 
+              displayed 
+ Origin:      Unknown 
+ Eff Length:  301 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  F-Prot, AVTK, Sweep, NAVDX, PCScan, 
+                    ViruScan, IBMAV, NAV, VAlert, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Sad virus was received in July, 1992.  Its origin or point of 
+       isolation is unknown.  Sad is a non-resident, direct action 
+       infector of .COM programs, including COMMAND.COM. 
+ 
+       When the first Sad virus infected program is executed, the Sad 
+       virus will infect the first four .COM files in the current 
+       directory if they were not previously infected.  Infected programs 
+       will have a file length increase of 301 bytes with the virus being 
+       located at the beginning of the infected file.  The program's date 
+       and time in the DOS disk directory listing will not be altered. 
+ 
+       The following text strings can be found within the viral code in 
+       all Sad virus infected programs: 
+ 
+               "Sad virus - 24/8/91" 
+               "*?.com" 
+ 
+       Systems infected with the Sad virus may experience frequent system 
+       hangs, as well as boot failures once the boot copy of COMMAND.COM 
+       becomes infected.  Additionally, execution of infected programs 
+       in the month of September will result in the "Sad virus - 24/8/91" 
+       message being displayed. 
+ 
+       Known variant(s) of Sad are: 
+       Sad-307: A 307 byte variant of the Sad virus, this variant 
+                adds 307 bytes to the .COM programs it infects.  Like 
+                the original virus, Sad-307's viral code will be located 
+                at the end of the file, and the program's date and time 
+                in the DOS disk directory listing will not be altered. 
+                The text strings found in the original virus are also 
+                found in this variant.  The major distinction with regards 
+                to this variant is the virus' behavior in September. 
+                Upon execution of an infected program during the month of 
+                September, the virus will display its message and overwrite 
+                the current drive, effectively trashing the disk. 
+                Origin:  Unknown  September, 1992. 
+ 
+       See:   Bljec 

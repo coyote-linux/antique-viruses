@@ -1,0 +1,39 @@
+Virus Name:  T-1000 
+ Aliases:    
+ V Status:    Viron 
+ Discovered:  December, 1992 
+ Symptoms:    .COM files overwritten; program corruption; message; 
+              boot failure; file date/time changes 
+ Origin:      Unknown 
+ Eff Length:  128 Bytes OW 
+ Type Code:   ONCK - Non-Resident Overwriting .COM Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, F-Prot, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, LProt, NProt, IBMAV/N, 
+                    Innoc, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The T-1000 virus was submitted in December, 1992.  T-1000 is a 
+       non-resident, direct action overwriting virus which infects .COM 
+       programs, including COMMAND.COM.  It corrupts the programs it 
+       infects. 
+ 
+       When a program infected with the T-1000 virus is executed, the 
+       T-1000 virus will infect all of the .COM programs located in the 
+       current directory, and then display the following message: 
+ 
+               "T-1000" 
+ 
+       A system hang will then occur. 
+ 
+       Programs infected with the T-1000 virus will have the first 128 
+       bytes of the host program overwritten by the T-1000 viral code. 
+       Infected programs will have no increase in file length unless they 
+       were originally smaller than 128 bytes, in which case they will 
+       become 128 bytes in length.  The program's date and time in the 
+       DOS disk directory listing will have been updated to the current 
+       system date and time.  The above message, along with the following 
+       text string, is encrypted within the viral code: 
+ 
+               "*.Com" 

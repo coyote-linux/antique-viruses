@@ -1,0 +1,82 @@
+Virus Name:  1575 
+ Aliases:     1577, 1591, Green Caterpillar 
+ V Status:    Common 
+ Discovery:   January, 1991 
+ Symptoms:    .COM & .EXE growth; decrease in total system & available 
+              memory; sluggishness of DIR commands; file date/time changes, 
+              "green caterpillar" appears on display 
+ Origin:      Taiwan 
+ Isolated:    Ontario, Canada 
+ Eff Length:  1,575 Bytes 
+ Type Code:   PRfAk - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, ChAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, 
+                    LProt, Sweep/N, Innoc, NShld, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  CleanUp, or delete infected files 
+ 
+ General Comments: 
+       The 1575 virus was first isolated in Ontario, Canada, in January, 
+       1991. This virus has been widely reported, and is believed to be 
+       from the Far East, probably Taiwan.  It is a memory resident 
+       infector of .COM and .EXE files, and will infect COMMAND.COM. 
+ 
+       When the first program infected with the 1575 virus is executed, the 
+       virus will install itself memory resident in 1,760 to 1,840 bytes at 
+       the top of system memory, but below the 640K DOS boundary.  This 
+       memory is not reserved, and may be overwritten later by another 
+       program.  Interrupt 21 will be hooked by the virus.  COMMAND.COM on 
+       the system C: drive root directory will also be infected at this 
+       time. 
+ 
+       Once the 1575 virus is memory resident, it will infect one .COM and 
+       one .EXE program on the current drive whenever a DOS DIR or COPY 
+       command is executed.  This virus does not spread when programs are 
+       executed. 
+ 
+       Infected files will have their file date and time in the DOS 
+       directory updated to the system date and time when the infection 
+       occurred. Their file lengths will also show an increase of between 
+       1,577 and 1,591 bytes.  This virus will be located at the end of 
+       infected files. 
+ 
+       Some variants of this virus will have a green caterpillar appear on 
+       the system display, similar to the original Centipede game creature. 
+ 
+       Known variant(s) of 1575 are: 
+       1575-B: This variant is functionally similar to the 1575 virus 
+               described above.  The major difference is that this variant 
+               reserves the memory it occupies at the top of system memory, 
+               though the interrupt 12 return is not moved. 
+       1575-C: Similar to the 1575-B, this variant will infect files as 
+               they are executed in addition to when a DOS DIR or COPY 
+               command is issued.  System may hang when this variant 
+               infects COMMAND.COM. 
+       1575-D: Execution of an infected program will result in the C: 
+               drive COMMAND.COM program becoming infected.  Later booting 
+               the system from the C: drive will result in the virus 
+               becoming memory resident, with programs being infected when 
+               they are copied (both source and target), or when a DIR 
+               command is issued.  This variant is also known as Green 
+               Caterpillar due to the graphic caterpillar which sometimes 
+               will appear and eat all the characters from the system 
+               display. 
+       1575-E: Execution of an infected program will result in the C: 
+               drive COMMAND.COM program becoming infected.  The virus will 
+               then become memory resident the next time an infected program 
+               is executed.  Its size at the top of system memory but below 
+               the 640K DOS boundary is 1,840 bytes, hooking interrupt 21. 
+               1575-E infects .COM and .EXE programs when a DOS DIR command 
+               is executed, or a program is executed.  Infected programs 
+               increase in size by 1,575 - 1,591 bytes with the virus being 
+               located at the end of the file.  The file's date and time in 
+               the DOS disk directory listing will have been updated to the 
+               System date and time when infection occurred.  This variant 
+               has been altered to avoid detection by some anti-viral 
+               programs. 
+               Origin:  Australia  October, 1992. 
+       1575-Libin: Fairly similar in behavior to 1575-E, this variant has 
+               been altered to avoid detection by some anti-viral utilities. 
+               Origin:  Unknown  October, 1993. 
+ 
+       See:   Green Caterpillar-1989 

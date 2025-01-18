@@ -1,0 +1,36 @@
+Virus Name:  Bob 
+ Aliases:     Freew-718 
+ V Status:    Rare 
+ Discovery:   February, 1992 
+ Symptoms:    .COM file growth 
+ Origin:      Unknown 
+ Eff Length:  718 - 1,414 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, ChAV, 
+                    IBMAV, Sweep, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Bob virus was submitted in February, 1992.  Its origin, or 
+       point of isolation, are unknown.  Bob is a non-resident, direct 
+       action infector of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Bob virus is executed, this virus 
+       will infect all the previously uninfected .COM programs located 
+       in the current directory of the current drive.  Infected programs 
+       will usually have a file length increase of 718 bytes, though if 
+       the file's original length was less than 698 bytes, its length 
+       will become 1,416 bytes.  The virus will be located at the beginning 
+       of the program.  The file's date and time in the DOS disk directory 
+       listing will not be altered. 
+ 
+       The following text strings can be found in all Bob infected 
+       programs: 
+ 
+               "*. *.COM" 
+               "COMMAND.COM MKS_VIR.COM" 
+               "Program terminated normally" 
+ 
+       It is unknown if the Bob virus does anything besides replicate.

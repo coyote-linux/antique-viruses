@@ -1,0 +1,79 @@
+ Virus Name:  Mix1 
+ Aliases:     MIX1, MIX/1 
+ V Status:    Rare 
+ Discovered:  August, 1989 
+ Symptoms:    TSR; .EXE growth; location 0:33C = 77h; garbled output 
+ Origin:      Israel 
+ Eff Length:  1,618 - 1,634 Bytes 
+ Type Code:   PRsE - Parasitic Resident .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The Mix1 virus was originally isolated on August 22, 1989, on 
+       several BBSes in Israel.  This virus is a parasitic, memory- 
+       resident .EXE file infector.  Once an infected program has been 
+       executed, the virus will take up 2,048 bytes in RAM.  Each .EXE 
+       file then executed will grow in length between 1,618 and 1,634 
+       bytes, depending on the original file size.  The virus will not, 
+       however, infect files of less than 8K in size. 
+ 
+       Infected files can be manually identified by a characteristic 
+       "MIX1" always being the last 4 bytes of an infected file. Using 
+       DEBUG, if byte 0:33C equals 77h, then the Mix1 virus is in memory. 
+ 
+       This virus will cause garbled output on both serial and parallel 
+       devices, as well as the Num-Lock being constantly on.  After the 
+       6th infection, booting the system will crash the system due to a 
+       bug in the code, and a ball will start bouncing on the system 
+       monitor. 
+ 
+       There is a variant of this virus which does not have the problem of 
+       system crashes occurring, and will only infect files that are 
+       greater than 16K in length. 
+ 
+       Mix1 has several code similarities to Icelandic, which it may have 
+       been derived from. 
+ 
+       Known variant(s) of Mix1 are: 
+       Mix1-B: A 1,636 byte variant of the Mix1 virus, Mix1-B or 
+             Mix1-1636 adds 1,636 to 1,650 bytes to the .EXE programs it 
+             infects.  The text string "MIX1" can be found at the end of 
+             all infected files. 
+             Origin:  Unknown  January, 1993. 
+       Snow: Functionally similar to the Mix1 virus, the "MIX1" text 
+             string at the end of infected files is now "SNOW".  Snow 
+             is unable to determine when it has previously infected files, 
+             so .EXE files will be reinfected.  Initial infection by the 
+             virus will increase the file length by 1,618 - 1,632 bytes 
+             with the virus being located at the end of the file.  Each 
+             reinfection will add an additional 1,632 bytes to the file. 
+             Origin:  Unknown  December, 1992. 
+ 
+       See:   Icelandic   Mix2 
+
+
+	   ========================
+
+;
+;         The virus is basically divided in the following parts.
+;
+;        1. The main program - run when an infected program is run.
+;           It will check if the system is already infected, and if not
+;           it will install the virus.
+;
+;        2. The new INT 17 handler. All outgoing characters will be garbled.
+;
+;        3. The new INT 14 handler. All outgoing characters will be garbled.
+;
+;        4. The new INT 8 handler.
+;
+;        5. The new INT 9 handler. Disables the Num-Lock key
+;
+;        6. The new INT 21 handler. It will look for EXEC calls, and
+;           (sometimes) infect the program being run.
+;
+;       Parts 1 and 6 are almost identical to the Icelandic-1 version

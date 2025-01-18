@@ -1,0 +1,36 @@
+Virus Name:  Dumb 
+ Aliases:     Dumb.406 
+ V Status:    New 
+ Discovered:  January, 1996 
+ Symptoms:    .COM file growth; file date/time seconds = "60" 
+ Origin:      Unknown 
+ Eff Length:  406 Bytes 
+ Type Code:   PRaCK - Parasitic Resident .COM Infector 
+ Detection Method:  F-Prot, AVTK, IBMAV, PCScan, ChAV, NAV, NAVDX, 
+                    ViruScan, 
+                    Innoc, AVTK/N, IBMAV/N, NAV/N, NShld 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Dumb virus was received in January, 1996.  Its origin or point 
+       of isolation is unknown.  Dumb is a memory resident infector of 
+       .COM files, including COMMAND.COM. 
+ 
+       When the first Dumb infected program is executed, this virus will 
+       install itself memory resident in low available free memory, hooking 
+       interrupt 21.  Total system and available free memory will not be 
+       altered. 
+ 
+       Once the Dumb virus is memory resident, it will infect .COM files 
+       when they are opened or executed, but not on copy.  Infected .COM 
+       files will have a file length increase of 406 bytes with the virus 
+       being located at the end of the file.  The program's date and time 
+       in the DOS disk directory listing will not appear to be altered, 
+       though the seconds field will have been set to "60".  The following 
+       text strings are visible within the viral code: 
+ 
+           "Dum�" 
+           "[filename] fuck" 
+           "trashes HD" 
+ 
+       It is unknown what the Dumb virus may do besides replicate. 

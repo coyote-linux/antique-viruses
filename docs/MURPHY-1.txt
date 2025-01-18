@@ -1,0 +1,365 @@
+Virus Name:  Murphy 
+ Aliases:     Murphy-1, V1277, Stealth Virus 
+ V Status:    Common - Bulgaria 
+ Discovered:  April, 1990 
+ Symptoms:    .COM & .EXE growth; system hangs; speaker noise; possible 
+              bouncing ball effect (see Murphy-2 below) 
+ Origin:      Sofia, Bulgaria 
+ Eff Length:  1,277 Bytes 
+ Type Code:   PRA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The Murphy virus was isolated in Bulgaria in April, 1990.  It is a 
+       memory resident generic .COM & .EXE infector, and will infect 
+       COMMAND.COM. 
+ 
+       The first time an infected program is executed on a system, the 
+       virus installs itself memory resident.  After it is memory 
+       resident, if a file is executed, or opened for any reason, it is 
+       infected by the Murphy virus.  When the first non-infected program 
+       is executed with the virus in memory, the virus will attempt to 
+       infect COMMAND. COM.  The program being executed will also be 
+       infected at that time.  Infected programs will increase in length 
+       by 1,277 Bytes.  Programs which are less than 1,277 Bytes in length 
+       will not be infected. 
+ 
+       The Murphy virus watches the system time.  When the system time is 
+       between 10AM and 11AM, the virus will turn on the system speaker 
+       and send a 61h to it.  At any other time, the virus will not 
+       attempt to use the system speaker. 
+ 
+       The following text message is contained within the Murphy virus, 
+       giving an idea of when it was written and by whom, though they are 
+       not displayed: 
+ 
+            "Hello, I'm Murphy.  Nice to meet you friend. 
+             I'm written since Nov/Dec. 
+             Copywrite (c)1989 by Lubo & Ian, Sofia, USM Laboratory." 
+ 
+       Systems infected by the Murphy virus may also experience system 
+       hangs when the virus attempts to infect .EXE files. 
+ 
+       Known variant(s) of Murphy are: 
+       AntiChrist: Based on the Murphy virus, AntiChrist is a memory 
+                 resident infector of .EXE programs.  It becomes memory 
+                 resident at the top of system memory, but below the 640K 
+                 DOS boundary.  Total system and available free memory, as 
+                 indicated by the DOS CHKDSK program, will have decreased 
+                 by 1,040 bytes.  Interrupt 21 will be hooked.  AntiChrist 
+                 infects .EXE programs larger than 1K in length when they 
+                 are executed or opened.  Infected programs will have a 
+                 file length increase of 1,008 bytes with the virus being 
+                 located at the end of the file.  There will be no change 
+                 to the program's date and time in the DOS disk directory 
+                 listing.  This virus is considered a research virus, and 
+                 was not in the public domain at the time it was submitted. 
+                 Origin: Italy   March, 1991. 
+       Brothers: Based on the Murphy virus, Brothers is a memory 
+                 resident infector of .COM and .EXE programs, and should 
+                 be considered a stealth virus.  It does not infect 
+                 COMMAND.COM.  It becomes memory resident at the top of 
+                 system memory, but below the 640K DOS boundary.  Total 
+                 system and available free memory, as indicated by the DOS 
+                 CHKDSK program, will have decreased by 2,064 bytes. 
+                 Interrupts 21 and 22 will be hooked.  Brothers infects 
+                 .COM and .EXE programs when they are executed or opened. 
+                 Infected programs will have a file length increase of 2,045 
+                 bytes with the virus being located at the end of the file. 
+                 The file length increase will not be visible if the virus 
+                 is memory resident, though uninfected programs will appear 
+                 in the DOS disk directoy as being 63,491 bytes larger. 
+                 Text strings found within infected programs are: 
+                 "Brothers in arm.Copyright (C) 1990. V 1.0" 
+                 ":*.EXE" 
+                 "????????EXE" 
+                 Execution of the DOS CHKDSK program with Brothers memory 
+                 resident will result in file allocation errors being 
+                 detected on all infected programs. 
+                 Origin: Europe   November, 1991. 
+       Cemetery: Cemetery is a 1,417 byte variant of Italian Pest. 
+                 When Cemetery is memory resident, total system and 
+                 available free memory will decrease by 1,440 bytes. 
+                 Once memory resident, it will infect .EXE programs as 
+                 well as COMMAND.COM when they are opened or executed. 
+                 .COM programs other than COMMAND.COM are not infected. 
+                 Infected programs will increase in length by 1,417 
+                 bytes with the virus being located at the end of the 
+                 infected file.  One text string can be found in 
+                 Cemetery infected programs: "CEMETERY".  It is 
+                 unknown what Cemetery does when it activates. 
+       Delyrium: Delyrium is an 1,778 byte variant of Italian Pest. 
+                 When Delyrium is memory resident, total system and 
+                 available free memory will decrease by 1,808 bytes, 
+                 hooking interrupt 21. .COM and .EXE programs are infected 
+                 when they are executed or opened for any reason.  Infected 
+                 programs will increase in size by 1,778 bytes with Delyrium 
+                 being located at the end of the infected file.  Programs 
+                 infected with Delyrium will contain the following text 
+                 strings: 
+                 "(c) IVRL 1991 (Ivrl Head Quarter, Milan Italy)" 
+                 "Delyrium Virus - Created by Cracker Jack 1991" 
+                 "Copyright by Italian Virus Research Laboratory 1991" 
+                 ".....because the dead is not so far" 
+                 "....and the horror will be with you" 
+                 It is unknown what Delyrium does when it activates, but 
+                 infected systems may experience difficulties with the 
+                 DOS COPY command and executing programs from the B: drive. 
+                 Origin:  Italy  1991. 
+       Diabolik: Diabolik is an 1,171 byte variant of Italian Pest. 
+                 When Diabolik is memory resident, total system and 
+                 available free memory will decrease by 1,200 bytes. 
+                 .EXE programs are infected when they are executed. 
+                 Infected programs will increase in size by 1,171 bytes 
+                 with Diabolik being located at the end of the infected 
+                 file.  Programs infected with Diabolik will contain the 
+                 following text strings: 
+                  "Diabolik Ltd.   (C) 1991 by Odrowad" 
+                  "Trow" 
+                 It is unknown what Diabolik does when it activates. 
+       Erasmus: Based on the Murphy virus, Erasmus is a memory resident 
+                 infector of .COM and .EXE programs.  It does not infect 
+                 COMMAND.COM.  It becomes memory resident at the top of 
+                 system memory, but below the 640K DOS boundary.  Total 
+                 system and available free memory, as indicated by the DOS 
+                 CHKDSK program, will have decreased by 1,712 bytes. 
+                 Interrupt 21 will be hooked.  Erasmus infects .COM and 
+                 .EXE programs when they are executed. Infected programs 
+                 will have a file length increase of 1,682 bytes with the 
+                 virus being located at the end of the file.  The following 
+                 text strings will be found in Erasmus infected programs: 
+                 "C.J.'91" 
+                 "Gli Dei si mostreranno a gli uomini, 
+                  Quando essi saranno autori di grande conflitto 
+                  Prima il Cielo visto sara con spada e lancia, 
+                  Che verso la mano sinistra portera piu grande afflizione. 
+                  Alla rivoluzione del grande numero sette, 
+                  Apparira ai tempi giochi d'Ecatombe, 
+                  Non lontano dalla grande eta del millennio 
+                  Coloro che entrarono usciranno dalle loro tombe. 
+                  Saint-Remi, 14 dicembre 1533" 
+                 Systems infected with Erasmus may experience what appears 
+                 to be warm reboots upon execution of some anti-viral 
+                 programs.  These "reboots" are actually the in memory 
+                 copy of COMMAND.COM being reloaded, and then the 
+                 AUTOEXEC.BAT file being executed. 
+                 Origin: Italy   May, 1991. 
+       Finger: Finger is an 1,172 byte variant of Italian Pest.  When 
+                 Finger is memory resident, total system and available free 
+                 memory will have decreased by 1,200 bytes.  Infected .EXE 
+                 programs will increase in size by 1,172 bytes with the 
+                 virus being located at the end of infected file.  .EXE 
+                 programs will be infected when they are either opened or 
+                 executed.  Finger activates on Saturdays, at which time the 
+                 message indicated below will be displayed when an infected 
+                 program is executed, followed by a system hang: 
+                  "Cannot remember what I was doing!! 
+                   Insert fingers in ears and reboot please" 
+                 Attempts to reboot will result in a "Diskette read failure" 
+                 due to the virus having damaged the first 12 sectors of the 
+                 diskette or hard disk. 
+       Goblin: Based on the Smack variant, Goblin is a memory resident 
+                 infector of .COM and .EXE programs, but not COMMAND.COM. 
+                 It's size in memory is 1,968 bytes, and hooks interrupt 21. 
+                 Goblin infects .COM and .EXE programs over 2K in size when 
+                 they are executed or opened.  Infected programs will have a 
+                 file length increase of 1,951 bytes with the virus being 
+                 located at the end of the file.  Systems infected with 
+                 Goblin activates on Friday, at which time execution of an 
+                 infected program will result in the display of a message 
+                 and deletion of the first program in the current directory. 
+                 If the program executed is a .COM program, the displayed 
+                 message will be: 
+                 "What a horrible program, i wish not execute it!" 
+                 If the program executed is an .EXE program, the displayed 
+                 message will be: 
+                 "Goblin the Black Death  (c) by Cracker Jack IVRL '91" 
+                 Besides the above messages, the following text strings can 
+                 found in Goblin infected programs: 
+                 "(c) by Cracker Jack 1991 Italian Virus Research Laboratory" 
+                 "Patricia does not function correctly, 
+                  because I haven't run it before send. 
+                  Now I'm debugging it...ehehehehehehahahahahahah" 
+                 "Smack Virus....what a horrible name!!!!!!!!!!!!!!!!!!!" 
+                 "Compliments to the Dark Avenger for the nice viruses... 
+                  excuse me if I create some variants of your beautiful 
+                  viruses..." 
+                 "Viruses are a nice thing!!" 
+                 "I'm hungry!! Why don't you buy me a Cheesburger??" 
+                 Origin: Italy   May, 1991. 
+       HIV: Based on the Murphy virus, HIV is a memory resident infector 
+                 of .COM and .EXE programs, including COMMAND.COM.  It 
+                 becomes memory resident at the top of system memory, but 
+                 below the 640K DOS boundary.  Total system and available 
+                 free memory, as indicated by the DOS CHKDSK program, will 
+                 have decreased by 1,632 bytes.  Interrupt 21 will be 
+                 hooked.  HIV infects .COM and .EXE programs when they are 
+                 executed or opened. Infected programs will have a file 
+                 length increase of 1,614 bytes with the virus being located 
+                 at the end of the file.  The following text strings will be 
+                 found in HIV infected programs: 
+                 "HIV Virus - Release 1.0 
+                  Created by Cracker Jack 
+                  (C) 1991 Italian Virus Laboratory" 
+                 Origin: Italy   March, 1991. 
+       Italian Pest: Based on the Migram variant, Italian Pest is a 
+                 memory resident infector of .EXE programs.  It becomes 
+                 memory resident at the top of system memory, but below the 
+                 640K DOS boundary.  Total system and available free memory, 
+                 as indicated by the DOS CHKDSK program, will have decreased 
+                 by approximately 1.9K.  Interrupt 21 will be hooked. 
+                 Italian Pest may infect .EXE programs over 2,048 bytes in 
+                 length when they are executed, though it does not always 
+                 infect them.  Infected programs will have a file length 
+                 increase of 1,910 bytes with the virus being located at the 
+                 end of the file.  There will be no change to the program's 
+                 date and time in the DOS disk directory listing.  When 
+                 Italian Pest is in memory, attempts to execute .COM 
+                 programs will result in the following message being 
+                 displayed and the program not executing: 
+                 "I'm hungry!! Why don't you buy me a Cheesburger??" 
+                 Italian Pest activates on Fridays, at which time execution 
+                 of an infected program will result in the following message 
+                 being displayed: 
+                 "Your PC is infected with the Intergalactic Pest!" 
+                 The first .COM program in the current directory will have 
+                 been deleted, and the C: drive boot sector and first file 
+                 allocation table corrupted.  Besides the above two 
+                 messages, the following text can be found in all infected 
+                 programs: 
+                 "*.COM" 
+                 "(c) by Cracker Jack 1991 
+                  Italian Virus Research Laboratory 
+                  Created,Developed and Written by Cracker Jack, 
+                  All rights reserved 
+                  Con questo virus dichiaro guerra a tutti i POVERI 
+                  (ahhh quanto sono poveri!) 
+                  cosiddetti 'Virus Researchers' del globo... 
+                  provate a prendermi..ahahahah 
+                  I'IVRL e'forte.....vincera!!!! 
+                  Virus Writers di tutte le nazioni...uniamci!" 
+                  Origin: Italy   May, 1991. 
+       Kamasya: Kamasya is a 1,098 byte variant of the Italian Pest  
+                 variant.  It is a memory resident infector of .EXE 
+                 programs.  It's size in memory is 1,120 bytes, and it hooks 
+                 interrupt 21.  Kamasya infects .EXE programs when they are 
+                 executed or opened.  Infected programs will increase in 
+                 size by 1,098 bytes with the virus being located at the end 
+                 of infected file.  Kamasya activates on Tuesdays, at which 
+                 time the message indicated below will be displayed when an 
+                 infected program is executed: 
+                 "Kamasya nendriya pritir 
+                  labho jiveta yavata 
+                  jivasya tattva jijnasa 
+                  nartho yas ceha karmabhih" 
+                 Origin: Italy   March, 1991. 
+       Locker: Locker is a 1,642 byte variant of the Murphy virus.  It 
+                 is a memory resident infector of .COM &.EXE programs, but 
+                 not COMMAND.COM.  It's size in memory is 1,644 bytes, 
+                 hooking interrupt 21.  Locker infects programs when they 
+                 are executed.  Infected programs will increase in size by 
+                 1,642 bytes with the virus being located at the end of 
+                 the file.  The program's date and time in the DOS disk 
+                 directory listing will not be altered.  The following text 
+                 strings can be found within the viral code in infected 
+                 programs: 
+                 "(c) IVRL 1991 (Ivrl Head Quarter, Milan Italy)" 
+                 "all rights reserved!!!" 
+                 "[0mPassword ->" 
+                 "[0mPassword accepted!" 
+                 "Incorrect Password, sorry!" 
+                 "Locker Viri - Created by Cracker Jack 1991" 
+                 Origin: Italy   March, 1993. 
+       Migram: Migram is a 1,221 byte variant of the Murphy virus.  It 
+                 is a memory resident infector of .EXE programs.  It's size 
+                 in memory is 1,248 bytes, and it hooks interrupt 21. 
+                 Migram infects .EXE programs over 1K in size when they are 
+                 executed or opened.  Infected programs will increase in 
+                 size by 1,221 bytes with the virus being located at the end 
+                 of infected file.  Migram activates on Saturdays, at which 
+                 time the message indicated below will be displayed when an 
+                 infected program is executed: 
+                 "MIGRAM VIRUS 1.0 
+                  (C) 1991 IVL" 
+                 The display of the message is followed with a system hang. 
+                 Origin: Italy   March, 1991. 
+       Murphy-2: (V1521) Similar to the Murphy virus, its length is 1,521 
+                 bytes.  The non-displayed messages in the virus are now: 
+                 "It's me - Murphy. 
+                  Copywrite (c)1990 by Lubo & Ian, Sofia, USM Laboratory." 
+                 The Murphy-2 will infect any .EXE file, as well as any 
+                 .COM file over 900 Bytes.  Instead of turning the system 
+                 speaker on between 10AM and 11AM, this variant waits for 
+                 the system time to have the minutes set to 00, then it 
+                 may have a "bouncing ball" effect similar to several 
+                 other viruses. This effect does not, however, occur on 
+                 all systems. 
+       Murphy-3: Murphy-3 is a 1,284 byte variant of the Murphy virus. 
+                 The major difference between Murphy and this variant is 
+                 that COMMAND.COM will be infected only if it is executed 
+                 or opened.  The virus no longer automatically infects it. 
+                 Programs infected with Murphy-3 will increase in length 
+                 by 1,284 bytes with the virus being located at the end of 
+                 the infected program.  Activation is the same as the 
+                 original virus described above, except that a low buzzing 
+                 sound will be emitted along with the clicks.  The messages 
+                 in the original Murphy virus appear in this variant. 
+                 Origin: Bulgaria   May 1991. 
+       Murphy-4: Murphy-4 is similar to the Murphy-2 virus, this 
+                 variant is 1,480 bytes long.  It will infect any program 
+                 larger than approximately 2,000 bytes when it is executed 
+                 or opened.  Murphy-4 will be resident at the top of system 
+                 memory but below the 640K DOS boundary.  Total system and 
+                 available free memory will decrease by 1,504 bytes, as 
+                 indicated by the DOS CHKDSK program.  Murphy-4 activates 
+                 in the same manner as Murphy-2, and contains the same 
+                 text messages. 
+                 Origin: Bulgaria   May 1991.   
+       Smack: Based on the Italian Pest variant, Smack is a memory 
+                 resident infector of .COM and .EXE programs, but not 
+                 COMMAND.COM.  It's size in memory is 1,856 bytes, and 
+                 hooks interrupt 21.  Smack infects .COM and .EXE programs 
+                 over 3K in length when they are executed.  Infected 
+                 programs will have a file length increase of 1,835 bytes 
+                 with the virus being located at the end of the file.  There 
+                 will be no change to the program's date and time in the DOS 
+                 disk directory listing.  Systems infected with Smack will 
+                 experience the occasional disappearance of both programs 
+                 and data files when infected programs are executed. 
+                 Infected systems will also notice a gradual increase in 
+                 lost clusters on the system hard disk and diskettes. 
+                 Smack activates on Fridays when infected .EXE programs are 
+                 executed.  It may then display the following message: 
+                 "Is today Friday? (Y/N)" 
+                 Replying "Y" will result in the following message and the 
+                 program being terminated: 
+                 "Sorry but on Friday I wish not work!!" 
+                 Replying "N" will result in the following message, though 
+                 the threatened FAT damage does not occur due to a bug in 
+                 the virus: 
+                "You are untruthful!! For punishment I format your HD FAT!!" 
+                 Other text strings located in the Smack virus are: 
+                 "This virus was written in Italy by Cracker Jack 1991 IVRL" 
+                 "All rights reserved, please don't crack this virus!!" 
+                 "Special message to Patricia Hoffman: I love you!!!!!!!!" 
+                 "SmackSmack" 
+                 "Can you give me your telephone number??? Ciao bellissima!" 
+                 Origin: Italy   May, 1991. 
+       Swami: The Swami virus was submitted in May, 1991, from a United 
+              States source.  Its origin is unknown.  It is a variant of 
+              Murphy and will be detected as Murphy by some anti-viral 
+              utilities.  Unlike Murphy, this variant does not infect 
+              COMMAND.COM.  Swami infected files will have a file length 
+              increase of 1,250 bytes. It will infect programs when they 
+              are executed, opened, or copied.  Infected files will 
+              contain the following text string: 
+                 "Bhaktivedanta Swami Prabhupada (1896 - 1977)" 
+              Swami activates on April 15, when it will delete the first 
+              .EXE file in the current directory when the virus becomes 
+              memory resident. 
+ 
+       See:   Tormentor       Tormentor-1072 

@@ -1,0 +1,38 @@
+Virus Name:  Typo COM 
+ Aliases:     Fumble, 867, Type, 712, Typo-712 
+ V Status:    Extinct 
+ Discovered:  November, 1989 
+ Symptoms:    .COM growth; resident-TOM; garbled printout (see text) 
+ Origin:      England 
+ Eff Length:  867 Bytes 
+ Type Code:   PRtC - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The Typo COM virus is similar to the Typo Boot virus in that it 
+       will garble data that is sent to the parallel port once it has 
+       activated.  Unlike the Boot virus, the .COM virus infects generic 
+       .COM files.  This virus was first reported by Joe Hirst of Brighton, 
+       UK, in November, 1989. 
+ 
+       The Typo COM virus only infects .COM files on even-numbered days. 
+ 
+       Known variant(s) of Typo COM are: 
+       Typo-712: Typo-712 is a 712 byte variant of the Typo COM virus. 
+                 It infects all .COM files in the current directory 
+                 each time an infected program is executed, adding its 
+                 viral code to the end of the file.  Its memory resident 
+                 portion is 224 bytes in size and hooks interrupt 16.  It 
+                 may intermittently interfer with keyboard input. 
+                 Origin:  Unknown  December, 1991. 
+       Typo-867B: Typo-867B is a minor variant of the original Typo COM 
+                 virus.  It infects all .COM files in the current directory 
+                 when an infected program is executed.  It also installs 
+                 a 480 byte TSR which hooks interrupt 16.  Infected files 
+                 will have a file length increase of 867 bytes with the 
+                 virus being located at the end of the infected file. 
+                 Origin:  Unknown  May, 1992. 

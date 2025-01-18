@@ -1,0 +1,57 @@
+Virus Name:  Globe 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  August, 1992 
+ Symptoms:    Read-Only, Hidden .COM files; system hangs         
+ Origin:      Unknown 
+ Eff Length:  6,610 Bytes 
+ Type Code:   SNE - Spawning Non-Resident .EXE Infector 
+ Detection Method:  F-Prot, ViruScan, AVTK, Sweep, NAV, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, NAV/N, NProt, IBMAV/N, Innoc, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Globe virus was received in August, 1992.  It is a non-resident 
+       spawning or companion virus which infects .EXE programs.  Its origin 
+       is unknown. 
+ 
+       When a program infected with the Globe virus is executed, the Globe 
+       virus will infect one .EXE program in the current directory.  It 
+       infects .EXE programs by creating a .COM program with the same 
+       base file name.  This .COM file will contain the viral code, and 
+       be 6,610 bytes with the Read-Only and Hidden attributes set.  It 
+       contains the following text strings: 
+ 
+               "Glo" 
+               "Virus 3 M.00" 
+               "PATH" 
+               "EXEKCO" 
+ 
+       It also contains strings from Borland's Turbo C compiler. 
+ 
+       Systems infected with the Globe virus may experience system hangs 
+       when infected programs are executed. 
+ 
+       Known variant(s) of Globe are: 
+       Globe 3.0 Received in November, 1993, Globe 3.0 is a non- 
+                  resident, direct action infector of .COM and .EXE 
+                  programs, but not COMMAND.COM.  It infects one .COM 
+                  or .EXE program in the current directory each time 
+                  an infected program is executed.  Infected programs will 
+                  have a file length increase of 5,150 bytes with the virus 
+                  being located at the beginning of the file.  The program's 
+                  date and time in the DOS disk directory listing will not be 
+                  altered.  The following text strings are visible within the 
+                  viral code in all infected programs: 
+                  ".EXE" 
+                  "COM" 
+                  "MAND" 
+                  "HELLO!!" 
+                  "GlobeViru" 
+                  "V3.00" 
+                  Systems infected with Globe 3.0 may experience available 
+                  free memory decreasing by approximately 5K of RAM each 
+                  time an infected program is executed. 
+                  Origin:  Unknown  November, 1993. 

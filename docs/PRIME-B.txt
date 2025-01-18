@@ -1,0 +1,70 @@
+Virus Name:  Prime   
+ Aliases:     Prime.580, Prime Evil 
+ V Status:    Rare 
+ Discovered:  July, 1992 
+ Symptoms:    .COM file growth; unexpected system reboots; programs fail 
+              to execute properly 
+ Origin:      Sweden 
+ Eff Length:  580 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  Sweep, ViruScan, F-Prot, IBMAV, AVTK, 
+                    NAV, NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Prime, or Prime Evil, virus was received in July, 1992.  It is 
+       originally from Stockholm, Sweden.  Prime is a non-resident, 
+       direct action infector of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Prime virus is executed, the 
+       Prime virus will locate and infect one previously uninfected .COM 
+       program in the current directory.  Infected programs will have a 
+       file length increase of 580 bytes with the virus being located 
+       at the beginning of the infected file.  The program's date and 
+       time in the DOS disk directory listing will not be altered. 
+ 
+       The following text strings are encrypted within the Prime viral 
+       code, and as such cannot be seen in infected programs: 
+ 
+               "*.C*" 
+               "Prime Evil! (C) Spellbound, Line Noise 1992." 
+               "Coded in Stockholm, Sweden." 
+               "Please spell my name right!" 
+              
+       Once the Prime virus has infected all of the .COM programs in the 
+       current directory, execution of an infected program will result 
+       in a warm reboot occurring. 
+ 
+       Known variant(s) of Prime are: 
+       Prime.1164: Received in December, 1996, this is a 1,164 byte 
+           variant of the Prime virus described above.  It infects one 
+           .COM file in the current directory, including possibly 
+           COMMAND.COM, when an infected program is executed.  Infected 
+           .COM files will have a file length increase of 1,164 bytes 
+           with the virus being located at the beginning of the file. 
+           The program's date and time in the DOS disk directory listing 
+           will not be altered.  The following text strings are encrypted 
+           within the viral code: 
+           "*.C* Prime Evil! (C) Spellbound, Line Noise 1992." 
+           "Coded in Stockholm, Sweden." 
+           "Please spell my name right!" 
+           Systems will fail to boot once COMMAND.COM becomes infected. 
+           Origin:  Unknown  December, 1996. 
+       Prime.1806: Received in July, 1995, this is a 1,806 byte 
+           variant of the Prime virus described above.  It infects one 
+           .COM file in the current directory, including possibly 
+           COMMAND.COM, when an infected program is executed.  Infected 
+           .COM files will have a file length increase of 1,806 bytes 
+           with the virus being located at the beginning of the file. 
+           The program's date and time in the DOS disk directory listing 
+           will not be altered.  The following text strings are visible 
+           within the viral code: 
+           "*.C* Prime Evil! (C) Spellbound, Line Noise 1992." 
+           "Coded in Stockholm, Sweden." 
+           "Please spell my name right!" 
+           Once all of the .COM files in the current directory have 
+           become infected, the system will constantly attempt to reboot 
+           when another infected program is executed. 
+           Origin:  Unknown  July, 1995. 

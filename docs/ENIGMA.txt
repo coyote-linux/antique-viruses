@@ -1,0 +1,35 @@
+Virus Name:  Enigma 
+ Aliases:     Cracker Jack 
+ V Status:    Rare 
+ Discovered:  February, 1991 
+ Symptoms:    .EXE growth 
+ Origin:      Italy 
+ Eff Length:  1,755 Bytes 
+ Type Code:   PNE - Parasitic Non-Resident .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, NAV, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Enigma virus was submitted in February, 1991, by Alberto Colusa 
+       of Italy.  This virus is a non-resident infector of .EXE files.  The 
+       original submitted sample of this virus was not a natural infection 
+       of the virus, being on a .COM file, so the virus may actually be a 
+       research virus. 
+ 
+       When a program infected with Enigma is executed, one .EXE program in 
+       the current directory will be infected by the virus.  Infected .EXE 
+       programs will increase in length by 1,755 bytes.  The virus will be 
+       located at the end of infected programs.  Infected programs will 
+       also contain the following text strings: 
+ 
+               "This is the voice of the Enigma virus...... 
+                the spirits of the hell are coming back!" 
+               "(C) 1991 by Cracker Jack * Italy * *.exe" 
+               "newenigmavir" 
+ 
+       It is not known if Enigma does anything besides replicate. 
+ 
+       See:   Yankee 2   Bandit 

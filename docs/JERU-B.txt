@@ -1,0 +1,408 @@
+Virus Name:  Jerusalem 
+ Aliases:     PLO, Israeli, Friday 13th, Russian, 1813(COM), 1808(EXE), 
+              Arab Star, Black Box, Black Window, Hebrew University 
+ V Status:    Common 
+ Discovered:  October, 1987 
+ Isolated:    Israel 
+ Symptoms:    TSR; .EXE & .COM growth; system slowdown; deleted files 
+              on Friday 13th; "black window" 
+ Origin:      Italy 
+ Eff Length:  1,808 - 1,822 Bytes 
+ Type Code:   PRsA - Parasitic Resident Generic File Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ General Comments: 
+       The Jerusalem virus was originally isolated at Hebrew University in 
+       Israel in the Fall of 1987.  As of November, 1991, it is thought to 
+       have now originated in Italy.  Jerusalem is a memory resident 
+       generic file infector.  Jerusalem viruses will infect .COM, .EXE, 
+       .SYS, .BIN, .PIF, and overlay files when they are executed  .EXE 
+       files may be reinfected by the virus each time they are executed due 
+       to a bug in the viral code.  The Jerusalem virus has been altered 
+       many times, and many other viruses have been based on its code.  The 
+       description below is for a standard Jerusalem virus which reinfects 
+       .EXE files when they are executed.  Other variants, or members of 
+       this family, are indicated below. 
+ 
+       The first time a program infected with the Jerusalem virus is 
+       executed, the Jerusalem virus will install itself memory resident 
+       as a low system memory TSR of 1,792 bytes.  Interrupts 08 and 21 
+       will be hooked by the Jerusalem virus in memory. 
+ 
+       Once the Jerusalem virus is memory resident, it will infect programs 
+       other than COMMAND.COM when they are executed.  .COM programs will 
+       increase in size by 1,813 bytes with the virus being located at the 
+       beginning of the infected file.  .EXE programs will increase in 
+       size by 1,808 to 1,822 bytes with the virus being located at the 
+       end of the infected file.  Later, infected .EXE programs will be 
+       reinfected by the virus when they are again executed.  Each 
+       reinfection will add an additional 1,808 bytes to the file. 
+       Jerusalem infected programs will have no change to their date and 
+       time in the DOS disk directory. 
+ 
+       This virus redirects interrupt 8, and 1/2 hour after execution of the 
+       first infected program the system will slow down by a factor of 10. 
+       Additionally, some Jerusalem virus variants will have a "black 
+       window" or "black box" appear on the lower left side of the screen 
+       which will scroll up the screen as the screen scrolls. 
+ 
+       The Jerusalem virus activates after it becomes memory resident on 
+       Friday the 13ths.  At that time, it will delete any program the user 
+       attempts to execute. 
+ 
+       The identifier for most Jerusalem strains is "sUMsDos", however, this 
+       identifier may not be found in the newer variants of Jerusalem. 
+ 
+       The Jerusalem virus is thought to have been based on the Suriv 3.00 
+       virus, though the Suriv 3.00 virus was isolated after the Jerusalem 
+       virus. 
+ 
+       Known members(s) of the Jerusalem Family are: 
+       A-204: Jerusalem with the sUMsDos text string changed to *A-204*, 
+             and a couple of instructions changed in order to avoid 
+             detection.  This variant will slow down the system after being 
+             memory resident for 30 minutes, as well as having a black box 
+             appear at that time. 
+             Origin:  Delft, The Netherlands 
+       Anarkia: Jerusalem with the timer delay set to slow down the 
+             system to a greater degree, though this effect doesn't show 
+             until a much longer time has elapsed.  No Black Box is ever 
+             displayed.  The sUMsDos id-string has been changed to ANARKIA. 
+             Lastly, the virus's activation date has been changed to Tuesday 
+             the 13th, instead of Friday the 13th. 
+             Origin:  Spain 
+       Anarkia-B: Similar to Anarkia, with the exception that the virus 
+             now activates on any October 12th instead of on Tuesday 
+             the 13ths. 
+       Antiviru: Similar to Jerusalem B, the Antiviru virus differs in 
+             that it contains two text strings: "COMMAND.COM" and 
+             "ANTIVIRU".  Like Jerusalem, it will display a "black box" 
+             accompanied by a system slowdown 30 minutes after becoming 
+             memory resident.  After the virus becomes memory resident on 
+             Friday the 13ths, any program executed will be deleted. 
+             Origin:  Unknown  January, 1992 
+       Apocalypse: The Apocalypse variant of Jerusalem was received 
+             from Europe in May, 1991.  It originated in Italy.  This 
+             variant will infect programs as they are executed.  .COM 
+             programs will increase in size by 1,813 bytes.  .EXE programs 
+             will increase in size by 1,808 to 1,822 bytes with the first 
+             infection, and 1,808 bytes on later reinfections.  The MsDos 
+             infection marker in the virus has been altered to "C.J**". 
+             Text strings which can be found in Apocalypse infected files 
+             are: 
+                      "Apocalypse!!!" 
+                      "COMMAND.COM" 
+                      "**C.J**" 
+             The last string is what has replaced the sUMsDos string in the 
+             original virus.  Apocalypse will have the characteristic "black 
+             box" appear on the lower left hand side of the screen after it 
+             has been memory resident for 30 minutes.  It does not, however, 
+             delete programs on Friday the 13ths. 
+             Origin:  Italy  May, 1991 
+       Bogota: The Bogota virus was discovered in Bogota, Columbia in 
+             May, 1992.  Its low system memory TSR is 2,048+ bytes in size, 
+             hooking interrupts 16 and 21.  It adds 1,813 bytes to the .COM 
+             programs it infected.  .EXE programs increase in size by 1,808 
+             to 1,822 bytes with the first infection, and 1,808 bytes with 
+             each reinfection.  Bogota will occassionally truncate .EXE 
+             programs to zero bytes when they are executed. 
+       Captain Trips: The Captain Trips variant was submitted in March, 
+             1991, and is from the United States.  Its name comes from the 
+             text string "Captain Trips X." which occurs within the viral 
+             code.  Unlike most Jerusalem variants, this variant does not 
+             display a black window after being memory resident for 30 
+             minutes, nor does it slow down the system.  On Friday the 
+             13th, it does not delete programs.  The text string "MsDos" 
+             does not occur in infected programs.  .COM programs will 
+             increase in size by 1,813 bytes.  .EXE programs will increase 
+             in size by 1,808 to 1,822 bytes with the first infection of 
+             the file, and then by 1,808 bytes with subsequent infections. 
+             Origin:  United States  March, 1991. 
+       Captain Trips 2: Captain Trips 2 was submitted in July, 1991. 
+             It is a variant of the Captain Trips variant which has been 
+             altered to avoid detection.  The major difference is that 
+             reinfections of .EXE files have a file length increase of 1,813 
+             bytes. 
+             Origin:  United States  July, 1991. 
+       Czech: The Czech variant of Jerusalem was received in April, 
+             1992.  When the Czech variant becomes memory resident, it 
+             installs a 1,984 byte TSR in memory with interrupts 08, 21, 
+             and F8 being hooked.  Once it is memory resident, it will 
+             infect programs other than COMMAND.COM when they are 
+             executed.  .COM programs will have a file length increase of 
+             1,735 bytes with the virus being located at the beginning 
+             of the infected file.  .EXE programs will increase in size 
+             by 1,735 to 1,749 bytes with the virus being located at the 
+             end of the file.  This variant does not reinfect .EXE 
+             programs.  After the Czech variant has been memory resident 
+             for 30 minutes, it will display a reverse video box in the 
+             upper left hand corner of the screen which contains the text 
+             "Ha!Ha!".  It does not delete programs on Friday The 13ths. 
+             Some anti-viral programs may detect this variant as the 
+             Sunday virus. 
+             Origin:  Unknown  April, 1992. 
+       Dragon: The Dragon variant of Jerusalem was submitted in 
+             April 1992.  This variant is functionally similar to the 
+             original Jerusalem virus described above.  It contains the 
+             text string "BDH  B T".  The MsDos identifier has been 
+             changed to a hex character string.  It deletes programs 
+             which are executed after the virus has become memory resident 
+             on Friday The 13ths. 
+             Origin:  Unknown  April, 1992. 
+       Get Password 1: Get Password 1 is a Jerusalem variant which was 
+             originally discovered in the first half of 1991 in Europe. 
+             This variant's TSR is 1,840 bytes in length.  Get Password 1 is 
+             a Novell network specific virus, it won't replicate unless the 
+             Novell Netware drivers are present in memory.  The virus was 
+             originally intended to capture the logon information when the 
+             user logs onto the network, however this code does not function 
+             properly and so there is no threat.  Get Password 1 is 1,914 
+             bytes in length. 
+             Origin:  Europe  1991. 
+       January 25TH: Similar to Jerusalem B, the major difference with 
+             this variant is that it will activate on January 25TH, at which 
+             time it will delete any programs which the user attempts to 
+             execute.  January 25TH doesn't reinfect .EXE files.  After 
+             being memory resident for 30 minutes, it will have the "black 
+             box" screen effect common to many Jerusalem variants.  The 
+             "sUMsDos" text string has also been replaced with hex 00 
+             characters. 
+       January 25TH-B: Functionally equivalent to the January 25TH, 
+             this variant has some slight code modifications. 
+             Origin:  Unknown  January, 1992. 
+       Jerusalem B: Similar to the original Jerusalem virus, this 
+             variant does not reinfect .EXE files when they are executed. 
+             Origin:  Israel  January, 1988.  
+       Jerusalem-C: Jerusalem B without the timer delay to slow down the 
+             processor. 
+       Jerusalem-D: Jerusalem C which will destroy both copies of the FAT 
+             on any Friday the 13th after 1990. 
+       Jerusalem DC: Similar to Jerusalem, this variant has the sUMsDos 
+             text string changed to 00h characters.  After being memory 
+             resident for 30 minutes, the system will slow down by 30% and 
+             the common "black window" will appear on the lower left side of 
+             the screen. Like Jerusalem, it will infect .EXE files multiple 
+             times.  This variant does not carry an activation date when it 
+             will delete files, it appears for all intents to be "defanged". 
+             Origin:  Washington, DC, United States 
+       Jerusalem-E: Jerusalem D but the activation is in 1992. 
+       Jerusalem-Polish: Based on the Jerusalem virus described above, 
+             this variant has been altered slightly so that the "black box" 
+             screen effect does not appear. 
+             Origin:  Poland  October, 1992. 
+       Jerusalem-PLO: Based on the Jerusalem virus described above, this 
+             variant will delete files when they are executed during the 
+             secondd half of the year.  It will replicate during the first 
+             half of the year.  After the virus has been memory resident 
+             for 30 minutes, a system slowdown will occur, but the 
+             characteristic Jerusalem black box will not appear.  The 
+             "sUMsDos" string in the original virus has been changed to 
+             "sU?sDos".  Infected .COM files will increase in size by 1,813 
+             bytes.  Infected .EXE files increase in size by 1,808 - 1,822 
+             bytes with the first infection, and 1,808 bytes with each 
+             reinfection. 
+             Origin:  Unknown  November, 1991. 
+       Jerusalem.2389: Based on the Jerusalem-B virus, Jerusalem.2389 is 
+             a 2,389 byte variant.  Its memory resident TSR is 2,640 bytes, 
+             and hooks interrupts 1C and 21.  It adds 2,389 bytes to the 
+             .COM programs it infects with the virus being located at the 
+             beginning of the file.  It adds 2,389 to 2,404 bytes to .EXE 
+             programs with the virus being located at the end of the file. 
+             .EXE programs are reinfected by the virus, adding an additional 
+             2,389 bytes with each reinfection.  The following text strings 
+             are visible within the viral code in infected programs: 
+             "COMMAND.COM" 
+             "AYTUBA=19722191!!" 
+             Systems infected with the Jerusalem.2389 virus may find programs 
+             interrupted while they are executed, and a message scrolling on 
+             the system display from right to left in a non-english language. 
+             "NICE FROM FAR FAR FROM NICE" is the only english text within 
+             the scrolling message.  This text is encrypted within infected 
+             files. 
+             Origin:  Europe?  July, 1994. 
+       Jerusalem.Suselfo: Similar to Jerusalem, this variant has the 
+             sUMsDos text string changed to "sUSelFo", as well as having 
+             been altered to avoid detection by some anti-viral utilities. 
+             Origin:  Spain  March, 1994. 
+       June 17TH: Based on the Jerusalem virus, June 17TH is a 1,530 
+             byte variant.  Its memory resident TSR is 1,792 bytes, hooking 
+             interrupt 21.  .COM programs increase in size by 1,535 bytes, 
+             while .EXE programs increase in size by 1,530 to 1,544 bytes. 
+             With .COM programs, the virus will be located at the beginning 
+             of the file.  With .EXE programs, the virus is located at the 
+             end of the file.  .EXE programs are not reinfected.  June 17TH 
+             activates when it becomes memory resident when the system date 
+             is between June 17TH and December 31st of any year, at which 
+             time it will delete any program which the user attempts to 
+             execute. 
+             Origin:  Unknown  November, 1992. 
+       JVT1: Similar to the original Jerusalem virus, the JVT1 variant's 
+             major differences are that after being memory resident for 
+             30 minutes, a vertical black box consisting of two characters 
+             will appear in the very upper left hand corner of the system 
+             display.  Another difference is that instead of deleting 
+             programs on Friday the 13ths, it deletes them on Tuesday the 
+             1st.  The "sUMsDos" text string within the virus has been 
+             changed to "sUMsDns".  Like Jerusalem, it will reinfect .EXE 
+             programs. 
+       JVT1-B: Functionally equivalent to JVT1, this variant is a 
+             slightly modified version. 
+             Origin:  Unknown  January, 1992. 
+       Mendoza: Based on the Jerusalem B virus, this variant does not 
+             reinfect .EXE files.  It is also missing the black box effect. 
+             Mendoza activates in the second half of the year (July - 
+             December), at which time any day will have a 10% chance of 
+             having all programs executed deleted. 
+             Origin: Argentina 
+       Messina: Similar to the original Jerusalem virus, Messina's 
+             major difference is that the "sUMsDos" text string has been 
+             changed to "Messina".  Infected .COM files increase in size 
+             by 1,813 bytes.  Infected .EXE files increase in size by 1,808 
+             to 1,822 bytes with the first infection, and 1,808 bytes for 
+             each reinfection. 
+             Origin:  Unknown  November, 1991. 
+       Nemesis: Similar to the original Jerusalem virus, this variant's 
+             major difference is in the area of text strings within the 
+             virus.  The characteristic "sUMsDos" string has been changed to 
+             "UM Do ".  Two other text strings can be found in infected 
+             files: "NEMESIS.COM" and "NOKEY". 
+             Origin:  Unknown  November, 1991. 
+       New Jerusalem: The New Jerusalem virus is a variant of Jerusalem 
+             which was uploaded to several BBSes in The Netherlands on 
+             October 14, 1989.  It was modified to be undetectable by 
+             some anti-viral utilities which were widely distributed at 
+             that time. 
+             Origin:  The Netherlands  October, 1989. 
+       Oscar: The Oscar variant of Jerusalem is functionally 
+             equivalent to the original virus.  It contains three 
+             text strings: "sUMsDos", "COMMAND.COM, and "OSCAR NU". 
+             .EXE programs will be reinfected by this variant. 
+             On Friday the 13ths, it will delete executed programs. 
+             Origin:  Unknown  April, 1992. 
+       Payday: The Payday variant was isolated in The Netherlands by 
+             Jan Terpstra in November, 1989.  A major behavioral change is 
+             that Payday will activate on all Fridays except Friday the 13th. 
+             Upon activation, it deletes all files executed. 
+             Origin:  The Netherlands  November, 1989. 
+       Park ESS: Isolated in October, 1990 in Happy Camp, California, 
+             this variant is very similar to other Jerusalem viruses. 
+             Infected .COM files increase in length by 1,813 bytes, and 
+             infected .EXE files will increase in length by 1,808 to 1,822 
+             bytes with the first infection, and 1,808 on later subsequent 
+             infections.  This variant will also infect COMMAND.COM.  The 
+             other major difference from the "normal" Jerusalem is that the 
+             "sUMsDos" string has been replaced.  The string "PARK ESS" can 
+             be found in the viral code within all infected files.  This 
+             variant slows down the system by approximately 20 percent and 
+             a "black window" will appear after the virus has been memory 
+             resident for 30 minutes. 
+       Phenome: The Phenome variant of Jerusalem B was received at the 
+             same time as the Apocalypse variant.  This variant is similar 
+             in behavior to Apocalypse, with the exception that 
+             COMMAND.COM will also be infected if executed.  The text 
+             strings found in this variant are: 
+                    "MsDos" 
+                    "PHENOME.COM" 
+                    "*-*-*-*" 
+             Phenome activates after becoming memory resident on Saturdays. 
+             On Saturdays, programs will not execute, but simply return the 
+             user to the DOS prompt.          
+             Origin:  Italy  May, 1991. 
+       Puerto: Isolated in June, 1990 in Puerto Rico, this variant is 
+             very similar to the Mendoza variant, the virus contains the 
+             sUMsDos id-string.  .EXE files may be infected multiple times. 
+             Origin:  Puerto Rico  June, 1990. 
+       Skism: Similar to the Skism-1 variant, the Skism variant of 
+             Jerusalem's major difference is that the "SKISM-1" text 
+             string has been changed to " SKISM ".  Functionally, it is 
+             equivalent to Skism-1. 
+             Origin:  Canada  January, 1992. 
+       Skism-1: Isolated in December, 1990 in New York State, this 
+             variant is similar to many other Jerusalems except with 
+             regards to when and what it does upon activation.  Rather than 
+             activate on Friday the 13ths and delete files, this variant 
+             activates in the years 1991 and later on any Friday which 
+             occurs after the 15th of the month.  On activation, it 
+             truncates any file which is attempted to be executed to zero 
+             bytes.  .COM files will increase in size upon infection by 
+             1,808 bytes, .EXE files will increase by 1,808 to 1,822 bytes. 
+             .EXE files will be reinfected by the virus.  The "sUMsDos" 
+             string in the virus is now "SKISM-1".  Like Jerusalem, this 
+             variant produces a "black window" 30 minutes after becoming 
+             memory resident, and also slows down the system. 
+             Origin:  Canada  December, 1990. 
+       Soy Un: Based on the Jerusalem-B virus, Soy Un is a 2,064 byte 
+             variant from Peru.  Its memory resident TSR is 2,336 bytes, 
+             and hooks interrupt 21.  Soy Un adds 2,069 bytes to the .COM 
+             programs it infects with the virus being located at the 
+             beginning of the file.  It adds 2,064 to 2,078 bytes to .EXE 
+             programs with the virus being located at the end of the file. 
+             .EXE programs are not reinfected.  Most of the file length 
+             increase will usually not be visible on infected programs when 
+             the virus is memory resident as it will attempt to hide all by 
+             1 to 16 bytes of the increase.  The following text strings 
+             occur within the viral code: 
+             "HACK1" 
+             "COMMAND.COM" 
+             "CHKLIST.CPS" 
+             "Soy un Virus y mi nombre es - THE HACKER -  Lima - Per�" 
+             Origin:  Peru  September, 1992. 
+       Spanish JB: (Jerusalem F)  Similar to Jerusalem, it reinfects 
+             .EXE files.  The increased file size on .COM files is always 
+             1,808 bytes.  On .EXE files, the increased file size may be 
+             either 1,808 or 1,813, with reinfection always adding 1,808 
+             bytes to the already infected file.  No "Black Box" appears. 
+             The characteristic "sUMsDos" id-string does not appear in the 
+             viral code.  This variant is also sometimes identified as 
+             Jerusalem E2. 
+             Origin:  Spain 
+       Sub-Zero: Received in April 1992, Sub-Zero is a modified 
+             Jerusalem variant which does not display the characteristic 
+             "black box" after being memory resident for 30 minutes, nor 
+             does a system slowdown occur.  Sub-Zero contains the 
+             following text strings: "LORD SKISM", "Sub-Zero NYHC", and 
+             "ED EL". 
+             Origin:  Canada  April, 1992. 
+       Sub-Zero B: Received in May, 1992, Sub-Zero B is a slightly 
+             modified version of the Sub-Zero variant.  On the last Friday 
+             of any month after 1991 it will truncate files which are 
+             executed, and will attempt to format the system hard disk 15 
+             minutes after becoming memory resident on June 6. 
+             Origin:  United States  May, 1992. 
+       Sub-Zero C: Received in February 1994, Sub-Zero C is a modified 
+             version of the Sub-Zero variant described above.  It has been 
+             altered to avoid detection by some anti-viral utilities. 
+             Origin:  Unknown  February, 1994. 
+       Swiss 1813: Submitted in February, 1991, from Switzerland, this 
+             Jerusalem variant does not exhibit the "black window" after 
+             being memory resident for 30 minutes, nor does it slow down 
+             the system. It also does not delete programs on Friday the 
+             13th, or any other Friday.  The "sUMsDos" text string has been 
+             changed to binary zeros. 
+             Origin:  Switzerland  February, 1991. 
+       Triple: Received in April, 1992, Triple is a Jerusalem variant 
+             which has been altered to avoid detection by some virus 
+             scanning programs.  Functionally, it is similar to the 
+             original virus.  One text string can be found in the viral 
+             code in infected programs:  "COMMAND". 
+             Origin:  Unknown  April, 1992. 
+       Ucender: Received in March, 1992, this variant of Jerusalem has 
+             been altered to avoid detection by some anti-viral programs. 
+             The "sUMsDos" text string has been changed to "UCNDER".  The 
+             characteristic Jerusalem "black box" appears after the virus 
+             has been memory resident for 30 minutes, and a system slow- 
+             down will also occur at this time.  Ucender will reinfect 
+             .EXE files, like the original virus.  This variant activates 
+             on Friday The 13ths, at which time it will delete programs 
+             which are executed. 
+             Origin:  Argentina  March, 1992. 
+ 
+       See:  1605          China           Discom            Freddy 
+             Frere Jacques   Fu Manchu     Groen Links       Growing Block 
+             Jerusalem 11-30   Jerusalem 1663   Jerusalem 1767    Mule 
+             RAM Virus     Slow            Sunday            Sunday-2 
+             Suriv 3.00    Westwood        Barcelona         Poison 
+             Moctezumas Revenge    1244    Timor             Totoro 

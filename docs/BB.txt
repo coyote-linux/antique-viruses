@@ -1,0 +1,59 @@
+Virus Name:  Bad Brain 
+ Aliases:     BB 
+ V Status:    Viron 
+ Discovery:   April, 1992 
+ Symptoms:    .COM file corruption; programs fail to execute 
+ Origin:      Unknown 
+ Eff Length:  576 Bytes 
+ Type Code:   ONCK - Overwriting Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, IBMAV, Sweep, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, LProt, Innoc, AVTK/N, IBMAV/N, 
+                    NAV/N, NProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Bad Brain virus was received in April, 1992.  Its origin is 
+       unknown.  Bad Brain is a non-resident direct action infector 
+       of .COM programs, including COMMAND.COM.  It corrupts all programs 
+       which it infects. 
+ 
+       When a program infected with Bad Brain is executed, the Bad 
+       Brain virus will infect one .COM program located on the current 
+       drive in the 2nd or lower subdirectory from the drive's root 
+       directory.  Programs which have been infected with the Bad Brain 
+       virus will have the first 576 bytes of their code overwritten with 
+       the viral code, so there will be no change in the file's length 
+       in the DOS disk directory listing.  The file's date and time in 
+       the DOS disk directory will not have been altered. 
+ 
+       The following text strings are encrypted within the Bad Brain 
+       viral code, and thus are not visible in infected files: 
+ 
+               "SKISM*" 
+               "*.COM" 
+               "BadBrains" 
+ 
+       Programs infected with the Bad Brain virus will not function 
+       properly when the user attempts to execute them.  The user will be 
+       returned to the DOS prompt upon execution. 
+ 
+       Since the Bad Brain virus overwrites the beginning of the host 
+       program, infected programs cannot be disinfected and should be 
+       replaced with clean backup copies. 
+ 
+       Known variant(s) of Bad Brain are: 
+       Bad Brain 1.2: Received in August, 1993, Bad Brain 1.2 is a 
+                 554 byte variant of the virus described above.  Infected 
+                 programs will have the first 554 bytes overwritten by the 
+                 virus.  The following text is visible within the viral code 
+                 in all Bad Brain 1.2 infected programs: 
+                 "The Thing That Should Not Be" 
+                 "He searches" 
+                 "Hunters of the shadow is rising" 
+                 "Crawling chaos, underground," 
+                 "out from ruins once possessed" 
+                 "Fallen city, living death..." 
+                 "* *.COM \" 
+                 "Metal Militia / Immortal Riot" 
+                 Origin:  Unknown  August, 1993. 

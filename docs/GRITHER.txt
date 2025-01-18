@@ -1,0 +1,36 @@
+Virus Name:  Grither 
+ Aliases:     Vienna 774 
+ V Status:    Rare 
+ Discovered:  January, 1991 
+ Symptoms:    .COM growth; C: & D: drive corruption 
+ Origin:      United States 
+ Eff Length:  774 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Grither virus was submitted in January, 1991, by Paul Ferguson 
+       of the United States.  This virus is a non-resident direct action 
+       infector of .COM files, including COMMAND.COM. 
+ 
+       When a program infected with Grither is executed, the virus will 
+       infect one .COM file in the current directory.  COMMAND.COM may 
+       become infected if it exists in the current directory. 
+ 
+       .COM programs infected with Grither will increase in length by 774 
+       bytes, the virus will be located at the end of the infected file. 
+       The file's date and time in the disk directory will not be altered 
+       by the virus. 
+ 
+       The Grither virus can be extremely destructive.  With a probability 
+       of approximately one out of every eight times an infected program is 
+       executed, the virus may activate.  On activation, Grither will 
+       overwrite the beginning of the C: and D: drives of the system's hard 
+       disk. Effectively, this corrupts the disk's boot sector, file 
+       allocation tables, and directory, as well as the system files. 
+ 
+       Grither is roughly based on the Vienna and Violator viruses. 

@@ -1,0 +1,59 @@
+Virus Name:  Vacsina 
+ Aliases: 
+ V Status:    Common 
+ Discovered:  November, 1989 
+ Symptoms:    TSR; .COM, .EXE, .BIN, & .SYS growth; "beeps" 
+ Origin:      Bulgaria 
+ Eff Length:  1,206 bytes 
+ Type Code:   PRsA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The Vacsina virus is approximately 1200 bytes in length and can be 
+       found in memory on infected systems.  There are at least 48 
+       variants of the Vacsina virus, also known as the TP virus family, 
+       though not all of them have been isolated.  Later versions of this 
+       virus are included in this listing under the name "Yankee Doodle". 
+ 
+       Generally, the Vacsina virus infects both .COM and .EXE files, as 
+       well as .SYS and .BIN files.  This virus, when infecting a .EXE 
+       file, will first convert it into .COM format by changing the MZ or 
+       ZM identifier in the first two bytes of the file to a JMP 
+       instruction and then adding a small piece of relocator code, so 
+       that the .EXE file can be infected as though it were originally a 
+       .COM file. 
+ 
+       One sign of a Vacsina infection is that programs which have been 
+       infected may "beep" when executed.  Infected programs will also 
+       have their date/time in the disk directory changed to the date and 
+       time they were infected. 
+ 
+       Known variant(s) of Vacsina are: 
+       TP04VIR: Infects .EXE files, changing them internally into .COM 
+                files.  Infected programs may beep when executed, and may 
+                be identified by searching for the text string "VACSINA" 
+                along with the second byte from the end of the file 
+                containing a 04h.  This version of Vacsina is a poor 
+                replicator, and while it will always convert a EXE file 
+                to .COM file format, adding 132 bytes, it does not always 
+                infect executed files. 
+       TP05VIR: Similar to TP04VIR, except that the second to the last 
+                byte in the file is now a 05h.  System hangs may also be 
+                experienced. 
+       TP06VIR: Similar to TP05VIR, except the second to the last byte in 
+                the file is now a 06h. 
+       TP16VIR: Similar to TP06VIR, the second to the last byte in the 
+                infected file is now 10h. 
+       TP23VIR: Similar to TP16VIR, the second to the last byte in the 
+                infected file is now 17h.  The text "VACSINA" no longer 
+                appears in the virus. 
+       TP24VIR: Similar to TP23VIR, the second to the last byte in the 
+                infected file is now 18h. 
+       TP25VIR: Similar to TP24VIR, the second to the last byte in the 
+                infected file is now 19h. 
+ 
+       See:   Penza   Yankee Doodle 

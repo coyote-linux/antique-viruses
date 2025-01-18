@@ -1,0 +1,327 @@
+Virus Name:  Leprosy 
+ Aliases:     Leprosy 1.00, News Flash 
+ V Status:    Viron 
+ Discovered:  August, 1990 
+ Symptoms:    Unusual messages; program corruption 
+ Origin:      California, United States 
+ Eff Length:  666 Bytes 
+ Type Code:   ONAK - Overwriting Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Leprosy virus was discovered in the San Francisco Bay Area of 
+       California on August 1, 1990.  This virus is a non-resident 
+       overwriting virus infecting .COM and .EXE files, including 
+       COMMAND.COM.  Its original carrier file is suspected to be a file 
+       called 486COMP.ZIP which was uploaded to several BBSes. 
+ 
+       When you execute a program infected with the Leprosy virus, the 
+       virus will overwrite the first 666 bytes of all .COM and .EXE files 
+       in the directory one level up from the current directory.  If the 
+       current directory is the root directory, all programs in the root 
+       directory will be infected.  If COMMAND.COM is located in the 
+       directory being infected, it will also be overwritten.  Infected 
+       files will show no file length increase unless they were originally 
+       less than 666 bytes in length, in which case their length will 
+       become 666 bytes. 
+ 
+       After the virus has infected the .COM and .EXE files, it will 
+       display a message.  The message will be either: 
+ 
+               "Program to big to fit in memory" 
+ 
+       or: 
+ 
+               "NEWS FLASH!!  Your system has been infected with the 
+                incurable decay of LEPROSY 1.00, a virus invented by 
+                PCM2 in June of 1990.  Good luck!" 
+ 
+       The second message will only be displayed by one out of every seven 
+       .COM and .EXE files that the program infects. 
+ 
+       Since Leprosy is an overwriting virus, the programs which are 
+       infected with it will not function properly.  In fact, once they 
+       are infected with this virus they will run for awhile (while the 
+       virus is infecting other files) and then display one of the two 
+       messages.  The program execution will then end. 
+ 
+       If the system is booted from a diskette or hard drive that has 
+       Leprosy in its COMMAND.COM file, one of the above two messages will 
+       be displayed followed by: 
+ 
+               "Bad or missing Command Interpreter" 
+ 
+       This boot problem occurs because COMMAND.COM is no longer really 
+       COMMAND.COM.  The boot will not proceed until a system boot 
+       diskette is inserted into the system and another boot is attempted. 
+ 
+       While Leprosy's messages are encrypted in the virus, infected files 
+       can be found by checking for the following hex string near the 
+       beginning of the file: 
+ 
+               740AE8510046FE06F002EB08 
+ 
+       Infected files must be deleted and replaced with clean, uninfected 
+       copies.  There is no way to disinfect this virus since the first 
+       666 bytes of the file have been overwritten, the virus does not 
+       store those bytes anywhere else. 
+ 
+       Known variant(s) of Leprosy are: 
+       Angel Of Death: The Angel Of Death is a non-resident direct 
+                 action infector of .COM and .EXE programs, including 
+                 COMMAND.COM.  It infects up to four programs in the 
+                 current directory each time an infected program is 
+                 executed.  It infects all .EXE programs in a directory 
+                 before it will start infecting .COM programs.  Infected 
+                 programs will have the first 555 bytes overwritten by the 
+                 viral code.  Programs infected with Angel Of Death will 
+                 not function properly, usually returning the user to the 
+                 DOS prompt after much disk activity.  The following text 
+                 is encrypted within the viral code: 
+                 "All those of impure race beware 
+                  because for the greater glory of 
+                  the Aryan Race, the Angel of Death 
+                  Doctor JOSEF MENGELE has returned!" 
+                 "*.EXE *.COM" 
+                 Origin:  Unknown  October, 1992. 
+       Leprosy-654: Leprosy-654 is a non-resident, direct action 
+                 overwriting virus based on the Leprosy virus.  It infects 
+                 four .EXE files in the current directory whenever an 
+                 infected program is executed, and then displays the 
+                 following message: 
+                 "Memory allocation error" 
+                 Leprosy-654 overwrites the first 654 bytes of the .EXE 
+                 programs it infects, permanently corrupting them.  The 
+                 following text string is unencrypted within the viral 
+                 code in Leprosy-654 infected programs: 
+                 ".. *.EXE *.COM COMMAND.COM" 
+                 Origin:  Unknown  March, 1993. 
+       Leprosy-664A: Leprosy-664A, or Betrayal, is a non-resident direct 
+                 action overwriting virus based on the Leprosy virus.  It 
+                 infects four .EXE or .COM files in the current directory 
+                 whenever an infected program is executed, and then displays 
+                 the following message: 
+                 "Program too big to fit in memory" 
+                 Leprosy-664A overwrites the first 664 bytes of the programs 
+                 it infects, permanently corrupting them.  The following text 
+                 strings are unencrypted within the viral code in all 
+                 Leprosy-664A infected programs: 
+                 "*.EXE *.COM .." 
+                 "Program too big to fit in memory" 
+                 "Betrayal is a sin, if it comes from another.." 
+                 "The Unforgiven / Immortal Riot  Dedicated to Ellie! - 
+                  Lurve you!  Sweden 15/09/93" 
+                 Once all of the .EXE and .COM programs in the current 
+                 directory are infected, the virus will display the following 
+                 message in the place of the "Program too big" message 
+                 whenever an infected program is executed: 
+                 "Betrayal is a sin, if it comes from another.." 
+                 Leprosy-664A activates on the 10th day of any month, at 
+                 which time it can trash the system hard disk. 
+                 Origin:  Sweden  February, 1994. 
+       Leprosy-5600: Leprosy-5600 is a non-resident, overwriting virus 
+                 based on the Leprosy-B virus.  It infects up to four .EXE 
+                 or .COM programs in the current directory when an infected 
+                 program is executed, overwriting the first 5,600 bytes. 
+                 The infected file's date and time in the DOS disk directory 
+                 listing will not be altered.  Leprosy-5600 cannot recognize 
+                 previously infected programs, so the first four programs 
+                 which the virus has infected in a directory will be 
+                 reinfected over and over again.  Infected programs will not 
+                 function properly, and will usually result in the display 
+                 of the message: 
+                 "Not enough memory" 
+                 This message can be found within the viral code, as can 
+                 the following text string: 
+                 "*.EXE *.COM .." 
+                 Origin:  Unknown  December, 1992. 
+       Leprosy-B: The major differences between the Leprosy and Leprosy-B 
+                  virus are that Leprosy-B uses a slightly different 
+                  encryption method, thus allowing it to avoid detection 
+                  once Leprosy was isolated.  Additionally, instead of 
+                  infecting all programs in the directory selected for 
+                  infection, Leprosy-B will infect four programs in the 
+                  current directory each time an infected program is 
+                  executed.  If four non-infected files do not exist in 
+                  the current directory, it will move up one level in the 
+                  directory structure and infect up to four files in that 
+                  directory.  Like Leprosy, it overwrites the first 666 
+                  bytes of infected files.  The Leprosy message has been 
+                  replaced with the following message: 
+                  "ATTENTION!  Your computer has been afflicted with 
+                   the incurable decay that is the fate wrought by 
+                   Leprosy Strain B, a virus employing Cybernetic 
+                   Mutation Technology (tm) and invented by PCM2  08/90." 
+       Leprosy-C: Leprosy-C is based on the Leprosy-B variant, and 
+                  has been altered to avoid detection by anti-viral products 
+                  familiar with the Leprosy virus at the time of its 
+                  isolation.  Leprosy-C overwrites up to three .EXE programs 
+                  in the current directory each time an infected program 
+                  is executed.  If it cannot find three candidate files to 
+                  infect in the current directory, it will move upward in 
+                  the directory structure.  Infected programs will have the 
+                  first 320 bytes overwritten with the viral code.  The 
+                  file's date and time will not be altered.  Programs 
+                  infected with Leprosy-C will fail to execute properly, 
+                  either resulting in an access to the system hard disk, 
+                  the program exiting with no message being displayed, or 
+                  a "Program too big to fit into memory" message occurring. 
+                  Origin:  United States  May, 1991. 
+       Leprosy-D: Similar to Leprosy-C, Leprosy-D's major difference is 
+                  that it will infect .COM and .EXE programs, including 
+                  COMMAND.COM.  Leprosy-D overwrites the first 370 bytes 
+                  of infected programs. 
+                  Origin:  United States  May, 1991. 
+       Leprosy-FVHS: Leprosy-FVHS is a non-resident, overwriting virus 
+                 based on the Leprosy-B virus.  It infects up to four .EXE 
+                 or .COM programs in the current directory when an infected 
+                 program is executed, overwriting the first 2,218 bytes. 
+                 The infected file's date and time in the DOS disk directory 
+                 listing will not be altered.  Leprosy-FVHS displays the 
+                 following message when an infected program is executed: 
+                 "Allocating memory....  Please wait..... 
+                  Hard time accessing memory, please turn off all RAM 
+                  resident programs and press >>Enter<< to continue...." 
+                 The above message can be found within the viral code in 
+                 all infected programs, as can the following additional 
+                 text strings: 
+                 "Copyright(C) 1992 by Fairview High School, 
+                  Boulder Colorado, 80303." 
+                 "Person/People/Things we >>hate<<: 
+                  Paul Harvey's sucks!!!!! MacinTrashes Suck!!!!" 
+                 "Graham (Not Alexander but this fuck ass kids whjo calls 
+                  himself graham) sucks!" 
+                 "Person/People we admire:Lynn Bari, Jean Arthur, Jane 
+                  Russel, Victoria Hill" 
+                 "Person/People/Things we thing are cool:  Cybernetics, 
+                  C++, 39 Steps, The Mafia, maybe "Monty Python". XX" 
+                 ".. *.EXE *.COM" 
+                 Origin:  United States  December, 1992. 
+       Leprosy.Wannabe: A minor variant of the Leprosy virus, this 
+                 variant infects up to four .EXE or .COM files when an 
+                 infected program is executed, overwriting the first 666 
+                 bytes of the host program.  The following text strings are 
+                 encrypted within the viral code: 
+                 "*.exe *.com .." 
+                 "File allocation error." 
+                 "The Roger-1 Virus has made you sick!" 
+                 "BReW CReW BaBY!!!" 
+                 "[WaNNaBe]!" 
+                 "Boom-squash on ya Ken! Tis 435!!" 
+                 Origin:  Unknown  December, 1994. 
+       NightCrawler 3.0: The NightCrawler 3.0 virus is a non-resident 
+                 direct action infector of .EXE programs.  It infects all 
+                 of the .EXE programs in the current directory when an 
+                 infected program is executed.  Infected programs will have 
+                 the first 562 bytes overwritten by the viral code. 
+                 Programs infected with Silver Surfer will not function 
+                 properly, and the following message is usually displayed 
+                 when an infected program is executed: 
+                 "Program too big to fit in memory" 
+                 In addition to the above text, the following text is 
+                 encrypted within the viral code: 
+                 "*.EXE *.COM .." 
+                 "*------------------------------*" 
+                 "    NIGHTCRAWLER VERSION 3.0" 
+                 "      (C) SECTOR INFECTOR" 
+                 "*------------------------------*" 
+                 Origin:  Unknown  June, 1993. 
+       RMIT: Based on the Leprosy-B virus, RMIT infects both .COM and 
+             .EXE programs, including COMMAND.COM.  It infects up to four 
+             programs each time an infected program is executed, with 
+             preference for .EXE programs.  Infected programs will have the 
+             first 666 bytes overwritten by the RMIT viral code.  RMIT 
+             infected programs will contain the text string "V3" in the 
+             first two bytes.  The other text string which can be found in 
+             all infected programs is "*.EXE *.COM".  Infected programs 
+             will fail to execute properly, and may result in the message 
+             "Program too big to fit in memory" being displayed. 
+             Origin:  Unknown  June, 1991. 
+       Scribble: Received from Sweden in June, 1992, Scribble is based 
+                 on the Leprosy virus, but has been altered to avoid 
+                 detection by anti-viral products familiar with the 
+                 Leprosy virus.  Scribble overwrites up to three programs 
+                 in the current directory each time an infected program 
+                 is executed.  It will infect .EXE programs before .COM 
+                 programs.  Infected programs will have the first 595 
+                 bytes overwritten with the viral code.  The file's date 
+                 and time will not be altered.  After all of the programs 
+                 in the current directory have become infected, execution 
+                 of the next infected program will result in the following 
+                 message being displayed: 
+                 "Legalize Graffitipainting! 
+                  Scribble 1.00 (c) 1992   VIRINC" 
+                 A system hang will then occur.  The above messages are 
+                 encrypted within the virus and not visible in infected 
+                 files. 
+                 Origin:  Sweden  June, 1992. 
+       Silver Surfer: The Silver Surfer is a non-resident direct 
+                 action infector of .COM and .EXE programs, including 
+                 COMMAND.COM.  It infects up to five programs in the 
+                 current directory each time an infected program is 
+                 executed.  It infects all .EXE programs in a directory 
+                 before it will start infecting .COM programs.  Infected 
+                 programs will have the first 946 bytes overwritten by the 
+                 viral code.  Programs infected with Silver Surfer will 
+                 not function properly, usually returning the user to the 
+                 DOS prompt after much disk activity.  The following text 
+                 is encrypted within the viral code: 
+                 "*.EXE *.COM .." 
+                 "Error in Executable" 
+                 "I've never been able to ascertain its exact nature, 
+                  but I'm certain of its" 
+                 "symptoms - dementia, paranoia, shizophrenia, 
+                  hallucinations.  The end result" 
+                 "is always death... The virus lives to reproduce - 
+                  it seems to have no other" 
+                 "purpose... Once infected, the organism's central 
+                  nervois system suffers a" 
+                 "complete breakdown, leading to death." 
+                 "-- Silver Surfer #61" 
+                 "The Silver Surfer Virus - Lep-B variant - by" 
+                 The "Error in Executable" text string may be displayed as 
+                 a message when some infected programs are executed. 
+                 Origin:  Unknown  November, 1992. 
+       The Plague: The Plague is a non-resident direct action infector 
+                 of .COM and .EXE programs, including COMMAND.COM.  It 
+                 infects up to three programs in the current directory each 
+                 time an infected program is executed.  Infected programs 
+                 will have the first 591 bytes overwritten by the viral 
+                 code.  Programs infected with The Plague will not function 
+                 properly.  For .EXE files, the following message will 
+                 usually be displayed upon program execution: 
+                 "Program too big to fit in memory" 
+                 The Plague activates when an infected program is executed 
+                 and it cannot find an uninfected program to infect, though 
+                 there is some randomness to whether or not activation will 
+                 actually occur.  When this virus activates, the following 
+                 message is displayed: 
+                 "Autopsy indicates the cause of 
+                  death was THE PLAGUE 
+                  Dedicated to the dudes at SHHS 
+                  VIVE LE SHE-MAN!" 
+                 While this message is being displayed, the current drive 
+                 will be overwritten with garbage characters, rendering 
+                 it unrecoverable. 
+                 Origin:  Houston, Texas, Unites States  January, 1991. 
+       Xabaras: Xabaras is a non-resident, overwriting virus based on 
+                the Leprosy-B virus.  It infects up to four .EXE programs 
+                in the current directory when an infected program is 
+                executed, overwriting the first 1,972 bytes.  The resultant 
+                infected .EXE files will usually not infect other programs, 
+                and execution of them usually results in a system hang or 
+                other unexpected results.  The following text strings are 
+                encrypted within the Xabaras virus, and cannot be seen 
+                in infected files: 
+                "*.EXE" 
+                "Xabaras...the name of the devil!!" 
+                "*.COM .. Access denied" 
+                "Your PC has been infected by XABARAS VIRUS" 
+                "Created by Cracker Jack 1991  (c) IVRL" 
+                Origin:  Italy  August, 1992. 
+ 
+       See:   Silver Dollar 

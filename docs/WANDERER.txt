@@ -1,0 +1,35 @@
+Virus Name:  Wanderer 
+ Aliases:    
+ V Status:    New 
+ Discovered:  November, 1993 
+ Symptoms:    .COM file growth; file date/time seconds = 62; 
+              decrease in total system & available free memory 
+ Origin:      Unknown 
+ Eff Length:  400 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  AVTK, ViruScan, F-Prot, Sweep, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NProt, AVTK/N, Sweep/N, NShld, IBMAV/N, Innoc, NAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Wanderer virus was received in November, 1993.  Its origin is 
+       unknown.  Wanderer is a memory resident infector of .COM programs, 
+       including COMMAND.COM. 
+ 
+       When the first Wanderer infected program is executed, this virus 
+       will install itself memory resident at the top of system memory but 
+       below the 640K DOS boundary.  Total system and available free 
+       memory, as indicated by the DOS CHKDSK program, will have decreased 
+       by 416 bytes.  Interrupt 21 will be hooked by the virus in memory. 
+ 
+       Once the virus is memory resident, it will infect .COM programs, 
+       including COMMAND.COM, when they are executed.  Infected programs will 
+       have a file length increase of 400 bytes with the virus being located 
+       at the end of the file.  The program's date and time in the DOS disk 
+       directory listing will not appear to be altered, though the seconds 
+       field will have been set to "62".  The following text string is 
+       visible within the Wanderer viral code in infected programs: 
+ 
+               "As wolfs among sheep we have wandered" 

@@ -1,0 +1,122 @@
+ Virus Name:  Ear 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  May, 1992 
+ Symptoms:    .COM & .EXE file growth; errors writing to device AUX; 
+              Ear quiz played with the system user 
+ Origin:      United States 
+ Eff Length:  1,024 Bytes 
+ Type Code:   PNAK - Parasitic Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, NProt, AVTK/N, NAV/N, IBMAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Ear virus was discovered in the United States in May, 1992. 
+       It is a non-resident, direct action infector of .COM and .EXE 
+       programs, including COMMAND.COM. 
+ 
+       When a program infected with the Ear virus is executed, the Ear 
+       virus will check to determine if more than two subdirectories 
+       exist on the current drive.  If there are not at least two 
+       subdirectories, the virus will attempt to write to device AUX, 
+       and will normally result in an error.  No programs will be infected. 
+       If two subdirectories exist, then the virus will infect all of the 
+       .COM and .EXE programs located in the current directory, and the 
+       program the user was attempting to execute will then run. 
+ 
+       Programs infected with the Ear virus will have a file length increase 
+       of 1,024 bytes with the virus being located at the end of the 
+       infected file.  The program's date and time in the DOS disk directory 
+       listing will not be altered. 
+ 
+       The Ear virus will occassionally provide the user with a quiz on a 
+       part of the human ear when an infected program is executed.  The 
+       messages displayed at this time are: 
+ 
+               "PHALCON/SKISM 1992 [Ear-6] Alert! 
+                Where is the $ located? 
+ 
+                1. External Ear 
+                2. Middle Ear 
+                3. Inner Ear" 
+ 
+       The "$" above in the second line will be replaced with one of the 
+       following: "Auditory Canal", "Lobe", "Hammer", "Eustacian Tube", 
+       "Auditory Nerve", or "Cochlea".  If the user replies correctly, 
+       the virus will display: 
+ 
+               "Wow, you know your ears! Please resume work." 
+ 
+       If the user replies incorrectly, the following is displayed: 
+ 
+               "You obviously no nothing about ears. 
+                Try again after some study." 
+ 
+       The above text strings are encrypted within the virus and are not 
+       visible in infected files.  Additional text strings which are 
+       encrypted within the virus are: 
+ 
+               "[Ear-6] Dark Angel" 
+               "*.EXE *.COM" 
+               "????????COM" 
+ 
+       Known variant(s) of Ear are: 
+       Anti-Print: Based on the Ear virus, Anti-Print is a memory 
+                resident infector of .EXE programs.  When the first Anti- 
+                Print virus infected program is executed, the Anti-Print 
+                virus will install itself memory resident at the top of 
+                system memory but below the 640K DOS boundary.  Total 
+                system and available free memory, as indicated by the DOS 
+                CHKDSK program, will have decreased by 1,248 bytes. 
+                Interrupt 21 will be hooked.  Once resident, Anti-Print 
+                infects .EXE programs when they are executed.  Infected 
+                programs will have a file length increase of 593 bytes with 
+                the virus being located at the end of the file.  The file's 
+                date and time in the DOS disk directory listing will have 
+                been updated to the current system date and time when 
+                infection occurred.  The following text strings are 
+                encrypted within the Anti-Print viral code: 
+                "PRINT.EXE detected in memory!" 
+                "=> Anti-PRINT Virus detonation <=" 
+                When the Anti-Print virus is memory resident, it will trash 
+                the current drive if PRINT.EXE is executed, along with 
+                displaying the above text as a message.  System hangs may 
+                also frequently occur. 
+                Origin:  Unknown  February, 1993. 
+       Quake-O: Based on the Ear virus, Quake-O infects up to three 
+                .EXE or .COM programs in the current directory each time 
+                an infected program is executed.  Infected programs will 
+                have a file length increase of 960 bytes with the virus 
+                being located at the end of the file.  There will be no 
+                change to the program's date and time in the DOS disk 
+                directory listing.  The following text strings are 
+                encrypted within the Quake-O viral code: 
+                "[Quake-O]" 
+                "By Dark Angel of PHALCON/SKISM '92" 
+                "Assistance by Demogorgon on Quake-O routines" 
+                "Albeit" 
+                ".. *.exe *.com" 
+                Origin:  United States  August, 1992. 
+       Suicide: Based on the Ear virus, Suicide infects up to five 
+                .EXE or .COM programs in the current directory each time 
+                an infected program is executed.  Infected programs will 
+                have a file length increase of 2,048 bytes with the virus 
+                being located at the end of the file.  There will be no 
+                change to the program's date and time in the DOS disk 
+                directory listing.  The following text strings are 
+                encrypted within the Suicide viral code: 
+                "*.COM *.EXE .. [Suicide]" 
+                "Written by Dark Angel of PHALCON/SKISM" 
+                "Ross M. Greenberg blows goats." 
+                "Your PC has been infected by the Suicide virus." 
+                "I would disinfect myself, but I despise DOS 2.X" 
+                "Upgrade now!" 
+                "Brought to you by PHALCON/SKISM" 
+                "I will now kill myself.  Press D to    disinfect" 
+                "PHALCON" 
+                "SKISM" 
+                "Hard at work to make your life" 
+                "living hell" 
+                Origin:  United States  July, 1992. 

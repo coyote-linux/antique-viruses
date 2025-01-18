@@ -1,0 +1,50 @@
+Virus Name:  Viperize 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  April, 1992 
+ Symptoms:    .COM file growth 
+ Origin:      Unknown 
+ Eff Length:  934 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, ChAV, 
+                    NAV, IBMAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, AVTK/N, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Viperize virus was submitted in April, 1992.  Its origin is 
+       unknown.  Viperize is a non-resident direct action infector of 
+       .COM programs, including COMMAND.COM.  It is based on the Vienna 
+       virus. 
+ 
+       When a program infected with Viperize is executed, the Viperize 
+       virus will infect one .COM program located in the current 
+       directory.  Infected programs will have a file length increase of 
+       934 bytes with the virus being located at the end of the file. 
+       The seconds in the program's timestamp in the disk directory will 
+       have been set to 62.  The following text strings can be found within 
+       the Viperize viral code in infected programs: 
+ 
+               "*.COM" 
+               "PATH=" 
+               "????????COM" 
+ 
+       Viperize activates on a random basis, at which time it will 
+       display the following message: 
+ 
+               "THE VIPERIZE VIRUS STRAIN A 
+                (c) 1992, STINGRAY / VIPER 
+                WITH AFFECTION TO BRENDA M.G. 
+                ONE OF THESE DAYS, YOU'LL BE MINE! 
+                AND -YOU- WILL FRY. FUCK YOU MCAFEEE." 
+ 
+       The virus may also corrupt the current drive's file allocation 
+       table and hang the system when the message is displayed. 
+ 
+       Known variant(s) of Viperize are: 
+       Viperize-B: Functionally similar to the original virus, this 
+                   variant has two bytes which have been altered. 
+                   Origin:  Unknown  July, 1992. 
+ 
+       See:   Generic   Vienna 

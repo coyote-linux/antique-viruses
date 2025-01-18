@@ -1,0 +1,79 @@
+Virus Name:  Overwriting 
+ Aliases:     OW-Trident, OW-64 
+ V Status:    Viron 
+ Discovered:  October, 1992 
+ Symptoms:    .COM files overwritten; file date/time changes; programs fail 
+              to function properly 
+ Origin:      Unknown 
+ Eff Length:  64 Bytes 
+ Type Code:   ONCK - Overwriting Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, NProt, AVTK/N, IBMAV/N, NAV/N, LProt, 
+                    Innoc 4.0+ 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Overwriting, OW-Trident, or OW-64, virus was submitted in 
+       October, 1992.  The submission was actually of four related viruses. 
+       The OW-Trident variant is described below, with the other three 
+       variants described under known variants at the end of this entry. 
+ 
+       When a program infected with the OW-Trident virus is executed, this 
+       virus will infect all .COM programs in the current directory by 
+       overwriting the first 64 bytes of the host files.  Infected programs 
+       will have no change in the file length, unless the .COM program was 
+       originally smaller than 64 bytes.  In the event that the host 
+       program was originally smaller than 64 bytes in length, it will now 
+       have a file length of 64 bytes.  The program's date and time in the 
+       DOS disk directory listing will have been changed to the system date 
+       and time when infection occurred.  The following text string is 
+       visible in all infected programs: 
+ 
+               "*.COM Trident" 
+ 
+       Infected programs are permanently damaged, and will no longer 
+       function properly. 
+ 
+       Known variant(s) of the Overwriting virus are: 
+       OW-37: A 37 byte variant of the OW-Trident virus described 
+              above.  It overwrites the first five .COM programs in the 
+              current directory when an infected program is executed. 
+              The following text string can be found in all infected 
+              programs: 
+              "*.COM" 
+              Origin:  Unknown  October, 1992. 
+       OW-40: A 40 byte variant of the Overwriting virus described 
+              above.  It overwrites the first 40 bytes of all of the 
+              files in the current directory when an infected program 
+              is executed.  No text strings are visible within the viral 
+              code.  Both program and data files are corrupted by the 
+              virus. 
+              Origin:  Unknown  May, 1993. 
+       OW-42: A 42 byte variant of the OW-Trident virus, this variant 
+              overwrites the first 42 bytes of all .COM programs in the 
+              current directory when an infected program is executed.  It 
+              contains the following text string: 
+              "*.COM" 
+              Origin:  Unknown  October, 1992. 
+       OW-42B: Functionally similar to OW-42, it is a minor variant. 
+              Origin:  Unknown  October, 1992. 
+       Small-46: A 46 byte non-resident direct action overwriting 
+              virus, Small-46 infects one .COM file in the current directory 
+              each time an infected program is executed.  Infected files 
+              will have the first 46 bytes of the host program ovewritten 
+              by the virus, and the file's date and time altered to the 
+              current system date and time when infection occurred.  It 
+              contains the following text string: 
+              "*.COM" 
+              Origin:  Unknown  January, 1993. 
+       Small-72: A 72 byte non-resident direct action overwriting 
+              virus, Small-72 infects all of the .COM files in the current 
+              directory when an infected program is executed.  Infected 
+              programs will have the first 72 bytes of the host program 
+              overwritten by the virus, and the file's date and time in 
+              the DOS disk directory listing updated to the current system 
+              date and time when infection occurred.  It contains one 
+              text string: 
+              "*.COM" 
+              Origin:  Unknown  January, 1993. 

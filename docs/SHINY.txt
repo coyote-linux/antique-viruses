@@ -1,0 +1,45 @@
+Virus Name:  Shiny Happy 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  April, 1993 
+ Symptoms:    .COM & .EXE growth; file date/time seconds = "48"; 
+              decrease in total system & available free memory; 
+              :-) changed to :-( 
+ Origin:      North America 
+ Eff Length:  921 Bytes 
+ Type Code:   PRtAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  F-Prot, ViruScan, AVTK, Sweep, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, NProt, IBMAV/N, Innoc, NAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Shiny Happy virus was submitted in April, 1993, and appears to 
+       be from North America.  Shiny Happy is a memory resident infector 
+       of .COM and .EXE programs, including COMMAND.COM.  It employs some 
+       stealth techniques to avoid detection. 
+ 
+       When the first Shiny Happy infected program is executed, the Shiny 
+       Happy virus will install itself memory resident at the top of system 
+       memory but below the 640K DOS boundary, moving interrupt 12's return. 
+       Total system and available free memory, as indicated by the DOS 
+       CHKDSK program, will have decreased by 1,024 bytes.  Interrupts 01, 
+       03, and 09 will be hooked by Shiny Happy in memory. 
+ 
+       Once the Shiny Happy virus is memory resident, it will infect .COM 
+       and .EXE programs when they are executed.  Infected programs will 
+       have a file length increase of 921 bytes, though this file length 
+       increase will be hidden when Shiny Happy is memory resident.  The 
+       virus will be located at the end of all infected files.  The file's 
+       date and time in the DOS disk directory listing will not appear to 
+       be altered, but the seconds field will have been changed to "48". 
+       The following text string can be found within the viral code in all 
+       Shiny Happy infected programs: 
+ 
+               "Shiny Happy Virus by Hellraiser and Dark Angel 
+                of Phalcon/Skism" 
+ 
+       When the Shiny Happy virus is memory resident, it will change the 
+       character sequence ":-)" to ":-(" when it is typed on the system 
+       keyboard. 

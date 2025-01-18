@@ -1,0 +1,152 @@
+Virus Name:  Scream 
+ Aliases:     Fist, Screaming Fist 
+ V Status:    Rare, Except Scream 2-696, which is Common in USA & Canada 
+ Discovered:  February, 1992 
+ Symptoms:    .COM & .EXE growth; decrease in total system & available free 
+              memory 
+ Origin:      Canada 
+ Eff Length:  711 - 1,191 Bytes 
+ Type Code:   PRtAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  AVTK, ViruScan, F-Prot, IBMAV, NAVDX, 
+                    NAV, Sweep, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, IBMAV/N, NAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Scream, or Screaming Fist, virus was isolated in Canada in 
+       February, 1992.  Scream is a memory resident infector of .COM and 
+       .EXE programs, including COMMAND.COM. 
+ 
+       The first time a program infected with the Scream virus is executed, 
+       this virus will install itself memory resident at the top of system 
+       memory but below the 640K DOS boundary, moving interrupt 12's 
+       return.  Total system and available free memory, as indicated by 
+       the DOS CHKDSK program, will have decreased by 2,048 bytes. 
+       Interrupts 21 and 24 will be hooked by Scream in memory.  Also at 
+       this time, the virus will check to see if C:\COMMAND.COM has been 
+       infected by the virus.  If it is not infected, the virus will 
+       promptly infect it.  The copy of COMMAND.COM located on the current 
+       drive may also become infected. 
+ 
+       Once the Scream virus is memory resident, it will infect .COM and 
+       .EXE programs when they are executed or opened for any reason. 
+       Infected .COM programs will have a file length increase of 711 bytes. 
+       Infected .EXE programs will have a file length increase of 711 to 
+       1,191 bytes.  In both cases, the virus will be located at the end 
+       of the infected program.  The file's date and time in the DOS disk 
+       directory listing will not have been altered. 
+ 
+       Two text strings can be found in the Scream viral code in all 
+       infected programs: 
+ 
+               "Screaming Fist" 
+               "C:\COMMAND.COM" 
+ 
+       It is unknown if Scream does anything besides replicate. 
+ 
+       Known variant(s) of Scream are: 
+       Scream 1B: The Scream 1B virus is functionally equivalent to 
+                 the Scream virus described above.  It has four bytes 
+                 which differ from the original. 
+                 Origin:  Canada  April, 1992. 
+       Scream 2: The Scream 2 virus is based on the Scream virus.  It 
+                 adds 838 bytes to the .COM programs it infects, and 838 
+                 to 1,318 bytes to .EXE programs.  Like Scream, the virus 
+                 will be located at the end of the infected file.  This 
+                 variant is encrypted, and no text strings are visible in 
+                 its viral code in infected files. 
+                 Origin:  Canada  February, 1992. 
+       Scream 2B: The Scream 2B virus is a 692 byte variant of the 
+                 Scream virus.  When it is memory resident, total system 
+                 and available free memory, as measured by the DOS 
+                 CHKDSK program, will have decreased by 2,048 bytes. 
+                 Interrupts 21 and 24 will be hooked by Scream 2B.  Once 
+                 Scream 2B is resident, it will infect .COM and .EXE 
+                 programs when they are executed, opened, or copied.  .COM 
+                 programs will increase in size by 692 bytes.  .EXE 
+                 programs will have a file length increase of 898 to 1,172 
+                 bytes.  In both cases, the virus will be located at the 
+                 end of the infected file. 
+                 Origin:  Canada  April, 1992. 
+       Scream 2C: The Scream 2C virus is functionally identical to 
+                 Scream 2B.  It is a minor variant. 
+                 Origin:  Canada  April, 1992. 
+       Scream 2-696: The Scream 2-696 virus was discovered in the 
+                 United States in May, 1992.  When it is memory resident, 
+                 total system and available free memory, as measured by 
+                 the DOS CHKDSK program, will have decreased by 2,048 
+                 bytes, and interrupt 21 will be hooked.  Once it is 
+                 memory resident, it will infect .COM and .EXE programs 
+                 when they are executed, opened, or copied.  .COM programs 
+                 will have a file length increase of 696 bytes.  .EXE 
+                 programs will have increased in size by 902 to 1,176 
+                 bytes.  In both cases, the virus will be located at the 
+                 end of the infected file.  Scream 2-696 is polymorphic, 
+                 employing a complex encryption mechanism.  As of May, 
+                 1992, it was confirmed by several large infections to 
+                 be in the public domain, and is considered a common virus 
+                 in the United States as a result. 
+                 Origin:  Canada  May, 1992. 
+       Scream 2-732: The Scream 2-732 virus was isolated in the 
+                 United States in May, 1992.  It is similar in many 
+                 respects to the Scream 2-696 variant.  .COM programs, 
+                 however, will increase in size by 732 bytes.  .EXE programs 
+                 will have a file length increase of 1,128 to 1,212 bytes. 
+                 In both cases the virus will be located at the end of the 
+                 file.  Like Scream 2-696, this variant is polymorphic. 
+                 Origin:  United States  May, 1992. 
+       Scream-650: The Scream-650 virus is a 650 byte variant of the 
+                 Scream virus.  This virus infects the C: drive root 
+                 directory copy of COMMAND.COM when the first infected 
+                 program is executed.  It does not become memory resident 
+                 until the system is booted from booted from the system 
+                 hard disk and the infected copy of COMMAND.COM.  When it 
+                 is memory resident, total system and available free memory, 
+                 as measured by the DOS CHKDSK program, will have decreased 
+                 by 2,048 bytes.  Interrupts 21 will be hooked by Scream-650. 
+                 Once it is resident, it will infect .COM programs when they 
+                 are executed, opened, or copied.  Infected programs will 
+                 have a file length increase of 650 bytes with the virus 
+                 being located at the end of the file.  The program's date 
+                 and time in the DOS disk directory listing will not be 
+                 altered.  The following text strings are encrypted within 
+                 the viral code: 
+                 "Screaming Fist (c)12/91" 
+                 "C:\COMMAND.COM" 
+                 Origin:  Canada  November, 1992. 
+       Scream.839: Received in December, 1996, this is a 839 byte 
+           variant of the Scream virus described above.  Its size in memory 
+           is 1,024 bytes, hooking interrupt 21.  Once resident, it infects 
+           .COM and .EXE files, including COMMAND.COM and the copy of 
+           COMMAND.COM located in the C: drive root directory, when they 
+           are executed or opened, but not on copy.  Infected .COM files 
+           will have a file length increase of 839 bytes.  .EXE files will 
+           increase in size by 839 to approximately 1,339 bytes as the virus 
+           pads the file length to a multiple of 512 on .EXE files.  The 
+           viral code will be located at the end of the file.  The program's 
+           date and time in the DOS disk directory listing will not be 
+           altered.  The following text strings are encrypted within the 
+           viral code: 
+           "Screaming FistII" 
+           "C:\COMMAND.COM" 
+           Origin:  Unknown  December, 1996. 
+       Scream.846: Received in December, 1996, this is a 846 byte 
+           variant of the Scream virus described above.  Its size in memory 
+           is 1,024 bytes, hooking interrupt 21.  Once resident, it infects 
+           .COM and .EXE files, including COMMAND.COM and the copy of 
+           COMMAND.COM located in the C: drive root directory, when they 
+           are executed or opened, but not on copy.  Infected .COM files 
+           will have a file length increase of 846 bytes.  .EXE files will 
+           increase in size by 846 to approximately 1,346 bytes as the virus 
+           pads the file length to a multiple of 512 on .EXE files.  The 
+           viral code will be located at the end of the file.  The program's 
+           date and time in the DOS disk directory listing will not be 
+           altered.  The following text strings are encrypted within the 
+           viral code: 
+           "Screaming FistII" 
+           "C:\COMMAND.COM" 
+           Origin:  Unknown  December, 1996. 
+ 
+ 
+       See:   Emf   Enemy 

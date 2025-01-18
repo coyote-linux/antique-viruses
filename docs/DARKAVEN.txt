@@ -1,0 +1,402 @@
+ Virus Name:  Dark Avenger 
+ Aliases:     Amilia, Black Avenger, Boroda, Eddie, Diana, Rabid Avenger, 
+              VAN Soft, PS!KO, Evil Men, Dark Quest 
+ V Status:    Common 
+ Discovery:   September, 1989 
+ Symptoms:    TSR; .COM, .EXE, .SYS file growth; file/disk corruption 
+ Origin:      Bulgaria 
+ Isolated:    Davis, California, United States 
+ Eff Length:  1,800 bytes 
+ Type Code:   PRsAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV or delete infected files 
+ 
+ General Comments: 
+       Dark Avenger was first isolated in the United States at the 
+       University of California at Davis.  It infects .COM, .EXE, and 
+       overlay files, including COMMAND.COM.  The virus will install itself 
+       into system memory, becoming resident, and is extremely prolific at 
+       infecting any executable files that are opened for any reason. 
+       This includes using the DOS COPY and XCOPY commands to copy 
+       uninfected files, both the source and the target files will end up 
+       being infected.  Infected files will have their lengths increased by 
+       1,800 bytes. 
+ 
+       The Dark Avenger virus does perform malicious damage.  The virus 
+       maintains a counter in the disk's boot sector.  After each sixteenth 
+       file is infected, the virus will randomly overwrite a sector on the 
+       disk with a portion of the Dark Avenger virus code.  If the randomly 
+       selected sector is a portion of a program or data file, the program 
+       or data file will be corrupted.  Programs and data files which have 
+       been corrupted by a sector being overwritten are permanently damaged 
+       and cannot be repaired since the original sector is lost. 
+ 
+       If you are infected with Dark Avenger, shutdown your computer and 
+       reboot from a Write Protected boot diskette for the system, then 
+       carefully use a disinfector, following all instructions. Be sure to 
+       re-scan the system for infection once you have finished disinfecting 
+       it. 
+ 
+       The Dark Avenger virus contains the words: "The Dark Avenger, 
+       copyright 1988, 1989", as well as the message: "This program was 
+       written in the city of Sofia.  Eddie lives.... Somewhere in Time!". 
+ 
+       This virus bears no resemblance or similarity to the Jerusalem 
+       viruses, even though they are similar in size. 
+ 
+       Known variant(s) of Dark Avenger are: 
+       Amilia: Based on the Dark Avenger virus, Amilia adds 1,614 bytes 
+               to the .COM and .EXE programs it infects.  It will also 
+               infect COMMAND.COM.  The virus will be located at the end of 
+               infected files.  Decrease in total system and available free 
+               memory, as indicated by the DOS CHKDSK program, will be 1,632 
+               bytes.  Interrupt 21 will be hooked.  The Amilia virus 
+               activates on February 2nd, at which time it will display the 
+               following message after becoming memory resident, and a 
+               system hang will occur: 
+               "AmiLiA I Virii - [NukE] 
+                Released Dec91 Montreal 
+                (C) NukE Development Software Inc." 
+               Besides the above message, the following text strings can be 
+               found within the viral code in infected programs: 
+               "antideb" 
+               "AmiLiA I Virii  -  [NukE] i99i  By Rock Steady/NukE" 
+               Origin:  Montreal, Canada  December, 1991. 
+       Boroda: Similar to Dark Avenger-D, this variant contains only 
+               one text string: "B O R O D A".  It adds 1,800 bytes to the 
+               .COM files it infects, and 1,800 to 1,814 bytes to the 
+               .EXE files it infects.  Decrease in total system and 
+               available free memory, as indicated by the DOS CHKDSK 
+               program, will be 3,696 bytes.  Interrupts 21 and 27 will be 
+               hooked.  As with the original Dark Avenger, it will 
+               modify the disk boot sector, and occassionally overwrite a 
+               sector of the disk with a copy of itself, thus damaging 
+               files. 
+               Origin:  Unknown  January, 1992. 
+       Dark Avenger.1E: Similar to Dark Avenger-D, this variant adds 
+                       1,800 bytes to the .COM programs it infects, and 
+                       1,800 to 1,814 bytes to the infected .EXE programs. 
+                       In both cases, the virus is located at the end of 
+                       the infected program.  The text strings in this 
+                       variant are: 
+                       "Eddie lives...somewhere in time!" 
+                       "Diana P." 
+                       "This program was written in the city of Sofia" 
+                       "(C) 1988-89 Dark Avenger" 
+                       Systems infected with Dark Avenger.1E will notice 
+                       that boot sectors will be slightly altered, and 
+                       programs and files may become slowly corrupted. 
+                       Once the system is booted from an infected 
+                       COMMAND.COM, the system date's format may be changed 
+                       from "mm/dd/yy" to "yyyy#mm#dd", and the ":" 
+                       character in the system time changed to "". 
+                       Origin:  Bulgaria  June, 1992. 
+       Dark Avenger.Major: Based on the Dark Avenger virus, this variant 
+                       adds 1,832 bytes to the .COM programs it infects, and 
+                       1,832 to 1,846 bytes to .EXE programs.  In both cases, 
+                       the virus is located at the end of the infected file. 
+                       The text strings in this variant are: 
+                       "Written In turbo Assember v2.84" 
+                       "(C) 1992 MajorBBS Patch v1.0" 
+                       "This Program Was Written To Patch The Backdoor Of 
+                        MajorBBS" 
+                       "(C) 1992 by Leroy Janowa" 
+                       Systems infected with Dark Avenger.Major will notice 
+                       that boot sectors will be slightly altered, and 
+                       programs and files may become slowly corrupted. 
+                       Origin:  Unknown  July, 1994. 
+       Dark Avenger.Shyster: Based on the Dark Avenger virus, this 
+                       variant's size in memory is 3,712 bytes, hooking 
+                       interrupts 21 and 27.  It adds 1,802 bytes to the .COM 
+                       programs it infects, and 1,802 to 1,816 bytes to .EXE 
+                       programs.  In both cases, the virus is located at the 
+                       end of the infected file.  One text string can be 
+                       found within the viral code in infected files: 
+                       "Shyster" 
+                       Systems infected with Dark Avenger.Shyter will notice 
+                       that boot sectors will be slightly altered, and 
+                       programs and files may become slowly corrupted. 
+                       Origin:  Unknown  August, 1994. 
+       Dark Avenger-B: Very similar to the Dark Avenger virus, the major 
+                       difference is that .COM files will be reinfected, 
+                       adding 1,800 bytes to the file length with each 
+                       infection.  This variant also becomes memory 
+                       resident in high system memory instead of being a 
+                       low system memory TSR. Text strings found in the 
+                       virus's code include: 
+                           "Eddie lives...somewhere in time!" 
+                           "Diana P." 
+                           "This program was written in the city of Sofia" 
+                           "(C)1988-1989 Dark Avenger" 
+       Dark Avenger-C: Very similar to the Dark Avenger virus, this 
+                       variant adds 1,800 to 1,814 bytes to infected files. 
+                       The copyright notice is also different, having been 
+                       changed to: "(C) 1988-89 Dark Avenger". 
+       Dark Avenger-D: This variant is very similar to Dark Avenger-C, 
+                       adding 1,800 to 1,814 bytes to infected files.  It 
+                       has the same copyright notice as Dark Avenger-C. 
+       Dark Avenger-Romanian: Received in November, 1992, this variant 
+                       of Dark Avenger is from Romania.  The major change 
+                       with this variant is that it will only infect .EXE 
+                       programs, adding 1,800 to 1,814 bytes to the file's 
+                       length.  It contains the same text strings as 
+                       Dark Avenger-B. 
+                       Origin:  Romania  November, 1992. 
+       Dark Avenger 1801: Similar to the Dark Avenger virus, the major 
+                          difference is that this variant has an effective 
+                          length of 1,801 bytes, one byte longer than the 
+                          Dark Avenger virus.  Like Dark Avenger-B, it will 
+                          become memory resident at the top of system memory 
+                          instead of being a low system memory TSR.  It does 
+                          not, however, reinfect .COM files as Dark Avenger-B 
+                          does.  The same text strings found in Dark Avenger 
+                          and Dark Avenger-B appear in this variant. 
+       Dark Avenger-1693: The Dark Avenger-1693 variant is a 1,693 byte 
+              variant of the Dark Avenger virus.  Its size in memory is 3,696 
+              bytes at the top of system memory but below the 640K DOS 
+              boundary, hooking interrupts 21 and 27.  It adds 1,693 bytes to 
+              the .COM programs it infects, and 1,693 to 1,707 bytes to .EXE 
+              programs.  The virus will be located at the end of the file, 
+              and the file's date and time in the DOS disk directory listing 
+              will not be altered.  This variant does not hide the file 
+              length increase.  The boot sector of infected disks will have 
+              been altered as the virus keeps a counter there. No text 
+              strings are visible within the viral code.  Programs infected 
+              with this variant will frequently hang the system when they are 
+              executed. 
+              Origin:  Unknown  January, 1994. 
+       Dark Avenger.1797: The Dark Avenger.1797 variant is a 1,797 byte 
+              variant of the Dark Avenger virus.  Its size in memory is 3,696 
+              bytes at the top of system memory but below the 640K DOS 
+              boundary, hooking interrupts 21 and 27.  It adds 1,797 bytes to 
+              the .COM programs it infects, and 1,797 to 1,811 bytes to .EXE 
+              programs.  The virus will be located at the end of the file, 
+              and the file's date and time in the DOS disk directory listing 
+              will not be altered.  This variant does not hide the file 
+              length increase.  The boot sector of infected disks will have 
+              been altered as the virus keeps a counter there. The following 
+              text strings are visible within the viral code in infected 
+              programs: 
+              "McAfee and Associated (C)1992" 
+              "Diana P." 
+              "This program was written in the city of Sofia 
+               (C) 1988-89 Dark Avenger" 
+              Origin:  Unknown  August, 1994. 
+       Dark Avenger-1799: The Dark Avenger-1799 variant is a 1,799 byte 
+              variant of the Dark Avenger virus.  Its size in memory is 3,696 
+              bytes at the top of system memory but below the 640K DOS 
+              boundary, hooking interrupts 21 and 27.  It adds 1,799 bytes to 
+              the .COM programs it infects, and 1,799 to 1,813 bytes to .EXE 
+              programs.  The virus will be located at the end of the file, 
+              and the file's date and time in the DOS disk directory listing 
+              will not be altered.  This variant does not hide the file 
+              length increase.  The boot sector of infected disks will have 
+              been altered as the virus keeps a counter there. The following 
+              text strings are visible within the viral code in infected 
+              programs: 
+              "Francis lives...in Hong Kong!" 
+              "Diana P." 
+              "This program was written in the city of Sofia 
+               (C) 1988-89 Dark Avenger" 
+              Origin:  Unknown  January, 1994. 
+       Dark Avenger.1800.Satan: The Dark Avenger.1800.Satan variant is a 
+              1,800 byte variant of the Dark Avenger virus.  Its size in 
+              memory is 3,696 bytes at the top of system memory but below the 
+              640K DOS boundary, hooking interrupts 21 and 27.  It adds 1,800 
+              bytes to the .COM programs it infects, and 1,800 to 1,814 bytes 
+              to .EXE programs.  The virus will be located at the end of the 
+              file, and the file's date and time in the DOS disk directory 
+              listing will not be altered.  This variant does not hide the 
+              file length increase.  The boot sector of infected disks will 
+              have been altered as the virus keeps a counter there. The 
+              following text strings are visible within the viral code in 
+              infected programs: 
+              "Satan Virus * Satan Ver 2.09" 
+              "- Satan Virus - 1994 Written by Mad Satan in 
+               TAIWAN.  =Ver 2.09=" 
+              Origin:  Unknown  August, 1994. 
+       Dark Avenger-1813: The Dark Avenger-1813 variant is a 1,813 byte 
+              variant of the Dark Avenger virus.  Its size in memory is 3,696 
+              bytes at the top of system memory but below the 640K DOS 
+              boundary, hooking interrupts 21 and 27.  It adds 1,813 bytes to 
+              the .COM programs it infects, and 1,813 to 1,827 bytes to .EXE 
+              programs.  The virus will be located at the end of the file, 
+              and the file's date and time in the DOS disk directory listing 
+              will not be altered.  The Dark Avenger-1813 virus attempts to 
+              hide the file length increase on infected files, though on .EXE 
+              programs they may appear to have increased in size by up to 16 
+              bytes when the virus is memory resident.  This variant is also 
+              unable to determine properly when it has previously infected 
+              a file, so it ends up reinfecting files.  Reinfections will add 
+              an additional 1,813 bytes to the file, this increase is not 
+              hidden by the virus in memory.  The boot sector of infected 
+              disks will have been altered as the virus keeps a counter 
+              there. The following text strings are visible within the viral 
+              code in infected programs: 
+              "Eddie lives...somewhere in time!" 
+              "Diana P." 
+              "This program was written in the city of Sofia 
+               (C) 1988-89 Dark Avenger" 
+              Origin:  Unknown  January, 1994. 
+       Dark Quest: The Dark Quest variant is a 1,800 byte variant of 
+              the Dark Avenger virus.  Dark Quest's size in memory is 3,696 
+              bytes at the top of system memory but below the 640K DOS 
+              boundary, hooking interrupts 21, 22, and 27.  It adds 1,800 
+              bytes to the .COM programs it infects, and 1,800 to 1,815 
+              bytes to .EXE programs.  The virus will be located at the end 
+              of the file, and the file's date and time in the DOS disk 
+              directory listing will not be altered.  This variant does not 
+              hide the file length increase.  The boot sector of infected 
+              disks will have been altered as the virus keeps a counter 
+              there. The following text strings can be found within the 
+              viral code in all Dark Quest infected programs: 
+              "Never buy Quest computers again!" 
+              "iana P." 
+              "This program is not dangerous stamp." 
+              "All new software seriosly danger" 
+              Origin:  Unknown  December, 1992. 
+       Evil Men: Similar to Dark Avenger-D, this variant contains the 
+                 following text strings: 
+                 "The evil that men do !" 
+                 "This program was written in the city of Sofia" 
+                 "(C) 1988-89 Dark Avenger" 
+                 "Diana P." 
+                 Origin:  Unknown  January, 1992. 
+       Kang Yong: The Kang Yong variant is a 1,947 byte variant of Dark 
+              Avenger.  Unlike other members of this group, it reinfects 
+              previously infected programs.  Kang Yong's size in memory is 
+              3,984 bytes at the top of system memory but below the 640K 
+              DOS boundary, hooking interrupts 21 and 27.  It adds 1,947 
+              bytes to the .COM programs it infects, and 1,947 to 1,961 
+              bytes to .EXE programs.  Reinfections will add an additional 
+              1,947 bytes.  The virus will be located at the end of the 
+              file, and the file's date and time in the DOS disk directory 
+              listing will not be altered.  This variant does not hide the 
+              file length increase.  The boot sector of infected diskettes 
+              will have been altered as the virus keeps a counter there. 
+              The following text strings can be found within the viral 
+              code: 
+              "If you are a thieve man , virus lives...somewhere always!" 
+              "You must become good man!" 
+              "Kang Yong II" 
+              "This program was adjustted in 'Commputer Home' of KOREA" 
+              "(C) 1988-89 ,LSR+KYL 
+              Origin:  Korea  October, 1992. 
+       Mercury: The Mercury variant is a 2,829 byte variant of the Dark 
+              Avenger virus.  Its size in memory is 5,808 bytes at the top of 
+              system memory but below the 640K DOS boundary, hooking 
+              interrupts 08, 21 and 27.  It adds 2,829 bytes to the .COM 
+              programs it infects, and 2,829 to 2,843 bytes to .EXE programs. 
+              Mercury hides this file length increase when it is memory 
+              resident.  The virus will be located at the end of the file, 
+              and the file's date and time in the DOS disk directory listing 
+              will not be altered.  The boot sector of infected disks will 
+              not be altered. The following text strings are encrypted within 
+              the viral code in infected programs: 
+              "If You Liked This Virus, Call Asaf, At +972-4-225288!" 
+              "Written by Jasper, and Dedicated to Freddie Mercury." 
+              Symptoms of a Mercury infection include a sluggish response to 
+              DOS DIR commands, DOS CHKDSK file allocation errors on all 
+              infected programs, as well as random sectors being overwritten 
+              on the current drive. 
+              Origin:  Unknown  January, 1994. 
+       PS!KO: The PS!KO variant of Dark Avenger was received in 
+              November, 1991.  It is from the United States.  It addes 
+              1,803 to 1,817 bytes to programs which it infects.  The 
+              following text strings can be found in infected programs: 
+              "The Ps!ko Virus - Version 1.0" 
+              "The Ps!ko Virus - Written in the USA," 
+              "(C)1991 by SiTT and The Viola" 
+              Symptoms of an infection by PS!KO include .COM programs 
+              failing to execute properly, and frequent system hangs. 
+              Origin:  United States  November, 1991. 
+       PS!KO-1459: The PS!KO-1459 variant is based on the PS!KO-1687 
+              variant described below.  PS!KO-1459's size in memory is 
+              3,040 bytes at the top of system memory but below the 640K 
+              DOS boundary, hooking interrupts 21 and 27.  It adds 1,459 
+              bytes to the .COM programs it infects, and 1,459 to 1,473 
+              bytes to .EXE programs.  In both cases, the virus will be 
+              located at the end of the file, and the file's date and time 
+              in the DOS disk directory listing will not be altered.  This 
+              variant hides the file length increase when the virus is 
+              memory resident.  The DOS CHKDSK program will return file 
+              allocation errors on all infected programs when PS!KO-1459 is 
+              in memory.  There are no text strings within the viral code. 
+              Origin:  United States  September, 1992. 
+       PS!KO-1687: The PS!KO-1687 variant is based on the PS!KO-1800 
+              variant described below.  PS!KO-1687's size in memory is 
+              3,472 bytes, hooking interrupts 21 and 27.  It adds 1,687 
+              bytes to the .COM programs it infects, and 1,687 to 1,701 
+              bytes to .EXE programs.  In both cases, the virus will be 
+              located at the end of the file, and the file's date and time 
+              in the DOS disk directory listing will not be altered.  This 
+              variant does not hide the file length increase when it is 
+              memory resident.   There are no text strings within the viral 
+              code. 
+              Origin:  United States  September, 1992. 
+       PS!KO-1800: The PS!KO-1800 variant is based on the PS!KO variant 
+              described above.  PS!KO-1800's size in memory is 3,696 bytes, 
+              hooking interrupts 21 and 27.  It adds 1,800 bytes to the .COM 
+              programs it infects, and 1,800 to 1,814 bytes to the .EXE 
+              programs it infects.  In both cases, the virus will be located 
+              at the end of the file, and the file's date and time in the 
+              DOS disk directory listing will not be altered.  This variant 
+              does not hide the file length increase when it is memory 
+              resident.  The following text strings can be found in 
+              infected programs: 
+              "The Ps!ko Virus -- Version 1.0" 
+              "SiTT" 
+              "The Ps!ko Virus - Written in the USA, 
+               (C)1991 by SiTT and The Violator" 
+              Origin:  United States  September, 1992. 
+       Rabid Avenger: Rabid Avenger was isolated in the United States in 
+                      April 1991.  This variant of Dark Avenger is based on 
+                      the Dark Avenger-B variant.  Its memory resident 
+                      portion is located at the top of system memory but 
+                      below the 640K DOS boundary, and is 3,696 bytes in 
+                      length.  Interrupts 21 and 27 are hooked. Infected 
+                      .COM files will increase in length by 1,800 bytes. 
+                      Infected .EXE files will increase in size by 1,806 to 
+                      1,823 bytes.  In both cases, the virus will be 
+                      located at the end of the infected file.  Text 
+                      strings found in the virus's code include: 
+                         "<- Thanks to the Dark Avenger ->" 
+                         "Eat us!" 
+                         "(C) 1991 RABID International Development Corp!" 
+                         "Scan String Killer Test" 
+                      This variant has also been altered so as to avoid 
+                      detection by anti-viral utilities which are able to 
+                      detect Dark Avenger. 
+       Sneaker: Sneaker was submitted in September, 1991.  Its origin 
+                or point of isolation is unknown.  The following text 
+                strings are visible within the viral code: 
+                "Nadia FOTTIT!!...By the Sneaker" 
+                "Diana P." 
+                "This was written in the city of Sofia 
+                 (C) 1988-89 Dark Avenger" 
+                 Infected .COM programs will increase in size by 1,800 
+                 bytes with the virus being located at the end of the 
+                 infected file.  Infected .EXE programs increase in size 
+                 by 1,800 to 1,814 bytes with the virus also at the end 
+                 of the infected file. 
+                 Origin:  Unknown  September, 1993. 
+       VAN Soft: VAN Soft was received from Europe in May, 1991.  This 
+                 variant is from Bulgaria and is based on the original 
+                 Dark Avenger virus.  The major change in this variant is 
+                 that the text strings have been altered so that they are 
+                 now: 
+ 
+                      "V.A.N. Soft & MMMM PRESENT:SOFIA" 
+                      "VAN&MMMM" 
+ 
+                 Infected .COM programs will increase in size by 1,800 
+                 bytes with the virus being located at the end of the 
+                 infected file.  Infected .EXE programs increase in size 
+                 by 1,806 to 1,824 bytes with the virus also at the end 
+                 of the infected file. 
+ 
+       See:   1963      CB-1530   Jericho 
+              Outland   QP3       V651      V1024       V2000

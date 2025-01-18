@@ -1,0 +1,39 @@
+Virus Name:  Chad 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   September, 1992 
+ Symptoms:    .COM file growth; file date/time changed to 00-00-80 00:00; 
+              message displayed 
+ Origin:      England 
+ Eff Length:  751 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  F-Prot, Sweep, ViruScan, IBMAV, AVTK, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, IBMAV/N, 
+                    AVTK/N, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Chad virus was submitted in September, 1992.  It is originally 
+       from England.  Chad is a non-resident, direct action infector of 
+       .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Chad virus is executed, this 
+       virus will search the current directory to locate a previouly 
+       uninfected .COM program to infect.  If one is found, it will 
+       be infected by the virus.  Programs infected with the Chad virus 
+       will have a file length increase of 751 bytes with the virus 
+       being located at the end of the file.  The program's date and 
+       time in the DOS disk directory listing will appear to be blank 
+       or missing, though it has actually been set to 00-00-80 00:00. 
+ 
+       The following text strings can be found within the Chad viral 
+       code in all infected programs: 
+ 
+               "*.COM" 
+               "Software ....." 
+               "WOT!!  No Anti - Virus" 
+               "CHAD Against Damaging Viruses ... Save Our Software. 1992." 
+ 
+       The Chad virus contains code to display the message above once the 
+       10th generation of the virus has occurred. 

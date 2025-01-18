@@ -1,0 +1,143 @@
+Virus Name:  CyberTech 
+ Aliases:     CyberTech-A 
+ V Status:    Rare 
+ Discovery:   December, 1992 
+ Symptoms:    .COM file growth; message; removal of ViruScan validate codes 
+              from files 
+ Origin:      The Netherlands (?) 
+ Eff Length:  1,066 or 1,076 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  Sweep, ViruScan, AVTK, F-Prot, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    Sweep/N, NShld, AVTK/N, LProt, NProt, NAV/N, IBMAV/N, 
+                    Innoc 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The CyberTech, or CyberTech-A, virus was submitted in December, 1992. 
+       The origin of this virus appears to be The Netherlands.  CyberTech 
+       is a non-resident direct action infector of .COM programs, including 
+       COMMAND.COM. 
+ 
+       When a program infected with the CyberTech virus is executed, the 
+       CyberTech virus will infect one .COM program located in the current 
+       directory.  Infected programs will have a file length increase of 
+       1,066 or 1,076 bytes, with the virus being located at the end of the 
+       file.  Programs which have increased in size by 1,066 bytes will have 
+       had 10 bytes of validation information added by the ViruScan program 
+       removed.  The program's date and time in the DOS disk directory 
+       listing will not have been altered. 
+ 
+       The CyberTech virus will occassionally display the following message 
+       when an infected program is executed: 
+ 
+               "CyberTech Virus - Strain A 
+                (C) 1992 John Tardy of Trident" 
+ 
+       After December 31, 1992, the virus will display the following 
+       message and disinfect the file the user is executing each time an 
+       infected program is executed: 
+ 
+               "The previous year you have been infected by a virus 
+                without knowing or removing it. To be gentle to you 
+                I decide to remove myself from your system. I suggest 
+                you better buy ViruScan of McAfee to ensure yourself 
+                complete security of your precious data. Next time you 
+                could be infected with a malevolent virus. 
+                May I say goodbye to you now...." 
+ 
+       All of the above text is encrypted within the virus, as is the 
+       following additional text strings: 
+ 
+               "chklist.cps" 
+               "*.COM" 
+ 
+       CyberTech may also interfer with the functioning of the Central 
+       Point Anti-Virus program. 
+ 
+       Known variant(s) of CyberTech are: 
+       CyberTech-222: Based on the CyberTech virus described above, 
+                    this variant also infects one .COM program each time 
+                    an infected program is executed.  Infected programs 
+                    will have a file length increase of 222 bytes with the 
+                    virus being located at the end of the file.  The file's 
+                    date and time in the DOS disk directory listing will 
+                    not be altered.  One tech string is visible within the 
+                    viral code: 
+                    "*.COM" 
+                    Origin:  The Netherlands  June, 1993. 
+       CyberTech-501: Also known as Ice Cream, CyberTech-501 infects one 
+                    .COM program in the current directory each time an 
+                    infected program is executed.  Infected programs will 
+                    have a file length increase of 501 bytes with the 
+                    virus being located at the end of the file.  The file's 
+                    date and time in the DOS disk directory listing will 
+                    not be altered, though the seconds field will have been 
+                    set to "02".  The following text strings are encrypted 
+                    within the CyberTech-501 viral code: 
+                    "I scream, you scream, we both scream for an ice-cream!" 
+                    "John Tardy" 
+                    "*.COM" 
+                    Origin:  The Netherlands  October, 1993. 
+       CyberTech.552: CyberTech.552 infects one .COM program in the 
+                    current directory each time an infected program is 
+                    executed.  Infected programs will have a file length 
+                    increase of 552 bytes with the virus being located at 
+                    the end of the file.  The file's date and time in the 
+                    DOS disk directory listing will not be altered, though 
+                    the seconds field will have been set to "02".  The 
+                    following text strings are encrypted within the 
+                    CyberTech.552 viral code: 
+                    "Mourners of a dying world" 
+                    "Too late to reconcile" 
+                    "Into Everlasting Fire" 
+                    "Can't you see it's Satan's world" 
+                    "TRIDENT" 
+                    "John Tardy" 
+                    "*.COM" 
+                    Origin:  Unknown  July, 1994. 
+       CyberTech-654: CyberTech-654 infects one .COM program in the 
+                    current directory each time an infected program is 
+                    executed.  Infected programs will have a file length 
+                    increase of 654 bytes with the virus being located at 
+                    the end of the file.  The file's date and time in the 
+                    DOS disk directory listing will not be altered, though 
+                    the seconds field will have been set to "02".  The 
+                    following text strings are encrypted within the 
+                    CyberTech-654 viral code: 
+                    "(C) 1992 John Tardy / Trident" 
+                    "Satan Spawn, the Caco-Daemon - Mor(T)alities Death" 
+                    "*.COM" 
+                    Origin:  The Netherlands  January, 1994. 
+       CyberTech-B: Based on the CyberTech virus described above, this 
+                    variant adds 1,205 or 1,215 bytes to the .COM programs 
+                    it infects, with the exception of COMMAND.COM.  In the 
+                    case of COMMAND.COM, it will overwrite part of the slack 
+                    (hex 00) area in the file so there will be no file 
+                    length increase.  It occassionally displays the 
+                    following message when an infected program is executed: 
+                    "CyberTech Virus - Strain B 
+                     (C) 1992 John Tardy of Trident" 
+                    The virus activates after December 31, 1993, when it 
+                    will display the same message as the original virus 
+                    and disinfect the program the user is executing. 
+                    Origin:  The Netherlands  December 1992. 
+       CyberTech.1078: Received in January, 1996, this is a 1,078 byte 
+                    variant of the CyberTech virus described above.  It adds 
+                    1,078 bytes to the .COM files it infects, the virus 
+                    being located at the end of the file.  The file's date 
+                    and time in the DOS disk directory listing will not be 
+                    alterer.  The following text strings are encrypted 
+                    within the viral code: 
+                    "The previous year you have been infected by a virus" 
+                    "without knowing or removing it. To be gentle to you" 
+                    "I decide to remove myself from your system. I suggest" 
+                    "you better buy ViruScan of McAfee to ensure yourself" 
+                    "complete security of your precious data. Next time your" 
+                    "could be infected with a malevolent virus. " 
+                    "May I say goodbye to you now...." 
+                    "CyberTech Virus - Strain A" 
+                    "(C) 1992 John Tardy of Trident" 
+                    "chklist.cps" 
+                    "*.COM" 
+                    Origin:  The Netherlands  January 1996. 

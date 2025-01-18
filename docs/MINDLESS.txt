@@ -1,0 +1,49 @@
+Virus Name:  Mindless 
+ Aliases: 
+ V Status:    Viron 
+ Discovered:  November, 1992 
+ Symptoms:    .COM files overwritten; program corruption; hard disk 
+              corruption; data file corruption 
+ Origin:      United States 
+ Eff Length:  423 Bytes Overwriting 
+ Type Code:   ONCK - Overwriting Non-Resident .COM Infector 
+ Detection Method:  AVTK, ViruScan, F-Prot, IBMAV, Sweep, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, LProt, NProt, IBMAV/N, Innoc, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Mindless virus was submitted in November, 1992.  It is originally 
+       from the United States.  The Mindless virus is a non-resident 
+       overwriting virus which infects .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Mindless virus is executed, the 
+       Mindless virus will infect all of the .COM programs in the current 
+       directory.  Infected programs will have the first 423 bytes of the 
+       host program overwritten with the viral code.  The file will not 
+       increase in size unless it was originally smaller than 423 bytes, 
+       in which case it will become 423 bytes in size.  The file's date 
+       and time in the DOS disk directory listing will not be altered.  The 
+       following text string is visible within the viral code in Mindless 
+       infected programs: 
+ 
+               "*.c*" 
+ 
+       On Sundays, the Mindless virus activates when an infected program 
+       is executed.  At this time, it will trash the current drive and the 
+       C: drive, overwriting the boot sectors and the beginning of the 
+       drive.  The following text strings can be found in the boot sectors 
+       on the trashed drives: 
+ 
+               "[Youngsters Against McAffee] -NATAS KAUPAS" 
+               "The Mindless Virus v1.0" 
+ 
+       This text is encrypted within the viral code so it is not visible 
+       in infected programs. 
+ 
+       The Mindless virus will also corrupt data files which have a file 
+       extension starting with "C", infecting them as though they were 
+       .COM programs. 
+ 
+  

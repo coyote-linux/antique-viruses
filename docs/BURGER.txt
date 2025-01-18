@@ -1,0 +1,83 @@
+Virus Name:  Burger 
+ Aliases:     404, 505, 509, 537, 540, 541, 542, 560, 560-B, 909090h, CIA, 
+              CIA-2 
+ V Status:    Viron 
+ Discovery:   1986 
+ Symptoms:    Programs will not run after infection 
+ Origin:      West Germany 
+ Eff Length:  560 Bytes 
+ Type Code:   ONAK - Overwriting Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, NAV, F-Prot, AVTK, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Burger, or 909090h, virus was written and copyrighted in 1986 by 
+       Ralf Burger of West Germany.  This virus is extinct in the "public 
+       domain".  This virus is a non-resident overwriting virus, infecting 
+       .COM and .EXE files, including COMMAND.COM. 
+ 
+       When a program infected with the Burger virus is executed, the virus 
+       will attempt to infect one previously uninfected .COM file located 
+       in the C: drive root directory.  To determine if the program was 
+       previously infected, the virus checks to see if the first three 
+       bytes of the .COM file are three NOP instructions (909090h).  If the 
+       first three bytes are the NOP instructions, the virus goes on 
+       checking until it finds an uninfected .COM file.  If no uninfected 
+       .COM file exists, the virus then renames all the .EXE files in the 
+       root directory to .COM files and checks those files.  Once it finds 
+       a .COM file to infect, it overwrites the first 560 bytes of the 
+       uninfected program with the virus code.  At this point, the program 
+       the user was attempting to run will either end or hang the system. 
+       Infected programs will never execute properly as the first portion 
+       of the program has been destroyed.  Systems which have been infected 
+       with the Burger virus will fail to boot once the virus has infected 
+       the hard disk boot partition's COMMAND.COM, or the copy of 
+       COMMAND.COM on their boot diskette.  Infected files can be easily 
+       identified by the "909090B8000026A245" hex sequence located in the 
+       first nine bytes of all infected files.  Infected files cannot be 
+       disinfected, they must be replaced from a clean source. 
+ 
+       Known variant(s) of Burger are: 
+       404: Similar to the Burger virus, this variant's actual code length 
+            is 404 bytes, though the first 560 bytes of infected files will 
+            be overwritten.  Infected files will have their first nine 
+            bytes contain the hex string: "909090B8000026A245". 
+       505: Similar to the Burger virus, this variant's actual code length 
+            is 505 bytes, though the first 560 bytes of infected files will 
+            be overwritten.  Infected files will have their first nine 
+            bytes contain the hex string: "909090B8000026A3A0". 
+       509: Similar to the Burger virus, this variant's actual code length 
+            is 509 bytes, though the first 560 bytes of infected files will 
+            be overwritten.  Infected files will have their first nine 
+            bytes contain the hex string: "909090B8000026A3A4". 
+       540: Similar to the Burger virus, this variant's actual code length 
+            is 540 bytes, though the first 560 bytes of infected files will 
+            be overwritten.  Infected files will have their first nine 
+            bytes contain the hex string: "909090B8000026A3A3". 
+       541: Similar to the Burger virus, this variant overwrites the first 
+            560 bytes of infected programs, though the virus's length is 
+            actually 541 bytes.  Infected programs will start with the hex 
+            sequence: "909090B8000026A3A4". 
+       542: Similar to the Burger virus, this variant overwrites the first 
+            560 bytes of infected programs, though the virus's length is 
+            actually 542 bytes.  Infected programs will start with the hex 
+            sequence: "909090B8000026A3A5". 
+       560-B: Similar to the Burger virus, this variant overwrites the 
+              first 560 bytes of infected programs, and the virus's length 
+              is 560 bytes.  The end of the virus code contains the following 
+              text: "his file was downloaded from the Vir".  This text will 
+              appear in all replicated samples.  Infected programs will start 
+              with the hex string: "909090B8000026A3B2". 
+       CIA: Discovered in the United States in October, 1990, this virus is 
+            similar to the Burger virus described above.  The first nine 
+            bytes of all infected files in hex will be: 
+            "909090B8000026A3A5".   The actual length of this variant is 
+            541 bytes, though the first 560 bytes of infected programs are 
+            overwritten. 
+       CIA-2: Isolated in May, 1992, this variant is a minor variant of 
+            the CIA variant described above. 
+ 
+       See:  382 Recovery   405   Dewdz   VirDem   VirDem-1542   Wonderful

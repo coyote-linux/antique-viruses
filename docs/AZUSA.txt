@@ -1,0 +1,55 @@
+Virus Name:  Azusa 
+ Aliases:     Hong Kong 
+ V Status:    Common 
+ Discovery:   February, 1991 
+ Symptoms:    BSR; decrease in total system and available free memory; 
+              LPT1 & COM1 ports may be disabled 
+ Origin:      Hong Kong 
+ Eff Length:  N/A 
+ Type Code:   BRtX - Resident Boot Sector & Master Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, Sweep, AVTK, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  M-Disk/P, FDisk /MBR on DOS 5 systems 
+ 
+ General Comments: 
+       The Azusa virus was received in February, 1991.  Its origin is 
+       unknown, though its origin is believed to be Hong Kong.  This virus 
+       is a memory resident infector of diskette boot sectors and the hard 
+       disk master boot sector (partition table). 
+ 
+       The first time the system is booted from a diskette infected with 
+       the Azusa virus, the virus will become memory resident at the top of 
+       system memory, but below the 640K DOS boundary.  The virus moves the 
+       Interrupt 12 return so that the system will report 1,024 bytes less 
+       memory than is installed on the system.  At this time, the virus 
+       will infect the system's hard disk master boot sector, overwriting 
+       the master boot sector with a copy of the Azusa virus.  A copy of 
+       the original master boot sector is not stored by the virus. 
+ 
+       Once Azusa is memory resident, it will infect diskettes when they 
+       are accessed on the system with write intent (i.e., a file is opened 
+       as output, or with read/write intent) or when attempting to reboot 
+       the system from a diskette via CTL-ALT-DEL.  Diskettes are infected 
+       by copying the original diskette boot sector to track 40 sector 8, 
+       and then writing a copy of itself to the diskette's boot sector.  On 
+       diskettes other than 360K 5.25" diskettes, the original boot sector 
+       will end up in the middle of the disk, possibly corrupting files. 
+ 
+       The Azusa virus keeps track of how many times the system has been 
+       booted from an infected diskette.  After 32 boots, the virus will 
+       disable the COM1 and LPT1 ports on the system, and reset its 
+       counter. A later boot will result in the ports functioning properly 
+       again. 
+ 
+       Known variant(s) of Azusa are: 
+       Azusa 2: Submitted in April, 1991, this variant is from Hong Kong. 
+                The memory resident portion of Azusa 2 is 2,048 bytes in 
+                length, located at the top of system memory but below the 
+                640K DOS boundary.  Infection of high-density diskettes 
+                will result in severe cross-linking of files and invalid 
+                clusters, as well as 0 bytes in directories.  CTRL-C may 
+                fail to function, as well as boots from infected diskettes 
+                may hang the system.  Disabling of COM1 and LPT1 may also 
+                be experienced. 
+ 
+       See:   Evil Empire 

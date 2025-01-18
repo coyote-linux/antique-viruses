@@ -1,0 +1,39 @@
+Virus Name:  USSR 711 
+ Aliases:     USSR-711, 699, V711-2 
+ V Status:    Rare 
+ Discovered:  December, 1990 
+ Symptoms:    .COM file growth; system hangs; decrease in total system and 
+              available memory 
+ Origin:      USSR 
+ Eff Length:  704 - 719 Bytes 
+ Type Code:   PRhC - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The USSR 711 virus was submitted in December, 1990, and comes from 
+       the USSR.  This virus is a memory resident infector of .COM files. 
+       It does not infect COMMAND.COM. 
+ 
+       When the first program infected with USSR 711 is executed, the 
+       virus will install itself memory resident at the top of system 
+       memory but below the 640K DOS boundary.  This memory is reserved. 
+       The virus also hooks interrupts 08, 13, and 21.  The DOS CHKDSK 
+       program will indicate that total system memory and available free 
+       memory is 704 bytes less than what the user expects.  The interrupt 
+       12 return is not altered by this virus. 
+ 
+       After USSR 711 is memory resident, any .COM file which is executed 
+       that had an original file length of at least 1600 bytes will be 
+       infected by the virus.  Infected .COM files will increase in size 
+       by 704 to 719 bytes, and the virus will be located at the end of 
+       the infected file. 
+ 
+       Systems infected with USSR 711 may notice occasional system hangs 
+       which may occur when this virus attempts to infect .COM programs. 
+ 
+       It is unknown if USSR 711 does anything besides replicate and 
+       occasionally hang the system when infecting files. 

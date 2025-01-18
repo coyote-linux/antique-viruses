@@ -1,0 +1,37 @@
+Virus Name:  Anna 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   October, 1992 
+ Symptoms:    .COM file growth; file date/time changes 
+ Origin:      Manchester, England 
+ Eff Length:  742 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, 
+                    NAV, IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N, Innoc, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Anna virus was received from Manchester, England in October, 
+       1992.  Anna is a non-resident, direct action infector of .COM 
+       programs, including COMMAND.COM. 
+ 
+       When a program infected with the Anna virus is executed, the Anna 
+       virus will infect one .COM program located in the current directory. 
+       Infected programs will have a file length increase of 742 bytes with 
+       the virus being located at the end of the file.  The program's date 
+       and time in the DOS disk directory listing will have been updated to 
+       the current system date and time when infection occurred.  The 
+       following text strings are encrypted within the viral code: 
+ 
+               "[ANNA] Slartibartfast, ARCV NuKE the French" 
+               "Have a Cool Yule from the ARcV" 
+               "xCept Anna Jones" 
+               "I hope you get run over by a Reindeer" 
+               "Santas bringin' you a Bomb" 
+               "All my Lurve - SlarTiBarTfAsT" 
+               "(c) ARcV 1992 - England Raining Again" 
+               "\ *.  *.com" 
+ 
+       It is unknown what Anna does besides replicate. 

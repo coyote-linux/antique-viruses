@@ -1,0 +1,69 @@
+ Virus Name:  Traceback 
+ Aliases:     3066, TB 
+ V Status:    Extinct 
+ Discovered:  October, 1988 
+ Symptoms:    .COM & .EXE growth; TSR; graphic display 1 hour after boot 
+ Origin: 
+ Eff Length:  3,066 bytes 
+ Type Code:   PRsA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ General Comments: 
+       The Traceback virus infects both .COM and .EXE files, adding 3,066 
+       bytes to the length of the file.  After an infected program is 
+       executed, it will install itself memory resident and infect other 
+       programs that are opened.  Additionally, if the system date is 
+       after December 5, 1988, it will attempt to infect one additional 
+       .COM or .EXE file in the current directory.  If an uninfected file 
+       doesn't exist in the current directory, it will search the entire 
+       disk, starting at the root directory, looking for a candidate. 
+       This search process terminates if it encounters an infected file 
+       before finding a candidate non-infected file. 
+ 
+       This virus derives its name from two characteristics.  First, 
+       infected files contain the directory path of the file causing the 
+       infection within the viral code, thus is it possible to "trace 
+       back" the infection through a number of files.  Second, when it 
+       succeeds in infected another file, the virus will attempt to access 
+       the on-disk copy of the program that the copy of the virus in 
+       memory was loaded from so that it can update a counter in the 
+       virus.  The virus takes over disk error handling while trying to 
+       update the original infected program, so if it can't infect it, the 
+       user will be unaware that an error occurred. 
+ 
+       The primary symptom of the Traceback virus having infected the 
+       system is that if the system date is after December 28, 1988, the 
+       memory resident virus will produce a screen display with a 
+       cascading effect similar to the Cascade (1701/1704) virus.  The 
+       cascading display occurs one hour after system memory is infected. 
+       If a keystroke is entered from the keyboard during this display, 
+       a system lockup will occur.  After one minute, the display will 
+       restore itself, with the characters returning to their original 
+       positions.  This cascade and restore display are repeated by the 
+       virus at one hour intervals. 
+ 
+       Known variant(s) of Traceback are: 
+       Traceback-B: Similar to the Traceback virus, the major differences 
+                    are that Traceback-B will infect COMMAND.COM and there 
+                    is no cascading display effect after the virus has 
+                    been resident for one hour.  Infected files will 
+                    also not contain the name of the file from which the 
+                    virus originally became memory resident, but instead 
+                    the name of the current file.  A text string: 
+                    "MICRODIC MSG" can be found in files infected with 
+                    Traceback-B.  If the system is booted from a diskette 
+                    whose copy of COMMAND.COM is infected, attempting to 
+                    execute any program will result in a memory allocation 
+                    error and the system being halted. 
+                    Origin: Spain, March 1990. 
+       Traceback-B2: Similar to Traceback-B2, this variant has the 
+                     cascading display effect after the virus has been 
+                     resident in memory for one (1) hour.  The text string 
+                     " XPO DAD    " replaces the "MICRODIS MSG" text 
+                     string in Traceback-B. 
+                     Origin: Spain, May 1990. 
+ 
+       See:   Spanish   Traceback 3029   Traceback II 

@@ -1,0 +1,82 @@
+Virus Name:  Anthrax 
+ Aliases: 
+ V Status:    Rare 
+ Discovery:   July, 1990 
+ Symptoms:    .COM & .EXE growth 
+ Origin:      Bulgaria 
+ Isolated:    Netherlands 
+ Eff Length:  1040 - 1279 Bytes 
+ Type Code:   PRAKX - Parasitic Resident .COM, .EXE, & Master Boot Sector 
+              Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, NAV/N, 
+                    AVTK/N, IBMAV/N 
+ Removal Instructions:  See below 
+ 
+ General Comments: 
+       The Anthrax virus was isolated in July 1990 in the Netherlands after 
+       it was uploaded onto several BBSs in a Trojan anti-viral program, 
+       USCAN.ZIP.  It is the second virus to be found in a copy of UScan 
+       during July 1990, the first virus being V2100.  Anthrax is a memory 
+       resident generic infector of .COM and .EXE files, including 
+       COMMAND.COM. 
+ 
+       The first time a program infected with the Anthrax virus is executed 
+ 
+       on the system's hard disk, the virus will infect the hard disk's 
+       master boot sector (partition table).  At this point, the virus 
+       is not memory resident.  It will also write a copy of itself on the 
+       last few sectors of the system's hard disk.  If data existed on those 
+       last few sectors of the hard disk, it will be destroyed. 
+ 
+       When the system is booted from the hard disk, the Anthrax virus will 
+       install itself memory resident.  It will remain memory resident 
+       until the first program is executed.  At that time, it will 
+       de-install itself from being resident and infect one .COM or .EXE 
+       file.  This virus does not infect files in the current directory 
+       first, but instead starts to infect files at the lowest level of the 
+       disk's directory tree. 
+ 
+       Later, when an infected program is executed, Anthrax will infect one 
+       .COM or .EXE file, searching the directory structure from the lowest 
+       level of the directory tree.  If the executed infected program was 
+       located on the floppy drive, a .COM or .EXE file may or may not be 
+       infected. 
+ 
+       The Anthrax virus's code is 1,024 bytes long, but infected programs 
+       will increase in length by 1,040 to 1,279 bytes.  On the author's 
+       test system, the largest increase in length experienced was 1,232 
+       bytes.  Infected files will always have an infected file length that 
+       is a multiple of 16. 
+ 
+       The following text strings can be found in files infected with the 
+       Anthrax virus: 
+ 
+               "(c)Damage, Inc." 
+               "ANTHRAX" 
+ 
+       A third text string occurs in the viral code, but it is in the 
+       Cyrillic alphabet.  Per Vesselin Bontchev, this third string 
+       translates to: 
+                "Sofia 1990" 
+ 
+       Since Anthrax infects the hard disk master boot sector, infected 
+       systems must have the master boot sector disinfected or rebuilt in 
+       order to remove the virus.  This disinfection can be done with 
+       either a low-level format or use of the MDisk/P program for the 
+       correct DOS version after powering off and rebooting from a 
+       write-protected boot diskette for the system.  Any .COM or .EXE 
+       files infected with Anthrax must also be disinfected or erased. 
+       Since a copy of the virus will exist on the last few sectors of the 
+       drive, these must also be located and overwritten. 
+ 
+       Anthrax interacts with another virus: V2100.  If a system which was 
+       previously infected with Anthrax should become infected with the 
+       V2100 virus, the V2100 virus will check the last few sectors of the 
+       hard disk for the spare copy of Anthrax.  If the spare copy is 
+       found, then Anthrax will be copied to the hard disk's master boot 
+       sector. 
+ 
+       It is not known if Anthrax carries any destructive capabilities or 
+       trigger/activation dates. 

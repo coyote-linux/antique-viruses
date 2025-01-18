@@ -1,0 +1,55 @@
+Virus Name:  334 
+ Aliases:     Made 
+ V Status:    Rare 
+ Discovery:   May, 1992 
+ Symptoms:    .COM file growth; file date/time change 
+ Origin:      England 
+ Eff Length:  334 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, IBMAV, AVTK, NAVDX, 
+                    NAV, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The 334 virus was submitted in May, 1992.  It is originally from 
+       England.  This virus is a non-resident direct action infector of 
+       .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the 334 virus is executed, the 334 virus 
+       will check the first three .COM programs in the current directory to 
+       see if they are infected.  When it finds the first uninfected of 
+       these three .COM files, it will infect it.  Once the virus has 
+       completed this process, the program the user was attempting to 
+       execute will run. 
+ 
+       Programs infected with the 334 virus will have a file length increase 
+       of 334 bytes with the virus being located at the end of the infected 
+       file.  The program's date and time in the DOS disk directory listing 
+       will have been updated to the system date and time when infection 
+       occurred.  No text strings are visible within the viral code in 
+       infected programs. 
+ 
+       The 334 virus doesn't appear to do anything besides replicate. 
+ 
+       Known variant(s) of 334 are: 
+       334-B: Based on the 334 virus described above, this variant is 
+              very similar.  It infects one .COM file in the current 
+              directory when an infected program is executed, though it 
+              does not infect .COM files past the first five in the 
+              current directory.  Infected programs will have a file length 
+              increase of 334 bytes with the virus being located at the end 
+              of the file.  The file's date and time in the DOS disk 
+              directory listing will have been updated to the current 
+              system date and time when infection occurred.  The following 
+              text is encrypted within the viral code: 
+              "Made in England" 
+              "*.COM" 
+              Origin:  England  December, 1992. 
+       334-C: Based on the 334 virus described above, this is another 
+              very minor variant.  It contains the following encrypted 
+              text strings: 
+              "Made in England" 
+              "*.COM M" 
+              Origin:  England  May, 1993. 

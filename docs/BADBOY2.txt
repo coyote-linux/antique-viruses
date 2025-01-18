@@ -1,0 +1,123 @@
+Virus Name:  Bad Boy 
+ Aliases:     Bad Boy 2 
+ V Status:    Rare 
+ Discovery:   May, 1991 
+ Symptoms:    .EXE file growth; decrease in system and available free 
+              memory; system hangs 
+ Origin:      Europe 
+ Eff Length:  1,000 Bytes 
+ Type Code:   PRtCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, NAV, ChAV, 
+                    IBMAV, AVTK, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, AVTK/N, NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Bad Boy virus was received in May, 1991, from Europe.  Bad Boy 
+       is a memory resident infector of .COM programs, it will infect 
+       COMMAND.COM. 
+ 
+       The first time a program infected with Bad Boy is executed, the 
+       virus will install itself memory resident at the top of system 
+       memory, but below the 640K DOS boundary.  Interrupt 21 will be 
+       hooked by the virus.  Interrupt 12 return is not moved.  If the 
+       virus became memory resident by booting from a disk with an infected 
+       COMMAND.COM, total system memory and available free memory as 
+       indicated by the DOS CHKDSK program will have decreased by 3,072 
+       bytes.  If Bad Boy became memory resident by executing some other 
+       infected program (not COMMAND.COM), then the decrease of 3,072 bytes 
+       of total system memory will occur, but available free memory will 
+       have decreased by 6,704 bytes.  The additional bytes from available 
+       free memory is due to a low system memory TSR installed by the 
+       virus. 
+ 
+       After Bad Boy is resident, the virus will infect .COM files, 
+       including COMMAND.COM, when they are executed.  Infected .COM files 
+       will increase in length by 1,000 bytes with the virus being located 
+       at the beginning of infected files.  Occasionally, infected programs 
+       will increase in length by 1,001 bytes.  The file date and time in 
+       the disk directory will not be altered. 
+ 
+       Infected programs will contain two text strings, the first of which 
+       will be encrypted in replicated, natural infections of the virus. 
+       These text strings are not displayed by the virus: 
+ 
+               "The bad boy halt your system ..." 
+               "The Bad Boy virus, Copyright (C) 1991." 
+ 
+       The Bad Boy virus activates on a random basis, at which time it will 
+       appear to hang the system.  The hang is then followed by the virus 
+       scrolling several screens of repeated characters, and then a system 
+       halt occurs. 
+ 
+       Known variant(s) of Bad Boy are: 
+       Bad Boy 2: A later version of Bad Boy, Bad Boy 2 does not have 
+                  the TSR installed if the virus became memory from other 
+                  than booting from a disk with an infected COMMAND.COM. 
+                  The system hang, screen scrolling of characters, and 
+                  system halt may still occur, but not as frequently. 
+                  The text strings in the virus have been changed to: 
+                  "Make me better!" 
+                  "The Bad Boy virus, Version 2.0, Copyright (C) 1991." 
+                  As with Bad Boy, the first text string is encrypted in 
+                  replicated samples of Bad Boy 2. 
+       Bad Boy-D: Received in November, 1993, Bad Boy-D is a memory 
+                  resident infector of .COM programs, but not COMMAND.COM. 
+                  It installs itself memory resident at the top of system 
+                  memory but below the 640K DOS boundary in 3,072 bytes of 
+                  memory.  Interrupt 21 will be hooked.  Bad Boy-D infects 
+                  .COM files when they are executed.  Infected files will 
+                  increase in size by either 1,073 or 1,074 bytes.  The 
+                  virus will be at the beginning of the file.  The program's 
+                  date and time in the DOS disk directory listing will not 
+                  be altered.  The following text string is visible within 
+                  the viral code in all infected files: 
+                  "The Worthless Piece of shit vi-rus that is a joke" 
+                  Origin:  Unknown  November, 1993. 
+       Bad Boy.1000.C: Received in January, 1996, Bad Boy.1000.C is a 
+                  memory resident infector of .COM programs, including 
+                  COMMAND.COM.  It installs itself memory resident at the 
+                  top of system memory but below the 640K DOS boundary in 
+                  3,072 bytes of memory, hooking interrupt 21.  This variant 
+                  infects .COM files when they are executed, adding 1,000 
+                  bytes to the file's length.  The virus will be at the 
+                  beginning of the file.  The program's date and time in the 
+                  DOS disk directory listing will not be altered.  The 
+                  following text string is visible within the viral code in 
+                  all infected files: 
+                  "1994 Satan Virus By [Mad Satan] Ver 4.0" 
+                  Origin:  Unknown  January, 1996. 
+       Bad Boy.1000.D: Also received in January, 1996, this is a minor 
+                  variant of Bad Boy.1000.C.  The text string has been 
+                  changed to: 
+                  "1994 Stan Virus By [ Mad Satan ] in TAIWAN. Ver 4.01" 
+                  Origin:  Unknown  January, 1996. 
+       Immortal Riot: Received in August, 1993, Immortal Riot is a 
+                  memory resident infector of .COM programs, including 
+                  COMMAND.COM.  It installs itself memory resident at the 
+                  top of system memory but below the 640K DOS boundary in 
+                  3,072 bytes of memory.  Interrupt 21 will be hooked. 
+                  Immortal Riot infects .COM files when they are executed. 
+                  Infected files will increase in size by either 1,054 or 
+                  1,055 bytes, or may have the first 1,054 bytes overwritten 
+                  by the viral code.  The virus will be at the beginning of 
+                  the file.  The program's date and time in the DOS disk 
+                  directory listing will not be altered.  The following 
+                  text strings are visible within the viral code in all 
+                  infected files: 
+                  "Senseless Destruction..." 
+                  "Protecting what we are joining together to take 
+                   on the world.." 
+                  "METAL MiLiTiA [iMM0RTAL RI0T] SVW" 
+                  The first text string above will occassionally be 
+                  displayed as a message on the system monitor.  At this 
+                  time a system hang may occur. 
+                  Origin:  Unknown  August, 1993. 
+       Immortal Riot.B: Received in January, 1995, Immortal Riot.B is 
+                  based on the Immortal Riot variant.  The only significant 
+                  difference is that infected files always increase in size 
+                  by 1,054 bytes.  The same text strings found in Immortal 
+                  Riot can be found in this variant. 
+                  Origin:  Unknown  January, 1995. 
+ 
+       See:   Boys 

@@ -1,0 +1,29 @@
+ Virus Name:  Reboot 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   August, 1992 
+ Symptoms:    .COM file growth; unexpected system reboots 
+ Origin:      Eastern Europe 
+ Eff Length:  715 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  F-Prot, Sweep, ViruScan, IBMAV, AVTK, NAVDX, 
+                    NAV, VAlert, ChAV, PCScan, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Reboot virus was received in August, 1992.  It is originally 
+       from Eastern Europe.  Reboot is a non-resident, direct action 
+       infector of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Reboot virus is executed, this 
+       virus will infect one .COM program located in the current directory. 
+       If COMMAND.COM is located in this directory, it may become infected. 
+       Programs infected with the Reboot virus will have a file length 
+       increase of 715 bytes with the virus being located at the end 
+       of the file.  One text string is visible in infected programs: 
+ 
+               "891221" 
+ 
+       Systems infected with the Reboot virus may experience unexpected 
+       system reboots occurring when infected programs are executed.

@@ -1,0 +1,44 @@
+ Virus Name:  V2P6 
+ Aliases: 
+ V Status:    Research 
+ Discovered:  July, 1990 
+ Symptoms:    .COM file growth 
+ Origin:      Minnesota, United States 
+ Eff Length:  1,946 - 2,111 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  NAV, F-Prot, Sweep, IBMAV, AVTK, NAVDX, VAlert, 
+                    PCScan, ViruScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, AVTK/N, NAV/N, 
+                    NProt, IBMAV/N 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The V2P6 virus is a research virus written by Mark Washburn and 
+       distributed to some anti-viral program authors in July of 1990. 
+       This virus, according to its author, has not been released.  This 
+       virus is a non-resident generic infector of .COM files similar to 
+       the 1260 and V2P2 viruses.         
+ 
+       When a program infected with the V2P6 virus is executed, it will 
+       infect the first .COM file it finds in the current directory which 
+       is not infected with the virus.  The virus adds its code to the end 
+       of the file, and the infected file's length will increase between 
+       1,946 and 2,111 bytes. 
+ 
+       Like the 1260 and other viruses by Mark Washburn, this virus uses a 
+       complex encryption method.  The encryption method used by V2P6 is 
+       more complex than that used in V2P2, but less complex than that 
+       used in the last known variant in this family, V2P6Z.  Like V2P2, an 
+       algorithmic approach must be used to identify this virus. 
+ 
+       Known variant(s) of V2P6 are: 
+       V2P6-B: Similar to V2P6 in behavior, programs infected with this 
+               variant will increase in size by 1,990 to 2,261 bytes. 
+       V2P6Z: Similar to V2P6 in behavior, this variant is the last 
+              variant in this family to be received by researchers.  It 
+              employs a more complex encryption algorithm requiring an 
+              algorithmic search to identify infected files.  V2P6Z adds 
+              2,076 to 2,364 bytes to the .COM programs it infects. 
+              Origin:  United States  August, 1990. 
+ 
+       See:   1260   Adolph   Casper   V2P2 

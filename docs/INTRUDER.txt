@@ -1,0 +1,197 @@
+Virus Name:  Intruder 
+ Aliases:     Intruder.1319 
+ V Status:    Rare 
+ Discovered:  March, 1992 
+ Symptoms:    .EXE file growth; system hangs 
+ Origin:      United States 
+ Eff Length:  1,319 - 1,333 Bytes 
+ Type Code:   PNE - Parasitic Non-Resident .EXE Infector 
+ Detection Method:  Sweep, F-Prot, ViruScan, NAVDX, ChAV, 
+                    NAV, IBMAV, AVTK, VAlert, PCScan, 
+                    NShld, Sweep/N, NProt, AVTK/N, NAV/N, IBMAV/N, Innoc, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Intruder virus was submitted in April, 1992.  This virus' 
+       source code was published in "The Little Black Book of Computer 
+       Viruses" by Ludwig in the United States in 1991.  It is a 
+       non-resident direct action infector of .EXE programs. 
+ 
+       When a program infected with the Intruder virus is executed, this 
+       virus will infect one .EXE program in the current directory.  The 
+       infected program will have a file length increase of 1,319 to 
+       1,333 bytes with the Intruder virus' code being added to the end 
+       of the host program.  The file's date and time in the DOS disk 
+       directory listing will not be altered.  The following text strings 
+       can be found in the viral code in infected programs: 
+ 
+               "\*.EXE \*.*" 
+               "????????EXE" 
+ 
+       Systems infected with the Intruder virus may experience system 
+       hangs when some infected programs are executed. 
+ 
+       Known variant(s) of Intruder are: 
+       Bell: Based on the Intruder virus described above, this variant 
+             behaves similarly, and has been altered to avoid detection by 
+             some anti-viral programs familiar with the original virus. 
+             Like the original virus, it addes 1,326 to 1,340 bytes to the 
+             .EXE programs it infects, and contains the following text 
+             strings: 
+             "\*.EXE \*.* \" 
+             "????????EXE?" 
+             Origin:  Unknown  April, 1993. 
+       Intruder-1326: A 1,326 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,326 to 1,340 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder-1326 
+                   infected programs: 
+                   "\*.EXE \*.* \" 
+                   "????????EXE?" 
+                   Intruder-1326 will corrupt some .EXE programs instead of 
+                   infecting them. 
+                   Origin:  Unknown  December, 1992. 
+       Intruder.1331: A 1,331 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,331 to 1,345 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder.1331 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   Origin:  Unknown  January, 1995. 
+       Intruder.1336: A 1,336 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,336 to 1,350 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder.1336 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   "Anti-Print II" 
+                   Origin:  Unknown  July, 1995. 
+       Intruder.1353: A 1,353 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,353 to 1,367 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder.1353 
+                   infected programs: 
+                   "????????EXE?" 
+                   "???????????" 
+                   "DOS" 
+                   "SAMPLE  XE" 
+                   "\*.EXE \*.*" 
+                   "Product of Wolters Kluwer Peter Martin." 
+                   Origin:  Unknown  July, 1995. 
+       Intruder.1355: A 1,355 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,355 to 1,369 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder.1355 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   Origin:  Unknown  January, 1995. 
+       Intruder-1440: A 1,440 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,440 to 1,456 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder-1440 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   Intruder-1440 activates after the first three or four 
+                   .EXE programs in the current directory have become 
+                   infected.  Execution of the next infected program will 
+                   result in either a system hang, or the playing of a 
+                   warbling sound on the system speaker accompanied by a 
+                   system hang. 
+                   Origin:  United States  November, 1992. 
+       Intruder.1555: A 1,555 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,555 to 1,567 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder.1555 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   Origin:  Unknown  July, 1994. 
+       Intruder-1967: A 1,967 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,967 to 1,981 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text string 
+                   can be found within the viral code in all Intruder-1967 
+                   infected programs: 
+                   "\*.EXE \*.* \" 
+                   Origin:  Unknown  October, 1992. 
+       Intruder-1988: A 1,988 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 1,988 to 2,002 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder-1988 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   Intruder-1988 activates after the first four .EXE 
+                   programs in the current directory have become infected. 
+                   Execution of the next infected program will result in 
+                   either a system hang, or the playing of a melody on the 
+                   system speaker accompanied by a system hang. 
+                   Origin:  United States  November, 1992. 
+       Intruder.2051: A 2,051 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 2,051 to 2,065 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text strings 
+                   can be found within the viral code in all Intruder.2051 
+                   infected programs: 
+                   "????????EXE?" 
+                   "\*.EXE \*.* \" 
+                   Origin:  Unknown  January, 1996. 
+       Intruder-2336: A 2,336 byte variant of Intruder, this variant 
+                   infects one .EXE file in the current directory each 
+                   time an infected program is executed.  Infected programs 
+                   will have a file length increase of 2,336 to 2,350 bytes 
+                   with the virus being located at the end of the file. 
+                   The program's date and time in the DOS disk directory 
+                   listing will not be altered.  The following text string 
+                   can be found within the viral code in all Intruder-2336 
+                   infected programs: 
+                   "????????EXE?" 
+                   Origin:  Unknown  October, 1992. 
+       Intruder-B: Functionally equivalent to the original virus, 
+                   this variant has six bytes which differ.  As with the 
+                   original virus, system hangs may occur when infected 
+                   programs are executed. 
+                   Origin:  United States  June, 1992. 

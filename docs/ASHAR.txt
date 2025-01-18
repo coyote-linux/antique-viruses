@@ -1,0 +1,38 @@
+Virus Name:  3Y 
+ Aliases:     3Y.853 
+ V Status:    New 
+ Discovery:   July, 1994 
+ Symptoms:    .COM file growth; 
+              decrease in total system & available free memory 
+ Origin:      Unknown 
+ Eff Length:  853 Bytes 
+ Type Code:   PRhC - Parasitic Resident .COM Infector 
+ Detection Method:  F-Prot, IBMAV, AVTK, Sweep, ViruScan, NAV, NAVDX, 
+                    VAlert, PCScan, 
+                    AVTK/N, Sweep/N, IBMAV/N, NProt, NShld, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The 3Y virus was received in July, 1994.  Its origin or point of 
+       isolation is unknown.  3Y is a memory resident infector of .COM 
+       files, but not COMMAND.COM. 
+ 
+       When the first 3Y infected program is executed, the 3Y virus 
+       will install itself memory resident at the top of system memory but 
+       below the 640K DOS boundary, not moving interrupt 12's return.  Total 
+       system and available free memory, as indicated by the DOS CHKDSK 
+       program, will have decreased by 1,328 bytes.  Interrupt 21 will be 
+       hooked by the virus in memory. 
+ 
+       Once the 3Y virus is memory resident, it may infect .COM files when 
+       they are executed, though it does not infect all .COM files.  Infected 
+       programs will have a file length increase of 853 bytes with the virus 
+       being located at the end of the file.  The program's date and time in 
+       the DOS disk directory listing will not be altered.  The following 
+       text strings are visible within the viral code in all infected files: 
+ 
+               "COMMAND." 
+               "3Y_06b.COM Ver0.6b  Copyright 1992 3Y2H" 
+               "R3Y_06a.EXE" 
+ 
+       It is unknown what 3Y does besides replicate. 

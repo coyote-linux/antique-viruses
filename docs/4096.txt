@@ -1,0 +1,89 @@
+Virus Name:  4096 
+ Aliases:     FroDo 
+ V Status:    Common 
+ Discovery:   January, 1990 
+ Symptoms:    .COM, .EXE, & overlay file growth; TSR hides growth; 
+              crosslinks; corruption of data files 
+ Origin:      Israel 
+ Eff Length:  4,096 Bytes 
+ Type Code:   PRsA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    LProt, Sweep/N, Innoc, NShld, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions: F-Prot, NAV or delete infected files 
+ 
+ General Comments: 
+       The 4096 virus was first isolated in January, 1990.  This virus is 
+       considered a stealth virus in that it is almost invisible to the 
+       system user. 
+ 
+       The 4096 virus infects .COM, .EXE, and Overlay files, adding 4,096 
+       bytes to their length.  Once the virus is resident in system memory, 
+       the increase in length will not appear in a directory listing.  Once 
+       this virus has installed itself into memory, it will infect any 
+       executable file that is opened, including if it is opened with the 
+       COPY or XCOPY command. 
+ 
+       This virus is destructive to both data files and executable files, 
+       as it very slowly cross-links files on the system's disk.  The 
+       cross-linking occurs so slowly that it appears there is a hardware 
+       problem, the virus being almost invisible.  The cross-linking of 
+       files is the result of the virus manipulating the FATs, changing the 
+       number of available sectors, as well as the user issuing CHKDSK/F 
+       command which will think that the files have lost sectors or 
+       cross-linking if the virus is in memory. 
+ 
+       As a side note, if the virus is present in memory and you attempt to 
+       copy infected files, the new copy of the file will not be infected 
+       with the virus if the new copy does not have an executable file 
+       extension.  Thus, one way to disinfect a system is to copy off all 
+       the infected files to diskettes with a non-executable file extension 
+       (i.e., don't use .EXE, .COM, .SYS, etc.) while the virus is active in 
+       memory, then power off the system and reboot from a write-protected, 
+       uninfected system disk. Once rebooted and the virus is not in 
+       memory, delete the infected files and copy back the files from the 
+       diskettes to the original executable file names and extensions. 
+ 
+       The above will disinfect the system, if done correctly, but will 
+       still leave the problem of cross-linked files which are permanently 
+       damaged. 
+ 
+       On or after September 22 of any year, the 4096 virus will hang 
+       infected systems.  This appears to be a "bug" in the virus in that 
+       it goes into a time consuming loop. 
+ 
+       The 4096 virus also contains a boot-sector within its code; however, 
+       it is never written out to the disk's boot sector.  Moving this boot 
+       sector to the boot sector of a diskette and rebooting the system 
+       will result in the message "FRODO LIVES" being displayed. September 
+       22 is Bilbo and Frodo Baggin's birthday in the Lord of the Rings 
+       trilogy. 
+ 
+       An important note on the 4096 virus: this virus will also infect 
+       some data files.  When this occurs, the data files will appear to be 
+       fine on infected systems.  However, after the system is later 
+       disinfected, these files will now be corrupted and unpredictable 
+       results may occur. 
+ 
+       Known variant(s) of 4096 are: 
+       4096-B: Similar to the 4096 virus, the main change is that the 
+               encryption mechanism has been changed in order to avoid 
+               detection. 
+       4096-C: Isolated in January, 1991, this variant of 4096 is similar 
+               to the original virus.  The major difference is that the DOS 
+               CHKDSK command will not show any cross-linking of files or 
+               lost clusters.  A symptom of infection by this variant is 
+               that the disk space available according to a DIR command 
+               will be more than the disk space available according to the 
+               DOS CHKDSK program. 
+       4096-D: Isolated in April, 1992, this variant of 4096 is similar 
+               to the 4096-C variant in behavior.  The major difference is 
+               that it has been modified to avoid detection by some anti- 
+               viral utilities. 
+               Origin:  Unknown  April, 1992. 
+       4096-E: Received in October, 1992, this variant of 4096 is similar 
+               to the 4096-C variant in behavior.  The major difference is 
+               that it has been modified to avoid detection by most anti- 
+               viral utilities.  Its size in memory is 5,648 bytes. 
+               Origin:  Unknown  October, 1992.

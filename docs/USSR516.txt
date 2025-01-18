@@ -1,0 +1,34 @@
+ Virus Name:  USSR 516 
+ Aliases:     Leapfrog, V516, 516 
+ V Status:    Rare 
+ Discovered:  December, 1990 
+ Symptoms:    .COM file growth 
+ Origin:      USSR 
+ Eff Length:  516 Bytes 
+ Type Code:   PRCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The USSR 516 virus was submitted in December, 1990.  It is from the 
+       USSR.  This virus is a memory resident infector of .COM programs, 
+       including COMMAND.COM.  It infects on file execution. 
+ 
+       The first time a program infected with the USSR 516 virus is 
+       executed, the virus will install itself memory resident in a "hole 
+       in memory" between MSDOS and the DOS Stacks.  This area will be 
+       labeled DOS Data.  Interrupt 21 will be hooked by the virus.  There 
+       will be no change in total system memory or available free memory. 
+ 
+       After the virus is memory resident, it will infect .COM programs 
+       which are executed that had an uninfected file length which was 
+       greater than 512 bytes.  Infected .COM programs will have their 
+       length increased by 516 bytes, the virus will be located at the end 
+       of the program. 
+ 
+       USSR 516 does not appear to do anything besides replicate.  The 
+       original submitted sample was not a natural infection of this 
+       virus, so this may be a research virus. 

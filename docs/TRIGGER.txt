@@ -1,0 +1,45 @@
+Virus Name:  Trigger 
+ Aliases:    
+ V Status:    New 
+ Discovered:  June, 1993 
+ Symptoms:    .COM & .EXE growth; possible beeping from system speaker; 
+              decrease in total system and available free memory 
+ Origin:      United States 
+ Eff Length:  2,520 - 2,696 Bytes 
+ Type Code:   PRtAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  Sweep, AVTK, NAV, NAVDX, VAlert, ViruScan, ChAV, 
+                    PCScan, 
+                    Sweep/N, AVTK/N, NShld, Innoc, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Trigger virus was received in June, 1993, and is from the 
+       Phalcon/Skism virus writting group in the United States.  Trigger 
+       is a memory resident infector of .COM and .EXE programs, including 
+       COMMAND.COM.  It is more or less a prototype virus which uses the 
+       Dark Angel Multiple Encryptor engine for its encryption, thus 
+       making it a polymorphic virus.  It is the first virus to use this 
+       engine. 
+ 
+       When the first Trigger infected program is executed, the Trigger 
+       virus will install itself memory resident at the top of system 
+       memory but below the 640K DOS boundary, moving interrupt 12's return. 
+       Total system and available free memory, as indicated by the DOS 
+       CHKDSK program, will have decreased by 6,144 bytes.  Interrupt 01 
+       will be directly hooked by the virus in memory, as well as interrupt 
+       21.  The hooking of interrupt 21 is accomplished using a tunnelling 
+       technique, so memory mapping utilities will not map it to the virus 
+       in memory. 
+ 
+       Once the Trigger virus is memory resident, it will infect .COM and 
+       .EXE programs when they are executed, occassionally accompanied by 
+       beeping on the system speaker.  Infected programs will have a file 
+       length increase of 2,520 to 2,696 bytes with the virus being 
+       located at the end of the program.  The file's date and time in the 
+       DOS disk directory listing will not be altered.  The following 
+       text strings are encrypted within the Trigger viral code: 
+ 
+               "Trigger by Dark Angel of Phalcon/Skism" 
+               "Utilising Dark Angel's Multiple Encryptor (DAME)" 
+ 
+       Trigger doesn't appear to do anything besides replicate.

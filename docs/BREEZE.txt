@@ -1,0 +1,36 @@
+Virus Name:  Breeze 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   December, 1992 
+ Symptoms:    .COM file growth 
+ Origin:      The Netherlands 
+ Eff Length:  358 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  AVTK, F-Prot, ViruScan, Sweep, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N, Innoc 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Breeze virus was submitted in December, 1992, and is originally 
+       from The Netherlands.  Breeze is a non-resident, direct action 
+       infector of .COM programs, including COMMAND.COM.  It is written by 
+       the same author as the  Deicide  family of viruses. 
+ 
+       When a program infected with the Breeze virus is executed, the 
+       Breeze virus will infect one .COM program located in the current 
+       directory.  If COMMAND.COM is located in this directory, it may 
+       become infected.  Programs infected with the Breeze virus will have 
+       a file length increase of 358 bytes with the virus being located at 
+       the beginning of the file.  The program's date and time in the 
+       DOS disk directory listing will not be altered.  The following text 
+       strings can be found within the viral code in all Breeze infected 
+       programs: 
+ 
+               "Dutch [Breeze] by Glenn Benton" 
+               "*.COM" 
+ 
+       Breeze doesn't appear to do anything besides replicate. 
+ 
+       See:   Deicide 

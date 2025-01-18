@@ -1,0 +1,41 @@
+Virus Name:  HiDos 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  November, 1992 
+ Symptoms:    BSC; master boot sector altered; decrease in total system & 
+              available free memory; system hangs; diskette root directory 
+              corruption 
+ Origin:      England 
+ Eff Length:  N/A 
+ Type Code:   BRtX - Resident Boot Sector & Master Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, IBMAV, NAV, 
+                    Sweep, NAVDX, Valert, PCScan, ChAV 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The HiDos boot virus was submitted in November, 1992.  It is from 
+       England.  HiDos is a memory resident infector of diskette boot 
+       sectors and the system hard disk master boot sector (partition 
+       table).  It is roughly based on the Stoned virus. 
+ 
+       The first time the system is booted from a diskette infected with 
+       the HiDos virus, the HiDos virus will infect the system hard disk 
+       master boot sector and become memory resident.  Total system and 
+       available free memory, as indicated by the DOS CHKDSK program, will 
+       have decreased by 2,048 bytes.  On the system hard disk, the original 
+       master boot sector will have been moved to Side 0, Cylinder 0, Sector 
+       7, and a copy of the viral code written to the original master boot 
+       sector location. 
+ 
+       Once the HiDos Boot virus is memory resident, it will occassionally 
+       infect the boot sector of non-write protected diskettes which are 
+       accessed on the system.  The infection always occurs when the user 
+       changes current drives from the system hard disk to the diskette 
+       drive, with a system hang resulting.  Any attempt to directly access 
+       the diskette boot sector or the system hard disk's master boot 
+       sector will also result in a system hang. 
+ 
+       The original boot sector of infected 360K 5.25" diskettes will have 
+       been copied to sector 11.  On 1.2M 5.25" diskettes, it will be at 
+       sector 17.  As both of these sectors are part of the root directory, 
+       directory corruption may result if they previously contained entries. 

@@ -1,0 +1,47 @@
+Virus Name:  Cop-Com 
+ Aliases:     Cop-Com.286 
+ V Status:    Viron 
+ Discovery:   February, 1995 
+ Symptoms:    .COM file corruption; file date/time seconds = "62"; 
+              message 
+ Origin:      Unknown 
+ Eff Length:  286 Bytes Overwriting 
+ Type Code:   ONCK - Overwriting Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, NAVDX, VAlert, 
+                    ChAV, PCScan, 
+                    Sweep/N, NProt, AVTK/N, NShld, NAV/N, Innoc 4.0+ 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Cop-Com virus was received in February, 1995.  Its origin or 
+       point of isolation is unknown.  Cop-Com is a non-resident, direct 
+       action infector of .COM files, including COMMAND.COM.  It permanently 
+       corrupts the files it infects. 
+ 
+       When a program infected with the Cop-Com virus is executed, the 
+       following message requiring a response from the system user will 
+       be displayed, where X is the current drive designation: 
+ 
+               "General failure reading drive X 
+                Abort, Retry, Ignore, Fail?" 
+ 
+       If the system user replies "R" for "Retry", the virus will then 
+       infect one .COM file located in the current directory.  If all of 
+       the .COM files in the current directory are already infected by the 
+       virus, the following message will be displayed: 
+ 
+               "Program halted by Cop-Com 
+                Unauthorized program on your system 
+                Consult Local dealer for support" 
+ 
+       Progrms infected with the Cop-Com virus will have the first 286 bytes 
+       of the host program overwritten by the viral code, permanently 
+       corrupting the host file.  The file's date and time in the DOS disk 
+       directory listing will appear to be unaltered, though the seconds 
+       field will be set to "62".  The following text strings are visible 
+       within the viral code in all infected files: 
+ 
+                "Program halted by Cop-Com" 
+                "Unauthorized program on your system" 
+                "Consult Local dealer for support" 
+                "(C) Business Software Alliance 

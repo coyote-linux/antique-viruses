@@ -1,0 +1,48 @@
+Virus Name:  Vote 
+ Aliases:    
+ V Status:    Viron 
+ Discovered:  June, 1992 
+ Symptoms:    .COM file growth; system hangs; message display 
+ Origin:      Bulgaria 
+ Eff Length:  1,004 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  AVTK, Sweep, ViruScan, IBMAV, F-Prot, ChAV, 
+                    NAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Vote virus was submitted in June, 1992.  It is originally from 
+       Bulgaria.  Vote is a non-resident direct action infector of .COM 
+       files, including COMMAND.COM. 
+ 
+       When a program infected with the Vote virus is executed, the Vote 
+       virus will infect the first .COM program located in the current 
+       directory.  If this program was previously infected with Vote, the 
+       virus will reinfect it.  The program the user was attempting to 
+       execute will then run.  When the user attempts to execute another 
+       program, .BAT file, or DOS command, a system hang will usually 
+       occur. 
+ 
+       Programs infected with the Vote virus will have a file length 
+       increase of 1,004 bytes for each infection of Vote within the file. 
+       The Vote virus will be located at the end of the file.  The program's 
+       date and time in the DOS disk directory listing will not be altered. 
+ 
+       The Vote virus will not infect programs from replicated samples, 
+       though the 1,000 byte variant listed below does infect programs 
+       from replicated samples. 
+ 
+       Known variant(s) of Vote are: 
+       Vote-1000: A later version of the Vote virus, this variant does 
+                  not reinfect programs.  It infects one of the first four 
+                  .COM files in the current directory when an infected 
+                  program is executed.  Infected programs will have a file 
+                  length increase of 1,000 bytes with the virus located at 
+                  the end of the file.  The program's date and time in the 
+                  DOS disk directory listing will not be altered.  Vote-1000 
+                  will occassionally attempt to display a message, though 
+                  the message may be in cyrillic and is thus unreadable on 
+                  most systems. 
+                  Origin:  Bulgaria  June, 1992 

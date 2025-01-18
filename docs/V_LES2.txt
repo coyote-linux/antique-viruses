@@ -1,0 +1,17 @@
+;
+;	Virus Lession #2 	'How to make a non-resident EXE infector'
+;
+;	(c) 1992 Tormentor // Demoralized Youth
+;
+;	Well, I had not time to comment this code as much as I wanted to,
+;	but here you are.
+; 	What can be hard to understand is the .EXE header changes, but if
+;	you look at the description on the header (ex: Norton guide Tech. Ref)
+;	you'll understand...
+;	Anyway, feel free to use this example and if you have any questions
+;	or anything call my board: Swedish Virus Labratory +46-3191-9393
+; 	
+;	Greetings to all virus-writers!
+;
+;	/Tormentor
+;

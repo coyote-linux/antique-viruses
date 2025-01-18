@@ -1,0 +1,40 @@
+Virus Name:  Generic 
+ Aliases: 
+ V Status:    N/A 
+ Discovery:   N/A 
+ Symptoms:    N/A 
+ Origin:      N/A 
+ Eff Length:  N/A 
+ Type Code:   G - Generic 
+ Detection Method:  [Not in Certification Set] 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Generic virus is not actually a specific virus, but a general 
+       category or group of viruses which can be genericly detected by 
+       anti-viral software using scanner technology.  It was first 
+       implemented by McAfee Associates in their ViruScan program with 
+       version 89. 
+ 
+       The viruses detected by the Generic virus detection mechanism in 
+       ViruScan are generally based on the Vienna virus, though not all 
+       of them are related to Vienna.  These viruses may infect .COM 
+       files, .EXE files, or both .COM and .EXE files.  They may also 
+       be malicious.  While most of the viruses are non-resident, some of 
+       them are memory resident file infectors.  Viruses which may be 
+       detected as the Generic virus by ViruScan include: 
+ 
+          646                    923                 Beast-N-Black 
+          Father Christmas       Ghostballs          Grither 
+          Infinity               Iraqui Warrior      Lisbon 
+          MSTU                   NTKC                Padded 
+          Polish 217             Polish 583          R-10       
+          Socha                  Sov                 Traveller   
+          USSR 311               USSR 711            VHP 
+          VHP2                   Vienna              Violator     
+          Violator B4            Viperize 
+ 
+       New viruses may also be detected by this mechanism which are not 
+       documented in VSUM.  If you detect a Generic virus, and it does 
+       not match one of the above viruses, please submit a sample to the 
+       author of VSUM for analysis and inclusion in VSUM. 

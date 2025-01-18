@@ -1,0 +1,102 @@
+Virus Name:  Cascade 
+ Aliases:     BlackJack, Fall, Falling Letters, 1701, 1704, 1701 Mutation, 
+              1704 Format, 1704-B 
+ V Status:    Common 
+ Discovery:   October, 1987 
+ Symptoms:    TSR; falling letters; .COM file growth; random reboots 
+ Origin:      Germany 
+ Eff Length:  1,701 or 1,704 bytes 
+ Type Code:   PRsC - Parasitic Resident Encrypting .COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, ChAV, 
+                    Sweep, IBMAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       Originally, this virus was a Trojan horse which was disguised as a 
+       program which was supposed to turn off the Num-Lock light when 
+       the system was booted.  The Trojan horse instead caused all the 
+       characters on the screen to fall into a pile at the bottom of the 
+       screen.  In late 1987, the Trojan horse was changed by someone into 
+       a memory resident .COM virus. 
+ 
+       While the original virus had a length of 1,701 bytes and would 
+       infect both true IBM PCs and clones, a variation exists of this 
+       virus which is 3 bytes longer than the original virus and does not 
+       infect true IBM PCs.  Both viruses are functionally identical in all 
+       other respects. 
+ 
+       Both of the viruses have some fairly unique qualities:  Both use an 
+       encryption algorithm to avoid detection and complicate any attempted 
+       analysis of them.  The activation mechanisms are based on a 
+       sophisticated randomization algorithm incorporating machine checks, 
+       monitor types, presence or absence of a clock card, and the time or 
+       season of the year. 
+ 
+       The viruses will activate on any machine with a CGA or VGA monitor 
+       in the months of September, October, November, or December in the 
+       years 1980 and 1988. 
+ 
+       Known variant(s) of Cascade are: 
+       1701 Mutation: Received in October, 1991, this variant of has 
+                      had two bytes modified in order to avoid detection. 
+       1701-B: Same as 1701, except that it can activate in the Fall of 
+               any year. 
+       1701-Yap: Based on the original Cascade virus, this variant 
+               adds 1,701 bytes to the .COM programs it infects.  Its 
+               memory resident TSR is 2,048 bytes, and hooks interrupt 21. 
+               The encryption mechanism has been slightly altered to avoid 
+               detection by some anti-viral utilities. 
+               Origin:  Unknown  October, 1992. 
+       1704 Format: Like the Cascade virus, but the disk is formatted 
+               when the virus activates.  Activation occurs during the 
+               months of October, November, and December of any year except 
+               1992. 
+               Origin:  Unknown  January, 1989. 
+       1704-C: Same as Cascade-B except that the virus can activate in 
+               December of any year. 
+       1704-D: Same as the 1704, except that the IBM selection has been 
+               disabled so that it can infect true IBM PCs. 
+       17Y4: Similar to the Cascade 1704 virus, the only difference is 
+               one byte in the virus which has been altered. 
+       Cascade-1621: Based on the original Cascade virus, this variant 
+               adds 1,621 bytes to the .COM programs it infects.  Its 
+               memory resident TSR is 1,936 bytes, and hooks interrupt 21. 
+               Attempts to execute .BAT files on infected systems may 
+               result in the scrolling of the message "Insufficient 
+               disk space", and the .BAT file not executing. 
+               Origin:  Unknown  June, 1992. 
+       Cascade 1701.E: Based on the original Cascade virus, this is a 
+               minor variant.  It drops a single character down the system 
+               display when it is memory resident from September 1 to 
+               December 31 of any year. 
+               Origin:  Unknown  September, 1993. 
+       Cascade.1702: Based on the original Cascade virus, this variant 
+               adds 1,702 bytes to the .COM programs it infects.  It is 
+               a memory resident virus which employs a 1,936 byte TSR 
+               hooking interrupts 21.  The virus will be located at the end 
+               of infected files. 
+               Origin:  Unknown  July, 1994. 
+       Cascade-1704G: Based on the original Cascade virus, this variant 
+               has been altered to avoid detection by some anti-viral 
+               programs by the addition of a NOP instruction in the virus' 
+               decryption routine.  It adds 1,704 bytes to the .COM programs 
+               it infects, with the virus being located at the end of the 
+               file.  It is a memory resident virus which employs a 1,968 
+               byte TSR hooking interrupt 21. 
+               Origin:  France  May, 1993. 
+       Cascade-1706: Based on the original Cascade virus, this variant 
+               adds 1,706 bytes to the .COM programs it infects.  It is 
+               a memory resident virus which employs a 2,064 byte TSR 
+               hooking interrupts 1C and 21.  The virus will be located 
+               at the end of infected files. 
+               Origin:  Unknown  April, 1992. 
+       Cascade-B: Similar to the Cascade virus, except that the 
+               cascading display has been replaced with a system reboot 
+               which will occur at random time intervals after the 
+               virus activates. 
+       Cunning: Based on the Cascade virus, a major change to the virus is 
+               that it now plays music. 
+ 
+       See:   1661   JoJo 

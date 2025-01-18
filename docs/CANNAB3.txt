@@ -1,0 +1,82 @@
+Virus Name:  Cannabis 
+ Aliases:     Cannabis 2, Cannabis 3 
+ V Status:    Rare 
+ Discovery:   October, 1991 
+ Symptoms:    BSC; decrease in total system and available free memory; 
+              directory corruption; message 
+ Origin:      The Netherlands 
+ Eff Length:  N/A 
+ Type Code:   BRh - Resident Floppy Boot Sector Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, LProt, NAV/N, Innoc 
+ Removal Instructions:  DOS Sys on system diskettes 
+ 
+ General Comments: 
+       The Cannabis virus was submitted from the Netherlands in October, 
+       1991.  Cannabis is a memory resident infector of floppy diskette 
+       boot sectors.  The current submission of this virus does not 
+       infect hard disks. 
+ 
+       When the system is booted from a diskette infected with Cannabis, 
+       the boot will usually result in a message indicating that the 
+       disk is a non-system diskette, and to replace it with a system 
+       disk and press any key.  Replacing the diskette, or removing it 
+       and allowing the boot to proceed from the system hard disk, will 
+       result in the boot completing.  At this point, Cannabis will be 
+       memory resident at the top of system memory but below the 640K 
+       DOS boundary.  Total system and available free memory, as 
+       measured with the DOS CHKDSK program, will be 2,048 bytes less 
+       than expected. 
+ 
+       Once Cannabis is memory resident, it will infect any non-write 
+       protected diskette exposed to the system.  Infected 360K diskettes 
+       will have the original boot sector moved to sector 9, and then 
+       the Cannabis viral code written to sector 0, the location of the 
+       original boot sector.  Since sector 9 is normally part of the 
+       root directory, directory corruption may result on infected 
+       diskettes. 
+ 
+       Cannabis is a very buggy virus, and it will reinfect diskettes 
+       previously infected with itself.  As a result, the original boot 
+       sector which was relocated to sector 9 will be overwritten by the 
+       viral code when a reinfection occurs. 
+ 
+       The Cannabis virus will occasionally display the following message 
+       when the system is booted from an infected diskette: 
+ 
+               "Hey man, I don't wanna work. 
+                I'm too stoned right now..." 
+ 
+       Infected boot sectors will contain this text, along with the word 
+       "Cannabis". 
+ 
+       Known variant(s) of Cannabis are: 
+       Cannabis Dropper: A very small .COM file which contained the 
+                         Cannabis virus described above.  This file does 
+                         nothing but infect a diskette's boot sector with 
+                         the Cannabis virus. 
+       Cannabis 2: Cannabis 2 is a variant of the Cannabis virus which 
+                   has the bug fixed which prevented system boot on 
+                   Cannabis infected diskettes.  It contains one text 
+                   string: "CANNABIS".  This string will appear where the 
+                   DOS version number is normally located in the boot 
+                   sector.  It uses 1,024 bytes of memory, rather than the 
+                   2,048 bytes required for the original virus.  Cannabis 2 
+                   is a very poor replicator, and not likely to become a 
+                   widespread problem. 
+                   Origin:  The Netherlands  November, 1991. 
+       Cannabis 2 Dropper: A very small .COM file which contained the 
+                           Cannabis 2 virus described above.  This file 
+                           does nothing but infect a diskette's boot 
+                           sector with the Cannabis 2 virus. 
+                           Origin:  The Netherlands  November, 1991. 
+       Cannabis 3: Cannabis 3 is a minor variant of the Cannabis 3 
+                   virus.  Like Cannabis 2, it contains the one text 
+                   string: "CANNABIS". 
+                   Origin:  The Netherlands  June, 1992. 
+       Cannabis 3 Dropper: A very small .COM file which contained the 
+                           Cannabis 3 virus described above.  This file 
+                           does nothing but infect a diskette's boot 
+                           sector with the Cannabis 3 virus. 
+                           Origin:  The Netherlands  June, 1992. 

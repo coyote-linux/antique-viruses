@@ -1,0 +1,50 @@
+Virus Name:  Joker 
+ Aliases:     Jocker 
+ V Status:    Extinct 
+ Discovered:  December, 1989 
+ Symptoms:    Messages, .EXE and .DBF growth 
+ Origin:      Poland 
+ Eff Length:  ??? Bytes 
+ Type Code:   PNE - Parasitic Non-Resident .EXE Infector 
+ Detection Method:  IBMAV, AVTK, F-Prot, Sweep, NAV, NAVDX, VAlert, 
+                    ViruScan, PCScan, ChAV, 
+                    NShld, Sweep/N, Innoc, AVTK/N, NAV/N, NProt, IBMAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Joker virus was isolated in Poland in December, 1989. This virus 
+       is a generic .EXE file infector, and is a poor replicator (i.e., it 
+       does not quickly infect other files). 
+ 
+       Programs which are infected with the Joker virus will display bogus 
+       error messages and comments.  These messages and comments can be 
+       found in the infected files at the beginning of the viral code. 
+       Here are some of the messages and comments that may be displayed: 
+ 
+       "Incorrect DOS version" 
+       "Invalid Volume ID Format failure" 
+       "Please put a new disk into drive A:" 
+       "End of input file" 
+       "END OF WORKTIME.  TURN SYSTEM OFF!" 
+       "Divide Overflow" 
+       "Water detect in Co-processor" 
+       "I am hungry! Insert HAMBURGER into drive A:" 
+       "NO SMOKING, PLEASE!" 
+       " Thanks." 
+       "Don't beat me !!" 
+       "Don't drink and drive." 
+       "Another cup of cofee ?" 
+       " OH, YES!" 
+       "Hard Disk head has been destroyed. Can you borow me your one?" 
+       "Missing light magenta ribbon in printer!" 
+       "In case mistake, call GHOST BUSTERS" 
+       "Insert tractor toilet paper into printer." 
+ 
+       This virus may also alter .DBF files, adding messages to them. 
+ 
+       The sample in the author of this listing possession does not 
+       replicate on an 8088 based system.  This entry has been included 
+       since the sample may have been damaged before its receipt by the 
+       author.  At best, there is a serious bug in the replication portion 
+       of this virus which prevents it from replicating. 

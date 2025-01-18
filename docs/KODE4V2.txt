@@ -1,0 +1,73 @@
+ Virus Name:  Kode4 
+ Aliases:     Kode4-399 
+ V Status:    Rare 
+ Discovered:  September, 1992 
+ Symptoms:    .COM file growth; programs fail to execute properly; message 
+ Origin:      North America 
+ Eff Length:  399 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  AVTK, F-Prot, Sweep, IBMAV, NAV, PCScan, 
+                    ViruScan, NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, LProt, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Kode4 virus was submitted in September, 1992, and appears to be 
+       from North America.  Kode4 is a non-resident direct action infector 
+       of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Kode4 virus is executed, the Kode4 
+       virus will infect all of the .COM programs located in the current 
+       directory.  Once it completes infecting the programs, it displays 
+       the following message and returns the user to the DOS prompt: 
+ 
+               "-=+ Kode4 +=-, The one and ONLY!" 
+ 
+       Programs infected with the Kode4 virus will have a file length 
+       increase of 399 bytes with the virus being located at the end of 
+       the file.  Kode4 cannot tell when a program was previously infected 
+       by the virus, so it will reinfect files adding additional increments 
+       of 399 bytes.  The program's date and time in the DOS disk directory 
+       will not be altered.  Besides the above text string, one other 
+       text string can be found in all infected programs: 
+ 
+               "*.com" 
+ 
+       Kode4 doesn't appear to do anything besides replicate, though 
+       infected programs will not function properly. 
+ 
+       Known variant(s) of Kode4 are: 
+       Kode4-B: Based on the Kode4 virus described above, Kode4-B is 
+                a very minor variant, having five altered bytes. 
+                Origin:  Unknown  May, 1993. 
+       Kode4-129: Received in November, 1992, Kode4-129 appears to be 
+                  an earlier variant of the Kode4 virus described above. 
+                  This variant is a non-resident, direct action overwriting 
+                  virus which infects all .COM programs in the current 
+                  directory when an infected program is executed.  Infected 
+                  programs will have the first 129 bytes of the program 
+                  overwritten by the viral code.  The following message will 
+                  also be displayed when an infected program is executed: 
+                  "-=+ Kode4 +=-, The one and ONLY!" 
+                  In addition to this message, the following text string 
+                  can be found within the viral code: 
+                  "*.c*" 
+                  Programs infected with Kode4-129 may increase in size, 
+                  even though this is an overwriting virus.  When this 
+                  occurs, the infected file will contain the viral code at 
+                  the beginning of the file, and the remainder of the file 
+                  will contain data from system memory. 
+                  Origin:  Unknown  November, 1992. 
+       Kode4.281: Received in May, 1995, Kode4.281 is a 281 byte variant 
+                  of the Kode4 virus described above. This variant is a 
+                  non-resident, direct action parasitic virus which infects 
+                  all .COM programs in the current directory when an 
+                  infected program is executed.  Infected programs will have 
+                  a file length increase of 281 bytes with the virus being 
+                  located at the end of the file.  The program's date and 
+                  time in the DOS disk directory listing will not be altered. 
+                  The following string is visible within the viral code in 
+                  all infected files: 
+                  "*.com  -=+ Kode4 +=-, The one and ONLY!" 
+                  Origin:  Unknown  May, 1995. 

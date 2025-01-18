@@ -1,0 +1,44 @@
+Virus Name:  Keeper 
+ Aliases:     Keeper.Acid, Acid Trip 
+ V Status:    Rare 
+ Discovered:  February, 1994 
+ Symptoms:    .EXE growth; .COM files may appear to decrease in size; 
+              decrease in total system & available free memory 
+ Origin:      North America 
+ Eff Length:  694 Bytes 
+ Type Code:   PRhE - Parasitic Resident .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, IBMAV, Sweep, NAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, NProt, AVTK/N, Sweep/N, IBMAV/N, NAV/N, Innoc 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Keeper, Keeper.Acid or Acid Trip, virus was received in 
+       February, 1994 and is from North America.  Keeper is a memory 
+       resident infector of .EXE programs. 
+ 
+       When the first Keeper infected program is executed, this virus 
+       will install itself memory resident at the top of system memory 
+       but below the 640K DOS boundary, hooking interrupt 21.  Total 
+       system and available free memory, as indicated by the DOS CHKDSK 
+       program, will have decreased by 1,264 bytes.  Interrupt 12's 
+       return will not be moved. 
+ 
+       Once the Keeper virus is memory resident, it will infect .EXE 
+       programs when they are executed.  Infected programs will have a 
+       file length increase of 694 bytes, though the file length increase 
+       will be hidden by the virus when it is memory resident.  The virus 
+       will be located at the end of all infected programs.  The file's 
+       date and time in the DOS disk directory listing will not be altered. 
+       The following text strings are visible within the viral code in all 
+       Keeper infected programs: 
+ 
+               "Crypt Keeper P/SG" 
+               "Your PC is on an [Acid Trip]... Try again later..." 
+ 
+       When the Keeper virus is memory resident, the DOS disk directory 
+       listing may indicate that .COM programs are 694 bytes smaller than 
+       expected.  This effect occurs due to the size stealthing mechanism 
+       employed by the virus.            
+ 
+       See:  Enemy Within   Lemming   Massacre 

@@ -1,0 +1,135 @@
+Virus Name:  Highlander 
+ Aliases:     Highlander.477 
+ V Status:    Rare 
+ Discovered:  October, 1992 
+ Symptoms:    .COM file growth; TSR 
+ Origin:      United States 
+ Eff Length:  477 Bytes 
+ Type Code:   PRsC - Parasitic Resident .COM Infector 
+ Detection Method:  Sweep, ViruScan, AVTK, F-Prot, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, AVTK/N, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Highlander virus was submitted in October, 1992.  It is 
+       originally from the United States, and is by the same author as 
+       the Geek virus.  Highlander is a memory resident infector of .COM 
+       programs, but not COMMAND.COM. 
+ 
+       When the first Highlander infected program is executed, the 
+       Highlander virus will become memory resident as a low system 
+       memory TSR of 1,280 bytes.  It hooks interrupts 21 and 22. 
+ 
+       Once memory resident, the Highlander virus will infect .COM 
+       programs other than COMMAND.COM when they are executed.  Infected 
+       programs will have a file length increase of 477 bytes with the 
+       virus being located at the beginning of the file.  The program's 
+       date and time in the DOS disk directory listing will not be altered. 
+       The following text strings are visible within the viral code in 
+       all Highlander infected programs: 
+ 
+               "COM" 
+               "Highlander 1 RULES!" 
+               "v05" 
+ 
+       Highlander activates on the 29th day of any month, at which time 
+       it will display the "Highlander 1 RULES!" message 21 times and 
+       hang the system. 
+ 
+       Known variant(s) of Highlander are: 
+       Highlander.478: Received in July, 1995, this is a 478 byte 
+           variant of the Highlander virus described above.  Its memory 
+           resident TSR is 1,264 bytes, hooking interrupts 21 and 22. 
+           It infects .COM files, but not COMMAND.COM, when they are 
+           executed.  Infected files will have a file length increase of 
+           478 bytes with the virus being located at the beginning of the 
+           file.  The file's date and time in the DOS disk directory 
+           listing will not appear to be altered, though the seconds field 
+           will have been set to "40".  The following text strings are 
+           visible within the viral code: 
+           "COM" 
+           "Highlander 1 RULES!" 
+           Origin:  Unknown  July, 1995. 
+
+=============================
+
+;This is the HIGHLANDER Virus version 1.0.  
+
+;This virus is a generic, parasitic, resident COM infector.  It will not
+;infect command.com however.  It is not destructive but can be irritating.
+;Interrupt 21 is hooked.
+
+;This virus is to be assembled under TASM 2.0 with the /m2 switch.
+
+;When an infected file is executed, the virus code is executed first.
+;The virus first checks to see if the virus is already resident.  It does
+;this by setting the AH register to 0DEh.  This subfunction is currently
+;unsupported by DOS.  Interrupt 21 is then called.  If after the call, AH is 
+;unchanged, the virus is not resident.  If AH no longer contains 0DEh, the
+;virus is assumed to be resident (If the virus is resident, AH will actually
+;be changed to 0EDh.  This is never checked for, only a change from 0DEh
+;is checked for).  If the virus is already resident, the executing viral
+;code will restore the host in memory to original condition and allow it
+;to execute normally.  If however, the virus is not resident, Interrupt 21
+;will then be trapped by the virus.  Once this is accomplished, the virus
+;will free all available memory that it does not need (COM programs are
+;allocated all available memory when they are executed even though they can
+;only occupy one segment).  The viral code will then copy the original 
+;environment and determine the path and filename of the host program in 
+;memory.  The viral code will then shell out and re-execute the host 
+;program.  The virus is nearly resident now.  When the virus shells out
+;and re-executes the host, a non-supported value is passed in the AL
+;register.  This is interpreted by the virus to mean that the infection
+;is in transition and that when the host is re-executed, to assume that the
+;virus is already resident.  This value is then changed to the proper value
+;so that the shell process will execute normally (INT 21 is already trapped
+;at this point).  This shell process is invisible, since the viral code
+;so successfully copies the original environment.  Once the host has 
+;finished executing, control is then returned back to the original host
+;(the viral code).  The virus then completes execution by going resident
+;using interrupt 027h.  In all appearances, the host program has just 
+;completed normal execution and has terminated.  In actuality, the virus
+;is now fully resident.
+
+;When the virus is resident, interrupt 021h is trapped and monitored.
+;When a program is executed, the resident virus gets control (DOS executes
+;programs by shelling from DOS using interrupt 021h, subfunction 04bh).
+;When the virus sees that a program is being executed, a series of checks
+;are performed.  The first thing checked for is whether or not the program
+;to be executed has 'D' as the seventh letter in the filename.  If it does
+;the program is not infected and is allowed to execute normally (this is
+;how the virus keeps from infecting COMMAND.COM.  No COM file with a 'D'
+;as the seventh letter will be infected).  If there is no 'D' as the seventh
+;letter, the virus then checks to see if the program to be executed is a
+;COM file or not.  If it is not a COM file, it is not infected and allowed
+;to execute normally.  If the COM file test is passed, the file size is then
+;checked.  Files are only infected if they are larger than 1024 bytes and
+;smaller than 62000 bytes.  If the file size is within bounds, the file
+;is checked to see if it is already infected.  Files are only infected
+;a single time.  The virus determines infection by checking the date/time
+;stamp of the file.  If the seconds portion of the stamp is equal to 40,
+;the file is assumed to be infected.  If the file is infected, the virus
+;then checks the date.  If it is the 29th day of any month, the virus will
+;then display its irritating qualities by displaying the message 
+;'Highlander 1 RULES!' 21 times and then locking the machine and forcing
+;a reboot.  If the file is not infected, infection will proceed.  The 
+;virus stores the original attributes and then changes the attributes to
+;normal, read/write.  The file length is also stored.  The file is then
+;opened and the first part of the file is read and stored in memory (the
+;exact number of bytes is the same length as the virus).  The virus then
+;proceeds to overwrite the first part of the file with its own code.  The 
+;file pointer is then adjusted to the end of the file and a short 
+;restoration routine is copied.  The original first part of the file is 
+;then copied to the end of the file after the restore routine.  The files
+;time/date stamp is then adjusted to show an infection (the seconds portion
+;of the time is set to 40.  This will normally never be noticed since 
+;directory listings never show the seconds portion).  The file is then
+;closed and the original attributes are restored.  Control is then passed
+;to the original INT 021h routine and the now infected program is allowed
+;to execute normally.
+
+;This virus will infect read-only files.
+;COMMAND.COM will not be infected.
+;It is not destructive but can be highly irritating.

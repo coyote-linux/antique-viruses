@@ -1,0 +1,51 @@
+Virus Name:  Michelangelo 
+ Aliases: 
+ V Status:    Common 
+ Discovered:  April, 1991 
+ Symptoms:    Disk directory damage; hard disk format; decrease in total 
+              system and available memory 
+ Origin:      Sweden or the Netherlands 
+ Eff Length:  N/A 
+ Type Code:   BRtX - Resident Floppy Boot Sector/Master Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, NAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  F-Prot or M-Disk/P 
+ 
+ General Comments: 
+       The Michelangelo virus was first reported in April, 1991 in Sweden 
+       and the Netherlands.  The first usable sample of this virus was 
+       actually received in June, 1991.  Michelangelo is a memory resident 
+       infector of diskette boot sectors and the hard disk master boot 
+       sector (partition table).  It is roughly based on the Stoned virus, 
+       though very different in its behavior. 
+ 
+       The Michelangelo virus becomes memory resident the first time the 
+       system is attempted to be booted with a Michelangelo infected disk. 
+       Regardless of whether this boot is successful, Michelangelo will 
+       become memory resident.  Total system and available free memory, as 
+       measured by the DOS CHKDSK program will typically decrease by 
+       2,048 bytes.  Michelangelo will be resident at the top of system 
+       memory but below the 640K DOS boundary. Interrupt 12's return will 
+       be moved to insure that Michelangelo in memory is not overwritten. 
+ 
+       Once Michaelangelo is memory resident, it will infect diskette boot 
+       sectors as they are accessed.  It will also infect the hard disk 
+       master boot sector when the user attempts to access a file on the 
+       hard disk. 
+ 
+       On 360K 5.25" diskettes, the original boot sector will be moved by 
+       the virus to sector 11, the last sector in the root directory.  On 
+       1.2M 5.25" diskettes, the original boot sector will be relocated to 
+       sector 28, part of the root directory.  Since the original boot 
+       sector now resides in the root directory, any entries which happened 
+       to be in the overwritten sector of the root directory will be lost. 
+ 
+       Master boot sector infections will result in the original master boot 
+       sector having been moved to Side 0, Cylinder 0, Sector 7 on the 
+       hard disk. 
+ 
+       Michelangelo activates on March 6, at which time it will format the 
+       system hard disk by overwriting it with random characters from 
+       system memory. 
+ 
+       See:   Stoned 

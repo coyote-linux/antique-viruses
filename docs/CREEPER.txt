@@ -1,0 +1,43 @@
+Virus Name:  Creeper  
+ Aliases:     Creeping Tormentor 
+ V Status:    Rare 
+ Discovery:   February, 1992 
+ Symptoms:    .COM file growth; decrease in total system and available free 
+              memory 
+ Origin:      Unknown 
+ Eff Length:  475 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, NAV, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Creeper, or Creeping Tormentor, virus was received in February, 
+       1992.  Its origin is unknown.  Creeper is a memory resident infector 
+       of .COM programs, including COMMAND.COM. 
+ 
+       The first time a program infected with Creeper is executed, the 
+       Creeper virus will install itself memory resident at the top of 
+       system memory but below the 640K DOS boundary.  Interrupt 12's 
+       return will not have been moved.  Total system and available free 
+       memory, as indicated by the DOS CHKDSK program, will have decreased 
+       by 1,024 bytes.  Interrupts 1C and 21 will be hooked by the virus. 
+ 
+       Once the Creeper virus is memory resident, it will infect .COM 
+       programs when they are executed.  If COMMAND.COM if executed, it 
+       will become infected.  Creeper infected programs will have a file 
+       length increase of 475 bytes with the virus being located at the 
+       beginning of the infected program.  The file's date and time in 
+       the DOS disk directory listing will not have been altered. 
+ 
+       The Creeper virus looks for the Tormentor virus in memory, checking 
+       for the text string "TORMENTOR". 
+ 
+       It is unknown if Creeper does anything besides replicate. 
+ 
+       Known variant(s) of Creeper are: 
+       Creeper-B: Functionally equivalent to the original Creeper virus, 
+                  this variant has one byte which has been altered. 
+                  Origin:  Unknown  May, 1992. 

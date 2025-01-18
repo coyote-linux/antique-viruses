@@ -1,0 +1,238 @@
+Virus Name:  Civil War 
+ Aliases: 
+ V Status:    Rare 
+ Discovery:   November, 1992 
+ Symptoms:    .COM file growth 
+ Origin:      The Netherlands 
+ Eff Length:  244 Bytes 
+ Type Code:   PNC - Parasitic Non-Resident .COM Infector 
+ Detection Method:  AVTK, ViruScan, Sweep, F-Prot, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, NProt, AVTK/N, LProt, IBMAV/N, NAV/N, 
+                    Innoc 4.0+ 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Civil War virus was submitted in November, 1992, and appears to 
+       be from The Netherlands.  Civil War is a non-resident direct action 
+       infector of .COM programs, but not COMMAND.COM.  Later versions of 
+       this virus, including Civil War II v1.1 and Proto-T, listed below 
+       under variants, are memory resident infectors of .COM programs, and 
+       may infect COMMAND.COM.  The Civil War III v1.0 variant can also 
+       infect .EXE programs.  Later versions of the Civil War virus are 
+       encrypted, and listed under the  TPE  entry as anti-viral software 
+       will most likely identify the encryption engine rather than the 
+       virus present. 
+ 
+       When a program infected with the Civil War virus is executed, this 
+       virus will infect one .COM program located in the current directory. 
+       Infected programs will have a file length increase of 244 bytes 
+       with the virus being located at the end of the file.  The program's 
+       date and time in the DOS disk directory listing will not be altered. 
+       The following text strings are visible within the viral code in all 
+       Civil War infected programs: 
+ 
+               "Civil War, (c) 1992 Dark Helmet" 
+               "*.com" 
+ 
+       Known variant(s) of Civil War are: 
+       Civil War II v1.0: Received in September, 1993, Civil War II v1.0 
+                is a later version of the Civil War virus described above. 
+                The first time an infected program is executed, this virus 
+                will install itself memory resident at the top of system 
+                memory but below the 640K DOS boundary.  Total system and 
+                available free memory, as indicated by the DOS CHKDSK 
+                program, will have decreased by 1,024 bytes.  Interrupt 21 
+                will be hooked by the virus in memory.  Once Civil War II 
+                v1.0 is memory resident, it will infect .COM programs, but 
+                not COMMAND.COM, when they are executed.  Infected programs 
+                will have a file length increase of 580 bytes with the virus 
+                being located at the end of the file.  The file's date and 
+                time in the DOS disk directory listing will not be altered. 
+                The following text string is visible within the viral code in 
+                all infected programs: 
+                "Civil War II v1.0,(c) 06/03/1992 The Netherlands" 
+                Origin: The Netherlands  September, 1993. 
+       Civil War II v1.1: Received in November, 1992, Civil War II v1.1 
+                is a later version of the Civil War II v1.0 variant. 
+                The first time an infected program is executed, this virus 
+                will install itself memory resident at the top of system 
+                memory but below the 640K DOS boundary.  Total system and 
+                available free memory, as indicated by the DOS CHKDSK 
+                program, will have decreased by 1,024 bytes.  Interrupt 21 
+                will be hooked by the virus in memory.  Once Civil War II 
+                v1.1 is memory resident, it will infect .COM programs, 
+                including COMMAND.COM, when they are executed or opened for 
+                any reason.  Infected programs will have a file length 
+                increase of 599 bytes with the virus being located at the 
+                end of the file.  The file's date and time in the DOS disk 
+                directory listing will not be altered.  The following text 
+                strings are visible within the viral code in all infected 
+                programs: 
+                "Civil War II v1.1," 
+                "(c) 06/03/1992 Trident/Dark Helmet, The Netherlands" 
+                Origin: The Netherlands  November, 1992. 
+       Civil War III v1.0: Received in March, 1993, Civil War III v1.0 
+                is a later version of the Civil War virus described above. 
+                The first time an infected program is executed, this virus 
+                will install itself memory resident at the top of system 
+                memory but below the 640K DOS boundary.  Total system and 
+                available free memory, as indicated by the DOS CHKDSK 
+                program, will have decreased by 1,200 bytes.  Interrupt 21 
+                will be hooked by the virus in memory.  Once Civil War III 
+                v1.0 is memory resident, it will infect .COM and .EXE 
+                programs, including COMMAND.COM, when they are executed or 
+                opened for any reason.  Infected programs will have a file 
+                length increase of 901 bytes with the virus being located at 
+                the end of the file.  The file's date and time in the DOS 
+                disk directory listing will not be altered.  The following 
+                text strings are visible within the viral code in all 
+                infected programs: 
+                "Civil War III v1.0," 
+                "(c) Dec 1992, [ DH / TridenT ]" 
+                Origin: The Netherlands  March, 1993. 
+       Civil War.158: Received in January, 1995, Civil War.158 is a 248 
+                byte variant of the Civil War virus.  It infects all of the 
+                .COM files in the current directory when an infected program 
+                is executed.  Infected programs increase in size by 248 bytes 
+                with the virus being located at the end of the file.  The 
+                programs date and time in the DOS disk directory listing 
+                will have been updated to the current system date and time 
+                when infection occurred.  The following text strings are 
+                visible within the viral code: 
+                "*.com" 
+                "You're fucked" 
+                Origin: Unknown  January, 1995. 
+       Civil War-282: Received in January, 1994, Civil War-282 (or 
+                Navigator) is a 282 byte variant of the Civil War virus. 
+                Civil War-282 infects one .COM file in the current directory 
+                each time an infected program is executed.  Infected programs 
+                increase in size by 282 bytes with the virus being located 
+                at the end of the file.  The program's date and time in the 
+                DOS disk directory listing will not be altered.  The 
+                following text strings are visible within the viral code in 
+                all Civil War-282 infected programs: 
+                "*.com" 
+                "The Navigator, (c) 1992 Dark Helmet" 
+                Origin:  Unknown  January, 1994. 
+       Civil War-Lockjaw: Received in October, 1993, Civil War-Lockjaw is 
+                based on the Proto-T variant described below.  Civil War- 
+                Lockjaw installs itself memory resident at the top of system 
+                memory but below the 640K DOS boundary when the first 
+                infected program is executed.  Total system and available 
+                free memory, as indicated by the DOS CHKDSK program, will 
+                have decreased by 4,096 bytes.  Interrupt 21 will be hooked 
+                by the virus in memory.  Once the virus is memory resident, 
+                it will infect .COM programs, including COMMAND.COM, when 
+                they are executed.  Infected programs will have a file length 
+                increase of 1,053 bytes with the virus being located at the 
+                end of the file.  The program's date and time in the DOS disk 
+                directory listing will not be altered.  The following text 
+                strings are visible within the viral code in all infected 
+                programs: 
+                "[l��k��W]" 
+                "��k�d�M�" 
+                "{p�Ŕ?-�]" 
+                Execution of some utilities, including anti-viral utilities, 
+                when the virus is memory resident will result in the program 
+                being deleted and the display being altered similar to the 
+                 Lokjaw  virus. 
+                Origin:  Unknown  October, 1993. 
+       Lockjaw.499: Received in January, 1995, Lockjaw.499 is based on 
+                the Civil War-Lockjaw variant.  It  installs itself memory 
+                resident at the top of system memory but below the 640K 
+                DOS boundary when the first infected program is executed. 
+                Total system and available free memory, as indicated by the 
+                DOS CHKDSK program, will have decreased by 4,096 bytes. 
+                Interrupt 21 will be hooked by the virus in memory.  Once 
+                the virus is memory resident, it will infect .EXE programs 
+                by creating a companion .COM file with the same base file 
+                name.  These companion .COM files will have a file length 
+                of 499 bytes with the current system date and time when 
+                created.  The companion files will not be hidden in the 
+                DOS disk directory listing.  The following text strings 
+                can be found within the viral code contained in the 
+                companion .COM files: 
+                "Good Night" 
+                "EXE COM" 
+                "Temp" 
+                Systems infected with the Lockjaw.499 virus can be manually 
+                disinfected by deleting the 499 byte companion .COM files 
+                which contain the viral code. 
+                Origin:  Unknown  January, 1995. 
+       Lockjaw.507: Received in January, 1995, Lockjaw.507 is based on 
+                the Civil War-Lockjaw variant.  It  installs itself memory 
+                resident at the top of system memory but below the 640K 
+                DOS boundary when the first infected program is executed. 
+                Total system and available free memory, as indicated by the 
+                DOS CHKDSK program, will have decreased by 4,096 bytes. 
+                Interrupt 21 will be hooked by the virus in memory.  Once 
+                the virus is memory resident, it will infect .EXE programs 
+                by creating a companion .COM file with the same base file 
+                name.  These companion .COM files will have a file length 
+                of 507 bytes with the current system date and time when 
+                created.  The companion files will not be hidden in the 
+                DOS disk directory listing.  The following text strings 
+                can be found within the viral code contained in the 
+                companion .COM files: 
+                "Starry Night" 
+                "EXE COM" 
+                "Bornio Baby" 
+                Systems infected with the Lockjaw.507 virus can be manually 
+                disinfected by deleting the 507 byte companion .COM files 
+                which contain the viral code. 
+                Origin:  Unknown  January, 1995. 
+       Proto-T: Received in November, 1992, Proto-T is based on the 
+                Civil War virus described above, and appears to be an 
+                earlier version of the Civil War II v1.1 virus described 
+                above.  It does not match the description of the rumored 
+                Proto-T virus which was circulated on BBSes starting in 
+                October, 1992.  Proto-T installs itself memory resident at 
+                the top of system memory but below the 640K DOS boundary 
+                when the first infected program is executed.  Total system 
+                and available free memory, as indicated by the DOS CHKDSK 
+                program, will have decreased by 1,280 bytes.  Interrupt 21 
+                will be hooked by Proto-T in memory.  Once Proto-T is 
+                memory resident, it will infect .COM programs, including 
+                COMMAND.COM, when they are executed.  Infected programs will 
+                have a file length increase of 695 bytes with the virus 
+                being located at the end of the file.  The program's date 
+                and time in the DOS disk directory listing will not be 
+                altered.  The following text strings are visible within the 
+                viral code in all Proto-T infected programs: 
+                "This program is sick." 
+                "[PROTO-T by Dumbco, INC.] 
+                Proto-T will sometimes access the system hard disk instead 
+                of becoming memory resident when the first infected program 
+                is executed.  Once this access ends, the system hard disk 
+                will be inaccessible until the system is rebooted. 
+                Origin:  Unknown  November, 1992. 
+       Ritzen: Received in January, 1994, Ritzen is based on the Civil 
+                War virus described above.  It installs itself memory 
+                resident at the top of system memory but below the 640K 
+                DOS boundary when the first infected program is executed. 
+                Total system and available free memory, as indicated by the 
+                DOS CHKDSK program, will have decreased by 1,536 bytes. 
+                Interrupt 21 will be hooked by the virus in memory.  Once the 
+                virus is memory resident, it will infect .COM and .EXE 
+                programs, including COMMAND.COM, when they are executed. 
+                Infected programs will have a file length increase of 1,087 
+                bytes with the virus being located at the end of the file. 
+                The program's date and time in the DOS disk directory listing 
+                will have been updated to the current system date and time 
+                when infection occurred.  The following text strings are 
+                visible within the viral code in all infected programs: 
+                "Dedicated to Ritzen, our Minister of Education and Science. 
+                 We are getting sick of your budget cuts so we hope that you 
+                 get sick of this virus.. (c) '93 by S.A.R. / TridenT" 
+                Users of systems infected by the Ritzen virus may find that 
+                the cursor becomes invisible on the system display, and that 
+                some infected programs will fail to execute, displaying the 
+                message: "Program too big to fit in memory". 
+                The Ritzen variant is buggy, reinfecting memory each time 
+                an infected program is executed.  As a result, the system 
+                user will eventually not be able to run any programs since 
+                very little memory will be available. 
+                Origin:  Unknown  January, 1994. 
+ 
+       See:   Number 6   TPE 

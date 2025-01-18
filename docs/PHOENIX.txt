@@ -1,0 +1,65 @@
+Virus Name:  Phoenix 
+ Aliases:     P1 
+ V Status:    Rare 
+ Discovered:  July, 1990 
+ Symptoms:    .COM growth; system reboots; CHKDSK program failure; 
+              COMMAND.COM header change 
+ Origin:      Bulgaria 
+ Eff Length:  1,704 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Phoenix virus is of Bulgarian origin, and was submitted to the 
+       author of this document in July, 1990 by Vesselin Bontchev. This 
+       virus is one of a family of three (3) viruses which may be referred 
+       to as the P1 or Phoenix Family.  Each of these viruses is being 
+       documented separately due to their varying characteristics. The 
+       Phoenix virus is a memory resident, generic infector of .COM files, 
+       and will infect COMMAND.COM. 
+ 
+       The first time a program infected with the Phoenix virus is 
+       executed, the virus will install itself memory resident in free 
+       high memory, reserving 8,192 bytes.  Interrupt 2A will be hooked by 
+       the virus. System total memory and free memory will decrease by 
+       8,192 bytes. If the program was executed from a floppy drive, and 
+       COMMAND.COM was not present on the diskette, the virus will 
+       request that a diskette with \COMMAND.COM present be inserted in 
+       the drive.  Phoenix will immediately infect COMMAND.COM by 
+       overwriting part of the binary zero portion of the program, and 
+       changing the program's header information. COMMAND.COM will not 
+       change in file length.  The virus will then similarly infect 
+       COMMAND.COM residing in the C: drive root directory. 
+ 
+       After becoming memory resident, the virus will attempt to infect 
+       any .COM file executed.  Most of its attempts, however, will not 
+       result in a file being infected.  Phoenix is a fairly poor 
+       replicator.  If the virus is successful in infecting the file, it 
+       will append its viral code to the end of the file, increasing the 
+       file's length by 1,704 bytes. 
+ 
+       Phoenix is not able to recognize when it has previously infected a 
+       file, so it may reinfect .COM files several times.  Each infection 
+       will result in another 1,704 bytes of viral code being appended to 
+       the file. 
+ 
+       Systems infected with the Phoenix virus will experience problems 
+       with executing CHKDSK.COM.  Attempts to execute this program with 
+       Phoenix memory resident will result in a warm reboot of the system 
+       occurring, however the memory resident version of Phoenix will not 
+       survive the reboot.  If an autoexec.bat file is not present on the 
+       drive being booted from, the system will prompt for the user to 
+       enter Date and Time. 
+ 
+       The Phoenix virus employs a complex encryption mechanism, and virus 
+       scanners which are only able to look for simple hex strings will 
+       not be able to detect it.  There is no simple hex string in this 
+       virus that is common to all infected samples. 
+ 
+       This virus is not related to the Cascade (1701/1704) virus. 
+ 
+       See:   Evil   Phoenix 2000   PhoenixD   Proud   V82 

@@ -1,0 +1,104 @@
+ Virus Name:  Natas 
+ Aliases:     Natas.4746 
+ V Status:    Common 
+ Discovered:  June, 1994 
+ Symptoms:    .COM & .EXE growth; DOS CHKDSK allocation errors; 
+              decrease in total system & available free memory; 
+              Master Boot Record / Diskette Boot Sectors Altered; 
+              system hard disk corruption 
+ Origin:      United States 
+ Eff Length:  4,746 Bytes 
+ Type Code:   PRhAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  F-Prot, AVTK, ViruScan, IBMAV, Sweep, NAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    AVTK/N, Sweep/N, NShld, IBMAV/N, NProt, NAV/N, LProt, 
+                    Innoc 4.0+ 
+ Removal Instructions:  Delete infected files, Replace MBR on Hard Disk 
+ 
+ General Comments: 
+       The Natas or Natas.4746 virus was received in June, 1994.  It's 
+       source code is rumored to have been distributed late last year in 
+       an issue of 40-Hex magazine.  Natas is a memory resident stealth 
+       virus which infects the system hard disk's Master Boot Record, 
+       diskette boot sectors, .COM, .EXE, and overlay files, including 
+       COMMAND.COM.  This virus is also highly polymorphic. 
+ 
+       When the first Natas infected program is executed, this virus will 
+       infect the hard disk master boot record (the sector containing the 
+       hard disk partition table), as well the boot copy of COMMAND.COM. 
+       Total system and available free memory, as indicated by the DOS CHKDSK 
+       program, will have decreased by 5,664 bytes. 
+ 
+       Once the Natas virus is memory resident, it will infect .COM, .EXE, 
+       and overlay files when they are executed, opened, or copied.  Infected 
+       programs will have a file length increase of 4,746 bytes, though the 
+       file length increase will not be visible with the virus memory 
+       resident.  The virus will be located at the end of all infected files, 
+       although it will not be visible when the virus is memory resident as 
+       Natas hides the infection.  The program's date and time in the DOS 
+       disk directory listing will not be altered.  The following text string 
+       is encrypted within the viral code in all Natas infected programs: 
+ 
+               "Natas" 
+ 
+       The DOS CHKDSK program will indicate Allocation Errors on all infected 
+       files when the virus is memory resident.  System hangs may occur when 
+       infected programs are executed. 
+ 
+       The Natas virus is a destructive virus.  Each time an infected 
+       program is executed, or the system is booted from an infected disk, 
+       the virus has a 1-in-512 probability of overwriting a large 
+       portion of the first system hard disk.  This event may also be 
+       triggered by attempting to use a debugger to disassemble the virus. 
+ 
+       Known variant(s) of Natas are: 
+       Natas.4740: Received in July, 1995, this is a 4,740 byte variant 
+               of the Natas virus described above.  Its size in memory is 
+               6,144 bytes.  Natas.4740 adds 4,740 bytes to the files it 
+               infects, though the virus hides the file length increase 
+               when it is memory resident.  As with other variants of Natas, 
+               this virus also infects the master boot record and diskette 
+               boot sectors.  The following text string is encrypted within 
+               the Natas.4740 viral code: 
+               "Natas" 
+               This variant adds 100 years the file date in the DOS disk 
+               directory as an indicator that the file is infected. 
+               Origin:  Unknown  July, 1995. 
+       Natas.4744: Isolated in Spain, Natas.4744 is a 4,744 byte variant 
+               of the Natas virus described above. 
+               Origin:  Spain  July, 1994. 
+       Natas.4774: Received in July, 1995, this is a 4,774 byte variant 
+               of the Natas virus described above.  Its size in memory is 
+               6,144 bytes.  Natas.4774 adds 4,774 bytes to the files it 
+               infects, though the virus hides the file length increase 
+               when it is memory resident.  As with other variants of Natas, 
+               this virus also infects the master boot record and diskette 
+               boot sectors.  The following text string is encrypted within 
+               the Natas.4774 viral code: 
+               "Time has come to pay (c)1994 NEVER-1 3" 
+               This variant adds 100 years the file date in the DOS disk 
+               directory as an indicator that the file is infected. 
+               Origin:  Unknown  July, 1995. 
+       Natas.4988: Isolated in the state of Arizona, in the 
+               United States, in May, 1995, Natas.4988 is a 4,988 byte 
+               variant of the Natas virus described above.  Its size in 
+               memory is 6,144 bytes.  It adds 4,988 bytes to the files it 
+               infects, though the virus hides the file length increase 
+               when it is memory resident.  As with other variants of Natas, 
+               this virus also infects the master boot record and diskette 
+               boot sectors.  The following text strings are encrypted within 
+               the Natas.4988 viral code: 
+               "Time has come to pay (c)1994 NEVER-1 SANDRINE B." 
+               "Yes I know my enemies 
+                They're the teatchers who taught me to fight me 
+                Compromise, conformity, assimilation, submission 
+                Ignorance, hypocrisy, brutality, the elite 
+                All of whitch are American dreams 
+                (c) 1994 by Never-1(Belgium Most Hated) Sandrine B." 
+                This variant of Natas adds 100 years to the file date in 
+                the DOS disk directory, and some directory programs may 
+                indicate a change in the year on infected files.  The 
+                DOS CHKDSK program will not indicate file allocation 
+                errors on infected files when this variant is memory 
+                resident. 
+                Origin:  United States  May, 1995. 

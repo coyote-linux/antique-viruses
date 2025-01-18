@@ -1,0 +1,42 @@
+Virus Name:  Nina 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  December, 1990 
+ Symptoms:    .COM growth; decrease in total system and available free 
+              memory; 
+ Origin:      Bulgaria 
+ Eff Length:  256 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Nina virus was received in December, 1990, and is from 
+       Bulgaria. This virus is a memory resident infector of .COM files, 
+       including COMMAND.COM. 
+ 
+       When the first program infected with the Nina virus is executed, 
+       Nina will install itself memory resident at the top of system 
+       memory but below the 640K DOS boundary.  Total system memory and 
+       available free memory will decrease by 1,024 bytes as shown by the 
+       DOS CHKDSK command. Interrupt 21 will be hooked by the virus. 
+ 
+       After Nina is memory resident, it will infect .COM programs that 
+       are greater than 256 bytes in length as they are executed.  If 
+       COMMAND.COM is executed, it will become infected.  Infected .COM 
+       programs increase in length by 256 bytes, and will have the virus 
+       located at the beginning of the infected file. 
+ 
+       The Nina virus is named Nina because the virus contains the text 
+       string "Nina" within the viral code. 
+ 
+       This virus does not do anything besides replicate. 
+ 
+       Known variant(s) of Nina are: 
+       Nina.D: Received in January, 1995, Nina.D is a minor variant 
+             of the Nina virus described above.  The text string within 
+             the virus has been changed to "RIOT!". 
+             Origin:  Unknown  January, 1995. 

@@ -1,0 +1,63 @@
+Virus Name:  Cheeba 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   December, 1991 
+ Symptoms:    .COM & .EXE growth; decrease in total system & available free 
+              memory 
+ Origin:      Unknown 
+ Eff Length:  1,683 - 1,698 Bytes 
+ Type Code:   PRsAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, IBMAV, ChAV, 
+                    NAV, NAVDX, VAlert, PCScan, 
+                    Sweep/N, NShld, Innoc, AVTK/N, IBMAV/N, NAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Cheeba virus was received in December, 1991.  Its origin or 
+       point of original isolation is unknown.  At the time it was 
+       submitted, there were two Cheeba viruses.  The virus is a memory 
+       resident infector of .COM programs, including COMMAND.COM, and 
+       is described below.  The second, Cheeba-B, is a memory resident 
+       infector of .COM and .EXE programs, including COMMAND.COM, and 
+       is listed under "Known variant(s)" below. 
+ 
+       The first time a program infected with the Cheeba virus is 
+       executed, it will install itself memory resident at the top of 
+       system memory but below the 640K DOS boundary.  Total system and 
+       available free memory, as indicated by the DOS CHKDSK program, 
+       will have decreased by 3,392 bytes.  Interrupt 12's return will 
+       not have been moved.  Interrupt 22 will be hooked by the Cheeba 
+       virus in memory. 
+ 
+       Once Cheeba is memory resident, it will infect the target file 
+       when .COM programs, including COMMAND.COM, are copied.  It does 
+       not infect on file execution or opened.  The source file of the 
+       copy operation will not be infected. 
+ 
+       Programs infected with Cheeba will have a file length increase of 
+       1,683 to 1,698 bytes with the virus being located at the end of 
+       the infected file.  The file's date and time in the DOS disk 
+       directory listing will not have been altered.  There are no visible 
+       text strings within the Cheeba viral code in infected files. 
+ 
+       It is unknown if Cheeba does anything besides replicate.  It uses 
+       a complex encryption mechanism. 
+ 
+       Known variant(s) of Cheeba are: 
+       Cheeba-B: Very similar to the original Cheeba virus, the 
+                 major difference with Cheeba-B is that it will also 
+                 infect .EXE programs when they are copied.  Like Cheeba, 
+                 only the target file is infected, the source file for 
+                 the copy operation will not become infected. 
+                 Origin:  Unknown  December, 1991. 
+       Cheeba-1691: Functionally equivalent to the Cheeba-B listed 
+                 above, this variant's main difference is that it adds 
+                 1,691 - 1,706 bytes to the .COM & .EXE programs it 
+                 infects. 
+                 Origin:  Unknown  March, 1992. 
+       Cheeba-1691B: Functionally similar to Cheeba-1691, this 
+                 variant also adds 1,691 - 1,706 bytes to the .COM & .EXE 
+                 programs it infects.  There are some minor code changes. 
+                 Origin:  Unknown  March, 1992. 
+ 
+       See:   Chemmy 

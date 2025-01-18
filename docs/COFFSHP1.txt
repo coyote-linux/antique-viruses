@@ -1,0 +1,42 @@
+ Virus Name:  Coffeeshop-1568 
+ Aliases:     Coffeeshop 1 
+ V Status:    Rare 
+ Discovery:   September, 1992 
+ Symptoms:    .COM & .EXE growth; decrease in total system & available free 
+              memory 
+ Origin:      Sweden 
+ Eff Length:  1,568 Bytes 
+ Type Code:   PRhA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, Sweep, F-Prot, NAVDX, VAlert, 
+                    IBMAV, NAV, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, AVTK/N, NProt, NAV/N, IBMAV/N, 
+                    Innoc 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Coffeeshop-1568 virus was submitted in September, 1992.  It is 
+       probably from Sweden.  Coffeeshop-1568 is a memory resident infector 
+       of .COM and .EXE programs, but not COMMAND.COM.  It is not encrypted 
+       with the Dark Avenger Mutating Engine, though there are two viruses 
+       known as Coffeeshop and Coffeeshop 2 which do use the mutating 
+       engine.  See the entry for  DAME  for these other Coffeeshop viruses. 
+ 
+       The first time a program infected with the Coffeeshop-1568 virus 
+       is executed, Coffeeshop-1568 will install itself memory resident at 
+       the top of system memory but below the 640K DOS boundary, not moving 
+       interrupt 12's return.  Total system and available system memory, as 
+       measured by the DOS CHKDSK program, will have decreased by 1,824 
+       bytes.  Interrupt 21 will be hooked by Coffeeshop-1568 is memory. 
+ 
+       Once memory resident, Coffeeshop-1568 will infect .COM and .EXE 
+       programs when they are executed.  Infected programs will increase 
+       in size by 1,568 bytes with the virus being located at the end of 
+       the file.  The program's date and time in the DOS disk directory 
+       listing will not be altered.  One text string appears within the 
+       viral code in all infected programs: 
+ 
+               "CoffeeShop" 
+ 
+       It is unknown if Coffeeshop-1568 does anything besides replicate. 
+ 
+       See:   DAME 

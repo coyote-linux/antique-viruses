@@ -1,0 +1,47 @@
+Virus Name:  Hacktic 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  June, 1992 
+ Symptoms:    .EXE programs truncated to 83 bytes; .EXE programs become 
+              hidden; files fail to execute properly; file date/time 
+              changes 
+ Origin:      The Netherlands 
+ Eff Length:  83 Bytes 
+ Type Code:   ONE - Non-Resident Overwriting .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, IBMAV, Sweep, NAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, AVTK/N, LProt, Sweep/N, NAV/N, NProt, IBMAV/N, 
+                    Innoc 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Hacktic virus was received from The Netherlands in June, 1992. 
+       Hacktic is a non-resident, direct action overwriting virus which 
+       infects .EXE programs.  There is a later version of this virus, 
+       Hacktic 2, which is a parasitic virus which infects .COM programs. 
+ 
+       When a program infected with the Hacktic virus is executed, the 
+       Hacktic virus will infect one .EXE program located in the 
+       current directory.  Infected .EXE programs will be truncated to 
+       83 bytes, and only contain the Hacktic viral code.  The .EXE file 
+       will disappear from the disk directory as it will have the hidden 
+       attribute byte set.  The file's date and time in the DOS disk 
+       directory will be set to the system date and time when infection 
+       occurred. 
+ 
+       Hacktic doesn't do anything besides replicate, destroying the files 
+       it infects. 
+ 
+       Known variant(s) of Hacktic are: 
+       Hacktic 2: Also received in June, 1992, Hacktic 2 is a non- 
+                  resident direct action infector of .COM programs, 
+                  including COMMAND.COM.  It will infect one .COM 
+                  program in the current directory each time an infected 
+                  program is executed.  Infected programs will have a 
+                  file length increase of 93 bytes with the virus being 
+                  located at the beginning of the file.  The program's 
+                  date and time in the DOS disk directory will have been 
+                  changed to the system date and time when infection 
+                  occurred.  Hacktic 2 doesn't do anything besides 
+                  replicate, and doesn't appear to be in the public domain. 
+                  Origin:  The Netherlands  June, 1992. 

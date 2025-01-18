@@ -1,0 +1,44 @@
+Virus Name:  Busted 
+ Aliases:    
+ V Status:    Viron 
+ Discovery:   February, 1992 
+ Symptoms:    .EXE files overwritten/corrupted 
+ Origin:      Unknown 
+ Eff Length:  571 Bytes (overwriting) 
+ Type Code:   ONE - Overwriting Non-Resident .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, IBMAV, Sweep, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, IBMAV/N, 
+                    AVTK/N, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Busted virus was received in February, 1992.  Its origin, or 
+       point of isolation, are unknown.  Busted is a non-resident, 
+       direct action overwriting virus which infects .EXE programs. 
+ 
+       When a program infected with the Busted virus is executed, this 
+       virus will infect all .EXE programs located in the current directory. 
+       Once the virus has completed infecting all .EXE programs in the 
+       current directory, the following message will be displayed: 
+ 
+               "Program too big to fit in memory" 
+ 
+       Infected programs will have the first 571 bytes of their code 
+       overwritten by the virus, permanently damaging them.  There will 
+       be no change to the file's length unless the .EXE program was 
+       originally smaller than 571 bytes, in which case the length will 
+       become 571 bytes.  The program's date and time in the DOS disk 
+       directory listing will not have been altered. 
+ 
+       Several text strings are contained within this virus, though they 
+       are encrypted in all replicated samples.  These text strings are: 
+ 
+               "Busted!" 
+               "This is based on Leprosy-B." 
+               "Thanx PCM2" 
+               "Busted, Strain A, version 1.08y" 
+               "(Psychogenius), September '91" 
+ 
+       Busted does not appear to do anything besides replicating, 
+       destroying the .EXE programs it infects. 

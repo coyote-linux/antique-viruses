@@ -1,0 +1,9 @@
+        ; The virus consists of a boot sector only.  The original boot sector
+        ; is kept at track zero, head one, sector three on a floppy disk, or
+        ; track zero, head zero, sector two on a hard disk.
+ 
+        ; The disassembly has been tested by re-assembly using MASM 5.0.
+ 
+        ; The program requires an origin address of 7C00H, as it is designed
+        ; to load and run as a boot sector.
+ 

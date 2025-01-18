@@ -1,0 +1,83 @@
+Virus Name:  Casino 
+ Aliases:     Casino-B, Casino-C 
+ V Status:    Rare 
+ Discovery:   April, 1991 
+ Symptoms:    .COM growth; decrease in total system & available free memory; 
+              file allocation errors; slot machine game; file allocation 
+              table damaged 
+ Origin:      Malta 
+ Eff Length:  2,332 - 2,346 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, NAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Casino virus was submitted in April, 1991 by David Chess of IBM. 
+       Casino was first isolated in Malta.  This virus is a memory resident 
+       infector of .COM files, including COMMAND.COM. 
+ 
+       The first time a program infected with Casino is executed, Casino 
+       will install itself memory resident at the top of system memory. 
+       Total system and available free memory, as indicated by the DOS 
+       CHKDSK program will decrease by 37,568 to 37,632 bytes.  3,152 bytes 
+       in low system memory will also be used by the virus, and interrupts 
+       00, 23, and 30 will point to this area.  After Casino is resident, 
+       it will then immediately infect COMMAND.COM located in the C: drive 
+       root directory. 
+ 
+       After Casino is memory resident, it will infect .COM programs when 
+       any of three events occur.  If the system user issues a DIR command, 
+       or a program does an internal DIR command, one .COM file in the 
+       current directory will be infected.  Additionally, if the system 
+       user executes an infected program, a .COM program will become 
+       infected.  Lastly, Casino will infect .COM programs that are opened 
+       by another program for any reason. 
+ 
+       Programs infected with Casino will have a file length increase of 
+       2,332 to 2,346 bytes.  The file length increase, however, is mostly 
+       hidden if the virus is memory resident.  With the virus memory 
+       resident, infected files will have a file length increase of 1 to 16 
+       bytes, but occasionally one may show a file length increase of up to 
+       48 bytes.  The virus does not alter the file date and time in the 
+       disk directory. 
+ 
+       If Casino is memory resident and the DOS CHKDSK program is executed, 
+       file allocation errors will be returned for each infected program. 
+       If the CHKDSK/F option is used, program corruption will occur. 
+ 
+       Casino activates on January 15, April 15, and August 15, when it 
+       will play a slot machine game with the system user, with the 
+       following message being displayed: 
+ 
+                       "DISK DESTROYER . A SOUVENIR OF MALTA 
+                   
+                    I have just DESTROYED the FAT on your Disk!! 
+           However, I have a copy in RAM, and I`m giving you a last chance 
+                            to restore your precious data.                  
+          WARNING: IF YOU RESET NOW, ALL YOUR DATA WILL BE LOST - FOREVER!! 
+                        Your Data depends on a game of JACKPOT 
+ 
+                                CASINO DE MALTE JACKPOT" 
+ 
+       If the system user looses the game, Casino will trash the 
+       file allocation table. 
+ 
+       Known variant(s) of Casino are: 
+       Casino-B: Similar to the original Casino virus, the major 
+                 change with this variant is that it will trash the 
+                 file allocation table before playing the slot machine 
+                 game with the system user.  Only interrupt 21 is hooked 
+                 by the virus in memory. 
+       Casino-C: Similar to Casino-B, the major change with this variant 
+                 is that it does not trash the file allocation table before 
+                 playing the slot machine game, and it is possible for the 
+                 system user to win, avoiding disk corruption.  If the 
+                 system user wins the game, the following message will be 
+                 displayed: 
+             "BASTARD ! You're lucky this time - but for your own sake now 
+              SWITCH OFF YOUR COMPUTER AND DON`TURN IT ON TILL TOMORROW!!!" 
+                 A system hang then occurs. 
+                 Origin:  Unknown  May, 1992. 

@@ -1,0 +1,234 @@
+Virus Name:  Pixel 
+ Aliases:     V-345 
+ V Status:    Endangered 
+ Discovery:   1988 
+ Symptoms:    .COM growth; message 
+ Origin:      Greece 
+ Eff Length:  345 Bytes 
+ Type Code:   PNC - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The Pixel virus was originally distributed in Greece in 1988 by 
+       Pixel magazine.  It is a non-resident, direct action infector of 
+       .COM files, including COMMAND.COM.  Since its original release, there 
+       have been many variants of the Pixel virus which have been isolated. 
+       These variants are listed below under known variants, or under the 
+       entries indicated below. 
+ 
+       When a program infected with the Pixel virus is executed, the Pixel 
+       virus will infect all .COM files in the current directory, including 
+       COMMAND.COM.  Infected files will have a file length increase of 
+       345 bytes with the virus being located at the beginning of the 
+       infected file.  The file's date and time in the DOS disk directory 
+       will have been updated to the current system date and time when 
+       infection occurred. 
+ 
+       The following text strings can be found in programs infected with 
+       the original Pixel virus: 
+ 
+               "*.COM" 
+               "=!= Program sick error:Call doctor or buy Pixel for cure 
+                description" 
+               "WB" 
+  
+       "WB" is the infection marker for the original Pixel virus, and is 
+       found in the third and fourth bytes of all infected files. 
+ 
+       The original Pixel virus doesn't do anything besides replicate. 
+ 
+       Known variants of Pixel are: 
+       MS-748: Based on the Pixel virus, MS-748 infects all of the .COM 
+               programs located in the current directory when an infected 
+               program is executed.  Infected programs will have a file 
+               length increase of 748 bytes with the virus being located 
+               at the beginning of the file.  The program's date and time in 
+               the DOS disk directory listing will have been updated to the 
+               current system date and time.  The following text strings can 
+               be found near the beginning of all MS-748 infected programs: 
+               "MS*.COM" 
+               "*.EXE" 
+               Origin:  Unknown, December, 1992 
+       Pixel-257: Similar to the Pixel virus described above, this 
+                  variant adds 257 bytes to the programs it infects. 
+                  All infected programs will have had their file date and 
+                  time changed to "4-24-80 12:04a".  Text strings found 
+                  in this variant are: 
+                  "*.COM" 
+                  "Fucking hell:You wet pussy" 
+                  The two character ASCII string "WB" will be located in 
+                  the third and fourth bytes of all infected files, this 
+                  is the infection marker for the virus.  Pixel-257 will 
+                  display the second text string above when an infected 
+                  program is executed after all of the .COM programs in 
+                  the current directory have been infected.  At this 
+                  point, the infected programs will not execute, but the 
+                  user will be returned to the DOS prompt after the message 
+                  is displayed. 
+                  Origin: Unknown, January, 1992 
+       Pixel-275: Similar to the Pixel-257 variant, this variant adds 
+                  275 bytes to the files it infects.  It doesn't display 
+                  the message, and infected programs will execute 
+                  properly.  Text strings are the same as for Pixel-277. 
+                  Origin: Unknown, January, 1992 
+       Pixel-277: Similar to the Pixel virus described above, except 
+                  that the virus is now 277 bytes in length, and does not 
+                  contain any message text.  The original message text has 
+                  been replaced with code to produce a parity error 
+                  approximately 50% of the time when an infected program is 
+                  executed. 
+                  Origin: Bulgaria               Alias: V-277 
+       Pixel-283: Similar to Pixel, this variant adds 283 bytes to the 
+                  .COM files it infects.  Infected files will have had 
+                  their file date and time in the DOS disk directory changed 
+                  to "4-24-80 12:04a".  Text strings found in this variant 
+                  are: 
+                  "*.COM" 
+                  "=!What a stupid you are !!!!!!!!" 
+                  Pixel-283 doesn't do anything besides replicate. 
+                  Origin: Unknown, January, 1992 
+       Pixel-295: Similar to Pixel, this variant adds 295 bytes to the 
+                  .COM files it infects.  Infected files will have had 
+                  their file date and time in the DOS disk directory changed 
+                  to "4-24-80 12:04a".  Text strings found in Pixel-295 are: 
+                  "*.COM" 
+                  "=!= Program sick error:Call doctor or buy PIXEL for 
+                   cure description" 
+                  Pixel-295 doesn't do anything besides replicate. 
+                  Origin: Unknown, January, 1992 
+       Pixel-297: Based on the Pixel virus, this variant infects all 
+                  .COM programs in the current directory when an infected 
+                  program is executed.  Infected programs will have a file 
+                  length increase of 297 bytes with the virus being located 
+                  at the beginning of the file.  The file's date and time 
+                  in the DOS disk directory listing will not be altered. 
+                  The following text strings can be found within the viral 
+                  code of all Pixel-297 infected programs: 
+                  "Happy Birthday,Cheef" 
+                  "*.COM" 
+                  Origin:  USSR, July, 1992. 
+       Pixel-299: Similar to Pixel, except that the length of the virus 
+                  is 299 bytes. 
+                  Origin: Bulgaria               Alias: V-299 
+       Pixel-342: Similar to Pixel, except that the length of the virus 
+                  is 342 bytes.  The "WB" infection marker in the virus has 
+                  been changed to "IV". 
+                  Origin: Bulgaria, June, 1992. 
+       Pixel-739: Similar to Pixel, except the length of the virus is 
+                  now 739 bytes. Infected files will have had their file 
+                  date and time set to the system date and time when 
+                  infection occurred.  The only text strings within the 
+                  viral code in infected programs are: "IV" (the infection 
+                  marker) and "*.COM".  Pixel-739 is actually much smaller 
+                  than 779 bytes in length, the remainder of the file 
+                  length increase will contain characters from system 
+                  memory. 
+                  Origin:  Unknown, April, 1993. 
+       Pixel-779: Similar to Pixel, except the length of the virus is 
+                  now 779 bytes. Infected files will have had their file 
+                  date and time set to the system date and time when 
+                  infection occurred.  The only text strings within the 
+                  viral code in infected programs are: "IV" (the infection 
+                  marker) and "*.COM".  Pixel-779 is actually much smaller 
+                  than 779 bytes in length, the remainder of the file 
+                  length increase will contain characters from system 
+                  memory. 
+                  Origin:  Unknown, January, 1992 
+       Pixel-837: Similar to Pixel, the length of the virus is now 
+                  837 bytes.  Infected files will have had their file 
+                  date and time set to the system date and time when 
+                  infection occurred.  Text strings found in this variant 
+                  are: 
+                  "=!= I love you so much !!!" 
+                  "-- Francis" 
+                  "*.COM" 
+                  Origin:  Unknown, January, 1992 
+       Pixel-847: Similar to Pixel, except that the length of the virus 
+                  is 847 bytes. 
+                  Origin: Bulgaria                  Alias: V-847 
+       Pixel-847B: Similar to Pixel-847, except that the message in the 
+                  virus is now in Spanish and is: 
+                  "=!= En tu PC hay un virus RV1, y esta es su quinta 
+                   generacion". 
+                  This variant was originally distributed by a magazine in 
+                  Spain in file NOCARGAR.COM. 
+                  Origin: Spain                     Alias: V-847B 
+       Pixel-850: Similar to other members of this family, this variant 
+                  was submitted in March 1991 from Europe.  Infected files 
+                  will increase in size by 850 bytes, with the virus being 
+                  located at the beginning of the infected program.  This 
+                  variant contains the same message as the original Pixel. 
+                  Origin: Europe, March 1991        Alias: Pixel 2 
+       Pixel-850 Dropper: The Pixel-850 Dropper is the original "dropper" 
+                  file of the Pixel-850 virus.  This program is 384 bytes in 
+                  length, and when executed will infect all .COM files in 
+                  the current directory with Pixel-850. 
+                  Origin: Europe, March 1991        Alias: S-847 
+       Pixel.851.B: Received in June, 1996, this is an 851 byte variant 
+                  of the Pixel virus.  It infects all of the .COM files 
+                  in the current directory, including COMMAND.COM, when 
+                  an infected program is executed, and may display one 
+                  line of characters from memory on the system monitor. 
+                  Infected programs will have a file length increase of 
+                  851 bytes with the virus being located at the beginning 
+                  of the file.  The program's date and time in the DOS 
+                  disk directory listing will have been updated to the 
+                  current system date and time when infection occurred. 
+                  The text string "SS" can be found starting in the fourth 
+                  byte of all infected files.  The following additional 
+                  text strings are visible within the viral code: 
+                  "*.COM" 
+                  "SSt!" 
+                  Origin:  Unknown  June, 1996. 
+       Pixel-852: Similar to the Pixel-847 variant, this variant does 
+                  not contain any message.  The original sample of this 
+                  variant received by the author did not contain any text; 
+                  however, after replicating on a test system, all infected 
+                  files then contained text from the video buffer, which 
+                  implies the submitted sample was the original distribution 
+                  of the virus.  This variant checks bytes 4-5 of .COM files 
+                  to determine if the file was previously infected.  If 
+                  bytes 4-5 are "SS", the virus assumes the file is already 
+                  infected. 
+                  Origin: Bulgaria                  Alias: V-852 
+       Pixel-854: Similar to the Pixel-852 variant, Pixel-854 differs 
+                  primarily in that it adds 854 bytes to the .COM files it 
+                  infects. 
+                  Origin: Unknown, January 1992. 
+       Pixel.1268: Received in July, 1994, Pixel.1268 is a 1,268 byte 
+                  variant of the Pixel virus described above.  It infects 
+                  all of the .COM files located in the current directory, the 
+                  \DOS directory (if it exists on the drive), as well as the 
+                  current drive's root directory, each time an infected 
+                  program is executed.  If the programs were previously 
+                  infected by the virus, it will reinfect them.  Each 
+                  infection by the virus adds 1,268 bytes to the .COM files. 
+                  The virus will be located at the beginning of the file. 
+                  The file's date and time in the DOS disk directory listing 
+                  will have been updated to the current system date and time 
+                  when the last infection or reinfection occurred.  The 
+                  following text strings can be found within the viral code: 
+                  "\DOS\" 
+                  "*.COM \DOS\*.COM \*.COM" 
+                  "PreComFileRunSyndrome 1993" 
+                  "YOU HAVE ENTERED THE WRONG PASSWORD!!" 
+                  "ENTER THE PASSWORD:" 
+                  Origin: Unknown, July, 1994. 
+       Portugal-500: Based on the Pixel virus, this virus was submitted 
+                  from Portugal in May, 1992.  It is a non-resident virus 
+                  which will infect all the .COM files in the current 
+                  directory when an infected program is executed.  Infected 
+                  programs will have a file length increase of 500 bytes 
+                  with the virus being located at the beginning of the 
+                  program.  The file's date and time in the DOS disk 
+                  directory will have been updated to the system date and 
+                  time when infection occurred.  Portugal-500 does not 
+                  contain any text strings, and does do anything besides 
+                  replicate. 
+                  Origin: Portugal, May 1992. 
+  
+       See:   Amstrad   Hell   Pixie   Silly   Silly-365 

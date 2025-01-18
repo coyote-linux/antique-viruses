@@ -1,0 +1,308 @@
+Virus Name:  Timid 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   December, 1991 
+ Symptoms:    .COM file growth; file date/time change; system hangs; 
+              program execution failure 
+ Origin:      Oregon, United States 
+ Eff Length:  306 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  F-Prot, Sweep, AVTK, PCScan, ChAV, 
+                    NAV, IBMAV, ViruScan, NAVDX, VAlert, 
+                    Sweep/N, NProt, NShld, AVTK/N, NAV/N, IBMAV/N, LProt, 
+                    Innoc 4.0+ 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Timid virus was discovered in the state of Oregon in the 
+       United States in December, 1991.  Timid is a non-resident, direct 
+       action infector of .COM programs, including COMMAND.COM.  Timid 
+       appears to be an escaped research virus, and has been found in the 
+       public domain.  It was submitted by Wallace Hale of Canada. 
+ 
+       When a program infected with Timid is executed, the Timid virus was 
+       look for an uninfected .COM program located in the current directory 
+       to infect.  The first uninfected .COM program encountered will be 
+       infected by the virus.  If no uninfected .COM programs exist in 
+       the current directory, a system hang will occur. 
+ 
+       Timid infected .COM files will have a file length increase of 306 
+       bytes.  The virus will be located at the end of the infected file. 
+       The file's date and time in the DOS disk directory listing will 
+       have been updated to the system date and time when infection 
+       occurred.  Two text strings can be found in the viral code: 
+ 
+               "VI" 
+               "*.COM" 
+ 
+       The first of these strings, "VI", will be located in the fourth and 
+       fifth byte of infected files.  Together with a jump (E9h) instruction 
+       located at the beginning of the infected file, it forms the infection 
+       marker used by the virus to determine if the file was previously 
+       infected by Timid. 
+ 
+       Attempts to boot the system from an disk with an infected COMMAND.COM 
+       will result in a system hang.  Execution of infected programs will 
+       yield unexpected results, such as beeping, or a file name being 
+       displayed.  Infected programs will not execute properly. 
+ 
+       Known variant(s) of Timid are: 
+       Hehheh: Received in November, 1992, Hehheh is a 320 byte variant 
+                of the Timid virus.  It infects one program or file in the 
+                current directory each time an infected program is executed. 
+                Infected files may be of any type, including data files, as 
+                the virus uses a search argument of *.*.  Infected files 
+                will have a file length increase of 320 bytes with the virus 
+                being located at the end of the file.  The program's date 
+                and time in the DOS disk directory listing will have been 
+                updated to the current system date and time when infection 
+                occurred.  After all of the files in the current directory 
+                have been infected, execution of the next infected program 
+                will result in the following message being repeatedly 
+                displayed on the system monitor, accompanied by beeping: 
+                "*.* HEH!HEH!HEH!HEH!" 
+                This text string can be found within the viral code in all 
+                Hehheh infected programs. 
+                Origin:  United States  November, 1992 
+       Timid.245: Received in January, 1996, Timid.245 is a 245 
+                byte variant of the Timid virus listed above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed.  Infected programs will have a 
+                file length increase of 245 bytes, with the virus being 
+                located at the end of the file.  The program's date in the 
+                DOS disk directory listing will have been updated to the 
+                current system date and time when infection occurred.  The 
+                characters "RF" can be found starting in the fourth byte of 
+                all infected files.  One text string is visible within the 
+                viral code: "*.COM". 
+                Origin:  Unknown  January, 1996. 
+       Timid.288: Received in January, 1996, Timid.288 is a 288 
+                byte variant of the Timid virus listed above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed, though it doesn't infect past the 
+                second .COM file in a directory, and may reinfect 
+                previously infected files.  Infected programs will have a 
+                file length increase of 288 bytes for each infection of the 
+                virus presend on the file, and the virus will be located 
+                at the end of the file.  The program's date in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The 
+                characters "VI" can be found starting in the fourth byte of 
+                all infected files.  One text string is visible within the 
+                viral code: "*.COM". 
+                Origin:  Unknown  January, 1996. 
+       Timid.289: Received in January, 1996, Timid.289 is a 289 
+                byte variant of the Timid virus listed above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed.  Infected programs will have a file 
+                length increase of 289 bytes with the virus being located 
+                at the end of the file.  The program's date in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The 
+                characters "VX" can be found starting in the fourth byte of 
+                all infected files.  One text string is visible within the 
+                viral code: "*.COM". 
+                Origin:  Unknown  January, 1996. 
+       Timid-290: Received in July, 1993, Timid-290 is a 290 byte 
+                variant of the Timid virus.  Execution of an infected 
+                program will result in the virus searching the current 
+                directory for an uninfected .COM program to infect.  Unlike 
+                the original virus, it does not display the newly infected 
+                .COM program's file name.  Infected programs have a file 
+                length increase of 290 bytes with the virus being located 
+                at the end of the file.  The program's date and time in the 
+                DOS disk directory listing will have been updated to the 
+                current system date and time when infection occurred.  The 
+                characters "VI" can be found starting in the fourth byte in 
+                all infected programs.  The other text string visible within 
+                the viral code is "*.COM". 
+                Origin:  North America  July, 1993 
+       Timid-297: Received in July, 1993, Timid-297 is a 297 byte 
+                variant of the Timid-371 virus.  Execution of an infected 
+                program will result in the virus searching the current 
+                directory for an uninfected .COM program to infect.  If the 
+                virus cannot find an uninfected .COM file to infect, it will 
+                hang the system.  Infected programs have a file length 
+                increase of 297 bytes with the virus being located at the 
+                end of the file.  The program's date and time in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The 
+                characters "GR" can be found starting in the fourth byte in 
+                all infected programs.  The other text string visible within 
+                the viral code is "*.COM". 
+                Origin:  North America  July, 1993 
+       Timid.300: Received in January, 1995, Timid.300 is a 300 byte 
+                variant of the Timid virus described above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed.  Infected programs will have a file 
+                length increase of 300 bytes with the virus being located 
+                at the end of the file.  The program's date in the DOS 
+                disk directory listing will have been updated to 3-15-95 
+                while the time will have been set to the current system 
+                time when infection occurred.  The characters "VI" can be 
+                found starting in the fourth byte of all infected files. 
+                One text string is visible within the viral code: "*.COM". 
+                Origin:  Unknown  January, 1995 
+       Timid.302.B: Received in January, 1996, Timid.302.B is a 302 
+                byte variant of the Timid virus listed above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed.  Infected programs will have a file 
+                length increase of 302 bytes with the virus being located 
+                at the end of the file.  The program's date in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The 
+                characters "VI" can be found starting in the fourth byte of 
+                all infected files.  One text string is visible within the 
+                viral code: "*.COM". 
+                Origin:  Unknown  January, 1996. 
+       Timid.303.A: Received in July, 1995, Timid.303.A is a 303 byte 
+                variant of the Timid virus described above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed.  Infected programs will have a file 
+                length increase of 303 bytes with the virus being located 
+                at the end of the file.  The program's date in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The 
+                characters "VI" can be found starting in the fourth byte of 
+                all infected files.  One text string is visible within the 
+                viral code: "*.COM". 
+                Origin:  Unknown  July, 1995 
+       Timid.303.B: Received in January, 1996, this is a very minor 
+                variant of Timid.303.A, and is functionally similar. 
+                Origin:  Unknown  January, 1996. 
+       Timid-305: Received in June, 1992, Timid-305 is one byte smaller 
+                than the original Timid virus.  Execution of an infected 
+                program will result in the virus searching the current 
+                directory for an uninfected .COM program to infect.  If the 
+                virus infects a program, it will then display the newly 
+                infected .COM program's file name.  No beeping occurs with 
+                this variant. 
+                Origin:  Unknown  June, 1992 
+       Timid.313: Received in July, 1995, Timid.313 is a 313 byte 
+                variant of the Timid virus described above.  It infects 
+                one .COM program in the current directory when an infected 
+                program is executed.  Infected programs will have a file 
+                length increase of 313 bytes with the virus being located 
+                at the end of the file.  The program's date in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The characters 
+                "IV" can be found starting in the fourth byte of all infected 
+                files.  One text string is visible within the viral code: 
+                "*.COM". 
+                This variant of Timid reinfects previously infected files, 
+                and will reinfect the first .COM file in the directory 
+                instead of moving down the directory to infect other files 
+                on successive executions.  It will also display the name 
+                of the file it is infecting on the system monitor. 
+                Origin:  Unknown  July, 1995 
+       Timid-371: Received in July, 1993, Timid-371 is a 371 byte 
+                variant of the Timid-290 virus.  Execution of an infected 
+                program will result in the virus searching the current 
+                directory for an uninfected .COM program to infect.  If the 
+                virus cannot find an uninfected .COM file to infect, it will 
+                overwrite 16 sectors of the system hard disk starting at 
+                Side 0, Cylinder 0, Sector 1.  After this has occurred, 
+                any attempts to access the hard disk result in an "Invalid 
+                drive specification" error.  Norton Disk Doctor can be used 
+                to fix the system hard disk.  Infected programs have a file 
+                length increase of 371 bytes with the virus being located at 
+                the end of the file.  The program's date and time in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The 
+                characters "VI" can be found starting in the fourth byte in 
+                all infected programs.  The other text string visible within 
+                the viral code is "*.COM". 
+                Origin:  North America  July, 1993 
+       Timid-382: Received in June, 1993, Timid-382 is based on the 
+                original Timid virus.  Execution of an infected program will 
+                result in the virus searching the current directory for an 
+                uninfected .COM program to infect.  If the virus infects a 
+                program, it will then display the newly infected .COM 
+                program's file name.  No beeping occurs with 
+                this variant.  Infected programs will have a file length 
+                increase of 382 bytes with the virus being located at the 
+                end of the file.  The program's date and time in the DOS 
+                disk directory listing will have been updated to the current 
+                system date and time when infection occurred.  The text 
+                string "VI" can be found starting in the fourth byte of all 
+                infected files.  This variant may corrupt the system hard 
+                disk's master boot record (partition table sector). 
+                Origin:  Unknown  June, 1993 
+       Timid-431: Received in June, 1993, Timid-431 is based on the 
+                original Timid virus.  Execution of an infected program will 
+                result in the virus searching the current directory for an 
+                uninfected program to infect.  This variant will infect 
+                .COM, .EXE, or .SYS files.  Infected programs will have a 
+                file length increase of 431 bytes with the virus being 
+                located at the end of the file.  The program's date and time 
+                will not be altered in the DOS disk directory listing.  The 
+                text string "GR" can be found starting in the fourth byte 
+                of all infected files.  Users of infected systems may 
+                experience boot failures and programs failing to function 
+                properly. 
+                Origin:  Unknown  June, 1993 
+       Timid-526: Received in July, 1993, Timid-526 is based on the 
+                original Timid virus.  Execution of an infected program will 
+                result in the virus searching the current directory for an 
+                uninfected file to infect.  This variant will infect both 
+                program and data files, with the exception that in the root 
+                directory it will only infect the hidden system files and 
+                COMMAND.COM.  Infected files, both program and data, will 
+                have a file length increase of 526 bytes with the virus 
+                being located at the end of the file.  The program's date 
+                and time will not be altered in the DOS disk directory 
+                listing.  The text string "GR" can be found starting in the 
+                fourth byte of all infected files.  Users of infected 
+                systems may experience boot failures, programs failing to 
+                function properly, and data corruption when non-executable 
+                programs become infected.  If the virus does not encounter 
+                an uninfected file to infect, it may slowly alter the system 
+                display until it is left blank.  A system hang will then 
+                occur. 
+                Origin:  Unknown  July, 1993 
+       Timid-557: Received in July, 1993, Timid-557 is based on the 
+                original Timid virus.  Execution of an infected program will 
+                result in the virus searching the current directory for an 
+                uninfected file to infect.  This variant will infect both 
+                program and data files, with the exception that in the root 
+                directory it will only infect the hidden system files and 
+                COMMAND.COM.  Infected files, both program and data, will 
+                have a file length increase of 557 bytes with the virus 
+                being located at the end of the file.  The program's date 
+                and time will not be altered in the DOS disk directory 
+                listing.  The text string "GR" can be found starting in the 
+                fourth byte of all infected files.  Users of infected 
+                systems may experience boot failures, programs failing to 
+                function properly, and data corruption when non-executable 
+                programs become infected.  If the virus does not encounter 
+                an uninfected file to infect, it will slowly drop characters 
+                down the system's display if it is in text mode, and then 
+                later move them back into place. 
+                Origin:  Unknown  July, 1993 
+       Timid-LM: Received in October, 1992, Timid-LM is a 305 byte 
+                variant of the Timid virus.  It is from Canada, written by 
+                Lucifer Messiah.  Timid-LM infects one .COM file in the 
+                current directory each time an infected program is executed. 
+                Infected programs increase in size by 305 bytes with the 
+                virus being located at the end of the file.  The file's date 
+                and time in the DOS disk directory listing will have been 
+                updated to the current system date and time when infection 
+                occurred.  Infected programs will contain the text string 
+                "LM" starting in the fourth byte of the file.  The other 
+                text string found in the viral code is "*.COM". 
+                Origin:  Canada  October, 1992. 
+       Timid-Orig: The original Timid virus whose source code was 
+                published in "The Little Black Book of Computer Viruses" 
+                by Mark Ludwig.  When a program infected with the Timid- 
+                Orig virus is executed, the virus will search the 
+                current directory for an uninfected .COM program to 
+                infect, and then infect it.  After it has infected 
+                a program, it will display the name of the program it 
+                has just infected.  Files infected with Timid-Orig will 
+                have a file length increase of 306 bytes with the virus 
+                being located at the end of the program.  The file's 
+                date and time in the DOS disk directory will have been 
+                updated to the system date and time when infection 
+                occurred.  The Timid-Orig virus does not cause beeping 
+                to occur on the system speaker. 
+                Origin:  Arizona, United States  1991 

@@ -1,0 +1,118 @@
+Virus Name:  Parasite 
+ Aliases: 
+ V Status:    Rare 
+ Discovery:   January, 1992 
+ Symptoms:    .COM file growth; message & buzzing; warm reboots 
+ Origin:      Canada 
+ Eff Length:  1,132 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, ChAV, 
+                    IBMAV, NAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, IBMAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Parasite virus was received in January, 1992 from Canada. 
+       Parasite is a non-resident, direct action infector of .COM 
+       programs, including COMMAND.COM.  It is based on the Sicilian 
+       Mob virus, and indirectly on the Vienna virus. 
+ 
+       When a program infected with Parasite is executed, the Parasite 
+       virus will search the current directory for the first uninfected 
+       .COM file.  When it finds this uninfected .COM file, it will 
+       then infect it. 
+ 
+       Programs infected with the Parasite virus will have a file size 
+       increase of 1,132 bytes.  The virus will be located at the end of 
+       the infected file.  There will be no visible change to the file's 
+       date and time in a DOS disk directory listing. 
+ 
+       The following text strings are visible within the viral code in 
+       Parasite infected programs: 
+ 
+               "(C) 1991 by [NUKE] InterNat`nl Software Development" 
+               "Parasite Virus, Released October 1991, Montreal, Canada" 
+               "--> [NukE] H/A/P/C/T/V at its Best! <---" 
+               "RABiT,RABiT,RABiT...EAT THIS!" 
+               "To John McAfee [I'll be BACK!]" 
+               "*.COM" 
+               "PATH=" 
+               "????????COM" 
+ 
+       On approximately one out of every four infected program executions, 
+       the Parasite virus will display the following message accompanied by 
+       a loud buzzing on the system speaker: 
+ 
+               "Parasite Virus! by Rock Steady [NukE] HP" 
+ 
+       This message is not visible in infected programs as it is 
+       encrypted. Once the message is displayed, the program the user was 
+       attempting to execute will run. 
+ 
+       Parasite will also occassionally cause a warm reboot of the system 
+       when an infected program is executed. 
+ 
+       Known variant(s) of Parasite are: 
+       Parasite 2: Parasite 2 was received in February 1992, and is 
+                   originally from Montreal, Canada.  It is a modified 
+                   version of the original Parasite virus, with many of 
+                   the text strings having been removed.  The text strings 
+                   which remain are: 
+                   "ParaSite II - By: Rock Steady" 
+                   "*.COM COMMAND.COM" 
+                   "PATH=" 
+                   "????????COM" 
+                   Each time a program infected with Parasite 2 is executed, 
+                   the virus will infect one .COM file in the current 
+                   directory, plus COMMAND.COM if it was not previously 
+                   infected.  Programs infected with Parasite 2 will have a 
+                   file length increase of 901 bytes with the virus being 
+                   located at the end of the infected file.  There will be 
+                   no change to the file's date and time in the DOS disk 
+                   directory listing.  Systems infected with Parasite 2 
+                   may experience a "machine gun" noise being emitted on the 
+                   system speaker when infected programs are executed. 
+                   System hangs and intermittent boot failures may also 
+                   occur.  The virus contains code to overwrite the C: drive 
+                   boot sector, directory, and FAT on Mondays, however this 
+                   code does not function properly. 
+                   Origin:  Montreal, Canada  February, 1992. 
+       Parasite 2B: Similar to Parasite 2, the Parasite 2B variant is 
+                   two bytes larger than Parasite 2.  It adds 903 bytes to 
+                   the .COM files it infects.  The following text strings 
+                   can be found in all infected files: 
+                   "ParaSite IIB - By: Rock Steady" 
+                   "*.COM COMMAND.COM" 
+                   "PATH=" 
+                   "????????COM" 
+                   It contains the same bug as Parasite 2, preventing it 
+                   from activating on Mondays and overwriting the hard disk. 
+       Vengeance: Based on the Parasite virus, the Vengeance virus was 
+                   discovered in the United States in late May, 1992.  It 
+                   infects one .COM file each time an infected program is 
+                   executed.  Infected programs will have a file length 
+                   increase of 723 bytes with the virus being located at the 
+                   end of the file.  The seconds in the file's time in the 
+                   DOS disk directory will have been set to 56, the virus's 
+                   infection marker.  Programs infected with Vengeance will 
+                   contain the following text strings: 
+                   "*** Vengeance is ours! ***" 
+                   "SKISM/Phalcon '92" 
+                   "PATH=*.COM" 
+                   "????????COM" 
+                   Origin:  United States  May, 1992. 
+       Vengeance-B: Received in September, 1992, Vengeance-B is similar 
+                   to Vengeance described above.  The seconds in the file's 
+                   time in the DOS disk directory will be set to 00 
+                   on all infected programs.  Programs infected with 
+                   Vengeance-B will contain the following text strings: 
+                   "PATH=*.COM" 
+                   "????????COM" 
+                   Origin:  Canada  September, 1992. 
+       Vengeance-C: Received in October, 1992, Vengeance-C is similar 
+                   to Vengeance described above, it has eight bytes which 
+                   differ. 
+                   Origin:  Canada  October, 1992. 
+ 
+       See:   Sicilian Mob   Vienna 

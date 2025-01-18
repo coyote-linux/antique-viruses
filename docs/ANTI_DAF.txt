@@ -1,0 +1,38 @@
+Virus Name:  Anti-DAF 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   March, 1993 
+ Symptoms:    .COM file growth 
+ Origin:      The Netherlands 
+ Eff Length:  561 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  Sweep, AVTK, F-Prot, ViruScan, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    Sweep/N, NShld, AVTK/N, LProt, NProt, NAV/N, Innoc, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Anti-DAF virus was submitted in March, 1993, and is from The 
+       Netherlands.  Anti-DAF is a non-resident, direct action infector 
+       of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Anti-DAF virus is executed, this 
+       virus will infect one .COM program located in the current directory. 
+       Infected programs will have a file length increase of 561 bytes 
+       with the virus being located at the end of the file.  The program's 
+       date and time in the DOS disk directory listing will not be altered. 
+       The following text strings are encrypted within the Anti-DAF viral 
+       code: 
+ 
+               "*.com" 
+               "The Anti-DAF virus" 
+               "DAF-TRUCKS Eindhoven" 
+               "Hugo vd Goeslaan 1" 
+               "Postbus 90063" 
+               "5600 PR Eindhoven, The Netherlands" 
+               "DAF sucks..." 
+               "(c) 1992 Dark Helmet + The Virus Research Centre" 
+ 
+       The company name and individual mentioned above, along with the 
+       address, are not associated with the creation of this virus. 

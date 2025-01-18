@@ -1,0 +1,48 @@
+Virus Name:  Lisbon 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  November, 1989 
+ Symptoms:    .COM growth; unusable files (see text) 
+ Origin:      Lisbon, Portugal 
+ Eff Length:  648 bytes 
+ Type Code:   PNCK - Parasitic Non-Resident COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ General Comments: 
+       The Lisbon virus is a strain of the Vienna virus first isolated by 
+       Jean Luz in Portugal in November, 1989.  The virus is very similar 
+       to Vienna, except that the virus has been altered in order to avoid 
+       virus identification/detection programs which could identify the 
+       Vienna virus. 
+ 
+       When a program infected with Lisbon is executed, the virus will 
+       infect or corrupt one .COM file in the current directory.  If a 
+       program is infected, 648 bytes will be added to the programs length 
+       with the virus being located at the end of the program.  These 
+       programs will have the text strings below near the end of the 
+       infected program: 
+ 
+               "@AIDS" 
+               "????????COM" 
+ 
+       If a program was corrupted instead of being infected, the first 
+       five characters of the program will be "@AIDS".  These corrupted 
+       programs will no longer execute properly, usually resulting in a 
+       system hang when they are executed.  Corrupted files will not have 
+       any file length increase since the first five characters were 
+       overwritten by the "@AIDS" string. 
+ 
+       Known variant(s) of Lisbon are: 
+       Lisbon-B: Similar to Lisbon, this variant does not contain the 
+                 "@AIDS" string.  It also may hang the system when it 
+                 attempts to infect .COM files.  Programs corrupted by 
+                 this variant will be begin with the hex string 
+                 "FEB8140C50", and programs infected with the actual 
+                 Lisbon-B variant will end with this string. 
+       Lisbon-B2: Lisbon-B2 is a very minor variant of Lisbon-B, differing 
+                  by 2 bytes.  Otherwise, it is functionally identical. 
+ 
+       See:   Vienna 

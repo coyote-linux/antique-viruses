@@ -1,0 +1,62 @@
+Virus Name:  Ambulance Car 
+ Aliases:     Ambulance, RedX 
+ V Status:    Rare 
+ Discovery:   June, 1990 
+ Symptoms:    .COM growth; graphic display & sound 
+ Origin:      West Germany 
+ Eff Length:  796 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The Ambulance Car virus was isolated in West Germany in June, 1990. 
+       This virus is a non-resident .COM infector. 
+ 
+       When a program infected with the Ambulance Car virus is executed, 
+       the virus will attempt to infect one .COM file.  The .COM file to be 
+       infected will be located on the C: drive.  This virus only infects 
+       one .COM file in any directory, and never the first .COM file in the 
+       directory.  It avoids infecting COMMAND.COM as that file is normally 
+       the first .COM file in the root directory. 
+ 
+       On a random basis, when an infected file is executed it will have 
+       the effect of a graphics display of an ASCII block drawing of an 
+       ambulance moving across the bottom of the system display.  This 
+       graphics display will be accompanied with the sound of a siren 
+       played on the system's speaker.  Both of these effects only occur on 
+       systems with a graphics capable display adapter. 
+ 
+       Known variant(s) of Ambulance Car are: 
+       Ambulance.795: Received in July, 1995, this is a 795 byte variant 
+           of the Ambulance Car virus described above.  It may infected two 
+           .COM files located in the current directory when an infected 
+           program is executed.  Infected programs will have a file length 
+           increase of 795 bytes with the virus being located at the end of 
+           the file.  The program's date and time in the DOS disk directory 
+           listing will not be altered.  No text strings are visible within 
+           the viral code.  This variant will also occassionally produce 
+           the ambulance graphic moving across the screen when an infected 
+           program is executed. 
+           Origin:  Unknown  July, 1995. 
+       Ambulance Car-B: Similar to the original Ambulance Car, this 
+                 variant will infect zero, one, or two .COM program(s) on 
+                 the current drive each time an infected program is 
+                 executed.  Infected programs will have a file length 
+                 increase of 796 bytes with the virus being located at 
+                 the end of the infected file.  There are seven bytes 
+                 which differ between this variant and the RedX-Any 
+                 variant listed below. 
+                 Origin:  Unknown  April, 1992. 
+       RedX-Any: Based on the original Ambulance Car, this variant has 
+                 been altered so that the Ambulance Car graphic appears 
+                 with its accompaning siren each time an infected program 
+                 is executed.  It infects one .COM file located on the 
+                 system path each time an infected program is executed, 
+                 and may infect COMMAND.COM. 
+                 Origin:  Unknown  January, 1992. 
+ 
+       See:   Hafenstrass 2 

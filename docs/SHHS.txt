@@ -1,0 +1,91 @@
+Virus Name:  Shhs  
+ Aliases:     Sh 
+ V Status:    Viron 
+ Discovered:  January, 1992 
+ Symptoms:    .COM & .EXE programs overwritten; message; disk corruption 
+ Origin:      Unknown 
+ Eff Length:  585 Bytes 
+ Type Code:   ONAK - Non-Resident Overwriting .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, ChAV, 
+                    IBMAV, NAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, IBMAV/N, 
+                    AVTK/N, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Shhs virus was received in January, 1992 from an unknown 
+       origin.  Shhs is a non-resident, direct action infector of .COM 
+       and .EXE programs, including COMMAND.COM.  It corrupts the current 
+       disk drive when it activates. 
+ 
+       When a program infected with Shhs is executed, the Shhs virus will 
+       search the current directory for three uninfected .EXE programs to 
+       infect.  If these programs were found, it will infect them.  If 
+       no uninfected .EXE programs were found, the virus will then search 
+       the current directory for three uninfected .COM files to infect, 
+       and infect them if they were found.  If all the .COM and .EXE 
+       programs in the current directory were previously infected, the 
+       virus will activate (see below).  If the virus doesn't activate, 
+       the following message will then be displayed, and the user 
+       returned to the DOS prompt: 
+ 
+               "Program too big to fit in memory" 
+ 
+       This message is contained within the virus itself, and is a fake 
+       error message. 
+ 
+       Programs infected with the Shhs virus will have the first 585 bytes 
+       of the host program overwritten with the Shhs virus code.  Unless 
+       the original program was smaller than 585 bytes, there will be no 
+       change to the file's size in the DOS disk directory listing. 
+       Programs which were originally smaller than 585 bytes will become 
+       585 bytes when they are infected by Shhs.  There will be no change 
+       to the file's date and time in the DOS disk directory listing. 
+ 
+       Once all of the .COM and .EXE programs in the current directory 
+       have been infected with the Shhs virus, the virus will activate 
+       when the next infected program is executed.  At that time, the 
+       virus will overwrite the first 35 sectors of the current drive, 
+       starting at sector 0.  The following message will then be 
+       displayed: 
+ 
+               "I'm sorry, Dave... but I'm afraid I can't do that! 
+  
+                Dedicated to the dudes at SHHS 
+                The BOOT SECTOR Infector ..." 
+ 
+       Attempts to access programs on the current drive will then 
+       result in Sector not found errors from DOS.  Examination of the 
+       boot sector on the current drive with Norton Utilities in 
+       maintenance mode will reveal the following text within the boot 
+       sector: 
+ 
+               "Killed by: ............." 
+ 
+       The "............." will contain the name of the program which the 
+       virus activated from.  For example, if the user ran CHKDSK.COM and 
+       the virus activated, the thirteen periods will be replaced by 
+       "CHKDSK.COM...". 
+ 
+       The Shhs virus is encrypted, so the above messages cannot be seen 
+       in infected files.  Since Shhs overwrites the beginning of the 
+       programs it infects, these programs cannot be disinfected, but must 
+       be deleted and replaced from non-infected copies.  Once the virus 
+       has activated, the disk should be reformatted. 
+ 
+       Known variant(s) of Shhs are: 
+       Secret Service: Based on the Shhs virus described above, the 
+              Secret Service virus overwrites the first 600 bytes of 
+              the .EXE programs it infects.  It infects three .EXE 
+              programs in the current directory when an infected program 
+              is executed.  Once all of the .EXE programs in the directory 
+              have been infected, the next execution of the virus will 
+              result in the virus trashing the current drive.  The 
+              following text strings are encrypted within the virus: 
+              "*.EXE *.COM .. Program too big to fit in memory" 
+              "I'm sorry John McAfee (NOT!)..." 
+              "Secret Service Virus has arrived..." 
+              "Dedicated to all virus makers!" 
+              "By: Agent #13/Nuke Member" 
+              "Killed by:" 
+              Origin:  Canada  August, 1992. 

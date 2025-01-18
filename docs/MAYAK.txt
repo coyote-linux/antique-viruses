@@ -1,0 +1,64 @@
+Virus Name:  Mayak 
+ Aliases:     Jews2 
+ V Status:    Rare 
+ Discovered:  April, 1992 
+ Symptoms:    .COM, .SYS, & .EXE file growth; system slowdown; TSR; 
+              system hangs 
+ Origin:      Unknown 
+ Eff Length:  2,339 Bytes 
+ Type Code:   PRsAK - Parasitic Resident .COM, .EXE, & .SYS Infector 
+ Detection Method:  AVTK, ViruScan, IBMAV, F-Prot, NAV, NAVDX, VAlert, 
+                    PCScan, ChAV, 
+                    Sweep/N, Innoc, AVTK/N, IBMAV/N, NShld, NAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Mayak virus was submitted in April, 1992.  Its origin or point 
+       of isolation is unknown.  Mayak is a memory resident infector of 
+       .COM, .EXE, and .SYS programs.  It employs stealth techniques to 
+       avoid detection. 
+ 
+       When the first Mayak infected .COM or .EXE program is executed, 
+       the Mayak virus will check .SYS files referenced in the C: drive's 
+       CONFIG.SYS file, and infect these .SYS files if they have not 
+       been previously infected.  After it completes infecting these 
+       files, it will not be memory resident, and will not infect other 
+       programs at this time. 
+ 
+       The next time the system is booted from the C: drive, the Mayak 
+       virus will become memory resident from the infected .SYS programs 
+       referenced in the C: drive CONFIG.SYS file.  The virus will have 
+       installed itself memory resident in the Config area of memory, 
+       allocating approximately 2,464 bytes.  Interrupt 21 will be hooked 
+       by Mayak. 
+ 
+       Once the Mayak virus is memory resident, it will infect .COM and 
+       .EXE programs as they are opened or executed.  Infected programs 
+       will have a file length increase of 2,339 bytes with the virus 
+       being located at the end of the infected file.  The file length 
+       increase, however, will not be visible when Mayak is memory 
+       resident. 
+ 
+       The following text strings can be found in the viral code in all 
+       Mayak infected programs: 
+ 
+               "Jews-2 Virus. MSU 1991" 
+               "c:\config.sys device" 
+               ".com.exe.bin.sys" 
+ 
+       Users of systems infected with the Mayak virus may notice that 
+       their system is running slower, and that some programs will hang 
+       the system when they are executed. 
+ 
+       Known variant(s) of Mayak are: 
+       Mayak-2370: Mayak-2370 is a 2,370 byte variant of the Mayak 
+                   or Jews2 virus described above.  Its size in memory 
+                   is approximately 2,720 bytes, hooking interrupt 21. 
+                   It infects programs when they are executed, adding 
+                   2,370 bytes to their length.  Systems infected with 
+                   Mayak-2370 may experience "Sector not found" errors 
+                   when accessing the system disk drives, "Error in exe 
+                   file" errors when attempting to execute infected 
+                   programs, and system hangs when some infected programs 
+                   are executed. 
+                   Origin:  Unknown  July, 1992. 

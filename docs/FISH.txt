@@ -1,0 +1,130 @@
+Virus Name:  Fish 
+ Aliases:     European Fish Viruses, Fish 6, Stealth Virus 
+ V Status:    Rare 
+ Discovered:  May 1990 
+ Symptoms:    .COM & .EXE growth; monitor/display flickering; system 
+              memory decrease 
+ Origin:      West Germany 
+ Eff Length:  3,584  Bytes 
+ Type Code:   PRsAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The Fish virus was isolated in May 1990.  At the time of isolation, 
+       it was reported to be widespread in Europe, and it is thought to 
+       have originated in West Germany.  It is a generic resident .COM and 
+       .EXE infector, and will infect COMMAND.COM.  This virus will remain 
+       memory resident through a warm reboot (CTRL-ALT-DEL).  The virus is 
+       encrypted, though infected programs can be found by searching for 
+       the text string "FISH FI" appearing near the end of the program. 
+       The "FISH FI" string may later disappear from the program. 
+ 
+       The first time a program infected with the Fish virus is executed, 
+       the virus will go memory resident, installing itself into the low 
+       available free memory.  If interrupt 13 has not been hooked by 
+       another program, it will hook interrupt 13.  If it can hook 
+       interrupt 13, it will take up 8,192 bytes in memory.  If the virus 
+       cannot hook interrupt 13 because another program is already using 
+       it, it will be 4,096 bytes in memory. 
+ 
+       When interrupt 13 is not hooked, and the virus is memory resident, 
+       the virus will cause a random warm reboot, thus allowing it to 
+       infect COMMAND.COM and hook interrupt 13.  Warm reboots do not 
+       appear to randomly occur after interrupt 13 has been hooked. 
+ 
+       After the virus is memory resident, all .COM and .EXE programs which 
+       are opened for any reason will be infected.  Infected programs 
+       increase in length by 3,584 bytes.  The increase in program size 
+       cannot be seen by listing the disk directory if the virus is in 
+       memory.  Also, if a CHKDSK command is run on an infected system, it 
+       will detect file allocation errors on infected files.  If CHKDSK is 
+       run with the /F option, it will result in lost clusters and 
+       cross-linking of files. 
+ 
+       The virus slows down video writes, and flickering of the monitor 
+       display can be noticed on an infected system. 
+ 
+       Anti-viral programs which perform CRC checking cannot detect the 
+       infection of the program by the Fish virus if the virus is memory 
+       resident.  This virus can also bypass software write-protect 
+       mechanisms used to protect a hard drive. 
+ 
+       The Fish virus is a modified version of the 4096 virus, though it is 
+       more sophisticated in that it constantly re-encrypts itself in 
+       system memory.  Viewing system memory with the virus resident will 
+       show that the names of several fish are present. 
+ 
+       It is unknown what the Fish virus does when it activates, though it 
+       does appear to check to determine if the year of the system time is 
+       1991. 
+ 
+       Known variant(s) of Fish are: 
+       Fish F: A variant of the Fish virus described above, this variant 
+               has been altered to avoid detection by some anti-viral 
+               utilities.  Its size in memory is 4,096 bytes, hooking 
+               interrupt 21.  It adds 3,584 bytes to the .COM and .EXE 
+               files it infects, though the file length increase is hidden 
+               when Fish F is memory resident.  The Fish F virus contains 
+               the following text strings which are encrypted within the 
+               viral code: 
+               "FISH VIRUS #6 - EACH DIFF - BONN 2/90" 
+               "TROUT3" 
+               "MUSKY2" 
+               "SOLE" 
+               "PIKE3" 
+               "MACKEREL" 
+               "FISH F" 
+               The "FISH F" text string will also usually appear unencrypted 
+               near the end of infected files.  The first text string above 
+               will also occassionally be displayed by the virus when it is 
+               memory resident. 
+               Origin:  Unknown  April 1993. 
+       Fish II: Based on the Fish virus described above, this variant's 
+                size in memory is 4,096 bytes, directly hooking interrupts 
+                so that memory mapping utilities will not indicate that 
+                any interrupts are hooked.  Once resident, it will infect 
+                .COM and .EXE programs when they are executed.  Infected 
+                programs will have a file length increase of 3,584 bytes, 
+                though the file length increase will be hidden when the 
+                virus is memory resident.  Fish II is polymorphic, and no 
+                text strings are visible within the viral code.  The 
+                encryption is altered from the original virus in order to 
+                avoid detection by anti-viral programs familiar with Fish 
+                but not this variant. 
+                Origin:  Unknown  January 1993. 
+       Kradee 1.0: A variant of the Fish virus described above, this 
+               variant has been altered to avoid detection by some anti-viral 
+               utilities.  Its size in memory is 4,096 bytes, it directly 
+               hooks interrupts so that memory mapping utilities will not 
+               indicate that any interrupts are hooked.  It adds 3,584 bytes 
+               to the .COM and .EXE files it infects, though the file length 
+               increase is hidden when Kradee 1.0 is memory resident.  The 
+               Kradee 1.0 virus contains the following text strings which are 
+               encrypted within the viral code: 
+               "FISH" 
+               "COD" 
+               "SHARK" 
+               "CARP" 
+               "BASS" 
+               "KRADEE VIRUS VERSION 1.00 By Metsys RetupMoc D&R" 
+               "TROUT" 
+               "FIN" 
+               "MUSKYZ" 
+               "DOLR" 
+               "PIKE3" 
+               "MACKEREL" 
+               "TUNA" 
+               The text string "FISH" occurs near the end of all infected 
+               .COM and .EXE files.  The "KRADEE VIRUS" text string above 
+               will be displayed by the virus when an infected program is 
+               executed.  System output will be sluggish when Kradee 1.0 is 
+               memory resident, and the DOS CHKDSK program will indicate file 
+               allocation errors on all infected files.  System hangs may 
+               also occur when infected programs are executed. 
+               Origin:  Unknown  March 1994. 
+ 
+       See:   Revelation 

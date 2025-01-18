@@ -1,0 +1,62 @@
+Virus Name:  Alameda 
+ Aliases:     Mazatlan, Merritt, Peking, Seoul, Yale 
+ V Status:    Rare 
+ Discovery:   1987 
+ Symptoms:    Floppy boot failures; resident-TOM; BSC 
+ Origin:      California, United States 
+ Eff Length:  N/A 
+ Type Code:   RtF - Resident Floppy Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  MDisk, F-Prot, NAV, or DOS SYS 
+ 
+ General Comments: 
+       The Alameda virus was first discovered at Merritt college in 
+       Alameda, California in 1987.  The original version of this virus 
+       caused no intentional damage, though there is now at least one 
+       variant of this virus that now causes floppy disks to become 
+       unbootable after a counter has reached its limit (Alameda-C virus). 
+ 
+       The Alameda virus, and its variants, all replicate when the system 
+       is booted with a CTL-ALT-DEL and infect only 5-1/4" 360K diskettes. 
+       These viruses do stay in memory through a warm reboot, and will 
+       infect both system and non-system disks.  System memory can be 
+       infected on a warm boot even if BASIC is loaded instead of DOS. 
+ 
+       The virus saves the real boot sector at track 39, sector 8, head 0. 
+       The original version of the Alameda virus would only run on a 
+       8086/8088 machine, though later versions can now run on 80286 
+       systems. 
+ 
+       Known variant(s) of Alameda are: 
+       Alameda 1.2M: Isolated in the United States in April, 1992, 
+                    this variant of Alameda is able to infect 1.2M 
+                    5.25 inch diskettes in addition to 360K 5.25 inch 
+                    diskettes.  The virus will hang computers using 
+                    other than an 8088 processor when the system is 
+                    booted from an infected diskette.  This virus is 
+                    memory resident, allocating 1,024 bytes of memory 
+                    at the top of system memory but below the 640K DOS 
+                    boundary.  Interrupt 12's return will have been 
+                    moved.  It only infects diskettes in the A: drive 
+                    when the user performs a CTL-ALT-DEL key combination. 
+                    Origin:  United States  April, 1992. 
+       Golden Gate: The Alameda virus will a modification so that it 
+                    activates when the counter in the virus has determined 
+                    that it has infected 500 diskettes.  Upon activation, 
+                    the C: drive is formatted.  The counter in the virus 
+                    is reset on each new diskette or hard drive infection. 
+                    Origin:  California, United States  1988 
+       Golden Gate-B: Same as Golden Gate, except that the counter has 
+                      changed from 500 to 30 infections before activation, 
+                      and only diskettes are infected. 
+       Golden Gate-C: Same as Golden Gate-B, except that the hard disk 
+                      can also be infected.  This variant is also known as 
+                      the Mazatlan virus, and is the most dangerous of the 
+                      Alameda family. 
+       SF Virus: A modified version of the Alameda virus which 
+                 activates when the counter in the virus has determined 
+                 that it has infected 100 diskettes.  Upon activation, the 
+                 diskette in the floppy drive is reformatted.  The SF 
+                 virus only infects 5-1/4" diskettes. 
+                 Origin:  California, United States  December, 1987 

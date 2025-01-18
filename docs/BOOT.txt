@@ -1,0 +1,8 @@
+;This is a simple boot sector that will load either MS-DOS or PC-DOS. It is not
+;self-reproducing, but it will be used as the foundation on which to build a
+;virus into a boot sector.
+
+;This segment is where the first operating system file (IBMBIO.COM or IO.SYS)
+;will be loaded and executed from. We don't know (or care) what is there, but
+;we do need the address to jump to defined in a separate segment so we can
+;execute a far jump to it.

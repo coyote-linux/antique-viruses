@@ -1,0 +1,225 @@
+Virus Name:  Keypress 
+ Aliases:     Peach, SamSoft, St. Leos, Turku, Keypress-Viring, Viring 
+ V Status:    Common 
+ Discovered:  October, 1990 
+ Symptoms:    .COM & .EXE growth; decrease in available free memory; 
+              keystrokes repeated unexpectedly; file date/time updated 
+ Origin:      USA 
+ Eff Length:  1,232 - 1,468 Bytes 
+ Type Code:   PRhAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, IBMAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Keypress virus was reported and isolated in many locations in 
+       the United States in late October, 1990.  This virus is a memory 
+       resident infector of .COM and .EXE files, including COMMAND.COM. 
+ 
+       The first time a program infected with the Keypress virus is 
+       executed, the virus will install itself memory resident at the 
+       top of free available memory, but below the 640K DOS boundary. 
+       Interrupts 1C and 21 will be hooked by the virus.  Available free 
+       memory on the system will have decreased by 1,232 bytes. 
+ 
+       After the virus is memory resident, any file executed may become 
+       infected by the virus.  In the case of .COM files, they are only 
+       infected if their original file length was greater than 1,232 bytes. 
+       .EXE files of any length will be infected, as will COMMAND.COM if 
+       it is executed.  Infected programs will have their directory 
+       date/time changed to the system date and time when they were 
+       infected by this virus.  .COM files will increase in length by 
+       between 1,234 and 1,248 bytes upon infection.  .EXE files will 
+       increase by 1,472 to 1,486 bytes upon infection.  In either case, 
+       the virus will be located at the end of the infected file. 
+ 
+       The Keypress virus activates after being memory resident for 30 
+       minutes.  Upon activation, the virus may interfere with keyboard 
+       input by repeating keystrokes.  For example, if "a" is entered on 
+       the keyboard, it may be changed to "aaaaaa" by the virus. 
+ 
+       Infected files can be identified by containing the following hex 
+       string near the end of the infected program: 4333C98E1E2901CD21. 
+ 
+       Known variant(s) of Keypress are: 
+       Keypress-1232X: Keypress-1232X is a modified version of the 
+              Keypress virus and is functionally similar to the original 
+              virus.  It contains the following text string: 
+              ".COM .EXE" 
+              Origin:  Unknown  February, 1994. 
+       Keypress-1238: Keypress-1238 is a modified version of the 
+              Keypress virus which at the time of its submission was 
+              undetectable by anti-viral scanning programs.  Its size in 
+              memory is 1,328 bytes, hooking interrupts 1C and 21.  It adds 
+              1,238 to 1,252 bytes to the .COM programs it infects, and 
+              1,492 to 1,506 bytes to .EXE programs.  In both cases, the 
+              virus will be located at the end of the file, and the file's 
+              date and time in the DOS disk directory will have been updated 
+              to the current system date and time. 
+              Origin:  Unknown  September, 1992. 
+       Keypress-1238B: Functionally equivalent to Keypress-1238, this 
+              is a minor variant. 
+              Origin:  Unknown  September, 1992. 
+       Keypress-1238C: Similar to Keypress-1238, this variant's size 
+              in memory is 1,328 bytes, hooking interrupts 1C and 21.  It 
+              adds 1,238 to 1,251 bytes to the .COM files it infects, and 
+              1,492 to 1,507 bytes to .EXE files.  The virus will be located 
+              at the end of the file.  The program's date and time in the 
+              DOS disk directory listing will have been updated to the 
+              current system date and time. 
+              Origin:  Unknown  October, 1992. 
+       Keypress.1258: Received in July, 1995, this variant's size in 
+              memory is 3,984 bytes, hooking interrupt 21.  It infects .COM 
+              and .EXE programs when they are executed.  Infected .COM 
+              programs will have a file length increase of 1,258 to 1,272 
+              bytes.  .EXE programs will increase in size by 1,514 to 1,528 
+              bytes.  The virus will be located at the end of the file. 
+              The program's date and time in the DOS disk directory listing 
+              will have been updated to the current system date and time when 
+              infection occurred.  The following text strings can be found 
+              within the viral code in all infected programs: 
+              "Platon Potapov" 
+              "  SPb  " 
+              "311-63-83" 
+              "Alfred" 
+              System hangs frequently occur when .EXE program are executed. 
+              Origin:  Unknown  July, 1995. 
+       Keypress-1268: (MuBark) Based on the Keypress virus, this 
+              variant's size in memory is 1,744 bytes, hooking interrupts 
+              09, 1C, and 21.  It infects .COM and .EXE programs when they 
+              are executed.  Infected .COM programs will have a file length 
+              increase of 1,268 to 1,282 bytes.  .EXE programs will increase 
+              in size by 1,506 to 1,520 bytes.  The virus will be located 
+              at the end of the file.  The program's date and time in the 
+              DOS disk directory listing will have been updated to the 
+              current system date and time.  The following text string can 
+              be found within the viral code in all infected programs: 
+              "M u b a r k   i s   c a w" 
+              This message will occassionally be displayed on the system 
+              monitor when the virus is memory resident. 
+              Origin:  Unknown  November, 1992. 
+       Keypress.1280: Based on the Keypress virus, this variant's size 
+              in memory is 1,280 bytes, hooking interrupt 21.  It infects 
+              .COM and .EXE programs, including COMMAND.COM when they 
+              are executed.  Infected .COM programs will have a file length 
+              increase of 1,280 to 1,294 bytes.  .EXE programs will increase 
+              in size by 1,536 to 1,550 bytes.  The virus will be located 
+              at the end of the file.  The program's date and time in the 
+              DOS disk directory listing will not be altered.  The following 
+              text strings can be found within the viral code: 
+              "D�nyalar Tatk�s� Sevgilime" 
+              "3.14 Seni �ok Seviyor FISTIK" 
+              This message will occassionally be displayed on the system 
+              monitor when the virus is memory resident. 
+              Origin:  Unknown  January, 1996. 
+       Keypress.2728: Based on the Keypress virus, this variant's size in 
+              memory is 3,968 bytes, hooking interrupts 13, 1C, and 21.  It 
+              infects .COM and .EXE programs when they are executed, opened, 
+              or copied.  Infected .COM programs will have a file length 
+              increase of 2,730 to 2,744 bytes.  .EXE programs will increase 
+              in size by 2,984 to 2,998 bytes.  The virus will be located 
+              at the end of the file.  The program's date and time in the 
+              DOS disk directory listing will not be altered.  The following 
+              text string can be found within the viral code in all infected 
+              programs: 
+              ".COM" 
+              It is unknown what Keypress.2728 does besides replicate. 
+              Origin:  Unknown  April, 1994. 
+       Keypress-B: Keypress-B is very similar to the original Keypress 
+              virus, though it is four bytes shorter in length.  Available 
+              free memory will decrease by 1,216 bytes with Keypress-B. 
+              Infected .COM programs increase in length by between 1,228 
+              and 1,243 bytes.  .EXE files increase in length by 1,468 to 
+              1,482 bytes.  Keypress-B activates on a random basis, at which 
+              time it will interfere with keyboard input by repeating 
+              keystrokes. 
+       Keypress-Chaos: Based on the Keypress virus, this variant's size 
+              in memory is 1,328 bytes, hooking interrupts 1C and 21.  It 
+              infects .COM and .EXE programs when they are executed. 
+              Infected .COM programs will have a file length increase of 
+              1,238 to 1,251 bytes.  .EXE programs will increase in size by 
+              1,492 to 1,506 bytes.  The virus will be located at the end of 
+              the file.  The program's date and time in the DOS disk 
+              directory listing will have been updated to the current system 
+              date and time.  The following text string is encrypted within 
+              the viral code: 
+              "SADDAM - the inferiority of the chaos" 
+              This message will occassionally be displayed on the system 
+              monitor when the virus is memory resident. 
+              Origin:  Malaysia  November, 1992. 
+       Keypress-E: Keypress-E is very similar to the original Keypress 
+              virus.  Its major differences are that its size in memory 
+              is 1,232 bytes.  It adds 1,234 to 1,247 bytes to the .COM 
+              programs it infects, and 1,472 to 1,486 bytes to the .EXE 
+              programs it infects.  The infected file's date and time in 
+              the DOS disk directory will have been updated to the current 
+              system date and time when infection occurred. 
+              Origin:  Unknown  July, 1992. 
+       Keypress-Freddy Soft: Keypress-Freddy Soft is a modified version of 
+              the Keypress virus and is functionally similar to the original 
+              virus.  It contains the following text strings: 
+              "FRED" 
+              "FREDDY_SOFT FREDDY_SOFT FREDDY_SOFT FREDDY_SOFT FREDDY_SOFT" 
+              This variant will occassionally blank out the screen and then 
+              return it to its original contents when memory resident.  .COM 
+              programs may be reinfected by the virus. 
+              Origin:  Unknown  February, 1994. 
+       Keypress-UFO: Based on the Keypress virus, this variant's size 
+              in memory is 3,968 bytes, hooking interrupts 13, 1C and 21. 
+              It infects .COM and .EXE programs when they are executed. 
+              Infected .COM programs will have a file length increase of 
+              2,725 to 2,738 bytes.  .EXE programs will increase in size by 
+              2,979 to 2,994 bytes.  The virus will be located at the end of 
+              the file.  The program's date and time in the DOS disk 
+              directory listing will not be altered. 
+              Origin:  United States  November, 1992. 
+       Keypress-Viring: Based on the Turku variant of Keypress, this 
+              variant's major difference from Turku is that the beeping, 
+              displayed message, and system hangs do not occur. 
+              Origin:  Italy  June, 1992. 
+       Peach: Based on the original Keypress virus, this variant from 
+              Singapore is much smaller in size.  When Peach is memory 
+              resident, it will decrease total system and available free 
+              memory by 896 bytes. Only interrupt 21 will be hooked. 
+              Infected .COM programs will have a file length increase of 
+              889 to 902 bytes.  Infected .EXE programs will have a file 
+              length increase of 1,143 to 1,157 bytes.  The following 
+              text strings can be found within the viral code in all 
+              Peach infected programs: 
+              "Roy CuatroNo" 
+              "2 Peach GargenMeyer Rd. Spore 1543" 
+              "chklist.cps" 
+              This variant does not appear to interfer with keyboard input 
+              as other of the Keypress group do.  It is targetted at 
+              Central Point Anti-Virus, looking for the CHKLIST.CPS file 
+              created by the Central Point package. 
+              Origin:  Singapore  January, 1992.  Isolated: United States 
+       SamSoft: Similar to the original Keypress, this variant adds 
+              1,232 - 1,248 bytes to the .COM files it infects, and 
+              1,472 - 1,487 bytes to .EXE files.  The file's date and time 
+              in the DOS disk directory will have been updated to the 
+              current system date and time.  Unlike the original 
+              virus, it does not repeat characters entered on the system 
+              keyboard.  It contains one text string: ".COM .EXE". 
+              Origin:  Unknown  May, 1992.  
+       SamSoft-B: Similar to the SamSoft variant, this variant is has 
+              some minor alterations. 
+              Origin:  Unknown  July, 1992. 
+       St Leos: Similar to the original Keypress, this variant is 
+              functionally equivalent.  It has been slightly altered. 
+              Origin:  Unknown  January, 1992. 
+       Turku: Similar to the original Keypress variant, Turku adds 
+              1,234 to 1,247 bytes to the .COM files it infects.  .EXE 
+              files increase in size by 1,472 to 1,486 bytes.  The following 
+              text string will be found in the viral code of all infected 
+              files: ".COM .EXE".  The sticky key or repeated keystroke 
+              effect in the original virus has been replaced by a series of 
+              beeps being emitted on they system speaker, the system being 
+              halted, and the following message being displayed: 
+              "Internal stack overflow 
+               System halted" 
+              Once this message appears, the system must be powered off to 
+              be rebooted. 
+              Origin:  Unknown  January, 1992. 

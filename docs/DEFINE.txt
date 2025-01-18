@@ -1,0 +1,57 @@
+Virus Name:  Define 
+ Aliases:    
+ V Status:    Viron 
+ Discovered:  May, 1991 
+ Symptoms:    Program corruption; file date/time change; boot failures 
+ Origin:      Australia 
+ Eff Length:  30 Bytes 
+ Type Code:   ONAK - Overwriting Non-Resident .COM & .EXE Infector 
+ Detection Method:  F-Prot, Sweep, AVTK, ViruScan, ChAV, 
+                    IBMAV, NAV, VAlert, NAVDX, PCScan, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    LProt, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Define virus was received in June, 1991.  Its source code was 
+       distributed in a FidoNet echo in May, 1991. Define is a non-resident 
+       direct action infector of .COM and .EXE programs, and may infect 
+       COMMAND.COM. 
+ 
+       When a program infected with Define is executed, Define will 
+       infect the first program in the current directory with a copy of 
+       itself by overwriting the first 30 bytes of the program.  If the 
+       program was previously infected, it will simply overwrite the 
+       previous infection.  Unless the first program in the current 
+       directory is smaller than 30 bytes in length, there will be no 
+       change in file length.  The first program in the current directory's 
+       date and time in the disk directory will be updated to the system 
+       date and time when infection occurred. 
+ 
+       The Define virus will corrupt programs when it infects them since 
+       it overwrites the first 30 bytes of the host program's code.  These 
+       infected programs will no longer properly function once infected, 
+       usually returning the user to the DOS prompt.  If COMMAND.COM 
+       becomes infected, the system will fail to boot. 
+ 
+       Define is based on the Mini-45 virus.  It does not do anything 
+       besides replicate. 
+ 
+       Known variant(s) of Define are: 
+       Define-B: Functionally similar to the Define virus described 
+                 above, this is a minor variant with several bytes which 
+                 differ. 
+                 Origin:  Unknown  July, 1992. 
+       Define-256: Define-256 is a 256 byte version of the Define 
+                   virus described above.  Much of the replicated code of 
+                   this variant doesn't do anything, and the base viral 
+                   code is very similar in the first 30 bytes of the virus. 
+                   When a Define-256 infected program is executed, the 
+                   virus will infect the first program in the current 
+                   directory.  If this program was previously infected, 
+                   it will overwrite the previous infection.  The file's 
+                   date and time in the DOS disk directory will have been 
+                   updated. 
+                   Origin:  South Africa  January, 1992. 
+ 
+       See:   Mini-45 

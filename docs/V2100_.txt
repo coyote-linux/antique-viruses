@@ -1,0 +1,60 @@
+Virus Name:  V2100 
+ Aliases:     2100, Stealth Virus, UScan Virus, Dark Avenger 4 
+ V Status:    Rare 
+ Discovered:  July, 1990 
+ Symptoms:    File allocation errors; decrease in system and free memory 
+ Origin:      Bulgaria 
+ Eff Length:  2,100 Bytes 
+ Type Code:   PRtA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The V2100, or 2100, virus was first isolated in Sofia, Bulgaria by 
+       Vesselin Bontchev in July 1990.  It is a resident generic infector 
+       of .COM, .EXE, and overlay files.  It will also infect COMMAND.COM. 
+       This virus appears to have been originally released into the public 
+       domain on an anti-viral program named UScan which was uploaded to a 
+       BBS in Europe.  While not all copies of UScan are carriers of this 
+       virus, there was one version which exists that has the virus 
+       embedded in its program code.  The virus cannot be detected on this 
+       Trojan version using search algorithms for this virus.  V2100 is 
+       believed to have been written by the author of Dark Avenger. 
+ 
+       The first time a program infected with V2100 is executed, the virus 
+       will install itself memory resident above top of memory but below 
+       the 640K boundary.  The top of memory returned by interrupt 12 will 
+       be lower than expected by 4,288 bytes.  Likewise, free memory will 
+       have decreased by 4,288 bytes.  At this same point, V2100 will 
+       infect COMMAND.COM though the change in file length will be hidden 
+       by the virus. 
+ 
+       Once the virus is memory resident, it will infect any .COM, .EXE, 
+       or overlay file with a file length of at least 2100 bytes that is 
+       executed or opened for any reason.  The simple act of copying an 
+       executable file will result in both the source and target files 
+       becoming infected.  Infected files will be 2,100 bytes longer, 
+       though the virus will hide the change in file length so that it 
+       isn't noticeable when directories are listed.  In some cases, 
+       infected files will appear to be 2,100 bytes smaller than expected 
+       if the virus is present in memory. 
+ 
+       Systems infected with the V2100 virus will notice file allocation 
+       errors occurring, along with cross-linking of files.  Due to these 
+       errors, some files may become corrupted.  These file allocation 
+       errors are truly errors, they exist whether or not the virus is 
+       present in memory. 
+ 
+       A side note on the V2100 virus: if the system had previously been 
+       infected with the Anthrax virus, V2100's introduction will result 
+       in the Anthrax virus again being present in the hard disk master boot 
+       sector (partition table).  This effect occurs because Anthrax stores 
+       a copy of itself on the last sectors of the hard disk.  When V2100 
+       becomes resident, it searches the last 16 cylinders of the hard disk 
+       for a copy of Anthrax.  If V2100 finds the hidden copy of Anthrax, it 
+       copies it into the hard disk's master boot sector.  On the next 
+       system boot from the hard disk, Anthrax will once again be active on 
+       the system. 

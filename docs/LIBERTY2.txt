@@ -1,0 +1,73 @@
+Virus Name:  Liberty-2 
+ Aliases:     Liberty-2A, Liberty-2B, Liberty-2C 
+ V Status:    Rare 
+ Discovered:  September, 1991 
+ Symptoms:    .COM, .EXE, and .OVL growth; BSC; file date and time changes; 
+              decrease in total system and available free memory 
+ Origin:      Sydney, Australia 
+ Eff Length:  2,869 - 2,883 Bytes 
+ Type Code:   PRfAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ General Comments: 
+       The Liberty-2 virus is actually a group of three viruses which 
+       appear to be earlier versions of the Liberty virus described in the 
+       preceding entry.  Liberty-2 is a memory resident generic file 
+       infector, infecting .COM, .EXE, and overlay files.  COMMAND.COM may 
+       also become infected.  In advanced infections, the virus may also 
+       infect boot sectors. 
+ 
+       The Liberty-2 virus gets its name from the text string "Liberty" 
+       which will appear in all infected files.  In .EXE files, it will be 
+       located in the last 3K of the file.  In .COM files, it will appear 
+       near the very beginning of the program, as well as within the last 
+       3K of the infected file. 
+ 
+       The first time a file infected with the Liberty-2 virus is executed, 
+       the virus will become memory resident.  Liberty-2 installs itself 
+       resident in high free memory, resulting in a decrease of 8,512 
+       bytes of available free memory and total system memory.  It hooks 
+       interrupts 21 and 24, as well as interrupt 67.  
+ 
+       After becoming memory resident, programs which are executed may be 
+       infected by the virus.  All .EXE files will be infected, but only 
+       .COM files over 2K in length will become infected.  Overlay files 
+       will also become infected.  Infected files will increase in size 
+       between 2,869 and 2,883 bytes.  The main body of the virus will be 
+       located at the end of all infected files.  Programs infected with 
+       Liberty-2 will also have had their file date and time in the 
+       DOS disk directory change to reflect the current system date and 
+       time when infection occurred. 
+ 
+       Infected .COM files can also be identified by the following text 
+       string which will appear near the beginning of the infected program: 
+ 
+               "- M Y S T I C - COPYRIGHT (C) 1989-2000, by SsAsMsUsEsL" 
+ 
+       This string does not appear in infected .EXE files, the area where 
+       this string would have appeared in infected .EXE files will be 00h 
+       characters. 
+ 
+       The following text string also appears in all Liberty-2 infected 
+       files, though it is much longer than indicated here: 
+ 
+               "MAGICMAGICMAGICMAGICMAGICMAGICMAGICMAGICMAGICMAGIC" 
+ 
+       Liberty-2 is a self-encrypting virus.  It is not yet known if it is 
+       destructive. 
+ 
+       Known variant(s) of Liberty are: 
+       Liberty-2B: Functionally equivalent to Liberty-2, this variant 
+                   has two bytes which differ from the Liberty-2 virus 
+                   described above. 
+       Liberty-2C: Functionally equivalent to Liberty-2, this variant 
+                   has six bytes which differ from both the Liberty-2 and 
+                   Liberty-2B viruses described above. 
+       Liberty.2867: Received in July, 1994, this variant is another 
+                   minor variant of the Liberty-2 virus. 
+                   Origin:  Unknown  July, 1994. 
+ 
+       See:   Liberty 

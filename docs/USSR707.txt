@@ -1,0 +1,34 @@
+Virus Name:  USSR 707 
+ Aliases:     USSR-707, V707 
+ V Status:    Rare 
+ Discovered:  December, 1990 
+ Symptoms:    .COM file growth; decrease in total system and available 
+              memory 
+ Origin:      USSR 
+ Eff Length:  707 Bytes 
+ Type Code:   PRtCK - Parasitic Resident .COM Infector 
+ Detection Method:  AVTK, F-Prot, Sweep, NAV, PCScan, ChAV, 
+                    ViruScan, IBMAV, NAVDX, VAlert, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The USSR 707 virus was submitted in December, 1990.  It is from the 
+       USSR.  This virus is a memory resident infector of .COM programs, 
+       including COMMAND.COM. 
+ 
+       When the first program infected with the USSR 707 virus is 
+       executed, this virus will install itself memory resident at the top 
+       of system memory but below the 640K DOS boundary.  It will move the 
+       interrupt 12 return so that the virus in memory cannot be 
+       overwritten.  USSR 707 makes use of interrupt 21, which will now 
+       map to the virus in high system memory.  Total system memory and 
+       available free memory will be 720 bytes less than expected. 
+ 
+       After USSR 707 is memory resident, any .COM program executed will 
+       become infected by the virus.  Infected .COM programs will have a 
+       file length increase of 707 bytes, the virus will be located at the 
+       end of the file.  If COMMAND.COM is executed, it will be infected. 
+ 
+       It is unknown if USSR 707 does anything besides replicate. 

@@ -1,0 +1,63 @@
+Virus Name:  Violator B4 
+ Aliases:     Christmas Violator, Violator Strain B4 
+ V Status:    Rare 
+ Discovered:  December, 1990 
+ Isolated:    United States 
+ Symptoms:    .COM growth on 8088 based system; hard disk corruption on 
+              80286 & 80386 based systems 
+ Origin:      Canada 
+ Eff Length:  5,302 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, ChAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Violator B4 virus was isolated in December, 1990 in the United 
+       States.  It is originally from Canada.  This virus was originally 
+       released into the public domain on a Trojan version of DSZ 
+       (DSZ1203).  It is a non-resident infector of .COM files, including 
+       COMMAND.COM. 
+ 
+       What Violator B4 does depends on what processor is in the personal 
+       computer it is being executed on.  On 80286 and above processors, 
+       the virus will activate immediately, overwriting the beginning 
+       portion of the system hard disk.  It will also attempt to display a 
+       Christmas greeting at that time, but the greeting display will be 
+       garbled if ANSI.SYS is not loaded.  Damage caused by Violator B4 at 
+       activation can be repaired using Norton Disk Doctor. 
+ 
+       On an 8088 based system, Violator B4 will do nothing but replicate. 
+       Each time an infected program is executed, the virus will infect 
+       one other .COM program in the current directory.  Violator B4 
+       infected files will have a file length increase of 5,302 bytes. 
+       The file's date and time in the disk directory will not be 
+       altered.  The virus will be located at the end of the infected file. 
+ 
+       The following text message is contained within the Violator B4 
+       virus, though it is never displayed: 
+ 
+       "Violator Strain B4 - Written by RABID Nat'nl Development Corp. 
+        RABID would like to take this opportunity to extend it's sincerest 
+        holiday wishes to all Pir8 lamers around the world! If you are 
+        reading this, then you are lame!!! 
+        Anyway, to John McAffe! Have a Merry Christmas and a virus filled 
+        new year. Go ahead! Make our day! 
+        Remember! In the festive season, Say No to drugs!!! They suck shit! 
+        (Bah! We make a virus this large, might as well have 
+        something positive!)" 
+ 
+       Known variant(s) of Violator B4 are: 
+       Violator B4-1: Very similar to the original Violator B4 described 
+                      above, this variant will overwrite track 1 of the 
+                      system hard disk after it has completed two 
+                      infections on a 386-based machine.  It contains the 
+                      same text messages as the Violator B4 virus described 
+                      above, and only differs by a few bytes. 
+       Violator B4-B: This virus is the same as Violator B4-1, it differs 
+                      by two bytes.  Its behavior is identical to Violator 
+                      B4-1. 
+ 
+       See:   Vienna   Violator 

@@ -1,0 +1,45 @@
+Virus Name:  Fu Manchu 
+ Aliases:     2080, 2086, Fu Manchu-B 
+ V Status:    Rare 
+ Discovered:  March, 1988 
+ Symptoms:    .SYS, .BIN, .COM, & .EXE growth; messages 
+ Origin:     
+ Eff Length:  2,086 (.COM files) & 2,080 (.EXE files) bytes 
+ Type Code:   PRsA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ 
+ General Comments: 
+       The Fu Manchu virus attaches itself to the beginning of .COM files 
+       or the end of .EXE files.  This virus will infect any executable 
+       program, including overlay, .SYS, and .BIN files as well.  It 
+       appears to be a rewritten version of the Jerusalem virus, with a 
+       possible creation date of 3/10/88. 
+ 
+       A marker or id string usually found in this virus is 'sAXrEMHOr', 
+       though the virus only uses the 'rEMHOr' portion of the string to 
+       identify infected files. 
+ 
+       One out of sixteen infections will result in a timer being 
+       installed, and after a random amount of time, the message, "The 
+       world will hear from me again!" is displayed and the system 
+       reboots.  This message will also be displayed on an infected system 
+       after a warm reboot, though the virus doesn't survive in memory. 
+ 
+       After August 1, 1989, the virus will monitor the keyboard buffer, 
+       and will add derogatory comments to the names of various 
+       politicians.  These comments go to the keyboard buffer, so their 
+       effect is not limited to the display.  The messages within the virus 
+       are encrypted. 
+ 
+       This virus is very rare in the United States. 
+ 
+       Known variant(s) of Fu Manchu are: 
+       Fu Manchu-B: Functionally the same as Fu Manchu, this variant has 
+                    seven bytes altered in order to avoid detection by 
+                    some anti-viral products. 
+ 
+       Also see:   Jerusalem    Taiwan 3 

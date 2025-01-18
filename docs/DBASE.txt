@@ -1,0 +1,30 @@
+Virus Name:  dBASE 
+ Aliases:     DBF Virus 
+ V Status:    Extinct 
+ Discovered:  September, 1988 
+ Symptoms:    .COM & .OVL file growth; corrupt .DBF files; TSR; FAT and root 
+              directory overwritten 
+ Origin:      New York, United States 
+ Eff Length:  1,864 bytes 
+ Type Code:   PRC - Parasitic Resident .COM and Overlay Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV or delete infected files 
+ 
+ General Comments: 
+       The dBASE virus was discovered by Ross Greenberg of New York. This 
+       virus infects .COM & .OVL files, and will corrupt data in DBF files 
+       by randomly transposing bytes in any open .DBF file. It keeps track 
+       of which files and bytes were transposed in a hidden file (BUG.DAT) 
+       in the same directory as the .DBF file(s). The virus restores these 
+       bytes if the file is read, so it appears that nothing is wrong. 
+       Once the BUG.DAT file is 90 days old or more, the virus will 
+       overwrite the FAT and root directory on the disk. 
+ 
+       After this virus has been detected, if you remove the infected 
+       dBASE program and replace it with a clean copy, your .DBF files 
+       that were opened during the period that you were infected will be 
+       useless since they are garbled on the disk even though they would 
+       be displayed as expected by the infected dBASE program. 

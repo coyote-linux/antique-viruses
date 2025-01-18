@@ -1,0 +1,150 @@
+Virus Name:  Hydra Family 
+ Aliases:     Hydra, Hydra-0, Hydra-1, Hydra-2, Hydra-3, Hydra-4, Hydra-5, 
+              Hydra-6, Hydra-7, Hydra-8, Hydra-8 Trojan 
+ V Status:    Rare 
+ Discovered:  December, 1991 
+ Symptoms:    .COM file growth; file date/time change; message displayed; 
+              unexpected errors; program execution failure; system hangs; 
+              programs deleted; programs truncated 
+ Origin:      Unknown 
+ Eff Length:  340 - 736 Bytes, depending on variant present 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  Sweep, ViruScan, AVTK, F-Prot, ChAV, 
+                    NAV, IBMAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Hydra Family of viruses was received in December, 1991.  Its 
+       origin or point of isolation is unknown.  The Hydra Family 
+       contains nine closely related viruses, and one trojan which is 
+       dropped by one of the viruses.  All of the viruses are non-resident, 
+       direct action infectors of .COM programs.  The earliest virus, 
+       Hydra-0, is described below, with the other eight later viruses 
+       and the trojan included in "Known variant(s)". 
+ 
+       When a program infected with Hydra-0 is executed, the Hydra-0 
+       virus will search the current directory for one non-infected .COM 
+       program to infect.  If one is found, Hydra-0 will infect it. 
+       Hydra-0 infected programs will have a file length increase of 
+       736 bytes, the virus will be located at the beginning of the 
+       infected file.  The file's date and time in the DOS disk directory 
+       will have been updated to the current system date and time when 
+       infection occurred. 
+ 
+       If Hydra-0 does not find an uninfected .COM file in the current 
+       directory, it will activate.  At this time, it will display a 
+       message with the following text, and return the user to the DOS 
+       prompt: 
+ 
+               "HYDRA" 
+               "Watch for the many heads. 
+                The first eight are easy to find and kill. 
+                Their replacements will be more sophisticated." 
+               "(c) 1991  -  C. A. V. E." 
+ 
+       The above text, along with the additional text strings indicated 
+       below can be found in all Hydra-0 infected programs: 
+ 
+               "HyDra" 
+               "Beta - Not For Release. *.CO?" 
+               "Copyright (c) by C.A.V.E." 
+               "Coalition  of   American  Virus   Engineers" 
+               "  -=-=-  " 
+               "Dedicated  to  supporting  the   anti-virus    industry 
+                without recognition or reward." 
+ 
+       Hydra-0 does not do anything besides replicate and display its 
+       message. 
+ 
+       Known members of the Hydra Family, besides Hydra-0, are: 
+       Hydra-1: Hydra-1 is similar to the Hydra-0 virus.  It adds 403 
+                bytes to the .COM files it infects.  After all the .COM 
+                files in the current directory have been infected, it will 
+                display the following message, and the system will be 
+                hung: 
+                "HYDRA" 
+                "Copyright (c)  1991 by C.A.V.E." 
+                The above text strings will be found in all Hydra-1 infected 
+                programs along with the following additional text string: 
+                "YD  HyDra-1   Beta - Not For Release. *.CO?" 
+       Hydra-2: Based on Hydra-1, Hydra-2 is a 343 byte variant.  It 
+                adds 343 bytes to the .COM files it infects.  After all the 
+                .COM files in the current directory have been infected, it 
+                will not display any message, and no system hang will 
+                occur.  It contains the following text strings: 
+                "YD  HyDra-2   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E" 
+       Hydra-3: Based on Hydra-2, Hydra-3 is one byte smaller.  It adds 
+                342 bytes to the .COM files it infects.  After all the .COM 
+                files in the current directory have been infected, the 
+                user will not be able to successfully execute any programs. 
+                Attempts to execute .EXE programs will result in the user 
+                being returned to the DOS prompt.  Attempts to execute .COM 
+                programs may result in unexpected error messages.  For 
+                example, execution of the DOS CHKDSK program will typically 
+                result in a message indicating the file allocation table 
+                is bad, even though it is actually undamaged.  Text strings 
+                found within programs infected with Hydra-3 are: 
+                "YD  HyDra-3   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E." 
+                Unlike other members of the Hydra Family, Hydra-3 will 
+                occassionally reinfect already infected programs, adding 
+                an additional 342 bytes to the file. 
+       Hydra-4: Based on Hydra-3, Hydra-2 is two bytes smaller.  It adds 
+                340 bytes to the .COM files it infects.  After all the .COM 
+                files in the current directory have been infected, 
+                execution of any program will result in the DOS error 
+                message: "General Failur error reading drive".  The disk 
+                which is receiving the error is actually ok, and will be 
+                accessible after rebooting the system and disinfecting the 
+                virus.  Text strings found within Hydra-4 infected programs 
+                are: 
+                "YD  HyDra-4   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E." 
+                Hydra-4 does not reinfect files as Hydra-3 does. 
+       Hydra-5: The Hydra-5 virus is based on the Hydra-4 variant.  It 
+                adds 391 bytes to the .COM files it infects.  After all the 
+                .COM files in the current directory have been infected, 
+                execution of the next infected .COM file will result in all 
+                .EXE files located in the current directory being deleted. 
+                Text strings found within Hydra-5 infected programs are: 
+                "YD  HyDra-5   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E." 
+                "????????EXE" 
+       Hydra-6: The Hydra-6 virus is based on the Hydra-5 variant.  It 
+                adds 372 bytes to the .COM files it infects.  After all the 
+                .COM files in the current directory have been infected, 
+                execution of the next infected .COM file will result in 
+                any file in the current directory with the base file name 
+                COMMAND (ie COMMAND.*) being truncated to zero bytes. 
+                Text strings found within Hydra-6 infected programs are: 
+                "YD  HyDra-6   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E.  COMMAND.*" 
+       Hydra-7: The Hydra-7 virus is based on the Hydra-6 variant.  It 
+                adds 368 bytes to the .COM files it infects.  After all the 
+                .COM files in the current directory have been infected, 
+                execution of the next infected .COM file will result in all 
+                .EXE programs located in the current directory being 
+                truncated to zero bytes in length.  Text strings found 
+                within Hydra-7 infected files are: 
+                "YD  HyDra-7   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E.  *.EXE" 
+       Hydra-8: The Hydra-8 virus is based on the Hydra-7 variant.  It 
+                adds 495 bytes to the .COM files it infects.  After all the 
+                .COM files in the current directory have been infected, 
+                execution of the next infected .COM file will result in 
+                four .EXE files in the current directory being replaced by 
+                a 90 byte trojan program (see below as Hydra-8 Trojan). 
+                Text strings found within Hydra-8 infected programs are: 
+                "YD  HyDra-8   Beta - Not For Release. *.CO?" 
+                "Copyright (c)  1991 by C.A.V.E.  *.EXE 3" 
+       Hydra-8 Trojan: The Hydra-8 Trojan is a 90 byte program which 
+                the Hydra-8 virus will replace four .EXE programs with in 
+                the current directory when it activates.  When these 
+                Hydra-8 programs are later executed, it will display the 
+                following text string in the middle of the user's display, 
+                and return the user to the DOS prompt: 
+                "Who is John Gait?" 
+                This text string is not visible within the trojan program. 

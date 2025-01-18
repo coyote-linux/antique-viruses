@@ -1,0 +1,39 @@
+Virus Name:  V2P2 
+ Aliases:     Chameleon 
+ V Status:    Research 
+ Discovered:  June, 1990 
+ Symptoms:    .COM file growth 
+ Origin:      Minnesota, United States 
+ Eff Length:  1,426 - 2,157 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  NAV, AVTK, F-Prot, Sweep, IBMAV, NAVDX, VAlert, 
+                    PCScan, ViruScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, AVTK/N, NAV/N, 
+                    NProt, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The V2P2 virus is a research virus written by Mark Washburn and 
+       distributed to some anti-viral program authors in June of 1990. 
+       This virus, according to its author, has not been released.  This 
+       virus is a non-resident generic infector of .COM files. 
+ 
+       When a program infected with the V2P2 virus is executed, it will 
+       infect the first .COM file it finds in the current directory which 
+       is not infected with the virus.  The virus adds its code to the end 
+       of the file, and the infected file's length will increase between 
+       1,426 and 2,157 bytes. 
+ 
+       Like the 1260 virus, this virus uses a complex encryption method. 
+       In fact, the encryption used with the 1260 virus is one of several 
+       possible encryptions that V2P2 may produce.  As a result, virus 
+       scanning software will often identify the 1260 virus in a file as 
+       being both 1260 and V2P2.  This identification is entirely valid as 
+       1260 is a special case of V2P2. 
+ 
+       See:   1260   Casper   V2P6 
+
+
+Show viruses from 
+anywhere
+ discovered during 

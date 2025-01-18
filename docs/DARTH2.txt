@@ -1,0 +1,60 @@
+Virus Name:  Darth Vader 
+ Aliases:     Darth-1, Darth-2, Darth-3, Darth-4, Darth-5 
+ V Status:    Research 
+ Discovery:   May, 1991 
+ Symptoms:    .COM programs corruption 
+ Origin:      Bulgaria 
+ Eff Length:  200 - 345 Bytes 
+ Type Code:   ORCK - Overwriting Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, NAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    LProt, Sweep/N, Innoc, NProt, AVTK/N, NShld, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Darth Vader viruses were received in May, 1991 from Bulgaria. 
+       Darth Vader is actually a family of four viruses which are very 
+       similar.  All of these viruses are memory resident overwriting 
+       viruses which only infect .COM programs when they are copied. 
+ 
+       When a program infected with a Darth Vader virus is executed, 
+       Darth Vader will install itself memory resident.  Latter, as .COM 
+       programs are copied, the target .COM program may become infected. 
+       Depending on the particular Darth Vader virus, the target program 
+       may have either the beginning of the program overwritten, or an 
+       area of hex 00 characters overwritten by the virus.  There will be 
+       no increase in file size in the disk directory, and the program's 
+       date and time will not be altered. 
+ 
+       Darth Vader viruses do not perform any malicious damage, though 
+       infected programs are usually damaged and will not execute 
+       properly. 
+ 
+       Known variant(s) of Dark Avenger are: 
+       Darth-1: The first Darth Vader virus submitted, Darth-1 is 
+                270 bytes in length.  It overwrites the first 270 bytes 
+                of .COM files when they are copied with the virus 
+                memory resident.  Darth-1 will not infect COMMAND.COM. 
+                The following text string can be found in the first 270 
+                bytes of infected programs: "COMMCOMDarth Vad". 
+       Darth-2: Darth-2 is a 345 byte variant of Darth-1.  Unlike 
+                Darth-1, it overwrites 345 bytes of hex 00 characters 
+                in copied .COM programs.  Infected programs will contain 
+                the text string: "COMDarth Vader".  Darth-2 and later 
+                variants will infect COMMAND.COM. 
+       Darth-3: Darth-3 is similar to Darth-2, but it is 255 bytes in 
+                length.  When Darth-3 infects programs, it overwrites 255 
+                bytes of hex 00 characters.  Infected programs will contain 
+                the text string: "Darth Vader". 
+       Darth-3B: Darth-3B is similar to Darth-3, and is a very minor 
+                variant.  Like Darth-3, infected programs will contain 
+                the text string: "Darth Vader". 
+                Origin:  Unknown  January, 1994. 
+       Darth-4: Darth-4 is a shorter version of Darth-4, it is 200 
+                bytes in length and does not contain any text strings. 
+       Darth-5: Darth-5 is very similar to Darth-4.  Like Darth-4, it 
+                is 200 bytes in length and does not contain any text 
+                strings.  Darth-5 only infects .COM files when they are 
+                copied if the original file contained at least 200 
+                bytes of hex 00 characters. 

@@ -1,0 +1,35 @@
+Virus Name:  African 109 
+ Aliases:     109 
+ V Status:    Rare 
+ Discovery:   January, 1992 
+ Symptoms:    .COM file growth; file date/time change 
+ Origin:      Republic of South Africa 
+ Eff Length:  109 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, NAV, NAVDX, 
+                    IBMAV, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The African 109 virus was isolated in January, 1992 in the 
+       Republic of South Africa by Oliver Steudler and Peter Stoffberg 
+       of the Virus Resource Centre.  African 109 is a non-resident, 
+       direct action infector of .COM files, including COMMAND.COM. 
+ 
+       When a program infected with African 109 is executed, the African 
+       109 virus will infect all previously uninfected .COM files in the 
+       current directory.  If COMMAND.COM happens to be in this directory, 
+       it will be infected as well. 
+ 
+       Programs infected with African 109 will have a file length increase 
+       of 109 bytes.  The virus will be located at the beginning of the 
+       infected file.  The file's date and time in the DOS disk directory 
+       will have been updated to the current system date and time when 
+       infection occurred.  One text string can be found in the viral code 
+       in infected files: 
+ 
+               "*.COM" 
+ 
+       African 109 doesn't do anything besides replicate. 

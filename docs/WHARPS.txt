@@ -1,0 +1,35 @@
+Virus Name:  Wharps 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  December, 1992 
+ Symptoms:    .COM file growth; message; buzzing on speaker; system hangs; 
+              file time seconds set to "62" 
+ Origin:      Unknown 
+ Eff Length:  572 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, F-Prot, IBMAV, NAVDX, 
+                    VAlert, NAV, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, LProt, IBMAV/N, Innoc, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Wharps virus was submitted in December, 1992.  Its origin or 
+       point of isolation is unknown.  Wharps is a non-resident, direct 
+       action infector of .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the Wharps virus is executed, the 
+       Wharps virus will infect one .COM program located in the current 
+       directory.  Infected programs will have a file length increase of 
+       572 bytes with the virus being located at the end of the file. 
+       The file's date and time in the DOS disk directory listing will 
+       appear to be unaltered, but actually the seconds field in the file 
+       time will have been set to "62".  The following text strings are 
+       encrypted within the Wharps viral code: 
+ 
+               "[wHaRpS]" 
+               "wHaRpS! It is 3:00 a.m. > ETERNAL" 
+ 
+       The second text string is displayed by the virus when an infected 
+       program is executed at 3:00 AM.  System hangs will also frequently 
+       occur on infected systems. 
+ 

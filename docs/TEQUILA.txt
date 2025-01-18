@@ -1,0 +1,76 @@
+ Virus Name:  Tequila 
+ Aliases:     Stealth 
+ V Status:    Common 
+ Discovered:  April, 1991 
+ Symptoms:    .EXE growth; master boot sector modified; file allocation 
+              errors; decrease in total system and available memory 
+ Origin:      Switzerland 
+ Eff Length:  2,468 Bytes 
+ Type Code:   PRtEX - Parasitic Resident .EXE & Master Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, NAV, PCScan, ChAV, 
+                    IBMAV, AVTK, NAVDX, VAlert, 
+                    NShld, LProt, Sweep/N, Innoc, AVTK/N, NAV/N, 
+                    NProt, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files and 
+                        replace master boot sector 
+ General Comments: 
+       The Tequila virus was isolated in April, 1991.  It is originally 
+       from Switzerland, and at the time of its isolation was thought to 
+       be common in Europe.  Tequila is a memory resident master boot sector 
+       (partition table) and .EXE file infector which uses a complex 
+       encryption method and garbling to avoid disassembly and detection by 
+       using a scan or search string. 
+ 
+       The first time a program infected with Tequila is executed on a 
+       system, the virus will check to see if it has already infected the 
+       hard disk master boot sector.  If the master boot sector has not been 
+       previously infected, Tequila will write an unencrypted copy of 
+       itself to the last six sectors of the system hard disk, as well as 
+       modify the hard disk master boot sector so that it will be 
+       infectious.  Tequila will not install itself memory resident at 
+       this time, and it will not infect programs. 
+ 
+       Later, when the system is rebooted from the system hard disk, 
+       Tequila will become memory resident.  It will be located at the top 
+       of system memory but below the 640K DOS boundary.  Interrupt 12's 
+       return will be moved, preventing the virus from being overwritten 
+       in memory. Interrupts 13 and 21 will be hooked by the virus.  Total 
+       system memory and available free memory, as indicated by the DOS 
+       CHKDSK program, will be 3,072 bytes less than expected. 
+ 
+       After Tequila is memory resident, it will infect .EXE programs when 
+       they are executed.  Infected .EXE programs will increase in size by 
+       2,468 bytes, but this increase will not be able to be seen in the 
+       DOS disk directory if the virus is memory resident.  The virus will 
+       be located at the end of infected programs.  The infected program's 
+       date and time in the disk directory will not be altered. 
+ 
+       The following text will be able to be found on the last few sectors 
+       of the hard disk on infected systems.  This text is encrypted in 
+       infected programs: 
+ 
+               "Welcome to T.TEQUILA's latest production. 
+                Contact T.TEQUILA/P.o.Box 543/6312 St'hausen 
+                Switzerland. 
+                Loving thought to L.I.N.D.A. 
+                BEER and TEQUILA forever !" 
+ 
+       Systems infected with Tequila will notice file allocation errors 
+       being detected with the DOS CHKDSK command when the virus is memory 
+       resident.  If CHKDSK is executed with the /F option, program 
+       corruption may result. 
+ 
+       Anti-viral programs which perform CRC checking may not be able to 
+       detect Tequila on files, regardless of whether the virus is memory 
+       resident. 
+ 
+       Tequila activates four months after the initial date of infection 
+       of the system hard disk.  At that time, and every month thereafter 
+       on the anniversary date, the virus will display a graphic and the 
+       following message: 
+ 
+               "Execute: mov ax, FE03 / int 21. Key to go on!" 
+ 
+       If the user executes a program containing this sequence of 
+       instructions, the message which was found on the last sectors of 
+       the system hard disk will be displayed. 

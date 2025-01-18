@@ -1,0 +1,38 @@
+Virus Name:  Polimer 
+ Aliases:     Polimer Tapeworm 
+ V Status:    Rare 
+ Discovered:  November, 1990 
+ Symptoms:    .COM growth; message 
+ Origin:      Hungary 
+ Eff Length:  512 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, NAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Polimer virus was discovered in Hungary in November, 1990. 
+       This virus is a non-resident infector of .COM files, including 
+       COMMAND.COM. 
+ 
+       When a program infected with the Polimer virus is executed, the 
+       following message will be displayed: 
+ 
+             "A le' jobb kazetta a POLIMER kazetta !   Vegye ezt !" 
+ 
+       This message can be found near the beginning of all infected files. 
+ 
+       After the message is displayed, the virus will attempt to infect 
+       one .COM file on the current drive and directory, and one .COM file 
+       on the C: drive's current directory.  This virus will only infect 
+       .COM files which are between 512 and 64,758 bytes in length.  If 
+       the .COM file it attempts to infect has the Read-Only attribute, it 
+       will not be infected, and the message $ERROR will be displayed. 
+ 
+       Although this virus is actually 456 bytes in length, infected .COM 
+       files will increase in size by 512 bytes with the virus's code 
+       being located at the beginning of the file. 
+ 
+       This virus does not appear to do anything besides replicating.

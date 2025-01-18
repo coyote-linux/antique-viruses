@@ -1,0 +1,80 @@
+Virus Name:  AirCop 
+ Aliases: 
+ V Status:    Common 
+ Discovery:   July, 1990 
+ Isolated:    Washington, United States 
+ Symptoms:    BSC; system halt; message; decrease in system and free 
+              memory 
+ Origin:      Taiwan 
+ Eff Length:  N/A 
+ Type Code:   FR - Resident Floppy Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, Sweep, AVTK, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  MDisk, or DOS SYS command 
+ 
+ General Comments: 
+       The AirCop virus was discovered in the State of Washington in the 
+       United States in July, 1990.  Some early infections of this virus, 
+       however, have been traced back to Taiwan, and Taiwan is probably 
+       where it originated.  AirCop is a boot sector infector, and it will 
+       only infect 360K 5.25" floppy diskettes. 
+ 
+       When a system is booted from a diskette which is infected with the 
+       AirCop virus, the virus will install itself memory resident.  The 
+       AirCop virus installs itself memory resident at the top of high 
+       system memory.  The system memory size and available free memory 
+       will decrease by 1,024 bytes when the AirCop virus is memory 
+       resident.  AirCop hooks interrupt 13. 
+ 
+       Once AirCop is memory resident, any non-write protected diskettes 
+       which are then accessed will have their boot sector infected with 
+       the AirCop virus.  AirCop will copy the original disk boot sector to 
+       sector 719 (Side 1, Cyl 39, Sector 9 on a normal 360K 5.25" 
+       diskette) and then replace the boot sector at sector 0 with a copy 
+       of the virus.  If a boot sector of a diskette infected with the 
+       AirCop virus is viewed, it will be missing almost all of the 
+       messages which normally appear in a normal boot sector.  The only 
+       message remaining will be: 
+ 
+               "Non-system..." 
+ 
+       This will be located just before the end of the boot sector. 
+ 
+       The AirCop virus will do one of two things on infected systems, 
+       depending on how compatible the system's software and hardware is 
+       with the virus.  On most systems, the virus will display the 
+       following message at random intervals: 
+ 
+               "Red State, Germ Offensive. 
+                AIRCOP." 
+ 
+       On other systems, the virus being present will result in the system 
+       receiving a Stack Overflow Error and the system being halted.  In 
+       this case, you must power off the system in order to be able to 
+       reboot. 
+ 
+       AirCop currently does not infect hard disk boot sectors or partition 
+       tables. 
+ 
+       AirCop can be removed from infected diskettes by first powering off 
+       the system and rebooting from a known clean, write-protected DOS 
+       master diskette.  The DOS SYS command should then be used to replace 
+       the infected diskette's boot sector.  Alternately, MDisk can be used 
+       following the power-down and reboot. 
+ 
+       Known variant(s) of AirCop are: 
+       AirCop-B: Submitted in May, 1991 from the United States, AirCop-B is 
+                 a variant of the original AirCop virus.  Like the original 
+                 virus, it only infects floppy disk boot sectors.  The 
+                 Stack Overflow Error and system halt which occurred on 
+                 some systems no longer occur with this variant.  AirCop-B 
+                 activates during the month of September, and booting from 
+                 an infected floppy will result in a flashing, scrolling 
+                 display of the message: 
+ 
+                         "This is Aircop" 
+ 
+                 The boot will then proceed.  AirCop-B has also been 
+                 altered to avoid detection by anti-viral utilities. 
+                 Utilities which can detect AirCop may not be able to 
+                 detect this variant.

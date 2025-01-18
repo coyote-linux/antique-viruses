@@ -1,0 +1,6 @@
+
+; This is a demo virus to demonstrate
+;   the Mutation Engine <tm> usage
+
+; Version 1.01 (26-10-91)
+; (C) 1991 Dark Avenger.

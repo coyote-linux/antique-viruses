@@ -1,0 +1,208 @@
+Virus Name:  Deicide 
+ Aliases:     Glenn, Deicide II 
+ V Status:    Rare 
+ Discovered:  February, 1991 
+ Symptoms:    .COM files overwritten; message; FAT corruption; system hang 
+ Origin:      Netherlands 
+ Eff Length:  666 Bytes 
+ Type Code:   ONC - Overwriting Non-Resident .COM Infector 
+ Detection Method:  AVTK, F-Prot, ViruScan, Sweep, IBMAV, NAV, 
+                    NAVDX, VAlert, PCScan, AVTK, ChAV, 
+                    Sweep/N, NShld, Innoc, NProt, AVTK/N, LProt, IBMAV/N, 
+                    NAV/N 
+ Removal Instructions:  Delete infected programs 
+ 
+ General Comments: 
+       The Deicide virus was received in February, 1991 from the 
+       Netherlands. This virus is a non-resident overwriting virus which 
+       infects .COM files, but not COMMAND.COM.  Later variants of Deicide 
+       are non-resident parasitic viruses, and are described below under 
+       "Known variant(s)". 
+ 
+       When a program infected with Deicide is executed, the virus will 
+       search the current directory for an uninfected .COM program.  If an 
+       uninfected .COM program is found, the virus will infect it, 
+       overwriting the first 666 bytes of the program with the virus.  If 
+       the newly infected program's original file length was 666 bytes or 
+       more, then no file length change will show in the disk directory. 
+       If originally the program was smaller than 666 bytes, its length 
+       will now be 666 bytes. The following message may be displayed by the 
+       virus after infecting a file: 
+ 
+               "File corruption error." 
+ 
+       If the virus does not find an uninfected .COM program in the current 
+       directory, it will display the following message double spaced, and 
+       overwrite the first 80 sectors of the system hard disk: 
+ 
+               "DEICIDE! 
+                Glenn (666) says : BYE BYE HARDDISK!! 
+                Next time be carufull with illegal stuff" 
+ 
+       The above messages can be found in all infected files, along with 
+       the following message which is not displayed: 
+ 
+                "This experimental virus was written by Glenn Benton 
+                 to see if I can make a virus while learning machinecode 
+                 for 2,5 months. (C) 10-23-1990 by Glenn. 
+                 I keep on going making virusses." 
+ 
+       Known variant(s) of Deicide are: 
+       Brotherhood: Written by the same author as the Deicide virus, 
+                  Brotherhood is a non-resident direct action infector 
+                  of .COM programs, including COMMAND.COM.  It infects 
+                  one .COM file in the current directory each time an 
+                  infected program is executed.  Infected programs will 
+                  have a file length increase of 477 bytes with the virus 
+                  being located at the beginning of the file.  The program's 
+                  date and time in the DOS disk directory listing will not 
+                  be altered.  The following text strings can be found 
+                  within the viral code in all Brotherhood infected files: 
+                  'Brotherhood...' 
+                  'I am seeking my brothers "DEICIDE" and "MORGOTH"...' 
+                  'Found my brother "MORGOTH"!!!' 
+                  'Found my brother "DEICIDE"!!!' 
+                  '*.COM' 
+                  '*** Glenn Benton ***' 
+                  '????????COM' 
+                  Origin:  Unknown  November, 1992 
+       Deicide 2: Also known as Deicide-1335, Deicide 2 is a 1,335 
+                  byte variant of the Deicide virus.  It infects one .COM 
+                  program in the current directory each time an infected 
+                  program is executed.  Infected programs will have a file 
+                  length increase of 1,335 bytes with the virus being 
+                  located at the beginning of the file.  There will be no 
+                  change to the file's date and time in the DOS disk 
+                  directory listing.  The following text strings are visible 
+                  within the viral code in all Deicide 2 infected programs: 
+                  "Suck my dick, Steffie!" 
+                  "*.COM" 
+                  "????????COM" 
+                  Origin:  The Netherlands  December, 1992 
+       Deicide II.622: Deicide II.622 is a 622 byte variant of the Deicide 
+                  virus.  It infects one .COM program in the current 
+                  directory when an infected program is executed.  Infected 
+                  programs will have a file length increase of 622 bytes with 
+                  the virus being located at the beginning of the file.  There 
+                  will be no change to the file's date and time in the DOS 
+                  disk directory listing.  The following text strings are 
+                  visible within the viral code in all infected files: 
+                  "This Personal Computer has been struck by the uncurable 
+                   disease that is" 
+                  "called "The Doom of Morgoth"." 
+                  "*.COM" 
+                  "????????COM" 
+                  Origin:  The Netherlands  July, 1994 
+       Deicide II.623: Deicide II.623 is a 623 byte variant of the Deicide 
+                  virus.  It infects one .COM program in the current 
+                  directory when an infected program is executed.  Infected 
+                  programs will have a file length increase of 623 bytes with 
+                  the virus being located at the beginning of the file.  There 
+                  will be no change to the file's date and time in the DOS 
+                  disk directory listing.  The following text strings are 
+                  visible within the viral code in all infected files: 
+                  "This Personal Computer has been struck by the uncurable 
+                   disease that is" 
+                  "called "The Doom of Morgoth"." 
+                  "*.COM" 
+                  "????????COM" 
+                  Origin:  The Netherlands  July, 1994 
+       Deicide II.2403: Received in January, 1996, this is a 2,403 byte 
+                  variant.  It infects one .COM program in the current 
+                  directory when an infected program is executed, and 
+                  displays a message on the system monitor.  Infected files 
+                  will have a file length increase of 2,403 bytes with the 
+                  virus being located at the beginning of the file.  There 
+                  will be no change to the file's date and time in the DOS 
+                  disk directory listing.  The following text strings are 
+                  visible within the viral code in all infected files: 
+                  "McAfee us a bum-hole" 
+                  "Patricia Hoffman is a virgin" 
+                  "David Grant is a shithead" 
+                  "Jan Terpstra sucks" 
+                  "Vesselin Bontchev is a lamer" 
+                  "Righard Zwienenberg is a cowboy" 
+                  "Greetings to Cracker Jack in Italy" 
+                  "DOS could be programmed better" 
+                  "A virus may not hang, it must replicate!" 
+                  "(C) by Glenn Benton DVRL" 
+                  "HAHA you have a virus" 
+                  "Dutch Virus Research Laboratory" 
+                  "Program to big to fit in ass" 
+                  "Another program bites the dust" 
+                  "Havahey! Another Me born to serve" 
+                  "Deicide wasnt that good at all..." 
+                  "DEICIDE, MORGOTH, BREEZE, BROTHER by Glenn Benton" 
+                  "Hey ! Gimme some more disks!" 
+                  "Stealth techniques are cool" 
+                  "Encryption is usefull..." 
+                  "Stephanie my lovely girl" 
+                  "FPROT is compiled BASIC" 
+                  "Fuck da police!" 
+                  "Source soon aveable for jokes!" 
+                  "Why dont you play with something else?" 
+                  "Thanks to BORLAND for Turbo Assembler" 
+                  "It is time for NORTON SPEED DISK" 
+                  "Donald duck is a lie..." 
+                  "Why dont you buy me a CHEESEBURGER?" 
+                  "Wim kok is a COMMUNIST!!!!" 
+                  "Xabaras could be better" 
+                  "FAT has a nice technique" 
+                  "This virus is not resident!" 
+                  "Nobody like debugging..." 
+                  "60 messages in here?" 
+                  "Out of worktime" 
+                  "RAM parity error" 
+                  "Insert porn magazine in drive A" 
+                  "Insert tracktor toilet paper in printer" 
+                  "Upload this virus to McAfee, please" 
+                  "HIP-HOP sucks!" 
+                  "Vote for Saddam." 
+                  "DEAD BY DAWN" 
+                  "NAIL HIM LIKE JESUS!" 
+                  "May I fuck with your wife?" 
+                  "Hey CJ! What about a Corporation (I&DVRL)" 
+                  "Thanx to Oliver North for giving me TASM" 
+                  "Do not use drugs, make a virus!" 
+                  "Register this produkt!" 
+                  "This virus is SHAREWARE" 
+                  "You will hate me for this" 
+                  "See the sunny side of life" 
+                  "DAME EDNA IS COOL" 
+                  "I like the pope, the pope smokes dope!" 
+                  "We like the pope, he gives us his dope!" 
+                  "Are you FLINTSTONED???" 
+                  "How about a game of STRIP-POKER?" 
+                  "FACES OF DEATH!" 
+                  "Just one more message!!!" 
+                  "Spread this like hell!" 
+                  "*.COM" 
+                  With the exception of the last text string, and of the 
+                  other strings may be displayed as a message. 
+                  Origin:  Unknown  January, 1996 
+       Deicide-2405: Based on the Brotherhood variant of Deicide, 
+                  Deicide-2405 infects one .COM program each time an 
+                  infected program is executed, adding 2,405 bytes to the 
+                  file, and then displays a message on the system display. 
+                  The virus will be located at the beginning of the file, 
+                  and there will be no change to the file's date and time 
+                  in the DOS disk directory listing.  Approximately 60 
+                  different messages may be displayed by the virus, all of 
+                  which are visible in infected programs.  Many of the 
+                  messages are insults to various anti-viral researchers. 
+                  Origin:  The Netherlands  November, 1992 
+       Deicide-2570: Based on the Brotherhood variant of Deicide, 
+                  Deicide-2570 is fairly similar to the Deicide-2405 
+                  variant described above.  It adds 2,570 bytes to the .COM 
+                  programs it infects, the virus being located at the 
+                  beginning of the file.  Approximately 60 messages also 
+                  are contained in the virus, and one is displayed each time 
+                  an infected program is executed.  Many of the mesages are 
+                  of a sexual nature in this variant. 
+                  Origin:  The Netherlands  November, 1992 
+       Deicide-B: Based on the Deicide virus described above, this 
+                  variant no longer overwrites the system hard disk after 
+                  it has infected all of the .COM files in a directory. 
+                  Origin:  Unknown  November, 1992 
+ 
+       See:   Breeze 

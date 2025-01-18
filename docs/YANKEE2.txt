@@ -1,0 +1,31 @@
+Virus Name:  Yankee 2 
+ Aliases:     Yankee Virus, Yankee-go-Home, 1961, Old Yankee 
+ V Status:    Endangered 
+ Discovered:  September, 1989 
+ Symptoms:    .EXE growth; Yankee Doodle melody 
+ Origin:      Bulgaria 
+ Eff Length:  1,961 Bytes 
+ Type Code:   PNE - Parasitic Non-Resident .EXE Infector 
+ Detection Method:  ViruScan, NAV, F-Prot, Sweep, AVTK, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Yankee 2, or Yankee virus, was isolated in Bulgaria in 1989. 
+       Unlike the Yankee Doodle virus, the Yankee 2 virus is not memory 
+       resident.  It also only infects .EXE files, adding 1,961 bytes to 
+       their length.  The virus will attempt to infect an .EXE file in the 
+       current directory whenever an infected program is executed.  If it 
+       is successful in locating an uninfected .EXE file, and infects it, 
+       Yankee Doodle will be played on the system speaker.  Infected files 
+       will have the hex string '6D6F746865726675636B6572' at the end. 
+ 
+       The Yankee 2 virus will not infect CodeView. 
+ 
+       Known variant(s) of Yankee 2 are: 
+       1624: This variant is similar to Yankee 2 in function, the major 
+             change is that its effective length is 1,624 bytes. 
+ 
+       See:   Enigma 

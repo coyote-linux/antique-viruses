@@ -1,0 +1,99 @@
+Virus Name:  VirDem 
+ Aliases:     VirDem 2 
+ V Status:    Endangered 
+ Discovered:  1986-1987 
+ Symptoms:    .COM growth; messages 
+ Origin:      Germany 
+ Eff Length:  1,236 Bytes 
+ Type Code:   PNC - Parasitic Non-Resident .COM Infector 
+ Detection Method:  AVTK, F-Prot, ViruScan, Sweep, PCScan, 
+                    NAV, IBMAV, NAVDX, VAlert, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The VirDem virus was written in 1986-1987 by Ralf Burger of 
+       Germany. The virus was originally distributed in Europe as a 
+       demonstration virus, to assist computer users in understanding 
+       how a computer virus operates. 
+ 
+       The VirDem virus is not memory resident, and only infects .COM 
+       files on the A: drive.  It will always skip the first .COM file in 
+       the root directory, so normally it will not infect COMMAND.COM.  It 
+       will also not infect .COM files past the second subdirectory on the 
+       disk. 
+ 
+       Infected files that were originally less than approximately 1,500 
+       bytes will be 2,616 bytes after infection.  .COM files which were 
+       greater than 1,500 bytes will increase in size by approximately 
+       1,236 bytes. 
+ 
+       When an infected program is executed, VirDem will infect the next 
+       candidate .COM file.  Infected files will contain the viral code, 
+       followed by the original program.  After infecting the .COM file, 
+       the virus will play a "game" with you, starting with the following 
+       text being displayed: 
+ 
+              " VirDem Ver.: 1.06 (Generation #) aktive. 
+                Copyright by R.Burger 1986,1987 
+                Phone.: D - xxxxx/xxxx 
+ 
+                This is a demoprogram for 
+                computerviruses. Please put in a 
+                number now. 
+                If you're right, you'll be 
+                able to continue. 
+                The number is between 
+                0 and #                                         " 
+ 
+               (Note: I have removed the phone number here, but it 
+                appears where xxxxx/xxxx is above.  Where # is, the 
+                virus's generation number appears.) 
+ 
+       At this point, you must guess the correct number and enter it.  If 
+       you put in the wrong number, you get the following message and your 
+       program is not run: 
+ 
+              " Sorry, you're wrong 
+ 
+                More luck at next try ....    " 
+ 
+       If you guess the correct number, you receive the following message 
+       and your program then executes: 
+ 
+              " Famous. You're right. 
+                You'll be able to continue.  " 
+ 
+       Finally, after all the candidate .COM files on the A: drive are 
+       infected, the following message is displayed: 
+ 
+              " All your programs are 
+                struck by VIRDEM.COM now." 
+ 
+       VIRDEM.COM was the original distribution file containing the virus, 
+       and had a VIRDEM.DOC file included with it.  VirDem is not 
+       widespread, and is not destructive. 
+ 
+       Known variant(s) of VirDem are: 
+       VirDem 2: Similar to the virus described above, the major 
+                 difference is that the text messages have been translated 
+                 to German. 
+       VirDem-833: Based on the VirDem virus described above, VirDem-833 
+                 infects one .COM file in the current directory when an 
+                 infected program is executed.  Infected programs will have 
+                 a file length increase of 833 bytes with the virus being 
+                 located at the beginning of the file.  The program's date 
+                 and time in the DOS disk directory listing will not be 
+                 altered.  The following text strings are visible within the 
+                 VirDem-833 viral code: 
+                 "\ * *.COM" 
+                 "\ IRUS S" 
+                 VirDem-833 activates when an infected program is executed 
+                 on any Monday starting in 1993.  At this time, a "bug" 
+                 will traverse the top of the system display from left to 
+                 right, and the current drive's file allocation table may 
+                 be corrupted by the virus. 
+                 Origin:  Unknown  January 1993. 
+ 
+       See:   Burger   Twin Peaks   VirDem-792   VirDem-1542   Wonderful

@@ -1,0 +1,24 @@
+;------------------------------------------------------------------------------
+;
+; Virus Name:  SEX 666
+; Origin:      Holland
+; Eff Length:  2,048 bytes
+; Type Code:   PRhE - Parasitic Resident .EXE Infector
+; 
+; General Comments:
+; 	When the first program with SEX 666 is executed, SEX 666 will infect
+; 	this partition table the first harddisk and install itself resident
+; 	at the top of system memory, but below the 640k DOS boundary. Free
+; 	memory as indicated by the DOS CHKDSK program, will decrease by 4112
+; 	bytes. Interrupt 21h will be hooked by the virus.
+; 
+; 	This first time the computer is booted from the first harddisk SEX 666
+; 	will install itself resident above TOM but below the 640k DOS boundary.
+; 	Total system memory as indicated by the DOS CHKDSK program, will
+; 	decrease by 4096 bytes.
+; 
+; 	After SEX 666 is resident, it will infect .EXE programs that are
+; 	created with dos function 3ch or 5bh. Infected programs will increase
+; 	in size by 2048 bytes, though the increase in file length will be
+; 	hidden if SEX 666 is resident. The program's time will indicate 62
+;  	seconds, but this will be hidden if the virus is resident.

@@ -1,0 +1,47 @@
+Virus Name:  Victor 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  May, 1990 
+ Symptoms:    .COM & .EXE growth; data file corruption; file linkage 
+              errors; unexpected system reboots 
+ Origin:      USSR 
+ Eff Length:  2,443 - 2,458 bytes 
+ Type Code:   PRAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ General Comments: 
+       The Victor virus was first isolated in May, 1990.  It is believed 
+       to have originated in the USSR due to messages which appear within 
+       the viral code: 
+ 
+          "Victor V1.0 The Incredible High Performance Virus 
+           Enhanced versions available soon. 
+           This program was imported from USSR. 
+           Thanks to Ivan." 
+ 
+       The above message can be found at the end of infected files, but 
+       does not appear to ever be displayed. 
+ 
+       The first time a program infected with the Victor virus is 
+       executed, the virus will install itself memory resident, occupying 
+       3,072 bytes at the top of free memory.  Interrupt 21 will be 
+       intercepted by the virus.  After becoming memory resident, Victor 
+       will then seek out and infect COMMAND.COM. 
+ 
+       Victor is a very slow file infector, only infected approximately 1 
+       in every 10 programs executed after it becomes memory resident. 
+       Infected programs will increase in length by between 2,443 and 
+       2,458 bytes.  The increase in file size is not hidden by the virus. 
+ 
+       Occasionally in the process of infecting a file, the virus will 
+       hang the system, which may result in data file corruption. Overlay 
+       files may also be infected, resulting in file linkage errors. 
+ 
+       Victor activates on Wednesdays, at which time its memory resident TSR 
+       will be 3,008 bytes in length.  When the first Victor infected 
+       program is executed on a Wednesday, the virus will infect all .COM 
+       and .EXE programs larger than approximately 2,500 bytes in length 
+       immediately. 

@@ -1,0 +1,124 @@
+Virus Name:  PCBB 
+ Aliases:     1677, PC Byte Bandit 
+ V Status:    Rare 
+ Discovery:   March, 1992 
+ Symptoms:    .COM file growth; system hangs; boot failure; file date/time 
+              changes 
+ Origin:      Sweden 
+ Eff Length:  1,677 Bytes 
+ Type Code:   PRK - Parasitic Resident COMMAND.COM Infector 
+ Detection Method:  ViruScan, Sweep, IBMAV, AVTK, F-Prot, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, AVTK/N, NProt, IBMAV/N, Innoc, NAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The PCBB, or PC Byte Bandit, virus was received in March, 1992.  It 
+       originated in Sweden.  This virus is a memory resident infector of 
+       COMMAND.COM, though it is very buggy and not really viable in its 
+       present state.  It is based on the 1720 virus. 
+ 
+       When a program infected with the PCBB virus is executed, this 
+       virus will immediately infect COMMAND.COM.  At this point, the 
+       system will be hung.  If the user attempts to boot from the 
+       infected COMMAND.COM, the boot will also hang. 
+ 
+       Programs infected with the PCBB virus will have a file length 
+       increase of 1,675 - 1,677 bytes.  The virus will be located at 
+       the end of the infected file.  The file's date and time in the 
+       DOS disk directory listing will have been updated to the system 
+       date and time when infection occurred.  The following text string 
+       can be found at the end of all infected files: 
+ 
+               "PCBB" 
+ 
+       Known variant(s) of PCBB are: 
+       PCBB-3: Received in March, 1992, the PCBB-3, or 1720-C, is a 
+               1,719 byte variant of the PCBB virus.  It infects the copy 
+               of COMMAND.COM pointed to by the COMSPEC environment variant 
+               when the first infected program is executed, as well as 
+               becoming memory resident at the top of system memory but 
+               below the 640K DOS boundary, hooking interrupts 09, 1C, and 
+               21.  Total system memory will have decreased by 4,096 bytes. 
+               It does not infect .COM files other than COMMAND.COM. 
+               This variant attempts to hide the file length increase on 
+               infected files when the virus is memory resident.  The 
+               text string "PCBB" can be found at the end of all infected 
+               files, and the following text strings are encrypted within 
+               its viral code: 
+               "<> Demoralized Youth <>" 
+               "PCBB, version 3.0" 
+               "Written by <: Charlie! :>". 
+               Origin:  Sweden  March, 1992. 
+       PCBB-3B: Received in October, 1992, the PCBB-3B variant is a 
+               1,722 byte variant of the PCBB-3 virus.  It infects the copy 
+               of COMMAND.COM pointed to by the COMSPEC environment variant 
+               when the first infected program is executed, as well as 
+               becoming memory resident at the top of system memory but 
+               below the 640K DOS boundary, hooking interrupts 09, 1C, and 
+               21.  Total system memory will have decreased by 62,176 bytes. 
+               It will occassionally infect programs other than COMMAND.COM, 
+               though it is difficult to get it to do this.  This variant 
+               attempts to hide the file length increase on infected files 
+               when the virus is memory resident.  The text string "PCBB" 
+               can be found at the end of all infected files, and the 
+               following text strings are encrypted within its viral code: 
+               "<> Demoralized Youth <>" 
+               "PCBB, version 3.0" 
+               "Written by <: Charlie! :>". 
+               Origin:  Sweden  October, 1992. 
+       PCBB-5: PCBB-5 is a 1,680 byte variant of the PCBB virus.  It 
+               becomes memory resident in a manner similar to PCBB-3.  The 
+               major difference is that this variant will infect .COM files 
+               on open or execution, adding 1,680 bytes to their length. 
+               The file length increase is not hidden, and the file date and 
+               time in the DOS disk directory listing will be updated to the 
+               system date and time when infection occurred.  Like the other 
+               members of this group, the text string "PCBB" can be found 
+               at the very end of infected files.  It also contains the 
+               following text string which is encrypted within the virus: 
+               "Pc Byte Bandit ver5". 
+               PCBB-5 is a polymorphic virus, employing a complex encryption 
+               mechanism. 
+               Origin:  Sweden  June, 1992. 
+       PCBB-5B: Similar to PCBB-5, this is a minor variant and is 
+               functionally equivalent. 
+               Origin:  Sweden  June, 1992. 
+       PCBB-1141: PCBB-1141 is a 1,141 byte variant of the PCBB virus. 
+               It becomes memory resident and infects COMMAND.COM when the 
+               first infected program is executed.  Its size in memory is 
+               4,096 bytes, located at the top of memory but below the 640K 
+               DOS boundary.  Interrupts 09, 1C, and 21 will be hooked. 
+               This variant of PCBB only infects COMMAND.COM, not other .COM 
+               and .EXE programs.  COMMAND.COM will have increased in size 
+               by 1,141 bytes with the virus being located at the end of the 
+               infected file, though the file length increase will be hidden 
+               when PCBB-1141 is resident.  The file's date and time in the 
+               DOS disk directory listing will not be altered.  The text 
+               string "PCBB" can be found at the end of all infected 
+               programs. 
+               Origin:  Sweden  September, 1992. 
+       PCBB-3072: Based on the PCBB virus, PCBB-3072 or PCBB-11 is a 
+               3,072 byte variant of the virus.  It becomes memory resident 
+               and infects COMMAND.COM when the first infected program is 
+               executed.  Its size in memory is 6,176 bytes, located at the 
+               top of memory but below the 640K DOS boundary.  Interrupts 
+               09, 1C, 21, and 24 will be hooked.  Once resident, 
+               PCBB-3072 will infect .COM and .EXE programs when they are 
+               opened or executed.  Infected files will have a file length 
+               increase of 3,072 bytes with the virus being located at the 
+               end of the file, though the file length increase will be 
+               hidden if PCBB-3072 is memory resident.  When PCBB-3072 is 
+               memory resident, the DOS CHKDSK program will indicate file 
+               allocation errors on all infected programs.  The file's date 
+               and time in the DOS disk directory listing will not be 
+               altered.  The following text strings are encrypted within the 
+               viral code and are not visible in infected programs: 
+               "PCBBCSX.?." 
+               ".COM.EXE.BATVBAPW" 
+               The text string "PCBB" can be found at the end of all 
+               infected programs. 
+               Origin:  Sweden  July, 1992. 
+           
+       See:   Sistor 

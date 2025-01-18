@@ -1,0 +1,33 @@
+Virus Name:  Ping Pong 
+ Aliases:     Bouncing Ball, Boot, Bouncing Dot, Italian, Italian-A, 
+              Vera Cruz 
+ V Status:    Common 
+ Discovered:  March, 1988 
+ Symptoms:    Graphic display (see text); TSR; BSC 
+ Origin:     
+ Eff Length:  N/A 
+ Type Code:   BRsF - Resident Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  MDisk, F-Prot, NAV, or DOS SYS command 
+ General Comments: 
+       The Ping Pong virus is a boot sector virus which was first reported 
+       in March 1988.  The original Ping Pong virus only infects Floppy 
+       Disks.  Later variants of this virus also infect the hard disk 
+       boot sector as well. 
+ 
+       When the virus activates, which is on a random basis, a bouncing 
+       ball or dot appears on the screen.  This display can only be 
+       stopped through a system reboot.  No other damage is apparently 
+       done. 
+ 
+       The original Ping Pong virus is extinct, though the hard disk 
+       variant, Ping Pong-B listed below, is a common MS-DOS virus. 
+ 
+       Known variant(s) of Ping Pong are: 
+       Ping Pong-B: A later variant of the Ping Pong virus which can 
+                    infect hard disk boot sectors. 
+                    Origin:  Unknown  May, 1988. 
+       Ping Pong-C: Similar to Ping Pong-B, this variant does not have 
+                    the bouncing ball screen effect. 
+                    Origin:  Argentina  June, 1990. 

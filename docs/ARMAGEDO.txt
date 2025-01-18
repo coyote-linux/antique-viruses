@@ -1,0 +1,78 @@
+Virus Name:  Armagedon 
+ Aliases:     Arma, Armagedon.1079 
+ V Status:    Rare 
+ Discovery:   June, 1990 
+ Symptoms:    Text string intermittently sent to COM ports 
+ Origin:      Athens, Greece 
+ Eff Length:  1,079 Bytes 
+ Type Code:   PRsC - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The Armagedon virus was isolated on June 2, 1990, by George 
+       Spiliotis of Athens, Greece.  Armagedon is a memory resident virus 
+       which infects .COM files, increasing their length by 1,079 bytes. 
+       The virus will be located at the beginning of infected files. 
+ 
+       The first time an infected program is executed on a system, the 
+       virus installs itself memory resident as a low system memory TSR 
+       of 1,392 bytes, hooking interrupts 8 and 21.  Any .COM files which 
+       are later executed are then infected by the resident virus. 
+ 
+       Infected systems will experience the text string "Armagedon the 
+       GREEK" being sent to COM ports 1 - 4 at timed intervals.  Between 
+       5:00 and 7:00, the virus will attempt to use the system's COM ports 
+       to make a phone call to Local Time Information in Crete, Greece.  If 
+       a connection is made, the phone line will remain open until the user 
+       notices that the phone line is in use.  (Needless to say, this 
+       doesn't work if the system is located outside of Greece as dialing 
+       codes are considerably different between countries.) 
+ 
+       This virus otherwise is not destructive. 
+ 
+       Known variant(s) of Armagedon are: 
+       Armagedon #911: Based on the original Armagedon virus, this 
+                       variant also adds 1,079 bytes to the .COM programs 
+                       it infects.  The phone number called by the virus 
+                       has been changed to "911", which is the police and 
+                       emergency services phone number implemented in 
+                       much of the United States.  The text string which 
+                       is sent to the COM ports has been changed to 
+                       "Support Your Police". 
+                       Origin:  United States, September, 1992. 
+       Armagedon.1065: Received in January, 1996, this variant adds 
+                       1,065 bytes to the .COM files it infects.  Its 
+                       memory resident TSR is 1,392 bytes, hooking 
+                       interrupts 08 and 21.  The following text strings 
+                       are visible within the viral code: 
+                       "COM" 
+                       "+++aTh0m0s7=35dp081,,,,141" 
+                       "Armagedon the GReEK" 
+                       Origin:  Unknown, January 1996 
+       Armagedon.1066: Received in January, 1996, this variant adds 
+                       1,066 bytes to the .COM files it infects.  Its 
+                       memory resident TSR is 1,392 bytes, hooking 
+                       interrupts 08 and 21.  The following text strings 
+                       are visible within the viral code: 
+                       "COM" 
+                       "+++aTh0m0s7=35dp081,,,,141" 
+                       "Armagedon the GREEK" 
+                       Origin:  Unknown, January 1996 
+       Armagedon-1074: Similar to the original Armagedon, this variant 
+                       adds 1,074 bytes to infected files.  Its memory 
+                       resident TSR is 1,408 bytes in length, and hooks 
+                       interrupts 8 and 21.  The following text strings are 
+                       visible within the viral code in infected files: 
+                       "COM" 
+                       "+++aTh0m0s7=35dp081,,,,141" 
+                       "Armagedon the GREEK" 
+                       Origin:  Greece, June 1993 
+       Armagedon-1077: Similar to the original Armagedon, this variant 
+                       adds 1,077 bytes to infected files.  Its memory 
+                       resident TSR is 1,392 bytes in length, and hooks 
+                       interrupts 8 and 21.   
+                       Isolated:  Greece, September 1991 

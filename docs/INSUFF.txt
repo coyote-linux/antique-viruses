@@ -1,0 +1,29 @@
+;INSUFFICIENT MEMORY virus - by URNST KOUCH for Crypt Newsletter #6
+;INSUFF MEMO is a simple MUTATION ENGINE loaded spawning virus, which 
+;confines itself to the current directory. To assemble with TASM 2.5, user
+;must have complete MTE091B software package (including RND.OBJ,
+;MTE.OBJ and stubfile, NOPS.BIN). Use MAKE2.BAT included in this
+;issue of the Crypt Newsletter to assemble all proper
+;components. Observant readers will notice INSUFF MEMO takes advantage of
+;VCL 1.0 code as well as notation from the SARA virus.  INSUFF MEMO is
+;a non-threatening, unique example of an MtE-loaded companion virus -
+;the only one in circulation, in fact.
+;
+;INSUFF2, included as a DEBUG script in this newsletter, is functionally        
+;identical to this virus.  However, for those who 'require' a destructive
+;program for their full enjoyment, it is loaded with a routine which
+;simple checks the system time and branches to some 'dropper' code if
+;after quitting time (4:00 pm).  The 'dropper' reads from a data table
+;and writes the NOIZ trojan to any .EXE in the current directory. By
+;looking carefully at this code, several areas where 'potentially'
+;destructive/nuisance routines can be added will suggest themselves.
+;We do not include them for a number of reasons: 1) they are easy to
+;come by in any number of books on assembly coding, the VCL 1.0 (an
+;excellent source), or source code archives on mnay BBS's, and; 2)
+;it allows you to get creative if you want and tinker (like I do all the
+; time) with the basic layout of virus source.
+;        
+;INSUFF3's source listing is modified to allow the virus to jump out        
+;of the current directory when all files in it are infected.  The
+;listing is publicly available at the BBS's listed at the end of the
+;Crypt newsletter.

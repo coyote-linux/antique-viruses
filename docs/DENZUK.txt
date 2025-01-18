@@ -1,0 +1,56 @@
+Virus Name:  Den Zuk 
+ Aliases:     Search, Venezuelan 
+ V Status:    Common 
+ Discovered:  September, 1988 
+ Symptoms:    Message; floppy format; TSR; BSC 
+ Origin:      Indonesia 
+ Eff Length:  N/A 
+ Type Code:   RtF - Resident Floppy Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  MDisk, F-Prot, NAV, or DOS SYS command 
+ 
+ General Comments: 
+       The Den Zuk virus is a memory-resident, boot sector infector of 360K 
+       5-1/4" diskettes.  The virus can infect any diskette in a floppy 
+       drive that is accessed, even if the diskette is not bootable.  If an 
+       attempt is made to boot the system with an infected non-system disk, 
+       Den Zuk will install itself into memory even though the boot 
+       failed.  After the system is booted with an infected diskette, a 
+       purple "DEN ZUK" graphic will appear after a CTL-ALT-DEL is 
+       performed if the system has a CGA, EGA, or VGA monitor.  While the 
+       original Den Zuk virus did not cause any damage to the system, some 
+       variants maintain a counter of how many times the system has been 
+       rebooted, and after the counter reaches its limit, the floppy in the 
+       disk drive is reformatted. The counter in these variants of the 
+       virus is usually in the range of 5 to 10. 
+ 
+       The following text strings can be found in the viral code on 
+       diskettes which have been infected with the Den Zuk virus: 
+ 
+                 "Welcome to the 
+                     C l u b 
+                  --The HackerS-- 
+                      Hackin' 
+                   All The Time 
+ 
+                   The HackerS" 
+ 
+       The diskette volume label of infected diskettes may be changed to 
+       Y.C.1.E.R.P., though this change only occurs if the Den Zuk virus 
+       removed a Pakistani Brain infection before infecting the diskette 
+       with Den Zuk.  The Den Zuk virus will also remove an Ohio virus 
+       infection before infecting the diskette with Den Zuk. 
+ 
+       The Den Zuk virus is thought to be written by the same person or 
+       persons as the Ohio virus.  The "Y.C.1.E.R.P." string is found in 
+       the Ohio virus, and the viral code is similar in many respects. 
+ 
+       Known variant(s) of Den Zuk are: 
+       Den Zuk-RPKS: A minor variant of Den Zuk, this variant has 
+                     some of the text located on track 40 altered, as 
+                     well as the boot sector altered to avoid detection 
+                     with the original Den Zuk detection strings. 
+                     Origin:  Unknown  May, 1992. 
+ 
+       See:   LZRQ    Ohio 

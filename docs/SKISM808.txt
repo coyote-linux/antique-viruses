@@ -1,0 +1,85 @@
+Virus Name:  Skism 1992 
+ Aliases:     1992B 
+ V Status:    Viron 
+ Discovered:  January, 1992 
+ Symptoms:    .EXE program corruption 
+ Origin:      United States 
+ Eff Length:  1,992 Bytes 
+ Type Code:   ONE - Overwriting Non-Resident .EXE Infector 
+ Detection Method:  ViruScan, IBMAV, AVTK, Sweep, ChAV, 
+                    F-Prot, NAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, AVTK/N, NAV/N, NProt, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Skism 1992 virus was isolated in the United States in January, 
+       1992.  This virus is a non-resident overwriting virus which infects 
+       .EXE programs. 
+ 
+       When a program infected with Skism 1992 is executed, this virus 
+       will look for an uninfected .EXE program to infect in the second 
+       subdirectory from the current drive's root directory.  If an 
+       uninfected .EXE program is not found, the virus will continue 
+       reading down through the drives directory structure looking for 
+       an uninfected .EXE program.  Once an uninfected .EXE program is 
+       located, Skism 1992 will infect it, overwriting the first 1,992 
+       bytes of the host file.  There will be no change to the file's 
+       length unless it was originally smaller than 1,992 bytes, in 
+       which case it will become 1,992 bytes in length.  The file's 
+       date and time will not be altered. 
+ 
+       Once Skism 1992 has completed infecting a file, it will return 
+       the user to the DOS prompt.  The program the user was attempting 
+       to execute will not function. 
+ 
+       Skism 1992 contains the following text strings which are encrypted 
+       within the viral code: 
+ 
+               "The man who brought you" 
+               "622, Skism One, Captain" 
+               "Trips, and Sub-Zero now" 
+               "shanks you again,  with" 
+               "his latest..." 
+               "Skism 1992 - Virus" 
+               "Get a late pass!" 
+               "* *.EXE" 
+               "????????EXE" 
+ 
+       It is unknown if Skism 1992 does anything besides replicate, 
+       corrupting the files it infects. 
+ 
+       Known variant(s) of Skism 1992 are: 
+       Angel Dust 1.0: Based on the Skism 1992 virus, this virus infects 
+                  one .EXE file in the current directory when an infected 
+                  program is executed only if more than two subdirectories 
+                  are present on the current drive.  Infected files will 
+                  have the first 700 bytes overwritten.  The viral code 
+                  contains the following encrypted text strings which are 
+                  not visible in infected files: 
+                  "* *.EXE *.* \" 
+                  "ANGEL DUST V1.0" 
+                  System hangs may occur when an infected program is 
+                  executed. 
+                  Origin:  Unknown  August, 1993. 
+       Skism 1992-B: Functionally equivalent to the original virus, 
+                     this variant's encryption has been slightly 
+                     modified. 
+                     Origin:  United States  April, 1992. 
+       Skism-808: Based on the Skism 1992 virus, this virus infects 
+                  one .EXE file in the current directory when an infected 
+                  program is executed only if more than two subdirectories 
+                  are present on the current drive.  Infected files will 
+                  have the first 808 bytes overwritten.  The viral code 
+                  contains the following encrypted text strings which are 
+                  not visible in infected files: 
+                  "Skism Rythem Stack Virus-808." 
+                  "Smart Kids Into Sick Methods" 
+                  "Dont alter this code into your own strain, faggit." 
+                  "HR/SSS NYCity, this is the fifth of many, many more...." 
+                  "You sissys....." 
+                  "* *.EXE *.*" 
+                  "????????EXE" 
+                  On the last Friday of any month, the virus will attempt 
+                  to destroy all files in the current directory. 
+                  Origin:  United States  May, 1992. 

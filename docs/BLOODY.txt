@@ -1,0 +1,78 @@
+Virus Name:  Bloody! 
+ Aliases:     Beijing, June 4th 
+ V Status:    Common 
+ Discovery:   December, 1990 
+ Symptoms:    Extended boot time; decrease in system & available memory; 
+              message on boot; boot sector & master boot sector changes 
+ Origin:      Taiwan 
+ Eff Length:  N/A 
+ Type Code:   BRtX - Resident Boot Sector & Master Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, Sweep, AVTK, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  See below 
+ 
+ General Comments: 
+       The Bloody! virus was submitted in December 1990, and infection 
+       reports were received from Europe, Taiwan, and the United States. 
+       This virus is a memory resident infector of floppy diskette boot 
+       sectors as well as the hard disk master boot sector (partition 
+       table). 
+ 
+       When a system is booted from a floppy or hard disk infected with the 
+       Bloody! virus, the virus will install itself memory resident at the 
+       top of system memory but below the 640K DOS boundary.  Total system 
+       memory and available free memory will decrease by 2,048 bytes.  The 
+       interrupt 12 return will be moved.  The system boot will also take 
+       much longer than expected.  The system's hard disk's master boot 
+       sector will become infected immediately if it was not the source of 
+       the system boot. 
+ 
+       At the time of system boot, the virus also maintains a counter of 
+       how many times the infected diskette or hard drive has been booted. 
+       Once 128 boots have occurred, the virus will display the following 
+       message during the boot: 
+ 
+               "Bloody! Jun. 4, 1989" 
+ 
+       June 4, 1989 is the date of the confrontation in Beijing, China 
+       between Chinese students and the Chinese Army in which many students 
+       were killed. 
+ 
+       This message will later be displayed on every sixth boot once the 
+       128 boot limit has been reached.  The text message is encrypted 
+       within the viral code, so it is not visible in the boot sector. 
+ 
+       Once Bloody! is memory resident, the virus will infect any diskette 
+       or hard disk when a file or program is accessed.  Listing a disk 
+       directory will not be enough to cause the virus to infect the disk. 
+ 
+       Infected diskette boot sectors will be missing all of the normal DOS 
+       error messages which are normally found in the boot sector.  The 
+       original boot sector will have been moved to sector 11 on 360K 
+       diskettes, a part of the root directory.  If there were previously 
+       root directory entries in that sector, those files will be lost. 
+ 
+       On the hard disk, the original master boot sector will have been 
+       moved to side 0, cylinder 0, sector 6. 
+ 
+       For floppies of other sizes then 360K, they may become unusable or 
+       corrupted as the virus does not take into account the existence of 
+       these disk types. 
+ 
+       For diskettes, Bloody! can be removed by powering the system off and 
+       then booting from a known clean, write-protected original DOS 
+       diskette. The DOS SYS command should then be executed on each of the 
+       infected diskettes. 
+ 
+       To remove the Bloody! virus from the hard disk's master boot sector, 
+       the original master boot sector should be located and then copied 
+       back to its original position.  The other option is to backup the 
+       files on the hard disk and low level format the drive.  In the case 
+       of DOS 5.0, the master boot sector can be rebuilt by using the DOS 
+       FDISK program with the undocumented /MBR option. 
+ 
+       Known variant(s) of Bloody! are: 
+       Bloody!-B: Submitted in May, 1992, this variant is functionally 
+                equivalent to the original virus.  It has been altered to 
+                avoid detection by most anti-viral utilities. 
+                Origin:  Unknown  May, 1992. 

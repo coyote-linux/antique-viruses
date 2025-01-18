@@ -1,0 +1,129 @@
+Virus Name:  Dir-2 
+ Aliases:     Creeping Death, FAT 
+ V Status:    Common 
+ Discovered:  September, 1991 
+ Symptoms:    lost clusters; program corruption on file copy; cross linked 
+              files indicated by DOS CHKDSK program after boot from clean 
+              diskette 
+ Origin:      Bulgaria 
+ Eff Length:  N/A 
+ Type Code:   ZRAK - Resident Directory Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, F-Prot, ChAV, 
+                    IBMAV, NAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Low level format system & reformat diskettes 
+ General Comments: 
+       The Dir-2, or FAT, virus was reported in Bulgaria, Hungary, Poland, 
+       and Yugoslavia in September 1991.  The copy analysed of this virus 
+       was received from Tamas Szalay of Budapest, Hungary.  The Dir-2 
+       virus is a memory resident stealth virus which uses a completely new 
+       technique for replicating, and moves very quickly through exposed 
+       systems.  It is very difficult to detect, not having many visible 
+       or measurable symptoms. 
+ 
+       The Dir-2 virus becomes memory resident when the computer system is 
+       booted from an infected diskette or hard disk, and a program is 
+       executed.  Since the boot executes the hidden system files, 
+       the virus becomes memory resident when they are executed.  The 
+       virus will be resident in low system memory, in the area where the 
+       system configuration information (IO and MSDOS) is normally 
+       found.  Once the boot completes, total system memory will not have 
+       been altered, but available free memory will be 1,552 bytes less 
+       that expected.  If the user views memory allocation with some 
+       memory mapping utilities, the "CONFIG" area will be 1,552 bytes 
+       larger than expected. 
+ 
+       At the time of the boot, the system hard disk will become infected 
+       by the virus as well, if it was not already infected. 
+ 
+       Once Dir-2 is memory resident, any non-write protected diskettes 
+       accessed on the system will be infected.  The virus places its 
+       viral code in the last cluster of diskettes.  On the system hard 
+       disk, the virus will be located in a previously unused cluster. 
+       The virus then encrypts the original pointers for the 
+       executable files on the disk, and copies them to an unused area 
+       of the disk directory.  The original pointers are then altered to 
+       point to the virus' code on the hard disk. 
+ 
+       Viewing the directory of infected diskettes will result in a normal 
+       appearing directory.  All executable programs will indicate their 
+       original file sizes and date/time stamps.  In fact, the original 
+       programs have not been altered at all.  If the user executes one 
+       of the programs, the virus will be executed (due to the change to 
+       the disk directory). Using the encrypted pointers to the program's 
+       actual location, the Dir-2 virus will then load the program the 
+       user was attempting to execute, so that it is executed. 
+ 
+       The major symptom of a Dir-2 virus infection is the effect the virus 
+       has on the system after powering off and booting from a known clean 
+       DOS system diskette.  Attempts to copy files from infected disks 
+       will result in the files not being copied properly.  The newly 
+       copied files will contain the virus code which is located in the 
+       last cluster of the disk.  Attempts to use backup programs will 
+       have a similar result.  Executing DOS CHKDSK program with the virus 
+       non-resident will result in a large number of lost clusters being 
+       found due to the change in the directory.  All executable files 
+       will be indicated as being cross-linked on the same sector, this 
+       sector is the location of the viral code on the disk.  If the /F 
+       parameter is used, permanent file corruption of all executable 
+       programs will be the result.  Note that execution of the DOS CHKDSK 
+       program with the virus memory resident will not indicate any file 
+       allocation or cross-linking of programs due to the presence of the 
+       virus. 
+ 
+       If you suspect you have a Dir-2 infection, power off the system 
+       and cold boot from a known-clean write-protected DOS system diskette, 
+       and check for the above symptoms on the system hard disk.  Be 
+       careful to not execute any programs from the hard disk as the virus 
+       will become memory resident. 
+ 
+       Without an anti-viral utility to detect and remove Dir-2, it is 
+       possible to manually disinfect a system by copying all executable 
+       programs to non-executable names with the virus memory resident. 
+       The system should then be powered off and rebooted from a clean, 
+       write protected system diskette.  Without executing any program from 
+       the system hard disk, backup the renamed files and your data files. 
+       The system should then be low level formatted.  Once the system is 
+       reformatted, restore the backup and rename the renamed files to 
+       their original names. 
+ 
+       Known variant(s) of Dir-2 are: 
+       Byway.A: Received in July, 1996, this variant is reported to 
+             be "in the wild".  It becomes memory resident as a low 
+             system memory TSR of 3,216 bytes, hooking interrupt 21. 
+             Once resident, it infects .COM and .EXE files in the root 
+             directory of the system hard disk and non-write protected 
+             diskettes when they are accessed, in a manner similar to 
+             the original Dir-2 virus.  This virus contains the text 
+             string "", though this text string 
+             is encrypted within the viral code.  This variant will also 
+             either replace or create the file "CHKLIST.MS" in the root 
+             directory, and may interfer with the functionality of 
+             Microsoft Anti-Virus.  It can be disinfected in the same 
+             manner as the original virus, with the addition that the 
+             user must be sure to remove the "CHKLIST.MS" file which will 
+             contain viral code. 
+             Origin:  Unknown  July, 1996. 
+       Byway.B: Also received in July, 1996, this is a minor variant 
+             of Byway.A.  It is similar, though it will also infect 
+             subdirectories.  It contains the following encrypted text 
+             strings: 
+             "The-HndV" 
+             "By:W.Chan-N" 
+             Origin:  Unknown  July, 1996. 
+       CD10: Functionally equivalent, this is a minor variant which is 
+             undetectable by some anti-viral programs. 
+             Origin:  Bulgaria  November, 1991. 
+       CD11: Functionally equivalent to CD10 and the original virus, 
+             this is another minor variant. 
+             Origin:  Bulgaria  November, 1991. 
+       CD12: Functionally equivalent to the other members of this 
+             family of viruses, it is a minor variant. 
+             Origin:  Bulgaria  November, 1991. 
+       Dir 2-910: Similar to the other members of this family, this 
+             variant stores its viral code on the last two sectors of the 
+             current drive.  Executing the first infected program will 
+             result in the infection of the C: drive and current drive 
+             root directories.  Its size in memory is 1,632 bytes. 
+             Origin:  Unknown  November, 1992. 

@@ -1,0 +1,61 @@
+Virus Name:  VHP 
+ Aliases:     VHP-348, VHP-353, VHP-367, VHP-435, VHP-757, VHP-776 
+ V Status:    Research 
+ Discovered:  July 1989 
+ Symptoms:    .COM growth; system hangs 
+ Origin:      Bulgaria 
+ Eff Length:  348 - 435 Bytes 
+ Type Code:   PNC - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The VHP virus is actually a small group or "family" of viruses that 
+       was discovered in Bulgaria in early 1990.  There are currently four 
+       identified variants to the VHP virus, with the VHP-435 variant 
+       being the one with the most potential for spreading.  These viruses 
+       were originally based on the Vienna virus.  The progression of the 
+       variants shows each variant to be a slightly better replicator. 
+ 
+       The VHP Viruses are: 
+       VHP-348: This variant does not replicate due to bugs in the virus 
+                code.  If it did replicate, it would infect .COM files. 
+                The virus's effective length is 348 bytes. 
+       VHP-353: VHP-348 fixed so that it will infected COMMAND.COM, 
+                increasing its size by 353 bytes.  It does not infect other 
+                .COM files.  This variant is still buggy, and it will 
+                occasionally hang systems when attempting to find a .COM 
+                file to infect. 
+       VHP-367: VHP-353 which will now infect .COM files besides 
+                COMMAND.COM.  Infected files increase in size by 367 
+                bytes.  Very rarely, this virus will reinfect an infected 
+                .COM file.  VHP-353 does not always infect a .COM file 
+                when an infected program is executed, it will sometimes 
+                not infect any .COM file, though it has in effect 
+                immunized the file from infection.  This effect is 
+                probably a bug in this variant. 
+       VHP-435: Isolated in July, 1989, this variant is 435 bytes in 
+                length and is not destructive, all it does is spread. 
+                VHP-435 will attempt to infect one file each time an 
+                infected program is executed.  COMMAND.COM and .EXE files 
+                are not infected.  After infecting all of the .COM files 
+                on the current drive and directory, it will attempt to 
+                infect drive C:.   VHP-435 is the VHP-367 virus with some 
+                modifications to make it less likely to be noticed. 
+       VHP-757: Received in November, 1991, VHP-757 is a 757 byte 
+                variant of the VHP group of Bulgarian Vienna variants.  It 
+                infects one .COM program, but not COMMAND.COM, each time 
+                an infected program is executed.  Infected files increase 
+                in size by 757 bytes with the virus being located at the 
+                end of the infected file.  Replicated samples are typically 
+                not very infectious, and rarely will they infect other 
+                files. 
+       VHP-776: Received in November, 1991, VHP-776 is a 776 byte 
+                variant of the VHP group.  It is similar in behaviour to 
+                the VHP-757 variant, though it will not infect the first 
+                two .COM files in a directory. 
+    
+       See:   Sicilian Mob   Vienna   VHP2 

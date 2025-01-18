@@ -1,0 +1,95 @@
+Virus Name:  Leech 
+ Aliases:     Leech2, Topler 
+ V Status:    Rare 
+ Discovered:  May, 1991 
+ Symptoms:    .COM file growth; decrease in total system and available 
+              memory; file dates may disappear 
+ Origin:      Bulgaria 
+ Eff Length:  1,024 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, Sweep, AVTK, NAV, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Leech virus was submitted in May, 1991.  Leech is from 
+       Bulgaria.  It is a memory resident infector of .COM programs, 
+       including COMMAND.COM. 
+ 
+       The first time a program infected with Leech is executed, the virus 
+       will install itself memory resident at the top of system memory but 
+       below the 640K DOS boundary.  Total system and available memory, 
+       as measured by the DOS CHKDSK program, will decrease by 2,080 bytes. 
+       Interrupt 21 will be hooked by the virus.  Leech also makes use of 
+       interrupt 2F. 
+ 
+       Once Leech is memory resident, it will infect .COM programs over 
+       approximately 10K in size when they are executed.  Infected programs 
+       will increase in size by 1,024 bytes, but the size increase will not 
+       be visible in the disk directory if Leech is memory resident. 
+       Programs which originally had a file time of 12:00a before infection 
+       will have their time disappear from the disk directory when viewed 
+       with Leech resident.  Leech is located at the beginning of infected 
+       programs.  Infected files will contain the following text string: 
+ 
+               "The leech live ... April 1991 The Topler" 
+ 
+       Leech is a stealth virus.  If it is memory resident, anti-viral 
+       programs which are unaware of Leech will be unable to detect its 
+       presence on the system. 
+ 
+       It is unknown if Leech does anything besides replicate. 
+ 
+       Known variant(s) of Leech are: 
+       Leech.1008: Received in January, 1996, Leech.1008 is a 1,008 
+               byte variant of the Leech virus described above.  Its size 
+               in memory is approximately 2,048 bytes, hooking interrupt 
+               21.  Once resident, it infects .COM files when they are 
+               executed, opened, or copied. Infected files will have a file 
+               length increase of 1,008 bytes, with the virus being located 
+               in the beginning of the file.  The program's date and time 
+               in the DOS disk directory listing will appear to be 
+               unaltered, though the seconds field will have been set 
+               to "60".  The following text strings are visible within the 
+               viral code: 
+               "Super, Super!" 
+               "March 1993,   Tazta" 
+               Origin:  Unknown  January, 1996. 
+       Leech.1025: Received in July, 1995, Leech.1025 is a 1,025 
+               byte variant of the Leech virus described above.  Its size 
+               in memory is approximately 4.1 kilobytes, hooking interrupt 
+               21.  Once resident, it infects .COM files when they are 
+               executed.  Leech.1025 infected files will have a file length 
+               increase of 1,025 bytes, though the file length increase 
+               will be hidden when the virus is memory resident.  The virus 
+               will be located at the beginning of the file.  The file's 
+               date and time in the DOS disk directory listing will appear 
+               to be unaltered, though the seconds field will have been set 
+               to "60".  The following text string is visible within the 
+               viral code: 
+               "Insane Reality..   The Unforgiven / IR.." 
+               The DOS CHKDSK program will return file allocation errors 
+               on all infected files when the virus is memory resident. 
+               Origin:  Sweden  July, 1995. 
+       Leech.1026: Received in February, 1995, Leech.1026 is a 1,026 
+               byte variant of the Leech virus described above.  Its size 
+               in memory is approximately 4.1 kilobytes, hooking interrupt 
+               21.  Once resident, it infects .COM files when they are 
+               executed.  Leech.1026 infected files will have a file length 
+               increase of 1,026 bytes, though the file length increase 
+               will be hidden when the virus is memory resident.  The virus 
+               will be located at the beginning of the file.  The file's 
+               date and time in the DOS disk directory listing will appear 
+               to be unaltered, though the seconds field will have been set 
+               to "60".  The following text string is visible within the 
+               viral code: 
+               "Insane Reality..   The Unforgiven / IR.." 
+               The DOS CHKDSK program will return file allocation errors 
+               on all infected files when the virus is memory resident. 
+               Origin:  Sweden  February, 1995. 
+       Leech2: Functionally equivalent to the original virus, Leech2 
+               has seven bytes which differ.  Leech2 will also infect 
+               programs when they are opened for any reason. 
+               Origin: Unknown  November, 1991 

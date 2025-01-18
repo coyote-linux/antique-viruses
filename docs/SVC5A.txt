@@ -1,0 +1,68 @@
+Virus Name:  SVC 5.0 
+ Aliases:     USSR 3103, SVC V5.0 
+ V Status:    Common 
+ Discovered:  October, 1991 
+ Isolated:    Israel 
+ Symptoms:    .COM & .EXE growth; decrease in total system and available 
+              memory; program corruption 
+ Origin:      USSR 
+ Eff Length:  3,103 Bytes 
+ Type Code:   PRhAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, NAV, F-Prot, IBMAV, PCScan, 
+                    NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, IBMAV/N, 
+                    AVTK/N, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The SVC 5.0, or USSR 3103, virus was isolated in Israel in 
+       October, 1991.  It is believed to have originated within the 
+       USSR.  USSR3103 is a memory resident infector of .COM and 
+       .EXE programs, as well as overlay files.  It is a stealth virus. 
+ 
+       The first time a program infected with SVC 5.0 is executed, the 
+       virus will install itself memory resident at the top of system 
+       memory but below the 640K DOS boundary.  Total system and 
+       available free memory, as indicated by the DOS CHKDSK program, will 
+       decrease by 3,120 bytes.  Interrupts 01, 03, 08, and 21 will be 
+       hooked by the virus. 
+ 
+       Once memory resident, SVC 5.0 will infect .COM and .EXE programs 
+       as they are executed.  SVC 5.0 is a stealth virus, and when it 
+       is memory resident, the infected program's file length increase 
+       of 3,103 bytes will not be visible.  Likewise, attempts to view 
+       programs infected with SVC 5.0 when the virus is memory resident 
+       will result in a "clean" copy of the program being made available 
+       in memory.  In reality, the programs increase in size by 3,103 
+       bytes with the virus being located at the end of the file.  The 
+       following text string can be found within the viral code: 
+ 
+               "(c) 1990 by SVC, Vers. 5.0" 
+ 
+       SVC 5.0 contains code which checks files when they are opened to 
+       see if the file name is "AIDSTEST.C".  If the file being opened 
+       has this name, then the virus will add a copyright message to 
+       the file which reads: 
+ 
+               "-* 1990-91 by SVC, Vers 6.0 *- 
+ 
+       SVC 5.0 may also cause program corruption when multiple files are 
+       open at the same time. 
+ 
+       Known variant(s) of SVC 5.0 are: 
+       SVC 5.0B: Functionally equivalent to the original SVC 5.0, this 
+                 variant has some minor code changes. 
+                 Origin:  USSR  February, 1992. 
+       SVC 5.0C: Functionally equivalent to the original SVC 5.0, this 
+                 variant has some minor code changes.  It contains the 
+                 following text string: 
+                 "(c) 1990 by SVC,Vers. 5.0" 
+                 Origin:  USSR  October, 1992. 
+       SVC 5.0D: Based on the SVC 5.0 virus, there are two major 
+                 differences with this variant.  First, the virus hooks 
+                 interrupts 13 and 21, instead of 01, 03, 08, and 21. 
+                 Second, it doesn't contain the typical copyright notice 
+                 found in the SVC 5.0 viruses. 
+                 Origin:  USSR  October, 1992. 
+ 
+       See:   SVC 3.1    SVC 4.0   SVC 6.0   SVC-2936   SVC.3241

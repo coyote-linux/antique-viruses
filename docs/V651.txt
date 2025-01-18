@@ -1,0 +1,52 @@
+Virus Name:  V651 
+ Aliases:     Eddie 3, Stealth Virus, Dark Avenger 2 
+ V Status:    Rare 
+ Discovered:  April, 1990 
+ Symptoms:    .COM & .EXE growth; decrease in system and free memory; file 
+              allocation errors 
+ Origin:      Sofia, Bulgaria 
+ Eff Length:  651 Bytes 
+ Type Code:   PRtA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The V651, or Eddie 3, virus was isolated in Sofia, Bulgaria in 
+       April 1990 by Vesselin Bontchev.  V651 is believed to have been 
+       written by the same author as Dark Avenger, V1024, and V2000. This 
+       virus is a generic infector for .COM and .EXE files. 
+ 
+       The first time a program infected with V651 is executed, the virus 
+       will install itself memory resident.  Using the DOS CHKDSK program, 
+       total system memory, as well as available free memory, will be 
+       decreased by 688 bytes. 
+ 
+       Later, as programs with a length of 651 bytes or greater are 
+       executed, they will be infected by the virus.  Infected files 
+       increase in length by 651 bytes, though the increase in file length 
+       will not be seen by performing a directory command with the virus 
+       present in memory. The total available disk space will also be 
+       adjusted by the virus so that the decrease in available disk space 
+       due to the virus's activities cannot be seen.  Powering off the 
+       system and booting from a known clean boot diskette, followed by 
+       issuing a directory command will result in the correct infected 
+       file lengths being displayed as well as the actual available space 
+       on the disk. 
+ 
+       Infected files can be easily identified as the text string "Eddie 
+       Lives." appears near the end of the infected file.  These files 
+       will also be 651 bytes longer than expected when the virus is not 
+       present in memory. 
+ 
+       A side effect of the V651 virus is that lost clusters may occur on 
+       infected systems if the CHKDSK /F command is used.  While this does 
+       not occur for all infected files, the number of errors reported by 
+       CHKDSK will be much higher statistically when V651 is present. 
+ 
+       Unlike Dark Avenger and V2000, this virus does not infect files on 
+       any file open.  It only infects when programs are executed. 
+ 
+       See:   Alfa   Dark Avenger   V1024   V2000 

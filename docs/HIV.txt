@@ -1,0 +1,37 @@
+                            HIV - VIRUS
+      Created: March 1991
+      Scan ID: [Murphy]
+      Origin: Italy ,"Italain Virus Laboratory!"
+      Sources: Produced by Rock Steady [NukE]
+
+ [NukE] Notes: Okay, another VIRUS SOURCE Release from [NukE]! Yup,
+ ~~~~~~~~~~~~~ Anywayz, this Virus cums from the Murphy Virus! So
+ if you Scan it with SCAN McAfee & Ass. you will see that it will be
+ detected as the [Murphy] Virus! I got this Virus from Italy from the
+ "Italian Virus Laboratory!" Mind you this Virus Source is being
+ released to the public because it's an OLD Virus and is detectable!
+ and doesn't do any damage to the system! This virus was edited by
+ me, I removed some bugs inside and produced this SOURCE CODE ONLY!
+ [NOTE] Of course, this virus is ONLY for STUDYING, to learn on how
+ virus are made! After the viruses are old its NICE to release them so
+ people can study em!
+
+                      HOW THE HIV - VIRUS WORKS
+
+ First, I'd like to thanx all those that thanked me for my latest
+ Virus! (ParaSite Virus)! And I'm glad to say I'll be releasing the
+ Source Codes to this virus in 6 MONTHS! Hopefully, by that time it
+ will be Detected by SCAN (McAfee & Ass) and yall will get a chance
+ to study this Assome Virus made totally from me...
+
+ HIV -: This virus Spreads thru coping itself to .EXE and .COM Files!
+ ~~~~~~ You will notice the file gets larger by 1614 Bytes! The Virus
+ Hooks itself to Interrup 21h and totally system memory will be 1632
+ Bytes Less. Once the file is resident in Memory it will attach itself
+ to every file that is runned or opened! The date of the original file
+ Doesn't not change! All this virus does is Copy itself over and over
+ again! CleanUp V77+ will get rid of it...or Simple delete all files
+ Infected with the virus...Anywayz Enjoy...
+
+ NOTE: If you want to compile the source, simply look for it in the .TXT files
+ contained in DATA.EXE in this newsletter package.

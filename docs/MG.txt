@@ -1,0 +1,77 @@
+Virus Name:  MG 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  September, 1990 
+ Symptoms:    .COM file growth; DIR command may not function properly; 
+              file allocation errors; system hangs 
+ Origin:      Bulgaria 
+ Eff Length:  500 Bytes 
+ Type Code:   PRCK - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, Sweep, NAV, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The MG virus was submitted in January, 1991, though it has been 
+       mentioned by Bulgarian researchers several times since September, 
+       1990. This virus is named MG as it was originally isolated at 
+       Matematicheska Gimnazia, a school in Varna, Bulgaria.  It is a 
+       memory resident infector of .COM files, including COMMAND.COM. 
+ 
+       The first time a program infected with MG is executed, the virus 
+       will install itself memory resident in a portion of the interrupt 
+       table in memory.  Interrupt 24 is hooked by the virus, as are 
+       several other interrupts. 
+ 
+       After MG is memory resident, it will infect programs when one of 
+       two things occurs: either the user attempts to execute any program, 
+       or a DIR command is performed.  In the case of a program being 
+       executed, the virus will infect one program in the current 
+       directory, though not necessarily the program being executed.  When 
+       a DIR command is executed, one program in the current directory 
+       will be infected as well. 
+ 
+       .COM programs infected with MG will increase in length by 500 
+       bytes, though the file length increase will not be visible in a DIR 
+       listing if the virus is memory resident.  File date and time in the 
+       disk directory are also not altered.  The virus will be located at 
+       the end of infected programs. 
+ 
+       Symptoms of a MG infection are that the DOS CHKDSK program will 
+       show File allocation errors on all infected .COM programs if the 
+       virus is present in memory.  The DOS DIR command may also not 
+       function properly, for example DIR A:*.COM will yield "File not 
+       found" even though .COM files exist on the A: drive.  At other 
+       times, pauses will occur in the disk directory being displayed by 
+       the DIR command.  Another symptom is that unexpected system hangs 
+       may occur due to the interrupt table being infected in memory. 
+ 
+       Known variant(s) of MG are: 
+       MG-2: MG-2 is a direct action, memory resident infector of 
+             .COM programs, including COMMAND.COM.  It is very similar 
+             to the MG virus on which it is based.  When MG-2 becomes 
+             memory resident, total system and available free memory 
+             will be decreased by 55,104 bytes.  MG-2 remaps many 
+             interrupts, including interrupt 24, and may allocate some 
+             memory above 640K.  After it is resident, it will infect 
+             .COM programs in the current directory when they are 
+             executed.  Infected files increase in size by 500 bytes, 
+             though the file length increase will not be visible if the 
+             virus is resident.  The virus is located at the end of the 
+             file. 
+             Origin:  Bulgaria  December, 1990. 
+       MG-3: Functionally similar to MG-2, this variant has been 
+             altered to avoid detection.  It is also 500 bytes in length. 
+             Origin:  Bulgaria  December, 1990. 
+       MG-3B: Similar to MG-3, this variant becomes memory resident in 
+             video card memory with a "hook" left in low system memory. 
+             Total system and available free memory will not change at all 
+             when the virus is resident.  MG-3B behaves as both a direct 
+             and indirect file infector.  .COM programs are infected when 
+             they are executed, as well as infecting one program in the 
+             current directory each time an infected program is executed. 
+             It will also infect a program in the directory when a DIR 
+             command is issued. 
+             Origin:  Bulgaria  December, 1990. 

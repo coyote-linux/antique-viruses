@@ -1,0 +1,82 @@
+Virus Name:  Datacrime 
+ Aliases:    
+ V Status:    Extinct 
+ Discovery:   April, 1989 
+ Symptoms:    .COM file growth; floppy disk access; formats hard disk; 
+              message any day from Oct 13th to Dec 31st 
+ Origin:      Netherlands 
+ Eff Length:  1,168 bytes 
+ Type Code:   PNC - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ 
+ General Comments: 
+       The Datacrime virus is a parasitic virus, and is also known as the 
+       1168 virus.  The Datacrime virus is a non-resident virus, infecting 
+       .COM files.  The virus was originally discovered in Europe shortly 
+       after its release in March, 1989. 
+ 
+       The virus will attach itself to the end of a .COM file, increasing 
+       the file's length by 1168 bytes.  The first 5 bytes of the host 
+       program are stored off in the virus's code and then replaced by a 
+       branch instruction so that the virus code will be executed before 
+       the host program.  In order to propagate, the virus searches through 
+       directories for .COM files, other than COMMAND.COM and attaches to 
+       any found .COM files (except for where the 7th letter is a D).  Hard 
+       drive partitions are searched before the floppy drives are checked. 
+       The virus will continue to propagate until the date is after October 
+       12th of any year, then when an infected program is executed it will 
+       display a message.  The decrypted message is something like: 
+ 
+                 "DATACRIME VIRUS" 
+                 "RELEASED: 1 MARCH 1989" 
+ 
+       Note: only this ASCII message is encrypted in this version. 
+ 
+       A low-level format of the hard disk is then done. 
+ 
+       Errors in the code will make .COM file infection appear random and 
+       will often make the system crash following infection. 
+ 
+       Unlike the other variants of Datacrime, the original Datacrime virus 
+       does not replicate, or infect files, until after April 1st of any 
+       year. 
+ 
+       Lastly, if the computer system is using an RLL, SCSI, or PC/AT type 
+       hard disk controller, all variants of the Datacrime virus are not 
+       able to successfully format the hard disk, according to Jan Terpstra 
+       of the Netherlands. 
+ 
+       Known variant(s) of Datacrime are: 
+       Datacrime-B: The Datacrime-B virus is a variant of the 
+                    Datacrime virus described above.  The differences are 
+                    that the effective length of the virus is 1,280 bytes, 
+                    and instead of infecting .COM files, .EXE files are 
+                    infected. 
+                    Origin:  The Netherlands  April, 1989. 
+       Datacrime II: The Datacrime II is a variant of the Datacrime 
+                    virus described above.  The major characteristic 
+                    changes are that the effective length of the virus is 
+                    1,514 bytes, and that it can now infect both .COM and 
+                    .EXE files, including COMMAND.COM.  There is also 
+                    an encryption mechanism in this variant.  Datacrime II 
+                    does not format disks on Mondays. 
+                    Origin:  The Netherlands  September, 1989. 
+       Datacrime IIB: A variant of the Datacrime II virus, 
+                    Datacrime IIB infects generic .COM and .EXE files, 
+                    including COMMAND.COM, adding 1,917 bytes to the file 
+                    length.  The virus differs from Datacrime II in that 
+                    the encryption method used by the virus to avoid 
+                    detection has been changed. 
+                    Origin:  The Netherlands  November, 1989. 
+       Datacrime IIC: Based on the Datacrime IIB virus, this variant 
+                    infects one .EXE or .COM file on the C: drive each 
+                    time an infected program is executed.  Infected .COM 
+                    programs increase in size by 1,480 bytes.  Infected 
+                    .EXE programs increase in size by 1,604 to 1,981 
+                    bytes.  In both cases, the virus will be located at 
+                    the end of the file. 
+                    Origin:  Unknown  October, 1992. 

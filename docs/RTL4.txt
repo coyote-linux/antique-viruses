@@ -1,0 +1,114 @@
+Virus Name:  RTL4 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   December, 1992 
+ Symptoms:    .COM file growth; message; system hangs 
+ Origin:      The Netherlands 
+ Eff Length:  503 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, F-Prot, IBMAV, PCScan, 
+                    NAV, NAVDX, VAlert, ChAV, 
+                    NShld, Sweep/N, AVTK/N, LProt, NAV/N, NProt, IBMAV/N, 
+                    Innoc 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The RTL4 virus was submitted in December, 1992, and is from The 
+       Netherlands.  RTL4 is a non-resident, direct action infector of 
+       .COM programs, including COMMAND.COM. 
+ 
+       When a program infected with the RTL4 virus is executed, the RTL4 
+       virus will infect one .COM program located in the current directory, 
+       along with displaying the following message: 
+ 
+               "RTL4" 
+               "Joop van den Ende Produkties BV 
+                Marco Daas (Casting Assistent) 
+                Postbus 397 
+                1430 AJ  AALSMEER 
+                van Cleeffkade 15 
+                1413 BA  AALSMEER 
+                The Netherlands 
+                Wedden dat... je een virus hebt?" 
+ 
+       A system hang will then occur.  The above text is encrypted within 
+       infected files, so it is not visible. 
+ 
+       Programs infected with the RTL4 virus will have a file length 
+       increase of 503 bytes with the virus being located at the end of 
+       the file.  The program's date and time in the DOS disk directory 
+       listing will not be altered.  In addition to the above text, the 
+       following text string is also encrypted within infected files: 
+ 
+               "*.COM" 
+ 
+       The individual and the addresses indicated above are displayed 
+       by the virus, but should not be construed to indicate that this 
+       individual wrote the virus. 
+
+
+=========================
+
+;******************************************************************************
+;
+; RTL4 / WEDDEN DAT... VIRUS
+;
+;******************************************************************************
+;
+; "If a weaking linkage found, eliminate...
+;       Hear the cities fearfull roar!"
+;
+; Now in front of you lies another source of a virus. It is not a very good
+; one, but, as you might say, a virus is a virus. After my wake at the PC, I
+; created several viruses, like:
+;
+; Deicide / Glenn
+; Morgoth
+; Breeze
+; Brother
+; Commentator I
+; Commentator II
+; Spawnie
+; Xmas
+; 1St_Star / 222
+; T-1000
+;
+; Well, I bet you think this is a whole lot, but some are minor variants, for
+; which I don't have the guts to publish the source code. I have to admid,
+; Deicide and Morgoth have spread very well. I uploaded them to a BBS and it
+; was downloaded several times, and it is not detected by antivirus program yet.
+; Deicide is now detectable, but that was my first attempt to make a virus.
+;
+; This virus is a Non-Resident Direct Action .COM Infector.
+; It only infects files in the current directory.
+; You can recognize a infected file simply, the 4th byte is a '*' (just like
+; the 1St_Star virus). It is inactive from January till May and starts
+; replicating from May. After July, every Wednessday after the 21st the
+; program will hang the system, showing the address of RTL4 Joop v/d Ende
+; Productions.
+;
+; Disclaimer : This program is like all other virus sources only for
+; educational purposes and should not be given to irresponsible hands
+; (John McAfee and people like him).
+;
+; For the criminal reader : Don't just change the text of this virus and
+; say you made a virus. Instead use some ideas from this virus and create your
+; own virus if you want to be nasty. Additions to this virus that makes it
+; spreading faster and makes it harder to detect are welcome, as long as I get
+; the new source code.
+;
+; I want to thank several virus writers for their support with letting McAfee
+; and Ass. earn his money with making so many updates of SCAN...
+; Here they are : Bit Addict, XSTC, Dark Helmet, Dark Avenger, Nuke!, Cracker
+; Jack and many more creators.
+;
+; Note to XSTC : Thank you for disassembling the Deicide virus, for I have lost
+; the source code. Next time write a message, because I might have the source
+; code of the virus ready, but not uploaded. It saves you time, so you may
+; disassemble another virus (ofcourse only for educational purposes ;-) )
+;
+; Now have fun with this virus, written in A86 assembler version 3.22
+;
+;               Glenn Benton
+;
+; "Is it truly a disembodied head lurking in the dark of the tombs of fate?"

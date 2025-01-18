@@ -1,0 +1,46 @@
+Virus Name:  AIDS 
+ Aliases:     Hahaha, Taunt, VGA2CGA, Burger.Pascal 
+ V Status:    Viron 
+ Discovery:   1989 
+ Symptoms:    Message; .COM file corruption 
+ Origin:     
+ Eff Length:  N/A 
+ Type Code:   ONA - Overwriting Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, AVTK/N, NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected .COM files 
+ 
+ General Comments: 
+       The AIDS virus, also known as the Hahaha virus in Europe and 
+       referred to as the Taunt virus by IBM, is a generic .COM and 
+       .EXE file infector.  When the virus activates, it displays the 
+       message "Your computer now has AIDS", with AIDS covering about 
+       half of the screen.  The system is then halted, and must be 
+       powered down and rebooted to restart it.  Since this virus 
+       overwrites the first 13,952 bytes of the executable program, the 
+       files must be deleted and replaced with clean copies in order to 
+       remove the virus.  It is not possible to recover the overwritten 
+       portion of the program. 
+ 
+       Note: this is NOT the Aids Info Disk/PC Cyborg Trojan. 
+ 
+       Known variant(s) of AIDS are: 
+       AIDS B: Very similar to the original AIDS virus, this variant is 
+               also 13,952 bytes in length.  Unlike the original virus, it 
+               will only infect .COM files, as well as COMMAND.COM, and 
+               does not activate as the original virus did.  Instead, this 
+               variant will occasionally issue the following error message: 
+               "I/O error 99, PC=2EFD Program aborted". This variant was 
+               received in January, 1991, origin unknown. 
+       AIDS-1992: Isolated at several locations in the United States in 
+               May, 1992, this variant of the AIDS virus has been altered to 
+               avoid detection by anti-viral utilities.  Among the changes 
+               to the virus are that it will not infect files if there are 
+               less than two subdirectories on the current drive.  System 
+               hangs may occur when infected programs are executed, as well 
+               as the system video mode may be switched to 25 x 40 Black & 
+               White from color mode. 
+               Origin:  United States  May, 1992. 
+ 
+       See:   Number One 

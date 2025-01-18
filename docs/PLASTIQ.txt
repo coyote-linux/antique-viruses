@@ -1,0 +1,73 @@
+Virus Name:  Plastique 
+ Aliases:     Plastic Bomb, Plastique 3012, Plastique 1, Anticad 3 
+ V Status:    Rare 
+ Discovered:  July, 1990 
+ Symptoms:    TSR; .COM & .EXE growth; possible system slowdown or bomb 
+              noises after September 20 
+ Origin:      Taiwan 
+ Eff Length:  3,012 Bytes 
+ Type Code:   PRsA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected  files 
+ 
+ General Comments: 
+       The Plastique, or Plastic Bomb, virus was submitted in July 1990, 
+       it comes to us from Taiwan.  Plastique is a memory resident generic 
+       infector of .COM and .EXE files, though it does not infect 
+       COMMAND.COM.  Unlike the Plastique-B virus listed below, this 
+       virus does not infect floppy disk boot sectors. 
+ 
+       The first time a program infected with Plastique is executed, the 
+       virus will install itself memory resident as a TSR in low system 
+       memory.  The TSR is 3,264 bytes in length, and hooks interrupt 21. 
+ 
+       After the virus is memory resident, it will attempt to infect any 
+       .COM or .EXE file which is executed.  This virus is rather "buggy", 
+       and it is not always successful in infecting files when they are 
+       executed.  When it is successful infecting the file, the file's 
+       length will increase.  For infected .COM files, the length will 
+       increase by 3,012 bytes.  For infected .EXE files, their length 
+       will increase between 3, 012 and 3,020 bytes. 
+ 
+       Plastique will also attempt to infect files when they are opened 
+       for any reason, though again, it is not always successful. 
+ 
+       After September 20th of any year, the Plastique virus activates. 
+       At that time, it will do either of two things.  It will either 
+       progressively slowdown the system, or it will intermittently emit 
+       "bomb" noises from the system speaker. 
+ 
+       Known variant(s) of Plastique are: 
+       HM2: The earliest known version of this virus, it does not 
+            replicate.  Executing an infected file results in the system 
+            hanging requiring a reboot. 
+            Origin: Taiwan, May 1990. 
+       Plastique 4.21: A variant of the Plastique virus described above, 
+                       the only real difference is that the encryption of 
+                       the virus is slightly different.  Otherwise it 
+                       behaves exactly the same as Plastique. 
+                       Origin: Taiwan, July 1990. 
+       Plastique COBOL: A variant of the Plastique virus described above, 
+                        this version is 3,004 bytes in length, and its 
+                        memory resident TSR is 3,248 bytes in length.  The 
+                        only text character string which can be found in 
+                        this variant is "COBOL".  This string does not 
+                        occur in other variants of the Plastique virus, or 
+                        related viruses.  Infected .COM programs will 
+                        increase in size by 3,004 bytes, .EXE files by 
+                        3,004 to 3,019 bytes.  COMMAND.COM will not 
+                        become infected.  Activation of the virus has also 
+                        been altered.  Between January 1st and September 
+                        21st, the virus will progressively slowdown the 
+                        system.  After 20 minutes, the system will execute 
+                        at approximately 50% of its original speed.  After 
+                        30 minutes, the virus may lockout the system 
+                        keyboard, as well as corrupt the system's CMOS 
+                        configuration.  Between September 22nd and 
+                        December 31st, the virus does not activate, and no 
+                        system slowdown or CMOS corruption will occur. 
+ 
+       See:   Invader   Plastique-B   Tobacco 

@@ -1,0 +1,67 @@
+Virus Name:  Predator   
+ Aliases:     Predator-1072 
+ V Status:    Rare 
+ Discovered:  June, 1993 
+ Symptoms:    .COM file growth; slowly corrupts files on disk; 
+              file date has 100 years added 
+              decrease in total system and available free memory 
+ Origin:      Unknown 
+ Eff Length:  1,072 Bytes 
+ Type Code:   PRtCK - Parasitic Resident .COM Infector 
+ Detection Method:  F-Prot, AVTK, Sweep, ViruScan, IBMAV, 
+                    NAV, NAVDX, VAlert, PCScan, ChAV, 
+                    AVTK/N, NProt, Sweep/N, IBMAV/N, NShld, NAV/N, LProt, 
+                    Innoc 4.0+ 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Predator, or Predator-1072, virus was submitted in June, 1993. 
+       Its origin or point of isolation is unknown.  Predator is a memory 
+       resident stealth virus which infects .COM programs, including 
+       COMMAND.COM.  It does not infect very small .COM programs. 
+ 
+       When the first Predator infected program is executed, this virus 
+       will install itself memory resident at the top of system memory but 
+       below the 640K DOS boundary, moving interrupt 12's return.  Total 
+       system and available free memory, as indicated by the DOS CHKDSK 
+       program, will have decreased by 2,160 bytes.  Interrupts 13 and 21 
+       will be hooked by Predator in memory. 
+ 
+       Once the Predator virus is memory resident, it will infect .COM 
+       programs, including COMMAND.COM, when they are executed or opened 
+       for any reason.  Infected programs will have a file length increase 
+       of 1,072 bytes, though the file length increase will be hidden when 
+       Predator is resident in memory.  The file's date and time in the 
+       DOS disk directory listing will appear to be unaltered, though 100 
+       years has been added to the file date.  The virus is located at the 
+       end of infected files.  The following text strings are encrypted 
+       within the viral code: 
+ 
+               "Predator virus  (c) Mar. 93  Priest" 
+               ".COM" 
+        
+       Systems infected with the Predator virus will experience file 
+       allocation errors being detected by the DOS CHKDSK program on all 
+       infected files when the virus is memory resident.  The virus also 
+       contains code to slowly corrupt files by randomly altering bytes 
+       in read sectors. 
+ 
+       Known variant(s) of Predator are: 
+       Predator-1148: A 1,148 byte variant of the Predator virus 
+                      described above.  This variant's size in memory is 
+                      2,304 bytes.  It adds 1,148 bytes to the .COM 
+                      programs it infects.  It contains the same 
+                      encrypted text strings as the original virus. 
+                      Origin:  Unknown  June, 1993. 
+       Predator-1154: A 1,154 byte variant of the Predator virus 
+                      described above.  This variant's size in memory is 
+                      2,320 bytes.  It adds 1,154 bytes to the .COM 
+                      programs it infects.  It contains the same 
+                      encrypted text strings as the original virus. 
+                      Origin:  Unknown  June, 1993. 
+       Predator-1195: A 1,195 byte variant of the Predator virus 
+                      described above.  This variant's size in memory is 
+                      2,400 bytes.  It adds 1,195 bytes to the .COM 
+                      programs it infects.  It contains the same 
+                      encrypted text strings as the original virus. 
+                      Origin:  Unknown  June, 1993. 

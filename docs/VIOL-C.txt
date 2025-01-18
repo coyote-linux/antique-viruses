@@ -1,0 +1,135 @@
+ Virus Name:  Violator 
+ Aliases:     Vienna.Violator, Violator Strain B 
+ V Status:    Endangered 
+ Discovered:  August, 1990 
+ Isolated:    United States 
+ Symptoms:    .COM growth; "Sector not found" error on drive B:; formats 
+              disk drives 
+ Origin:      Canada 
+ Eff Length:  1,055 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, ChAV, 
+                    IBMAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Violator virus was submitted in August, 1990 by an anonymous 
+       user of Homebase BBS.  While originally isolated in the United 
+       States, this virus is originally from Canada.  This virus is a 
+       non-resident parasitic virus which infects .COM files, including 
+       COMMAND.COM. 
+ 
+       When a program infected with the Violator virus is executed, what 
+       happens depends on what the system date is set to.  If the date is 
+       prior to August 15, 1990, the virus will infect one .COM file 
+       located in the current directory, adding 1,055 bytes to the 
+       program.  If the date is August 15, 1990 or after, the virus will 
+       not infect any files, but will format the first track of the disk 
+       drive. 
+ 
+       Symptoms of an infection of the Violator virus include unexpected 
+       attempts to access drive B:.  If there is no diskette in drive B:, 
+       or the diskette in drive B: is write-protected, a Sector not found 
+       error will result. 
+ 
+       The following message appears in the viral code located in infected 
+       programs: 
+ 
+           "TransMogrified (TM) 1990 by 
+            RABID N'tnl Development Corp 
+            Copyright (c) 1990 RABID! 
+            Activation Date: 08/15/90 
+            - Violator Strain B - 
+            ! (Field Demo Test Version) ! 
+            ! * NOT TO BE DISTRIBUTED * !" 
+ 
+       Known variant(s) of Violator are: 
+       Baby: Baby is a 1,000 byte variant of Violator, its origin is 
+             unknown.  Baby infects one .COM file in the current directory 
+             each time an infected program is executed.  Infected programs 
+             will have a file length increase of 1,000 bytes with the virus 
+             being located at the end of the file.  The program's date and 
+             time in the DOS disk directory listing will appear to be 
+             unaltered, however the seconds field will have been set to 
+             "60".  The following text strings are visible within the viral 
+             code in all Baby infected programs: 
+             "*.COM" 
+             "by by baby" 
+             "PATH=" 
+             "????????COM" 
+             It is unknown what Baby may do besides replicate. 
+             Origin:  Unknown  June, 1993. 
+       Violator B1: Based on the Violator BT variant, this variant is 716 
+                    bytes in length.  The major change is that Violator B1 
+                    activates on September 4, October 4, November 4, and 
+                    December 4.  On these dates, when an infected program 
+                    is executed it will reformat track 0 of all drives. 
+                    The only text strings found in this variant are: 
+                    "*.com" "????????COM" 
+       Violator B2: Violator B2 is a 1,000 byte variant of Violator, and 
+                    is also related to the Arf virus which appears to have 
+                    also been written by the same group.  Violator B2 will 
+                    activate on October 31 and December 31 when the year 
+                    is 1990 or later.  At that time, it will wipe out the 
+                    C: drive by overwriting the first 700h sectors with 
+                    random bytes.  This variant contains the text strings: 
+                    "*.COM" "Arf Arf! Got you!" "????????COM" "-- RABID 
+                    '90" "down or DIE!" "--- RABID '90" Violator B2 
+                    infects one or two .COM programs each time an 
+                    infected program is executed, along with displaying 
+                    the message: "Arf Arf Got you! -- RABID '90" 
+       Violator B2-969: Violator B2-969 is a 969 byte variant of the 
+                        Violator B2 virus indicated above.  It contains the 
+                        text strings: "*.COM" "????????.COM" and 
+                        "Violator B2 (C) '90 RABID Nat'nl Development Corp." 
+       Violator B3: Violator B3 is a 843 byte variant of Violator.  Like 
+                    the other Violators, it infects a .COM file each time 
+                    an infected program is executed.  Unlike the other 
+                    violators, it will also affect the C: drive, 
+                    overwriting the boot sector and file allocation table 
+                    immediately in some circumstances.  Damage caused by 
+                    Violator B3 can be fixed with Norton Disk Doctor. 
+                    Violator B3 should activate on December 25, at which 
+                    time it will attempt to format the current drive. 
+                    Text strings found in Violator B3 are: "Violator 
+                    Strain B3 - RABID Nat'nl Development Corp. " "*. COM" 
+       Violator BT: Very similar to the Violator virus described above, 
+                    this variant will replicate after August 15, 1990.  It 
+                    includes the same text strings as indicated above for 
+                    Violator. 
+       Violator.707: Violator.707 is a 707 byte variant of Violator. 
+                   It infects a .COM file each time an infected program is 
+                   executed.  Infected files will have a file length increase 
+                   of 707 bytes with the virus being located at the end of 
+                   the file.  The seconds field of the file time in the DOS 
+                   disk directory will have been set to "62".  The following 
+                   text strings are visible within the viral code: 
+                   "DDrUS (C) - 1990" 
+                   "*.COM" 
+                   "PATH=" 
+                   "????????COM" 
+                   Origin:  Unknown  July, 1994. 
+       Violator-C: Violator-C is a 821 byte variant of Violator.  Like 
+                   the other Violators, it infects a .COM file each time 
+                   an infected program is executed.  Infected files will 
+                   have a file length increase of 821 bytes with the virus 
+                   being located at the end of the file.  The seconds field 
+                   of the file time in the DOS disk directory will have been 
+                   set to "56".  The following text strings are contained 
+                   within the viral code, unencrypted: 
+                   "Violator Strain C - 
+                    (C) 1991 RABID Int'nl Development Corp." 
+                   "Violator strikes again..." 
+                   "PATH=*.COM" 
+                   "COMMAND.COM" 
+                   "????????COM" 
+                   Violator-C activates in October thru November of any 
+                   year, at which time execution of an infected program 
+                   will result in the overwriting of the beginning of the 
+                   system hard disk, and the following message being 
+                   displayed: "Violator strikes again...". 
+                   Origin:  Canada  October, 1992. 
+ 
+       See:   Arf   Vienna   Violator B4   Violite 

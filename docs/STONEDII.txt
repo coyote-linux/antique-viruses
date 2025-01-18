@@ -1,0 +1,224 @@
+Virus Name:  Stoned 
+ Aliases:     1991 Boot, Donald Duck, Hawaii, Marijuana, New Zealand, 
+              Rostov, San Diego, Sex Revolution, Smithsonian, Stoned II, 
+              Deunis, Stoned-16, Stoned-AT Love, Stoned-Collor, 
+              Stoned-Mexican, Stoned Mutation 
+ V Status:    Common 
+ Discovered:  February, 1988 
+ Symptoms:    BSC; TSR; messages; RLL controller hangs 
+ Origin:      New Zealand 
+ Eff Length:  N/A 
+ Type Code:   BRtX - Resident Boot Sector & Master Boot Sector Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV 
+ Removal Instructions:  MDisk, F-Prot, NAV 
+ 
+ General Comments: 
+       The Stoned virus was first reported in Wellington, New Zealand in 
+       early 1988.  The original virus only infected 360KB 5-1/4" 
+       diskettes, doing no overt damage.  The original diskette-only 
+       infector is extinct, however, and all known variants of this virus 
+       are capable of infecting the hard disk master boot sector 
+       (partition table) as well as may damage directory or FAT 
+       information.  Most variants of this virus have only minor 
+       modifications, usually in what the message is that the virus may 
+       display on boot. 
+ 
+       When a computer system is booted with a Stoned infected disk, this 
+       virus will install itself memory resident at the top of system 
+       memory. The interrupt 12 return will be moved, and ChkDsk will 
+       indicate that the computer system as 2K less total memory than what 
+       is installed.  If the system boot was from a diskette, the virus 
+       will also attempt to infect the hard disk master boot sector, if it 
+       was not previously infected. 
+ 
+       During the boot process, the Stoned virus may display a message. 
+       The message is displayed more or less on a random basis.  The most 
+       common text for the message is: 
+ 
+               "Your computer is now stoned." 
+ 
+       Or: 
+ 
+               "Your PC is now Stoned!" 
+ 
+       After Stoned is memory resident, it will infect diskettes as they 
+       are accessed on the system.  When Stoned infects a diskette, it 
+       moves the original boot sector (sector 0) to sector 11.  The Stoned 
+       virus then copies itself into sector 0.  Since sector 11 is 
+       normally part of the diskette root directory on 360K 5.25" 
+       diskettes, any files which had their directory entries located in 
+       this sector will be lost.  Some versions of DOS have sector 11 as 
+       part of the File Allocation Table, which may also result in the 
+       disk's FAT being corrupted. 
+ 
+       When Stoned infects that system hard disk, it copies the hard disk's 
+       original master boot sector to side 0, cyl 0, sector 7.  A copy 
+       of the Stoned virus is then placed at side 0, cyl 0, sector 1, the 
+       original location of the hard disk master boot sector.  If the hard 
+       disk was formatted with software which starts the boot sector, file 
+       allocation table, or disk directory on side 0, cyl 0 right after 
+       the master boot sector, the hard disk may be corrupted as well. 
+ 
+       In order to disinfect a system infected with the Stoned virus, the 
+       system must be powered off and booted with an uninfected, write- 
+       protected boot diskette.  If this is not done, the virus may 
+       re-infect diskettes as soon as they are disinfected. 
+ 
+       There are many programs which can disinfect Stoned infected 
+       diskettes and hard disks.  To successfully use one of these, follow 
+       the instructions with the program. 
+ 
+       To remove Stoned manually, the DOS SYS command can be used on 5.25" 
+       360K diskettes.  On the hard disk, the original master boot sector 
+       must be copied back to side 0, cyl 0, sector 1.  This can be 
+       performed with Norton Utilities, or other sector editors. 
+ 
+       Known variant(s) of Stoned are: 
+       Deunis : Based on the Stoned virus, Deunis is a variant received 
+               from Spain in July, 1991.  The text contained within the 
+               virus is now: 
+               "�Deun�s abras� tu Cpu!" 
+               "(c) IMAN4" 
+       PS-Stoned: Based on the Stoned virus, PS-Stoned is a variant which 
+                  has been altered to avoid detection.  Unlike most 
+                  members of the Stoned Family, PS-Stoned does not contain 
+                  a message, and does not display any message when the 
+                  system is booted from an infected disk.  This variant 
+                  will infect the boot sector of both normal and 
+                  high-density diskettes, as well as the hard disk master 
+                  boot sector.  In the case of the master boot sector, the 
+                  original master boot sector is moved to cylinder 0, 
+                  side 0, sector 17.  On low density diskettes, the 
+                  original boot sector is moved to sector 11, while on 
+                  high density diskettes it can be found at sector 16. 
+                  This variant was originally received in February, 1991, 
+                  from New Brunswick, Canada after being isolated at a 
+                  university.  As of May, 1991, no anti-viral products 
+                  detect this variant which can be just about invisible on 
+                  infected systems. 
+       Rostov: Similar to Stoned-B, this variant does not display any 
+               message.  It contains the text: "Non-system disk" and 
+               "Replace and strike". Submitted in December, 1990, origin 
+               unknown. 
+       Sex Revolution V1.1: Submitted in December, 1990, this variant is 
+                            similar to Stoned-B.  This variant may display 
+                            the following message: 
+                               "EXPORT OF SEX REVOLUTION ver. 1.1" 
+       Sex Revolution V2.0: Similar to Sex Revolution V1.1, the message 
+                            has been changed to: 
+                               "EXPORT OF SEX REVOLUTION ver. 2.0" 
+       Stoned-16: The variant does not contain a text string as the 
+                 original text string in the Stoned virus has been 
+                 replaced with binary zeros.  On 5.25 inch 360K diskettes, 
+                 the boot sector will not be saved by the virus.  On 5.25 
+                 inch 1.2M diskettes, the original boot sector is saved at 
+                 sector 17, part of the root directory.  The system hard 
+                 disk's master boot sector will have been relocated to 
+                 Side 0, Cyl 0, Sector 16. 
+                 Origin:  Unknown  May, 1992. 
+       Stoned-1991 Boot: Submitted in May, 1992, this variant of Stoned 
+                 differs in that it infects the boot sector of the DOS boot 
+                 partition of the hard disk, overwriting the original boot 
+                 sector.  It infects diskettes similar to the original 
+                 Stoned, moving the original boot sector on 360K 5.25" 
+                 diskettes to sector 11.  It does not contain typical 
+                 Stoned virus messages, but does contain the text string 
+                 "1991" near the beginning of the virus. 
+                 Origin:  Unknown  May, 1992. 
+       Stoned-A: Same as Stoned above, but does not infect the system 
+                 hard disk.  This is the original virus and is now extinct. 
+                 The text found in the boot sector of infected diskettes 
+                 is: "Your computer is now stoned.  Legalize Marijuana". 
+                 The "Legalize Marijuana" portion of the text is not 
+                 displayed. 
+       Stoned.Angelina: Similar to Stoned indicated above.  This 
+                 variant contains the following encrypted text string: 
+                 "Greetings for ANGELINA !!!/by Garfield/Zielona Gora" 
+                 Origin:  Unknown  December, 1997. 
+       Stoned.Arc Hub: Based on the Stoned virus above, this is a 
+                 stealth variant.  When memory resident, it will hide 
+                 the infection on disk.  Its size in memory is 2,048 
+                 bytes.  This variant contains the following text 
+                 string: 
+                 "ARC HUB 8A" 
+                 Origin:  Unknown  December, 1997. 
+       Stoned-AT Love: Similar to the PS-Stoned variant, this variant 
+                 moves the original boot sector on 5.25 inch 360K 
+                 diskettes to sector 11, the last sector of the root 
+                 directory.  On 1.2M 5.25 inch diskettes, the original boot 
+                 sector will be moved to sector 17, in the middle of the 
+                 root directory.  The master boot sector on the system hard 
+                 disk will have been moved to Side 0, Cyl 0, Sector 17. 
+                 It contains the following text string which may be 
+                 displayed when the system is booted: 
+                 "�available Your PC is now StNED in LVE with AT �becomes  
+                 Origin:  Unknown  May, 1992 
+       Stoned-B: Same as Stoned indicated above.  Systems with RLL 
+                 controllers may experience frequent system hangs.  Text 
+                 typically found in this variant is: "Your computer is now 
+                 stoned.  Legalise Marijuana". The "Legalise Marijuana" 
+                 may also be in capital letters, or may be partially 
+                 overwritten.  It is not displayed. 
+       Stoned-C: same as Stoned, except that the message has been 
+                 removed. 
+       Stoned-Collor: Similar to the original Stoned, this variant 
+                 from Brazil's main distinction is that the text strings 
+                 within the virus have been changed to: 
+                 "Collor, um tiro basta!" 
+                 "Call John" 
+                 Origin:  Brazil  1991. 
+       Stoned-D: same as Stoned, with the exception that this variant 
+                 can infect high density 3.5" and 5.25" diskettes. 
+       Stoned-E: Similar to Stoned-B, this variant now emits a "beep" 
+                 through the system speaker when the following message is 
+                 displayed: "Your PC is now Stoned!" The text "LEGALISE 
+                 MARIJUANA!" can also be found in the boot sector and 
+                 system master boot sector. 
+       Stoned-F: Similar to Stoned-E, this variant also emits a "beep" 
+                 through the system speaker when its message is 
+                 displayed.  The displayed message is: "Twoj PC jest teraz 
+                 be!" The text "LEGALISE MARIJUANA?" can also be found in 
+                 the boot sector and system hard disk master boot sector. 
+       Stoned II: Based on Stoned-B, this variant has been modified to 
+                  avoid detection by anti-viral utilities.  Since its 
+                  isolation in June, 1990, most utilities can now detect 
+                  this variant.  Text in the virus has been changed to: 
+                  "Your PC is now Stoned!  Version 2" Or: "Donald Duck is 
+                  a lie." The "Version 2" portion of the text may be 
+                  corrupted as well. 
+       Stoned-LM: Based on the Stoned virus, this variant will only 
+                  infect diskettes when the boot sector is directly accessed 
+                  with read and write intent, usually resulting in a system 
+                  hang.  The location of the original boot sector and the 
+                  hard disk master boot sector is similar to the original 
+                  Stoned virus described above. 
+                  Origin:  Canada  October, 1992. 
+       Stoned-Mexican: Discovered in Mexico in May, 1992, this variant 
+                  of Stoned contains the following text string: 
+                  "NO VOTES FOR EL PRI". 
+                  Origin:  Mexico, May 1992. 
+       Stoned Mutation: Submitted in June, 1992, Stoned Mutation is a 
+                  minor variant of the Stoned virus.  Its major destinction 
+                  is that it does not infect diskettes unless the diskette 
+                  boot sector is accessed with write-intent.  It contains 
+                  the same text strings as the original virus. 
+                  Origin:  Unknown, June 1992. 
+       Stoned-NSD: Isolated in October, 1991 in the Eastern United 
+                   States, Stoned-NSD is a minor variant of the Stoned 
+                   virus.  Its major difference is that the text strings 
+                   have been altered to: "Non SYStEM dISc" and 
+                   "LEGALISE MARIJUANA", though the second string will 
+                   usually be corrupted to "LEGALISE4".  Once this second 
+                   string is corrupted, all later infections will have 
+                   the corrupted string.  Stoned-NSD can infect high 
+                   density, 1.2M 5.25" diskettes, moving the original 
+                   boot sector to sector 17. 
+       Stoned-NZ: Received from New Zealand in October, 1991, this 
+                  variant of Stoned has one slight difference.  It does 
+                  not always save the original hard disk master boot sector 
+                  when it infects the system hard disk.  The text string 
+                  found in the virus is: "YOUR PC IS NOW STONED!". 
+ 
+       See:   Evil Empire   Horse Boot   Swedish Disaster   NoInt 
+              WXYC 

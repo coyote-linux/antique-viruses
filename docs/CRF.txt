@@ -1,0 +1,29 @@
+Virus Name:  CRF 
+ Aliases:    
+ V Status:    Rare 
+ Discovery:   November, 1991 
+ Symptoms:    .COM file growth; file date/time changes 
+ Origin:      Unknown 
+ Eff Length:  270 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, IBMAV, Sweep, AVTK, NAV, 
+                    NAVDX, VAlert, PCScan, 
+                    NShld, AVTK/N, NProt, Sweep/N, IBMAV/N, NAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The CRF virus was submitted in November, 1991.  Its origin and point 
+       of original discovery are unknown.  CRF is a non-resident, direct 
+       action infector of .COM files, including COMMAND.COM. 
+ 
+       When a program infected with the CRF virus is executed, the virus 
+       will infect all previously uninfected .COM files in the current 
+       drive and directory.  If COMMAND.COM is located in this directory, 
+       it will be infected.  Infected .COM files increase in size by 270 
+       bytes with the virus being located at the end of the infected 
+       program.  The file's date and time in the DOS disk directory will 
+       have been updated to the system date and time when infection 
+       occurred.  Two text strings are visible within the virus in 
+       infected files:  "OZR3" and "*.COM". 
+ 
+       It is unknown if CRF does anything besides replicate. 

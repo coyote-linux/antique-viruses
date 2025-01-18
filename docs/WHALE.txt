@@ -1,0 +1,113 @@
+Virus Name:  Whale 
+ Aliases:     Mother Fish, Stealth Virus, Z The Whale 
+ V Status:    Research 
+ Discovered:  August, 1990 
+ Symptoms:    .COM & .EXE growth; decrease in available memory; system 
+              slowdown; video flicker; slow screen writes; file allocation 
+              errors; simulated system reboot 
+ Origin:      Hamburg, West Germany 
+ Eff Length:  9,216 Bytes 
+ Type Code:   PRhA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  AVTK, F-Prot, Sweep, IBMAV, NAV, ViruScan, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    Sweep/N, Innoc, AVTK/N, NAV/N, IBMAV/N, LProt, NShld 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Whale virus was submitted in early September, 1990.  This virus 
+       had been rumored to exist since the isolation of the Fish 6 virus 
+       in June, 1990.  It has been referred to by several names besides 
+       Whale, including Mother Fish and Z The Whale.  The origin of this 
+       virus is subject to some speculation, though it is probably from 
+       Hamburg, West Germany due to a reference within the viral code once 
+       it is decrypted. 
+ 
+       The first time a program infected with the Whale virus is executed, 
+       the Whale will install itself memory resident in high system memory 
+       but below the 640K DOS boundary.  On the author's XT clone, the 
+       virus always starts at address 9D90.  Available free memory will be 
+       decreased by 9,984 bytes.  Most utilities which display memory 
+       usage will also indicate a value for total system memory which is 
+       9,984 bytes less than what is actually installed. 
+ 
+       The following text string can be found in memory on systems 
+       infected with the Whale virus: 
+ 
+              "Z THE WHALE". 
+ 
+       Immediately upon becoming memory resident, the system user will 
+       experience the system slowing down.  Noticeable effects of the 
+       system slowdown include video flicker to extremely slow screen 
+       writes.  Some programs may appear to "hang", though they will 
+       eventually execute properly in most cases since the "hang" is due 
+       to the slowing of the system. 
+ 
+       When a program is executed with the Whale memory resident, the 
+       virus will infect the program.  Infected programs increase in 
+       length, the actual change in length is usually 9,216 bytes.  Note 
+       the "usually": this virus does occasionally infect a program with a 
+       "mutant" which will be a different length.  If the file length 
+       increase is exactly 9,216 bytes, the Whale will hide the change in 
+       file length when a disk directory command is executed.  If the file 
+       length of the viral code added to the program is other than 9,216 
+       bytes, the file length displayed with the directory command will 
+       either the actual infected file length, or the actual infected file 
+       length minus 9,216 bytes. 
+ 
+       Executing the DOS CHKDSK program on infected systems will result in 
+       file allocation errors being reported.  If CHKDSK /F is executed, 
+       file damage will result. 
+ 
+       The Whale also alters the program's date/time in the directory when 
+       the file is executed, though it is not set to the system date/time 
+       of infection.  Occasionally, Whale will alter the directory entry 
+       for the program it is infecting improperly, resulting in the 
+       directory entry becoming invalid.  These programs with invalid 
+       directory entries will appear when the directory is listed, but 
+       some disk utilities will not allow access to the program.  In these 
+       cases, the directory entry can be fixed with Norton Utilities FD 
+       command to reset the file date. 
+ 
+       The Whale occasionally will change its behavior while it is memory 
+       resident.  While most of the time it only infects files when 
+       executed, there are periods of time when it will infect any file 
+       opened for any reason.  It will also, at times, disinfect files 
+       when they are copied with the DOS COPY command, at other times it 
+       will not "disinfect on the fly". 
+ 
+       Occasionally, the Whale virus will simulate what appears to be a 
+       system reboot.  While this doesn't always occur, when it does occur 
+       the Break key is disabled so that the user cannot exit unexpectedly 
+       from the execution of the system's autoexec.bat file.  If the 
+       autoexec.bat file contained any software which does file opens of 
+       other executable programs, those opened executable programs will be 
+       infected at that time if they were not previously infected. 
+       Typically, files infected in this manner will increase by 9,216 
+       bytes though it will not be shown in a directory listing. 
+ 
+       A hidden file may be found in the root directory of drive C: on 
+       infected files.  This file is not always present, the virus will 
+       sometimes remove it, only to recreate it again at a later time. The 
+       name of this hidden file is FISH-#9.TBL, it contains an image of 
+       the hard disk's master boot sector (partition table), along with 
+       the following message: 
+ 
+               "Fish Virus #9 
+                A Whale is no Fish! 
+                Mind her Mutant Fish 
+                and the hidden Fish Eggs 
+                for they are damaging. 
+                The sixth Fish mutates 
+                only if the Whale is in 
+                her Cave." 
+ 
+       After the discovery of this hidden file, the author of this 
+       document made several attempt to have the Fish 6 virus mutate by 
+       introducing it and Whale into a system.  Under no circumstances did 
+       a mutation of either virus result, the resultant files were 
+       infected with both an identifiable Fish 6 infection and a Whale 
+       infection. 
+ 
+       Whale is hostile to debuggers and contains many traps to prevent 
+       successful decryption of the virus.  One of its "traps" is to lock 
+       out the keyboard if it determines a debugger is in use.

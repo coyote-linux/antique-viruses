@@ -1,0 +1,8 @@
+;------------------------------------------------------------------------------
+; This virus is an com, exe and partitiontable infector. It will become resident
+; after the first reboot. The virus is stored above TOM but below 640k.
+; When the virus is resident the virus will infect every com and exe-file that
+; is created or opend for read and write. The virus doesn't use any stealth
+; techniques. The virus doesn't do anything besides replicate. I don't have
+; a good name for it, so I named it 'Digital Research Virus'.
+;------------------------------------------------------------------------------

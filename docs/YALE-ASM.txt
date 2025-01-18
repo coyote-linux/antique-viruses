@@ -1,0 +1,17 @@
+	; The virus consists of a boot sector only on a floppy disk.
+	; The original boot sector is kept at track thirty-nine, head zero,
+	; sector eight.
+
+	; The disassembly has been tested by re-assembly using MASM 5.0
+	; Note that this does not create an identical program, as the original
+	; appears to have been assembled with A86
+
+	; MASM would not assemble the instruction at offset 003CH (7C3CH)
+	; This instruction is undefined on an 8088/8086, and illegal
+	; on a 80286/80386.
+
+	; The program requires an origin address of 7C00H for the first sector
+	; to load and run as a boot sector
+
+	; System variables are defined in either RAM or BOOT (or both)
+	; depending on the segment used by the program

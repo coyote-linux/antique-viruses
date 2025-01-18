@@ -1,0 +1,259 @@
+ Virus Name:  Diamond 
+ Aliases:    
+ V Status:    Rare 
+ Discovered:  June, 1993 
+ Symptoms:    .COM & .EXE growth; system hangs; EXEC failure on execution 
+ Origin:      Unknown 
+ Eff Length:  Varies, depending on variant present 
+ Type Code:   PRAK - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  F-Prot, ViruScan, AVTK, IBMAV, NAV, NAVDX, VAlert, 
+                    Sweep, PCScan, ChAV, 
+                    LProt, NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, 
+                    IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Diamond entry in HyperText VSUM actually represents several 
+       members of the group or family of viruses which are based on the 
+        V1024  virus from Bulgaria. 
+ 
+       The viruses indicated below are based on the V1024 virus, and 
+       were received as part of a large library of viruses.  As such, 
+       their origin and time of discovery are completely unknown.  The 
+       viruses in this group are all memory resident infectors of .COM 
+       and/or .EXE programs, and in most cases programs will not function 
+       properly with the virus memory resident. 
+ 
+       Known member(s) of the Diamond family are: 
+       Diamond-444: A 444 byte virus based on the V1024 virus.  It 
+                    infects .COM and .EXE programs when they are executed. 
+                    Infected programs increase in size by 444 bytes with 
+                    the virus being located at the end of the file.  The 
+                    program's date and time in the DOS disk directory 
+                    listing is not altered.  Diamond-444 cannot determine 
+                    when it has previously infected a file, so programs will 
+                    be reinfected, adding an additional 444 bytes with each 
+                    reinfection.  The following text string is visible in 
+                    the viral code in all infected programs: 
+                    "9090909090" 
+                    With Diamond-444 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-465: A 465 byte virus based on the V1024 virus.  It 
+                    infects .COM and .EXE programs when they are executed. 
+                    Infected programs increase in size by 465 bytes with 
+                    the virus being located at the end of the file.  The 
+                    program's date and time in the DOS disk directory 
+                    listing is not altered.  Diamond-465 cannot determine 
+                    when it has previously infected a file, so programs will 
+                    be reinfected, adding an additional 465 bytes with each 
+                    reinfection.  The following text string is visible in 
+                    the viral code in all infected programs: 
+                    "9090909090" 
+                    With Diamond-465 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-485: A 485 byte virus based on the V1024 virus.  It 
+                    infects .COM and .EXE programs when they are executed. 
+                    Infected programs increase in size by 485 bytes with 
+                    the virus being located at the end of the file.  The 
+                    program's date and time in the DOS disk directory 
+                    listing is not altered.  Diamond-485 cannot determine 
+                    when it has previously infected a file, so programs will 
+                    be reinfected, adding an additional 485 bytes with each 
+                    reinfection.  The following text string is visible in 
+                    the viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-485 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-584: Similar to the Diamond-485 virus, this variant 
+                    adds 584 bytes to the program length with each 
+                    infection/reinfection.  The following text string 
+                    is visible in the viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-584 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-594: Similar to the Diamond-584 virus, this variant 
+                    adds 594 bytes to the program length with each 
+                    infection/reinfection.  The following text string 
+                    is visible in the viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-594 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-602: Similar to the Diamond-594 virus, this variant 
+                    adds 602 bytes to the length of the files it infects. 
+                    The following text string is visible in the viral code 
+                    in all infected programs: 
+                    "7106286813" 
+                    With Diamond-602 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  System hangs also occur when the DOS DIR 
+                    command is issued. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-606: Similar to the Diamond-602 virus, this variant 
+                    adds 606 bytes to the length of the files it infects. 
+                    The following text string is visible in the viral code 
+                    in all infected programs: 
+                    "7106286813" 
+                    With Diamond-606 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  System hangs also occur when the DOS DIR 
+                    command is issued. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-607: Similar to the Diamond-607 virus, this variant 
+                    adds 607 bytes to the length of the files it infects, 
+                    though the file length increase is hidden when the 
+                    virus is memory resident.  The following text string 
+                    is visible in the viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-607 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  The DOS DIR command does not hang the system. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-608: Similar to the Diamond-606 virus, this variant 
+                    adds 608 bytes to the length of the files it infects. 
+                    The following text string is visible in the viral code 
+                    in all infected programs: 
+                    "7106286813" 
+                    With Diamond-608 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  System hangs also occur when the DOS DIR 
+                    command is issued. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-609: Similar to the Diamond-609 variant, this variant 
+                    adds 609 bytes to the length of the files it infects. 
+                    The following text string is visible in the viral code 
+                    in all infected programs: 
+                    "7106286813" 
+                    With Diamond-609 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  System hangs also occur when the DOS DIR 
+                    command is issued. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-614: A 614 byte variant of the Diamond virus, it adds 
+                    609 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-614 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  The DOS DIR command does not produce a system 
+                    hang with this variant. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-620: A 620 byte variant of the Diamond virus, it adds 
+                    620 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-620 memory resident, execution of any 
+                    program will result in the message "EXEC failure" 
+                    being displayed, and the user returned to the DOS 
+                    prompt.  The DOS DIR command will hang the system when 
+                    it is issued.  This variant may also corrupt very small 
+                    files when it infects them. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-621: A 621 byte variant of the Diamond virus, it adds 
+                    621 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-621 memory resident, infected programs will 
+                    function properly, as will the DOS DIR command.  Its 
+                    size in memory is 5,376 bytes, hooking interrupts 08 and 
+                    21. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-624: A 624 byte variant of the Diamond virus, it adds 
+                    624 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-624 memory resident, infected programs will 
+                    function properly, as will the DOS DIR command.  Its 
+                    size in memory is 5,376 bytes, hooking interrupts 08 and 
+                    21. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-626: A 626 byte variant of the Diamond virus, it adds 
+                    626 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-626 memory resident, infected programs will 
+                    function properly, as will the DOS DIR command.  Its 
+                    size in memory is 5,376 bytes, hooking interrupts 08 and 
+                    21. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-891: A 891 byte variant of the Diamond virus, it adds 
+                    891 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-891 memory resident, infected programs will 
+                    function properly, as will the DOS DIR command.  Its 
+                    size in memory is 7,424 bytes, hooking interrupts 08 and 
+                    21. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-978: A 978 byte variant of the Diamond virus, it adds 
+                    978 bytes to the length of the files it infects, though 
+                    the file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-978 memory resident, infected programs will 
+                    function properly, as will the DOS DIR command.  Its 
+                    size in memory is 1,024 bytes, hooking interrupts 08 and 
+                    21. 
+                    Origin:  Unknown  June, 1993. 
+       Diamond-1013: A 1,013 byte variant of the Diamond virus, it adds 
+                    1,013 bytes to the length of the files it infects, the 
+                    file length increase will be hidden when the virus 
+                    is memory resident.  The seconds field of the file 
+                    date/time in the DOS disk directory will have been set 
+                    to "60".  The following text string is visible in the 
+                    viral code in all infected programs: 
+                    "7106286813" 
+                    With Diamond-1013 memory resident, infected programs 
+                    will function properly, as will the DOS DIR command. 
+                    Its size in memory is 1,056 bytes, hooking interrupts 
+                    08 and 21. 
+                    Origin:  Unknown  June, 1993. 
+      
+       See:   Ah   Gremlin   Rocko   V1024 

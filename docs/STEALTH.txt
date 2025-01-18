@@ -1,0 +1,45 @@
+Virus Name:  Stealth Boot.C 
+ Aliases:     Amse, Nops.B, Stelboo 
+ V Status:    Common 
+ Discovered:  January, 1995 
+ Symptoms:    BSC; system hard disk master boot sector altered; 
+              decrease in total system & available free memory; 
+              drivers may fail to load into memory 
+ Origin:      Unknown 
+ Eff Length:  N/A 
+ Type Code:   RhBX - Resident Boot Sector & MBR Infector 
+ Detection Method:  Sweep, F-Prot, AVTK, IBMAV, ViruScan, NAVDX, VAlert, 
+                    NAV, PCScan, ChAV 
+ Removal Instructions:  DOS SYS on diskettes, F-Disk/MBR on hard disk 
+ 
+ General Comments: 
+       The Stealth Boot.C virus was received in January, 1995.  It is a 
+       memory resident stealth boot virus which infects the system hard 
+       disk master boot sector (partition table sector) and diskette 
+       boot sectors.  It is in the public domain in North America. 
+ 
+       When the system is booted for the first time from a Stealth Boot.C 
+       infected diskette, this virus will install itself memory resident 
+       at the top of system memory but below the 640K DOS boundary.  Total 
+       system and available free memory, as indicated by the DOS CHKDSK 
+       program, will have decreased by 4,096 bytes.  Also at this time, the 
+       virus will infect the system hard disk master boot sector if it was 
+       not previously infected. 
+ 
+       Once the Stealth Boot.C virus is memory resident, it will infect 
+       diskette boot sectors when non-write protected diskettes are accessed. 
+       Infected diskettes will have the original boot sector moved to the 
+       last sector on the diskette. 
+ 
+       Systems infected with Stealth Boot.C may experience difficulty 
+       loading some driver and memory management software into memory, 
+       resulting in operational difficulties with programs which access 
+       upper memory blocks, such as Windows.  It is reported to also cause 
+       problems with 32-bit data access on some systems. 
+ 
+       This virus is a full stealth virus, hiding the infection on the 
+       system hard disk and diskette boot sectors when the virus is memory 
+       resident.  Therefore, it is important to be sure that the virus is 
+       not memory resident before attempting to scan possibly infected 
+       systems and diskettes, as well as booting from a known uninfected 
+       system diskette before any attempt to disinfect the virus. 

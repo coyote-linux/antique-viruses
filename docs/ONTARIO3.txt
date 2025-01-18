@@ -1,0 +1,54 @@
+Virus Name:  Ontario III 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  September, 1992 
+ Symptoms:    .COM & .EXE growth; decrease in system and free memory 
+ Origin:      Ontario, Canada 
+ Eff Length:  2,048 Bytes 
+ Type Code:   PRhAK - Parasitic Encrypted Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, IBMAV, PCScan, 
+                    NAV, NAVDX, VAlert, ChAV, 
+                    NShld, AVTK/N, Sweep/N, IBMAV/N, Innoc, NAV/N, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Ontario III virus was submitted in September, 1992 from 
+       Ontario, Canada.  The Ontario III virus is based on the 1024 SBC or 
+       Ontario II virus, and is a polymorphic memory resident stealth 
+       virus which infects of .COM, .EXE, overlay and .SYS files.  It will 
+       infect COMMAND.COM. 
+ 
+       The first time a program infected with the Ontario III virus is 
+       executed, it will install itself memory resident above the top of 
+       system memory but below the 640K DOS boundary.  Total system memory 
+       and free memory will be decreased by 5,120 bytes.  Interrupt 21 will 
+       be hooked by the virus in memory.  At this time, the virus will 
+       also infect the copy of COMMAND.COM pointed to by the COMSPEC 
+       environmental variable.  COMMAND.COM will not increase in size as the 
+       virus will overwrite the slack space at the end of COMMAND.COM. 
+ 
+       Once the Ontario III virus is memory resident, it will infect .COM, 
+       .EXE, overlay (.OVL), and .SYS programs when they are executed or 
+       opened for any reason.  Infected programs will increase in size by 
+       2,048 bytes, though the file length increase will not be visible if 
+       the virus is memory resident.  The virus will be located at the end 
+       of the file. 
+ 
+       The Ontario III virus uses a very complex form of encryption with 
+       no more than two bytes remaining constant in replicated samples. 
+       While the following text strings occur in the viral code, they are 
+       not visible in infected files due to the encryption: 
+ 
+               "COMSPEC=\COMMAND.COM COMEXEOVLSYS" 
+               "MSDOS5.0" 
+               "YAM" 
+               "Your PC has a bootache! - Get some medicine!" 
+               "Ontario-3 by Death Angel" 
+ 
+       The Ontario III virus also contains an embedded boot sector, though 
+       it is never actually written out to disk.  It employs additional 
+       stealth techniques to avoid its being disassembled using the DOS 
+       DEBUG program.  If it detects the use of the DOS DEBUG program, it 
+       will disinfect itself from the file in memory. 
+ 
+       See:   1024 SBC   Ontario 

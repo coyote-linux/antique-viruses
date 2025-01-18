@@ -1,0 +1,46 @@
+Virus Name:  Joshua 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  October, 1992 
+ Symptoms:    .COM & .EXE growth; message displayed 
+ Origin:      Unknown 
+ Eff Length:  965 Bytes 
+ Type Code:   PNA - Parasitic Non-Resident .COM & .EXE Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, Sweep, IBMAV, NAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, Innoc, NProt, AVTK/N, NAV/N, IBMAV/N, 
+                    LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Joshua virus was submitted in October, 1992.  Its origin or 
+       point of isolation is unknown.  Joshua is a non-resident, direct 
+       action infector of .COM and .EXE programs, but not COMMAND.COM. 
+ 
+       When a program infected with the Joshua virus is executed, this 
+       virus will infect two programs in the current directory.  It 
+       prefers .EXE programs to .COM programs.  If it could not infect 
+       two programs in the current directory, it will move upwards in 
+       the directory structure looking for programs to infect. 
+ 
+       Programs infected with the Joshua virus will have a file length 
+       increase of 965 bytes with the virus being located at the end of 
+       the file.  The program's date and time in the DOS disk directory 
+       listing will not be altered. 
+ 
+       Occassionally, the Joshua virus will display the following message 
+       when an infected program is executed: 
+ 
+               "�����������������������������������������������ķ 
+                � Guess what ???                                � 
+                � You have been victimized by a virus!!! Do not � 
+                � try to reboot your computer or even turn it   � 
+                � off.  You might as well read this and weep!   � 
+                �����������������������������������������������Ľ" 
+ 
+       The above text is encrypted within the viral code, as is the 
+       following additional text string: 
+ 
+               "*.com *.exe .." 
+ 
+       See:  PS-MPC 

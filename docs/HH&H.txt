@@ -1,0 +1,43 @@
+Virus Name:  HH&H 
+ Aliases:     Gomb, GMB 
+ V Status:    Rare 
+ Discovered:  April, 1992 
+ Symptoms:    .COM file growth; decrease in total system and available free 
+              memory; file date/time change 
+ Origin:      Unknown 
+ Eff Length:  4,091 Bytes 
+ Type Code:   PRhCK - Parasitic Resident .COM Infector 
+ Detection Method:  AVTK, ViruScan, F-Prot, IBMAV, ChAV, 
+                    Sweep, NAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, LProt, Innoc, NProt, IBMAV/N, 
+                    AVTK/N, NAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The HH&H virus was submitted in April, 1992.  Its origin is 
+       unknown.  HH&H is a memory resident infector of .COM programs, 
+       including COMMAND.COM. 
+ 
+       When the first HH&H infected program is executed, the HH&H virus 
+       will install itself memory resident at the top of system memory 
+       but below the 640K DOS boundary.  Total system and available free 
+       memory, as indicated by the DOS CHKDSK program, will have decreased 
+       by 6,144 bytes.  Interrupts 1C and 21 will be hooked by HH&H in 
+       memory. 
+ 
+       Once the HH&H virus is memory resident, it will infect .COM 
+       programs over approximately 8K in size when they are executed. 
+       If COMMAND.COM is executed, it will become infected.  Programs 
+       infected with the HH&H virus will have a file length increase of 
+       4,091 bytes.  The virus will be located at the end of the 
+       program.  The file's date and time in the DOS disk directory 
+       listing will have been updated to the current system date and time 
+       when infection occurred. 
+ 
+       The following text strings are encrypted within the HH&H virus' 
+       code, and hence are not visible in infected files: 
+ 
+               "HARD HIT & HEAVY HATE the HUMANS!!" 
+               "[ H.H.& H.H. ]" 
+ 
+       It is unknown what HH&H does besides replicate. 

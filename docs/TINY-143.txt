@@ -1,0 +1,79 @@
+Virus Name:  Tiny Family 
+ Aliases:     see below under "Known members" 
+ V Status:    Rare 
+ Discovery:   July, 1990 
+ Symptoms:    .COM file growth 
+ Origin:      Bulgaria 
+ Eff Length:  133 - 198 Bytes (see below) 
+ Type Code:   PRC - Parasitic Resident .COM Infector 
+ Detection Method:  ViruScan, AVTK, F-Prot, NAV, Sweep, IBMAV, 
+                    NAVDX, VAlert, PCScan, ChAV, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The Tiny Family of viruses was received by the author in July 1990 
+       from Vesselin Bontchev of Bulgaria.  All the viruses in this 
+       grouping share the same characteristics, with the only real 
+       difference is the effective length of the viral code.  There were 
+       five (5) viruses included in the "family" as of July, 1990: 
+       Tiny-158, Tiny-159, Tiny-160, Tiny-167, and Tiny-198.  In October 
+       1990, five (5) additional viruses in this family were received from 
+       Vesselin Bontchev: Tiny-134, Tiny-138, Tiny-143, Tiny-154, and 
+       Tiny-156. In December 1990, an eleventh member was added to this 
+       family: Tiny-133.  In March 1993, the twelveth member was added: 
+       Tiny-143B. 
+ 
+       The first time a file infected with one of the Tiny Family viruses 
+       is executed on a system, the virus will install itself memory 
+       resident at memory segment 60h.  This area of memory is normally 
+       only used by DOS when the system is booted, after that it is never 
+       used or referenced.  Interrupt 21 will be hooked by the virus. 
+ 
+       After the virus is memory resident, the virus will infect any .COM 
+       program that is executed.  Infected programs will have a file 
+       length increase of between 134 - 198 bytes, depending on which 
+       variant is present on the system.  The file's date and time in the 
+       directory will also have been updated to the system date and time 
+       when the infection occurred. 
+ 
+       The Tiny Family of viruses currently does not do anything but 
+       replicate. 
+ 
+       The viruses in this "family" are not related to the Tiny Virus 
+       documented below. 
+ 
+       Known members of the Tiny Family are: 
+       Tiny-133: Similar to Tiny-134, this variant's effective length is 
+                 133 bytes.  The bugs in Tiny-134 have been fixed, this 
+                 virus is an excellent replicator.  This variant has also 
+                 been altered so that it cannot be detected by anti-viral 
+                 utilities which were aware of other members of this 
+                 family. 
+       Tiny-134: This variant's effective length is 134 bytes.  This 
+                 variant is the only member of this family which is not a 
+                 very viable virus, it will usually hang the system when 
+                 it attempts to infect .COM files. 
+       Tiny-138: Same as above, effective length is 138 bytes. 
+       Tiny-143: Same as above, effective length is 143 bytes. 
+       Tiny-143B: Tiny-143B was received in March, 1993, and is 
+                  similar to Tiny-143.  It has been altered to avoid 
+                  detection by anti-viral programs familiar with Tiny-143. 
+                  Origin:  Unknown  March, 1993. 
+       Tiny-154: Same as above, effective length is 154 bytes. 
+       Tiny-156: Same as above, effective length is 156 bytes. 
+       Tiny-158: Same as above, effective length is 158 bytes. 
+       Tiny-159: Same as above, effective length is 159 bytes. 
+       Tiny-160: Same as above, effective length is 160 bytes. 
+       Tiny-167: Same as above, effective length is 167 bytes. 
+       Tiny-198: Same as above, effective length is 198 bytes. 
+       Tiny Family.Fred: Tiny Family.Fred was received in July, 1994.  It 
+               is a 255 byte member of this group of viruses.  It adds 255 
+               bytes to the .COM and .EXE programs it infects.  Infected 
+               programs will contain the following text string at the end of 
+               the file: 
+               "Fred" 
+               Origin:  Unknown  July, 1994.   
+ 
+       See:   Dutch Tiny   Micro 128   Mini-97   Tiny Virus 

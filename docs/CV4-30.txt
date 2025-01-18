@@ -1,0 +1,35 @@
+ Virus Name:  CV4 
+ Aliases:     COMVirus 1.0    
+ V Status:    Rare 
+ Discovery:   July, 1992 
+ Symptoms:    .COM file growth; message displayed 
+ Origin:      Unknown 
+ Eff Length:  321 Bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, Sweep, AVTK, F-Prot, ChAV, 
+                    NAV, NAVDX, VAlert, PCScan, 
+                    NShld, Sweep/N, AVTK/N, NProt, NAV/N, Innoc, LProt 
+ Removal Instructions:  Delete infected files 
+ 
+ General Comments: 
+       The CV4 virus was received in July, 1992.  Its origin or point of 
+       isolation is unknown.  CV4 is a non-resident, direct action infector 
+       of .COM files, including COMMAND.COM. 
+ 
+       When a program infected with the CV4 virus is executed, the CV4 
+       virus infect one previously uninfected .COM file located in the 
+       current directory.  If COMMAND.COM is located in this directory, 
+       it may become infected.  Programs infected with the CV4 virus 
+       will have a file length increase of 321 bytes with the virus 
+       being located at the end of the infected file.  The program's 
+       date and time in the DOS disk directory listing will not be 
+       altered.  The following text strings can be found in the viral 
+       code in all CV4 infected programs: 
+ 
+               "This file infected with COMVIRUS 1.0" 
+               "*.COM" 
+ 
+       The first of these text strings is displayed on the system 
+       monitor each time an infected program is executed. 
+ 
+       CV4 doesn't do anything besides display its message and replicate.

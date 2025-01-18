@@ -1,0 +1,461 @@
+Virus Name:  Vienna 
+ Aliases:     Austrian, Unesco, DOS-62, DOS-68, 1-in-8, 648 
+ V Status:    Common 
+ Discovered:  April, 1988 
+ Symptoms:    .COM growth; system reboots; system hangs 
+ Origin:      Austria 
+ Eff Length:  648 bytes 
+ Type Code:   PNCK - Parasitic Non-Resident .COM Infector 
+ Detection Method:  ViruScan, F-Prot, AVTK, Sweep, ChAV, 
+                    IBMAV, NAV, NAVDX, VAlert, PCScan, 
+                    NShld, LProt, Sweep/N, Innoc, NProt, AVTK/N, 
+                    NAV/N, IBMAV/N 
+ Removal Instructions:  F-Prot, NAV, or delete infected files 
+ General Comments: 
+       The Vienna virus was first isolated in April, 1988, in Moscow at a 
+       UNESCO children's computer summer camp.  The Vienna virus is a 
+       non-resident, direct action infector of .COM programs, including 
+       COMMAND.COM. 
+ 
+       When a program infected with the Vienna virus is executed, the 
+       virus will select a .COM program in the current directory which as 
+       previously not been modified by the virus.  Usually, the Vienna 
+       virus will infect this file and set the seconds in the file's time 
+       in the disk directory to 62.  Infected programs will have a file 
+       length increase of 648 bytes with the virus being located at the 
+       end of the infected program. 
+ 
+       One out of every six programs which Vienna selects will not be 
+       actively infected by the virus.  Instead, the first five bytes of 
+       the selected .COM program will be changed to the hex character 
+       string "EAF0FF00F0", and the seconds field in the file time will be 
+       set to 62.  When these programs are later executed, a system warm 
+       boot may occur.  Since these corrupted programs do not actually 
+       contain the Vienna virus, and most anti-viral programs cannot 
+       detect them, systems which have been infected by Vienna will 
+       continue to experience unexpected reboots until all of the 
+       corrupted .COM programs have been replaced with clean copies. 
+ 
+       Some programs will hang upon execution after they have been 
+       infected by the Vienna virus. 
+ 
+       The Vienna virus was written by a high school student in Vienna 
+       Austria as an experiment.  Its large number of variants, as well as 
+       other viruses which are in part based on Vienna code, can be 
+       accounted for as its source code has been published many times. 
+ 
+       Due to the large number of variants, Vienna infections may not 
+       exhibit exactly the symptoms indicated above. 
+ 
+       Known variant(s) of Vienna are: 
+       Cracky: Submitted in June, 1992, Cracky is a 546 byte variant of 
+             the Vienna virus which will only replicate on 8088 based 
+             systems.  On 286 and higher based systems, execution of an 
+             infected program will result in a system hang, or the text 
+             "Cracky !" being displayed in the upper left hand corner of 
+             the screen and a system hang when the next program, command, 
+             or .BAT file is executed.  On XT based systems, Cracky will 
+             infect one .COM file each time an infected program is 
+             executed.  Infected programs will have a file length increase 
+             of 546 bytes with the virus being located at the end of the 
+             infected file.  The seconds field in the file time in the 
+             DOS disk directory entry will have been set to 22, the virus' 
+             infection marker.  The display of the text "Cracky !" may 
+             also occur on 286 and higher systems, along with the system 
+             hang.  The following text strings can be found within the 
+             viral code in all infected files: 
+             "Cracky !" 
+             "*.com" 
+             Origin:  Unknown  June, 1992 
+       DOS 625: DOS 625 is a 625 byte variant of the Vienna virus.  It 
+             contains the text strings "????????COM", "PATH=", and "om OM". 
+             It is similar in behavior to the original Vienna virus, though 
+             it does not do anything besides replicate. 
+             Origin: Unknown  February, 1992 
+       Dr Q:   Dr Q is a 1,161 byte variant of the Vienna virus.  It 
+             contains the text string "(C) DOCTOR QUMAK" within the viral 
+             code in all infected programs. 
+             Origin: Unknown  November, 1991 
+       Dr Q-1028:   Dr Q-1028 is a 1,028 byte variant of the Dr Q 
+             virus described above.  It contains the text string 
+             "(C) DOCTOR QUMAK" within the viral code in all infected 
+             programs, as well as the following encrypted text strings: 
+             "Hello world from my virus !" 
+             "Infecks" 
+             "stuff that should be here" 
+             This variant infects one .COM program in the current directory 
+             each time an infected program is executed.  Infected programs 
+             will increase in size by 1,028 bytes and have no change in the 
+             file's date and time in the DOS disk directory listing. 
+             Occassionally, execution of an infected program will result 
+             in the display of the "Hello world from my virus !" message. 
+             Origin: Unknown  September, 1992 
+       Genny-648: Genny-648 is a 648 byte variant of the Vienna virus. 
+             It either infects or trojanizes one .COM program each time 
+             an infected program is executed.  Infected programs will 
+             have a file length increase of 648 bytes with the virus 
+             being located at the end of the infected file.  Trojanized 
+             programs will be altered so that they reboot the system when 
+             they are executed, the first five bytes having been altered. 
+             Like the original Vienna, this variant sets the seconds in 
+             the file's timestamp to 62 to indicate infection. 
+             Origin: Unknown  March, 1992 
+       Kuzmitch: Kuzmitch is a 1,064 byte variant of the Vienna virus. 
+             It will infect one .COM file in the current directory, but 
+             not COMMAND.COM, each time an infected program is executed. 
+             Infected files will have a file length increase of 1,064 - 
+             1,222 bytes with the virus being located at the end of the 
+             infected file.  It is unknown if it does anything besides 
+             replicate. 
+             Origin: Unknown  February, 1992 
+       Maxwell-498:   Maxwell-498 is a 498 byte variant of the Vienna 
+             virus.  It infects one .COM file in the current directory 
+             each time an infected program is executed, but not COMMAND.COM. 
+             The following text strings can be found within the viral code: 
+             "MaxWell Defender: I don't kill MMM" 
+             "PATH=*.COM" 
+             As with the original virus, the file date/time seconds field 
+             will be set to "62" on all infected programs. 
+             Origin: Unknown  June, 1993 
+       Maxwell-499:   Maxwell-499 is a 499 byte variant of the Vienna 
+             virus.  It infects one .COM file in the current directory 
+             each time an infected program is executed.  The following text 
+             strings can be found within the viral code: 
+             "MaxWell-Defender: I haven't been in Vienna" 
+             "PATH=*.COM" 
+             As with the original virus, the file date/time seconds field 
+             will be set to "62" on all infected programs. 
+             Origin: Unknown  June, 1993 
+       New Generation: New Generation is a 1,054 byte variant of the 
+             Vienna virus.  It will infect one .COM file in the current 
+             directory, including COMMAND.COM, each time an infected 
+             program is executed.  Infected files will have a file length 
+             increase of 1,054 bytes with the virus being located at the 
+             end of the infected file.  On every 20th generation of the 
+             virus, it will display the following message on the system 
+             monitor: 
+             "         New Generation Virus 1.0� by NET CRASHER, 
+              a PROUD member in Hyper.  This message appears in a generation 
+              that is devided by 20. Please don't remove this virus, it 
+                       was created for research purposes only. 
+                                                              Get a Life!" 
+             The above message is encrypted within the viral code, as are 
+             the following two additional text strings: 
+             "*.com PATH=" 
+             "?????????COM" 
+             Infected files will have the seconds field in the file time 
+             in the DOS disk directory set to 62. 
+             Origin: Israel  October, 1992 
+       Twer-1000: Twer-1000 is a 1,000 byte variant of the Vienna virus. 
+             It will infect one .COM file in the current directory each 
+             time an infected program is executed.  Infected files will have 
+             a file length increase of 1,000 bytes with the virus being 
+             located at the end of the infected file.  The file's date and 
+             time in the DOS disk directory listing will appear to be 
+             unaltered, but the seconds field has actually been changed to 
+             "60".  The following text strings can be found within the 
+             viral code in all Twer-1000 infected programs: 
+             "Twer 1991" 
+             "*.COM" 
+             "PATH=" 
+             "????????COM" 
+             Origin: Unknown  December, 1992 
+       Vienna 822: Vienna 822 is similar to Vienna-B 645 in behavior. 
+                   This variant will infect .COM programs, including 
+                   COMMAND.COM, increasing their length by 822 bytes. 
+                   It does not perform either a warm reboot or delete 
+                   executed programs. 
+                   Origin: Europe  May, 1991 
+       Vienna-415: Vienna-415 is a 415 byte variant of the Vienna 
+                   virus which infects .COM programs located in the C: 
+                   drive root directory.  It adds 415 bytes to the .COM 
+                   programs it infects, including COMMAND.COM.  It sets 
+                   the seconds in the file's time in the DOS disk directory 
+                   to 62 to indicate the file is infected. 
+                   Origin:  Unknown  August, 1992 
+       Vienna-618: Vienna-618 is a 618 byte variant of the Vienna 
+                   virus.  It adds 618 bytes to the .COM programs it 
+                   infects, including COMMAND.COM.  It sets the seconds 
+                   in the file's time in the DOS disk directory to 62 
+                   to indicate the file is infected.  Once all the 
+                   programs in the current directory have become infected, 
+                   execution of an infected program will result in a 
+                   system hang. 
+                   Origin:  Unknown  April, 1992 
+       Vienna-621: Vienna-621 is functionally similar to the Vienna-618 
+                   virus.  It adds 621 bytes to the .COM programs, 
+                   including COMMAND.COM, which it infects.  Like 
+                   Vienna-618, it sets the seconds in the file's time to 
+                   62 to indicate infection. 
+                   Origin:  Unknown  April, 1992 
+       Vienna-634 Reboot: Vienna-634 Reboot is a 634 byte variant of 
+                   the Vienna virus described above.  It infects one .COM 
+                   file, including COMMAND.COM, each time an infected 
+                   program is executed.  Approximately 25% of the time 
+                   when an infected program is executed, a program will 
+                   be altered instead of infected.  The alteration will 
+                   result in the system being rebooted the next time the 
+                   program is executed. 
+                   Origin:  Europe  November, 1991. 
+       Vienna-645: Similar to the Vienna-B 645 variant, this variant 
+                   adds 645 bytes to the .COM programs it infects.  It does 
+                   not trojanize some programs to perform a warm reboot. 
+                   It contains the text strings "*.COM", "PATH=", and 
+                   "????????COM". 
+                   Origin:  Unknown  April, 1992. 
+       Vienna-648E: Based on the original Vienna virus, this variant 
+                   adds 648 bytes to the .COM programs it infects.  It 
+                   alters some .COM files, rather then infecting them, by 
+                   overwriting the first five bytes with hex 20 characters. 
+                   The seconds field in the file time will be set to 62 on 
+                   all trojanized and infected programs.  It contains the 
+                   text strings "*.COM", "PATH=", and "????????COM". 
+                   Origin:  Unknown  October, 1992. 
+       Vienna.648.Oscar.A: Received in February, 1995, this variant is 
+                   a 648 byte minor variant of the Vienna virus described 
+                   above.  The seconds field in the file date and time of 
+                   all infected files will be set to "58".  The following 
+                   text strings are visible within the viral code in all 
+                   infected files: 
+                   "(C) OSCAR" 
+                   "*.COM" 
+                   "PATH=" 
+                   "????????COM" 
+                   Origin:  Unknown  February, 1995. 
+       Vienna.648.Oscar.B: Received in February, 1995, this is a minor 
+                   variant of the Vienna.648.Oscar.A variant.  It contains 
+                   the same text strings, and also sets the file date and 
+                   time seconds to "58" on all infected programs. 
+                   Origin:  Unknown  February, 1995. 
+       Vienna.648.Oscar.C: Received in February, 1995, this is another 
+                   minor variant of the Vienna.648.Oscar.A variant. 
+                   Origin:  Unknown  February, 1995. 
+       Vienna-656: Vienna-656 is a 656 byte variant of the Vienna virus. 
+                   When an infected program is executed, it will infect one 
+                   .COM file in the current directory, as well as accessing 
+                   the C: drive.  It doesn't infect anything on the C: 
+                   drive, but may crosslink the C: drive's file allocation 
+                   table. 
+                   Origin:  Europe  November, 1991. 
+       Vienna-712: Vienna-712 is a 712 byte variant of the Vienna 
+                   virus.  This variant will occasionally trojanize a 
+                   program instead of infecting it.  When these trojanized 
+                   programs are executed, a warm system reboot will 
+                   occur. 
+                   Origin:  Unknown  April, 1992. 
+       Vienna-716: Vienna-716 is 716 byte variant of the Vienna virus. 
+                   Execution of programs infected with this variant may 
+                   result in "Divide overflow" errors occurring, or possible 
+                   system hangs. 
+                   Origin:  Europe  November, 1991. 
+       Vienna-726: Vienna-726 is a 726 byte variant of the Vienna virus. 
+                   Like Vienna, it infects one .COM file in the current 
+                   directory each time an infected program is executed. 
+                   Approximately 50% of the time when an infected program 
+                   is executed, a warm reboot will occur following a long 
+                   disk access.  The following text strings can be found 
+                   in infected files: 
+                   ".COM" 
+                   "(c) Copyright IBM Corp 1981, 1987 Licensed Material" 
+                   "- Program Property of IBM" 
+                   Origin: Europe  November, 1991 
+       Vienna-726B: Similar to Vienna-726, this variant has six bytes 
+                    which differ. 
+                    Origin: Europe  November, 1991 
+       Vienna-827: Based on the Vienna virus, this variant adds 827 
+                   bytes to the .COM programs it infects.  Like Vienna, it 
+                   infects one .COM program each time an infected program 
+                   is executed, locating the virus at the end of the 
+                   infected program.  The following text strings can be 
+                   found in the viral code: 
+                   "Alan Solomon" 
+                   "Doctor of what?" 
+                   "Thinks he's a copper," 
+                   "A copper he's not." 
+                   "HVPOW YXNHM SUWXM XXCPO MX" 
+                   "*.COM" 
+                   "PATH=" 
+                   "????????COM" 
+                   The seconds field in the file date and time within the 
+                   DOS disk directory will be set to "60" on all infected 
+                   files. 
+                   Origin:  Unknown  January, 1994. 
+       Vienna-851: Based on the Vienna virus, this variant adds 851 
+                   bytes to the .COM programs it infects.  Like Vienna, it 
+                   infects one .COM program each time an infected program 
+                   is executed, locating the virus at the end of the 
+                   infected program.  The following text strings can be 
+                   found in the viral code: "PATH=", "????????COM", and 
+                   "*.COM".  System hangs frequently occur when infected 
+                   programs are executed. 
+                   Origin:  Unknown  August, 1993. 
+       Vienna-943: Based on the Vienna virus, this variant adds 943 
+                   bytes to the .COM programs it infects.  Like Vienna, it 
+                   infects one .COM program each time an infected program 
+                   is executed, locating the virus at the end of the 
+                   infected program.  The following text strings can be 
+                   found in the viral code: "PATH=", "????????COM", and 
+                   "*.COM".  System hangs frequently occur when infected 
+                   programs are executed.  The following message may also 
+                   be occassionally displayed: 
+                   "Have a NICE day...r is no longer operational due to an 
+                    outbreak of". 
+                   Origin:  Unknown  March, 1992. 
+       Vien6: Similar to Vienna, except that the warm reboot has been 
+              removed.  Effective length of the virus is still 648 bytes. 
+              After 7 files have become infected on the current drive, the 
+              virus will then start infecting .COM files on drive C:. 
+       Vienna-Abacus: Based on the original Vienna virus, this variant 
+                   adds 648 bytes to the .COM programs it infects.  It 
+                   alters some .COM files, rather then infecting them, by 
+                   overwriting the first five bytes with hex 20 characters. 
+                   The seconds field in the file time will be set to 62 on 
+                   all trojanized and infected programs.  It contains the 
+                   text strings "*.COM", "PATH=", "????????COM", and 
+                   "Abacus Software!". 
+                   Unexpected system reboots may occur when trojanized 
+                   programs are executed. 
+                   Origin:  Unknown  October, 1993. 
+       Vienna.Ambalama: Received in January, 1995, this variant of Vienna 
+                   infects all of the .COM files in the current directory 
+                   when an infected program is executed.  Infected files 
+                   increase in size by 493 bytes with the virus being located 
+                   at the the end of the file.  The file's date/time seconds 
+                   field will have been set to "08".  The following text 
+                   strings can be found within the viral code: 
+                   "(C) BLACK STAR Inc., 1991. USA,BOX 13263,Ambalama 
+                    Called from: BBS (095) 135-62-53" 
+                   "\????????.COM" 
+                   "????????COM" 
+                   "ft 1988" 
+                   After an infected program has been executed, the disk 
+                   drive may become unreadable until the system is rebooted. 
+                   Origin:  Unknown  January, 1995. 
+       Vienna-B: Similar to Vienna, except that instead of a warm reboot, 
+                 the program being executed will be deleted. 
+       Vienna-B 645: Similar to the Vienna-B variant, this variant's 
+                     effective length is 645 bytes.  It does not perform 
+                     either a warm reboot or delete executed programs.  It 
+                     does, however, infect COMMAND.COM 
+                     Origin: United States 
+       Vienna-Beta Boys: Received from Sweden in August, 1992, this 
+              variant of Vienna adds 679 bytes to the .COM programs it 
+              infects, including COMMAND.COM, and sets the seconds field 
+              in the file time to 62.  The following text strings can be 
+              found in all infected programs: 
+              "-+[BetaBoys]+-" 
+              "*.COM" 
+              "PATH=" 
+              "????????COM" 
+              Beta Boys activates when an infected program is executed in 
+              February of any year, overwritting the beginning of drives 
+              C:, D:, and E:. 
+              Origin:  Sweden  August, 1992 
+       Vienna-Beta Boys 730: Received from Sweden in October, 1992, 
+              this variant of Vienna adds 730 bytes to the .COM programs it 
+              infects, including COMMAND.COM, and sets the seconds field 
+              in the file time to 62.  The following text strings can be 
+              found in all infected programs: 
+              "BetaBoys Present:  Memo v2.0 /MaZ" 
+              "*.COM" 
+              "PATH=" 
+              "????????COM" 
+              Origin:  Sweden  October, 1992 
+       Vienna-CDM.A: Received from Poland in December, 1992, this 
+              variant of Vienna adds 642 bytes to the .COM programs it 
+              infects, including COMMAND.COM, and sets the seconds field 
+              in the file time to 58.  The following text strings can be 
+              found in all infected programs: 
+              "*.COM" 
+              "PATH=" 
+              "COULD DO MORE ...." 
+              "????????COM" 
+              "YOU COULD D" 
+              Vienna-CDM.A only replicates when the system date is set to 
+              January 1st thru May 5th of any year.  It doesn't appear to 
+              do anything besides replicate. 
+              Origin:  Poland  December, 1992 
+       Vienna-CDM.B: Based on the Vienna-CDM.A variant, this is a minor 
+              variant. 
+              Origin:  Poland  December, 1992 
+       Vienna-CDM.C: Based on the Vienna-CDM.A variant, this is a minor 
+              variant. 
+              Origin:  Poland  December, 1992 
+       Vienna-Feliz: Based on the Vienna virus, this variant adds 518 
+              bytes to the .COM programs it infects.  Like Vienna, it infects 
+              one .COM program each time an infected program is executed, 
+              locating the virus at the end of the infected program.  The 
+              following text strings can be found in the viral code: 
+              "(C) 1991" 
+              "�Feliz Navidad!" 
+              "�Feliz A�o Nuevo!" 
+              "*.COM PATH=" 
+              The seconds field in the file date and time within the DOS disk 
+              directory will be set to "60" on all infected files. 
+              Origin:  Spain  December, 1993. 
+       Vienna-Kaszana: Based on the Vienna virus, this variant adds 1,848 
+              bytes to the .COM programs it infects.  Like Vienna, it infects 
+              one .COM program each time an infected program is executed, 
+              locating the virus at the end of the infected program.  The 
+              following text strings are usually encrypted within the viral 
+              code, though occassionally an infected program will contain 
+              an unencrypted copy of the virus: 
+              "*.COM" 
+              "PATH=" 
+              ".COM WCLOCK.COM" 
+              "REVEROF ANASZAK" 
+              The seconds field in the file date and time within the DOS disk 
+              directory will be set to "26" on all infected files. 
+              Origin:  Unknown  December, 1993. 
+       Vienna-Nag: Received in August, 1992, Vienna-Nag is a 648 
+              byte variant of the Vienna virus.  Like the original, it 
+              adds 648 bytes to the .COM programs it infects, including 
+              COMMAND.COM.  It also sets the seconds field in the file 
+              time to 62.  It contains the following text strings: 
+              "*.COM" 
+              "PATH=" 
+              "????????COM" 
+              Origin:  Unknown  August, 1992 
+       Vienna-New Years: Vienna-New Years is a 697 byte variant of the 
+             Vienna virus.  It infects one .COM file in the current 
+             directory each time an infected program is executed.  The 
+             following text strings can be found within the viral code: 
+             "The New-Years Virus" 
+             "PATH=" 
+             "*.COM" 
+             "????????COM" 
+             As with the original virus, the file date/time seconds field 
+             will be set to "62" on all infected programs. 
+             Origin: Unknown  June, 1993 
+       Vienna-Refresh: Received in October, 1992, Vienna-Refresh is a 
+              648 byte variant of the Vienna virus.  Like the original, it 
+              adds 648 bytes to the .COM programs it infects, including 
+              COMMAND.COM.  It sets the seconds field in the file time to 
+              32.  It contains the following text strings: 
+              "*.COM" 
+              "PATH=" 
+              "????????COM" 
+              Origin:  Unknown  October, 1992 
+       Vienna-Yam 92: Received in October, 1992, Vienna-Yam 92 adds 849 
+              bytes to the .COM programs it infects, including COMMAND.COM, 
+              and sets the seconds field in the file time to 56.  The 
+              following text strings can be found in all infected programs: 
+              'Matthew Stolarski - "A Loser in deep trouble...."' 
+              "Matthew Stolarski is a born loser..." 
+              "Let's kill him!!!!" 
+              "YAM '92.  Remember that name." 
+              "*.COM" 
+              "PATH=" 
+              "????????COM" 
+              Origin:  United States  October, 1992 
+       Vienna-Yam 92B: Functionally similar to Vienna-YAM 92B, this 
+              variant has four bytes which differ. 
+              Origin:  Unknown  March, 1993 
+       Wien: Functionally similar to Vienna in all details, this minor 
+             variant which was discovered in 1990 had been altered to 
+             avoid detection. 
+             Origin: Poland 
+ 
+       See:   1260   Arf   Ghostballs   Grither   Lisbon   Mexican Mud 
+              Parasite   Rattle   Sicilian Mob   TSoft   VHP   VHP2 
+              Violator   W13   Incom   Viperize 

