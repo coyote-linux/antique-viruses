@@ -15,7 +15,7 @@ repo.
 ---
 
 ## Famous malware
-The *famous* directory contains malware which made history in some way and gain wide
+The *famous* directory contains malware which made history in some way and gained wide
 spread notoriety.
 
 ---
