@@ -18,24 +18,6 @@ repo.
 The *famous* directory contains malware which made history in some way and gain wide
 spread notoriety.
 
-
-### The Morris Worm
-The C source code for the Morris Worm has also been added to the archive. This is
-the first Internet worm to gain media attention and to result in a felony conviction.
-The worm was written by Robert Morris Jr. and released in November 1988. It took 
-advantage of a flaw in Sendmail to spread itself. More information can be found in the
-Wikipedia article: https://en.wikipedia.org/wiki/Morris_worm
-
-
-### Stuxnet
-The decompiled version of the Stuxnet virus has been added for study. For more
-information about this worm, check out the Wikipedia article:
-https://en.wikipedia.org/wiki/Stuxnet
-
-The Stuxnet virus source was decompiled and published to github by a couple of 
-security researchers. For more information about them, see the readme file in the 
-famous/stuxnet directory.
-
 ---
 
 **Note:** The directory structures have been shuffled a bit to add some additional organization
