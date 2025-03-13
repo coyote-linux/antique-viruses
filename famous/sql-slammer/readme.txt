@@ -1,5 +1,5 @@
 This is a disassembly of the SQL Slammer worm. This worm
-spread and cause mass disruptions in January of 2003. It is 
+spread and caused mass disruptions in January of 2003. It is 
 often considered the fastest spreading malware in history. It is
 estimated that it had infected nearly 90% of the vulnerable
 hosts within the first 10 minutes of its existence in the wild.
